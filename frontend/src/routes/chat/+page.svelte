@@ -2,6 +2,8 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { sendMessageStreaming } from '$lib/api.js';
+	import PhPlus from '~icons/ph/plus';
+	import PhArrowRight from '~icons/ph/arrow-right';
 
 	let messages = $state([]);
 	let inputValue = $state('');
@@ -137,7 +139,7 @@
 	<!-- Back Button -->
 	<header>
 		<button class="back-button" onclick={() => goto('/')} aria-label="Back to home">
-			← Back
+			←
 		</button>
 		<h1>Chat with AI</h1>
 	</header>
@@ -151,18 +153,27 @@
 					<div class="suggestions">
 						<button
 							class="suggestion"
-							onclick={() => (inputValue = 'What crops grow best in Iowa?')}
+							onclick={() => (inputValue = 'Should I worry about wheat rust this week?')}
 						>
-							What crops grow best in Iowa?
+							Should I worry about wheat rust this week?
 						</button>
 						<button
 							class="suggestion"
-							onclick={() => (inputValue = "What's the weather forecast for this week?")}
+							onclick={() => (inputValue = 'Is now a good time to sell my corn?')}
 						>
-							What's the weather forecast?
+							Is it a good time to sell my corn?
 						</button>
-						<button class="suggestion" onclick={() => (inputValue = 'When should I harvest corn?')}>
-							When should I harvest corn?
+						<button
+							class="suggestion"
+							onclick={() => (inputValue = 'What should I plant based on current prices?')}
+						>
+							What should I plant based on current prices?
+						</button>
+						<button
+							class="suggestion"
+							onclick={() => (inputValue = 'Will the weather affect my potato harvest?')}
+						>
+							Will the weather affect my potato harvest?
 						</button>
 					</div>
 				</div>
@@ -253,7 +264,7 @@
 					aria-label="Upload image"
 					title="Upload image"
 				>
-					📷
+					<PhPlus />
 				</button>
 				<input
 					bind:this={inputElement}
@@ -263,7 +274,14 @@
 					placeholder="Ask a farming question..."
 					disabled={isLoading}
 				/>
-				<button onclick={handleSubmit} disabled={isLoading || (!inputValue.trim() && selectedImages.length === 0)}> Send </button>
+				<button 
+					class="send-button"
+					onclick={handleSubmit} 
+					disabled={isLoading || (!inputValue.trim() && selectedImages.length === 0)}
+					aria-label="Send message"
+				>
+					<PhArrowRight />
+				</button>
 			</div>
 		</div>
 	</div>
@@ -274,53 +292,61 @@
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
-		max-width: 800px;
+		max-width: 35rem;
 		margin: 0 auto;
+		padding: 0.75rem;
+		background: var(--bg-1);
 	}
 
 	header {
 		display: flex;
 		align-items: center;
-		gap: 1rem;
-		padding: 1rem;
-		background: white;
-		border-bottom: 1px solid #e5e7eb;
+		justify-content: center;
+		padding: 0.75rem 0;
+		margin-bottom: 0.75rem;
+		position: relative;
 	}
 
 	header h1 {
 		margin: 0;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		color: var(--txt-1);
-	}
-
-	.back-button {
-		background: none;
-		border: none;
-		font-size: 1rem;
-		color: var(--acc-1);
-		cursor: pointer;
-		padding: 0.5rem;
-		display: flex;
-		align-items: center;
 		font-weight: 600;
 	}
 
+	.back-button {
+		position: absolute;
+		left: 0;
+		background: none;
+		border: none;
+		font-size: 1.25rem;
+		color: var(--txt-2);
+		cursor: pointer;
+		padding: 0.25rem;
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		transition: color 0.2s;
+	}
+
 	.back-button:hover {
-		opacity: 0.8;
+		color: var(--txt-1);
 	}
 
 	.chat-container {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
-		padding: 1rem;
 		overflow: hidden;
+		gap: 0.75rem;
 	}
 
 	.messages {
 		flex: 1;
 		overflow-y: auto;
-		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
 	}
 
 	.empty-state {
@@ -335,23 +361,24 @@
 	}
 
 	.empty-state .message {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin-bottom: 1.5rem;
+		color: var(--txt-2);
 	}
 
 	.suggestions {
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
-		max-width: 400px;
+		gap: 0.5rem;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
 	.suggestion {
-		background: white;
-		border: 1px solid #e5e7eb;
-		border-radius: 8px;
-		padding: 0.75rem;
+		background: var(--bg-2);
+		border: 1px solid var(--bg-3);
+		border-radius: 1.75rem;
+		padding: 0.75rem 1rem;
 		cursor: pointer;
 		color: var(--txt-2);
 		font-size: 0.95rem;
@@ -359,48 +386,47 @@
 	}
 
 	.suggestion:hover {
-		border-color: var(--acc-1);
-		background: var(--bg-2);
+		background: var(--bg-3);
+		border-color: var(--bg-4);
 	}
 
 	.message {
-		margin-bottom: 1rem;
+		display: flex;
 	}
 
 	.message.user {
-		text-align: right;
+		justify-content: flex-end;
 	}
 
 	.message.assistant {
-		text-align: left;
+		justify-content: flex-start;
 	}
 
 	.message-content {
-		display: inline-block;
 		padding: 0.75rem 1rem;
-		border-radius: 12px;
-		max-width: 80%;
+		border-radius: 1.75rem;
+		max-width: 85%;
 		word-wrap: break-word;
-		white-space: pre-wrap;
 	}
 
 	.message.user .message-content {
-		background-color: var(--acc-1);
-		color: white;
+		background-color: var(--green-1);
+		color: var(--txt-1);
 	}
 
 	.message.assistant .message-content {
-		background-color: white;
+		background-color: var(--bg-2);
 		color: var(--txt-1);
-		border: 1px solid #e5e7eb;
+		border: 1px solid var(--bg-3);
 	}
 
 	.loading {
 		font-style: italic;
-		opacity: 0.7;
+		opacity: 0.8;
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
+		color: var(--txt-2);
 	}
 
 	.loading-icon {
@@ -419,24 +445,28 @@
 	}
 
 	.error {
-		background-color: #ffebee;
-		color: #c62828;
-		padding: 0.75rem;
-		border-radius: 8px;
-		margin-bottom: 1rem;
+		background-color: var(--red-1);
+		color: var(--txt-1);
+		padding: 0.75rem 1rem;
+		border-radius: 1.75rem;
+		margin-bottom: 0.5rem;
+		text-align: center;
 	}
 
 	.input-area {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
-		padding-top: 0.5rem;
-		border-top: 1px solid #e5e7eb;
 	}
 
 	.input-row {
 		display: flex;
-		gap: 0.75rem;
+		gap: 0.5rem;
+		align-items: center;
+		background: var(--bg-3);
+		border-radius: 1.75rem;
+		padding: 0.5rem;
+		border: 1px solid var(--bg-4);
 	}
 
 	.image-previews {
@@ -444,17 +474,18 @@
 		gap: 0.5rem;
 		flex-wrap: wrap;
 		padding: 0.5rem;
-		background: #f9fafb;
-		border-radius: 8px;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
 	.image-preview {
 		position: relative;
-		width: 80px;
-		height: 80px;
-		border-radius: 8px;
+		width: 70px;
+		height: 70px;
+		border-radius: 1rem;
 		overflow: hidden;
-		border: 2px solid #e5e7eb;
+		border: 2px solid var(--bg-4);
 	}
 
 	.image-preview img {
@@ -465,41 +496,51 @@
 
 	.remove-image {
 		position: absolute;
-		top: 2px;
-		right: 2px;
+		top: 4px;
+		right: 4px;
 		width: 20px;
 		height: 20px;
 		padding: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.7);
 		color: white;
 		border: none;
 		border-radius: 50%;
 		cursor: pointer;
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		font-weight: bold;
 	}
 
 	.remove-image:hover {
-		background: rgba(0, 0, 0, 0.8);
+		background: rgba(0, 0, 0, 0.9);
 	}
 
 	.image-button {
-		padding: 0.75rem 1rem;
-		background-color: white;
-		color: var(--txt-2);
-		border: 1px solid #e5e7eb;
-		border-radius: 8px;
+		padding: 0.5rem;
+		background-color: var(--bg-2);
+		color: var(--txt-1);
+		border: 1px solid var(--bg-4);
+		border-radius: 50%;
 		cursor: pointer;
-		font-size: 1.25rem;
 		transition: all 0.2s;
+		width: 2.5rem;
+		height: 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.image-button :global(svg) {
+		width: 1.25rem;
+		height: 1.25rem;
 	}
 
 	.image-button:hover:not(:disabled) {
-		border-color: var(--acc-1);
-		background: var(--bg-2);
+		background: var(--bg-4);
 	}
 
 	.image-button:disabled {
@@ -509,37 +550,50 @@
 
 	input[type='text'] {
 		flex: 1;
-		padding: 0.75rem 1rem;
-		border: 1px solid #e5e7eb;
-		border-radius: 8px;
+		padding: 0.5rem 0.75rem;
+		border: none;
+		background: transparent;
 		font-size: 1rem;
-		background: white;
 		color: var(--txt-1);
+		min-width: 0;
 	}
 
 	input[type='text']:focus {
 		outline: none;
-		border-color: var(--acc-1);
 	}
 
-	button {
-		padding: 0.75rem 1.5rem;
-		background-color: var(--acc-1);
-		color: white;
+	input[type='text']::placeholder {
+		color: var(--txt-3);
+	}
+
+	.send-button {
+		padding: 0.5rem;
+		background-color: var(--green-1);
+		color: var(--txt-1);
 		border: none;
-		border-radius: 8px;
+		border-radius: 50%;
 		cursor: pointer;
-		font-size: 1rem;
-		font-weight: 600;
-		transition: background-color 0.2s;
+		transition: all 0.2s;
+		width: 2.5rem;
+		height: 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
 	}
 
-	button:hover {
-		background-color: var(--acc-2);
+	.send-button :global(svg) {
+		width: 1.25rem;
+		height: 1.25rem;
 	}
 
-	button:disabled {
-		background-color: #ccc;
+	.send-button:hover:not(:disabled) {
+		background-color: var(--green-2);
+	}
+
+	.send-button:disabled {
+		background-color: var(--bg-4);
+		color: var(--txt-3);
 		cursor: not-allowed;
 	}
 
@@ -551,9 +605,9 @@
 	}
 
 	.message-image {
-		max-width: 300px;
-		max-height: 300px;
-		border-radius: 8px;
+		max-width: 100%;
+		max-height: 250px;
+		border-radius: 1rem;
 		object-fit: contain;
 		cursor: pointer;
 	}
