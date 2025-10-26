@@ -107,7 +107,7 @@
 							<div class="gradient-bar ndvi-gradient"></div>
 							<span class="legend-label">1.0</span>
 						</div>
-						<p class="legend-desc">Red (bare/sparse) → Yellow → Green (dense vegetation)</p>
+						<p class="legend-desc">Red (poor) → Yellow (moderate) → Green (healthy vegetation)</p>
 					</div>
 				</div>
 			</div>
@@ -162,7 +162,7 @@
 							<div class="gradient-bar ndwi-gradient"></div>
 							<span class="legend-label">1.0</span>
 						</div>
-						<p class="legend-desc">Black (dry) → Blue gradient → Light blue (saturated)</p>
+						<p class="legend-desc">Black (dry) → Teal (saturated)</p>
 					</div>
 				</div>
 			</div>
@@ -339,37 +339,11 @@
 	}
 
 	.ndvi-gradient {
-		background: linear-gradient(
-			to right,
-			#8b0000,
-			#ff4500,
-			#ffd700,
-			#ffff00,
-			#adff2f,
-			#9acd32,
-			#32cd32,
-			#00ff00,
-			#00cd00,
-			#008000,
-			#006400,
-			#004000
-		);
+		background: linear-gradient(to right, #e06c6c, #dbba57, #97c639);
 	}
 
 	.ndwi-gradient {
-		background: linear-gradient(
-			to right,
-			#000000,
-			#0a0a1f,
-			#001b4d,
-			#003f7f,
-			#0066b2,
-			#0099cc,
-			#33ccff,
-			#66e0ff,
-			#b3f0ff,
-			#e6ffff
-		);
+		background: linear-gradient(to right, #000000, var(--blue-1));
 	}
 
 	.legend-desc {

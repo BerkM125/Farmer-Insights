@@ -18,8 +18,6 @@
 	--green-2: hsl(80, 50%, 45%);
 	--blue-1: hsl(170, 55%, 50%);
 	--blue-2: hsl(170, 50%, 45%);
-	--acc-1: hsl(80, 55%, 50%);
-	--acc-2: hsl(80, 50%, 45%);
 
 	box-sizing: border-box;
 }

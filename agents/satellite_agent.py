@@ -3,34 +3,38 @@ from models import SatelliteRequest, SatelliteResponse
 import os
 from supabase import create_client, Client
 import ee
+
 ee.Initialize(project="farmer-insights-project")
+
 
 # Initialize our Supabase client with environment variables
 def get_supabase_client() -> Client:
     """
     Initialize Supabase client using environment variables.
-    
+
     Returns:
         Client: Initialized Supabase client
-        
+
     Raises:
         ValueError: If required environment variables are missing
     """
     url = os.getenv("SUPABASE_URL")
     key = os.getenv("SUPABASE_KEY")
-    
+
     if not url:
         raise ValueError("SUPABASE_URL environment variable is required but not set")
     if not key:
         raise ValueError("SUPABASE_KEY environment variable is required but not set")
-    
+
     return create_client(supabase_url=url, supabase_key=key)
+
 
 # Initialize Supabase client
 supabase_client: Client = get_supabase_client()
 
 # Defines a global buffer radius for all satellite data calculations
 BUFFER_RADIUS = 3000
+
 
 def get_ndwi_map_url(latitude: float, longitude: float) -> tuple[ee.Image, str]:
     """
@@ -39,56 +43,53 @@ def get_ndwi_map_url(latitude: float, longitude: float) -> tuple[ee.Image, str]:
     """
     # Define point of interest
     point = ee.Geometry.Point([latitude, longitude])
-    
+
     # Load Landsat 8 TOA
-    l8 = ee.ImageCollection('LANDSAT/LC08/C02/T1_TOA')
-    
+    l8 = ee.ImageCollection("LANDSAT/LC08/C02/T1_TOA")
+
     # Filter by date and location, get least cloudy image
-    img = (l8.filterBounds(point)
-        .filterDate('2025-01-01', '2025-10-01')
-        .sort('CLOUD_COVER')
-        .first())
-    
+    img = (
+        l8.filterBounds(point)
+        .filterDate("2025-01-01", "2025-10-01")
+        .sort("CLOUD_COVER")
+        .first()
+    )
+
     # Get required bands
-    nir = img.select('B5')
-    green = img.select('B3')
-    
+    nir = img.select("B5")
+    green = img.select("B3")
+
     # Calculate NDWI
-    ndwi = nir.subtract(green).divide(nir.add(green)).rename('NDWI')
-    
+    ndwi = nir.subtract(green).divide(nir.add(green)).rename("NDWI")
+
     # Export to Google Drive
     task = ee.batch.Export.image.toDrive(
         image=ndwi,
-        description='landsat8_ndwi_water_resources',
-        folder='GEE_Exports',
-        fileNamePrefix=f'ndwi_water_{latitude}_{longitude}',
-        region=point.buffer(BUFFER_RADIUS).bounds().getInfo()['coordinates'],
+        description="landsat8_ndwi_water_resources",
+        folder="GEE_Exports",
+        fileNamePrefix=f"ndwi_water_{latitude}_{longitude}",
+        region=point.buffer(BUFFER_RADIUS).bounds().getInfo()["coordinates"],
         scale=30,
-        crs='EPSG:4326'
+        crs="EPSG:4326",
     )
     task.start()
-    
-    # Generate thumbnail URL with water-themed color palette
-    url = ndwi.getThumbURL({
-        'min': -1.0,  # NDWI range: -1 (dry) to +1 (wet)
-        'max': 1.0,
-        'palette': [
-            'E6FFFF',
-            'B3F0FF',
-            '66E0FF',
-            '33CCFF',
-            '0099CC',
-            '0066B2',
-            '003F7F',
-            '001B4D',
-            '0A0A1F',
-            '000000'
-        ],
-        'region': point.buffer(BUFFER_RADIUS).bounds().getInfo()['coordinates'],
-        'dimensions': 2056
-    })
-    
+
+    # Generate thumbnail URL with app color scheme: black to teal
+    url = ndwi.getThumbURL(
+        {
+            "min": -1.0,  # NDWI range: -1 (dry) to +1 (wet)
+            "max": 1.0,
+            "palette": [
+                "#000000",  # black - dry/low water
+                "#39c6af",  # blue-1 (teal) - saturated/high water
+            ],
+            "region": point.buffer(BUFFER_RADIUS).bounds().getInfo()["coordinates"],
+            "dimensions": 2056,
+        }
+    )
+
     return (ndwi, url)
+
 
 def get_ndvi_map_url(latitude: float, longitude: float) -> tuple[ee.Image, str]:
     """
@@ -97,108 +98,113 @@ def get_ndvi_map_url(latitude: float, longitude: float) -> tuple[ee.Image, str]:
     """
     # Define point of interest
     point = ee.Geometry.Point([latitude, longitude])
-    
+
     # Load Landsat 8 TOA
-    l8 = ee.ImageCollection('LANDSAT/LC08/C02/T1_TOA')
-    
+    l8 = ee.ImageCollection("LANDSAT/LC08/C02/T1_TOA")
+
     # Filter by date and location, get least cloudy image
-    img = (l8.filterBounds(point)
-        .filterDate('2024-01-01', '2024-12-31')
-        .sort('CLOUD_COVER')
-        .first())
-    
+    img = (
+        l8.filterBounds(point)
+        .filterDate("2024-01-01", "2024-12-31")
+        .sort("CLOUD_COVER")
+        .first()
+    )
+
     # Get required bands
-    nir = img.select('B5')
-    red = img.select('B4')
-    
+    nir = img.select("B5")
+    red = img.select("B4")
+
     # Calculate NDVI
-    ndvi = nir.subtract(red).divide(nir.add(red)).rename('NDVI')
-    
+    ndvi = nir.subtract(red).divide(nir.add(red)).rename("NDVI")
+
     # Export to Google Drive
     task = ee.batch.Export.image.toDrive(
         image=ndvi,
-        description='landsat8_ndvi_vegetation_health',
-        folder='GEE_Exports',
-        fileNamePrefix=f'ndvi_vegetation_{latitude}_{longitude}',
-        region=point.buffer(BUFFER_RADIUS).bounds().getInfo()['coordinates'],
+        description="landsat8_ndvi_vegetation_health",
+        folder="GEE_Exports",
+        fileNamePrefix=f"ndvi_vegetation_{latitude}_{longitude}",
+        region=point.buffer(BUFFER_RADIUS).bounds().getInfo()["coordinates"],
         scale=30,
-        crs='EPSG:4326'
+        crs="EPSG:4326",
     )
     task.start()
-    
-    # Generate thumbnail URL with green-themed color palette
-    url = ndvi.getThumbURL({
-        'min': -0.2,  # NDVI range for Landsat 8
-        'max': 1.0,
-        'palette': [
-            '#8B0000',  # Dark red (water, urban, bare soil)
-            '#FF4500',  # Orange red (sparse vegetation)
-            '#FFD700',  # Gold (very sparse vegetation)
-            '#FFFF00',  # Yellow (sparse vegetation)
-            '#ADFF2F',  # Green yellow (moderate vegetation)
-            '#9ACD32',  # Yellow green (good vegetation)
-            '#32CD32',  # Lime green (healthy vegetation)
-            '#00FF00',  # Green (dense vegetation)
-            '#00CD00',  # Dark lime (very dense vegetation)
-            '#008000',  # Dark green (dense forest)
-            '#006400',  # Dark green (very dense forest)
-            '#004000',  # Forest green (extremely dense)
-            '#002000',  # Very dark green (maximum vegetation)
-            '#001000',  # Almost black green (maximum density)
-            '#000800'   # Black green (maximum possible vegetation)
-        ],
-        'region': point.buffer(BUFFER_RADIUS).bounds().getInfo()['coordinates'],
-        'dimensions': 2056
-    })
-    
+
+    # Generate thumbnail URL with app color scheme
+    url = ndvi.getThumbURL(
+        {
+            "min": -0.2,  # NDVI range for Landsat 8
+            "max": 1.0,
+            "palette": [
+                "#e06c6c",  # Red - bare soil/poor vegetation
+                "#dbba57",  # Yellow - moderate vegetation
+                "#97c639",  # Green - healthy vegetation
+            ],
+            "region": point.buffer(BUFFER_RADIUS).bounds().getInfo()["coordinates"],
+            "dimensions": 2056,
+        }
+    )
+
     return (ndvi, url)
 
-agent = Agent(name="satellite_agent",
-              seed="satellite_agent_seed_123",
-              port=8002,
-              endpoint=["http://127.0.0.1:8002/submit"]
-              )
+
+agent = Agent(
+    name="satellite_agent",
+    seed="satellite_agent_seed_123",
+    port=8002,
+    endpoint=["http://127.0.0.1:8002/submit"],
+)
 
 
 @agent.on_event("startup")
 async def print_startup_message(ctx: Context):
-    print(f"satellite data connected, {fetch_satellite_data("FARM01")}")
+    print(f"satellite data connected, {fetch_satellite_data('FARM01')}")
     ctx.logger.info(agent.address)
+
 
 @agent.on_message(model=SatelliteRequest, replies=SatelliteResponse)
 async def handle_satellite_request(ctx: Context, sender: str, msg: SatelliteRequest):
-    ctx.logger.info(f"Received satellite request from {sender}: {msg.latitude}, {msg.longitude}")
-    
+    ctx.logger.info(
+        f"Received satellite request from {sender}: {msg.latitude}, {msg.longitude}"
+    )
+
     # Now, using Google Earth Engine to get satellite data.
     # Essentially, it's gonna be NDWI/NDVI data on a per-farm basis
     # So, every entry in this database is gonna focus on an X by X acre area of
     # farm. The mean, median NDVI and NDWI of that area will be used to determine
     # the health of the farm.
     response = SatelliteResponse(
-        status=f"satellite data connected, {fetch_satellite_data("FARM01")}"
+        status=f"satellite data connected, {fetch_satellite_data('FARM01')}"
     )
-    
+
     ctx.logger.info(f"Sending satellite response to {sender}: {response.status}")
-    await ctx.send(
-        sender, response
-    )
+    await ctx.send(sender, response)
+
 
 # Farm IDs correspond to the names of the farms stored in the
 # database. This function takes a farm ID and returns the satellite data for that farm,
 # including lat/lon, NDWI, NDVI, and other important info
 def fetch_satellite_data(farm_id: str):
-    aggregate_block = supabase_client.table("satellite_data_table").select("*").execute()
+    aggregate_block = (
+        supabase_client.table("satellite_data_table").select("*").execute()
+    )
     print(f"Aggregate block: {aggregate_block.data}")
 
     relevant_latitude = aggregate_block.data[0]["latitude"]
     relevant_longitude = aggregate_block.data[0]["longitude"]
 
-    print(f"Farm ID labeled ", farm_id, "has latitude ", relevant_latitude, "and longitude ", relevant_longitude)
-    
+    print(
+        f"Farm ID labeled ",
+        farm_id,
+        "has latitude ",
+        relevant_latitude,
+        "and longitude ",
+        relevant_longitude,
+    )
+
     # Get both map URLs
     ndwi, water_url = get_ndwi_map_url(relevant_latitude, relevant_longitude)
     ndvi, vegetation_url = get_ndvi_map_url(relevant_latitude, relevant_longitude)
-    
+
     print(f"Water Resources Map URL: {water_url}")
     print(f"Vegetation Health Map URL: {vegetation_url}")
 
@@ -224,35 +230,44 @@ def fetch_satellite_data(farm_id: str):
         "75th_ndwi": ndwi_stats["NDWI_p75"],
         "75th_ndvi": ndvi_stats["NDVI_p75"],
         "ndwi_url": water_url,
-        "ndvi_url": vegetation_url
+        "ndvi_url": vegetation_url,
     }
 
-    # Crop advice needs to process the entire data block, only insert after 
+    # Crop advice needs to process the entire data block, only insert after
     # rest of data is already inserted / inputted.
     satellite_data_block["crop_advice"] = crop_advice(satellite_data_block)
 
     # Insert the satellite data block into the database
-    result = supabase_client.table("satellite_data_table").update(satellite_data_block).eq("id", 1).execute()
+    result = (
+        supabase_client.table("satellite_data_table")
+        .update(satellite_data_block)
+        .eq("id", 1)
+        .execute()
+    )
     print(f"Satellite data block updated into database: {result.data}")
 
     return aggregate_block
 
-def get_normalized_diff_stats(latitude: float, longitude: float, nd_image: ee.Image) -> dict:
+
+def get_normalized_diff_stats(
+    latitude: float, longitude: float, nd_image: ee.Image
+) -> dict:
     point = ee.Geometry.Point([latitude, longitude])
 
     stats = nd_image.reduceRegion(
         reducer=ee.Reducer.mean()
-                .combine(ee.Reducer.median(), '', True)
-                .combine(ee.Reducer.percentile([25, 75]), '', True),
+        .combine(ee.Reducer.median(), "", True)
+        .combine(ee.Reducer.percentile([25, 75]), "", True),
         geometry=point.buffer(BUFFER_RADIUS),
         scale=30,
-        maxPixels=1e9
+        maxPixels=1e9,
     )
 
     return stats.getInfo()
 
+
 def get_crop_task_recs(satellite_data_block):
-    # Return a list of strings that are recommendations for how to 
+    # Return a list of strings that are recommendations for how to
     # treat the crop based on all the data this function recieves.
     # Should use an LLM instance to generate this tasklist.
     pass
@@ -262,17 +277,17 @@ def crop_advice(satellite_data_block):
     ndvi_mean = satellite_data_block["mean_ndvi"]
     ndvi_25 = satellite_data_block["25th_ndvi"]
     ndvi_75 = satellite_data_block["75th_ndvi"]
-    
+
     ndwi_mean = satellite_data_block["mean_ndwi"]
     ndwi_25 = satellite_data_block["25th_ndwi"]
     ndwi_75 = satellite_data_block["75th_ndwi"]
-    
+
     # Thresholds (adjustable based on local conditions)
     ndvi_low = 0.3
     ndvi_high = 0.7
     ndwi_low = 0.1
     ndwi_high = 0.5
-    
+
     # Analyze water status
     if ndwi_mean < ndwi_low:
         water_status = "approaching drought; begin storing or irrigating water"
@@ -280,7 +295,7 @@ def crop_advice(satellite_data_block):
         water_status = "water levels high; monitor for waterlogging"
     else:
         water_status = "moisture levels are adequate"
-    
+
     # Analyze crop health
     if ndvi_mean < ndvi_low:
         crop_status = "plants are stressed; consider fertilization and pest management"
@@ -288,16 +303,18 @@ def crop_advice(satellite_data_block):
         crop_status = "plants are healthy and growing well"
     else:
         crop_status = "plants are moderately healthy; monitor for stress signs"
-    
+
     # Combine into a single advisory string
     advice = f"Water status: {water_status}. Crop status: {crop_status}."
-    
+
     return advice
+
 
 # Writes a fetched block of satellite data to the database
 async def write_satellite_data_to_database(farm_id: str, satellite_data: dict):
     aggregate_block = fetch_satellite_data()
     pass
+
 
 if __name__ == "__main__":
     agent.run()
