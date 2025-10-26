@@ -40,17 +40,8 @@
 		messages = [...messages, { role: 'user', content: userMessage }];
 
 		try {
-			// Prepare messages for API (including system message for farming context)
-			const apiMessages = [
-				{
-					role: 'system',
-					content:
-						'You are an AI assistant helping small farmers with agricultural questions. Provide practical, helpful advice about farming, weather, crops, and agricultural practices.'
-				},
-				...messages
-			];
-
-			const response = await sendMessage(apiMessages);
+			// Send all messages (server will add system prompt with RAG context)
+			const response = await sendMessage(messages);
 
 			// Add AI response
 			messages = [...messages, { role: 'assistant', content: response }];

@@ -1,8 +1,5 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-import httpx
-import asyncio
-from functools import wraps
 import chromadb
 from chromadb.utils import embedding_functions
 import os
@@ -214,23 +211,21 @@ def rag_query():
         realtime_text = format_realtime_data(realtime_data)
         print(realtime_text)
 
+        # Load system prompt template from file
+        system_prompt_path = Path(__file__).parent / 'system_prompt.md'
+        with open(system_prompt_path, 'r') as f:
+            system_prompt_template = f.read()
+
         # Create system message with both RAG context and real-time data
-        system_message = f"""You are a helpful agricultural assistant with access to both a knowledge base and real-time farm data.
-
-{realtime_text}
-
-Knowledge Base Context:
-{context_text}
-
-Use the real-time personalized farm data and knowledge base to answer the user's questions accurately. 
-The real-time data includes current weather forecasts and market prices specific to the user's farm.
-If the context doesn't contain relevant information, acknowledge this and provide your best general answer. 
-In your response, do not state phrases like "the provided context" or "the given information"."""
+        system_message = system_prompt_template.format(
+            realtime_data=realtime_text,
+            rag_context=context_text
+        )
 
         # Build the messages array for the LLM with conversation history
         llm_messages = [{"role": "system", "content": system_message}]
-        
-        # Add conversation history (excluding any existing system messages)
+
+        # Add all conversation history (excluding any existing system messages from client)
         for msg in messages:
             if msg['role'] != 'system':
                 llm_messages.append({"role": msg['role'], "content": msg['content']})
