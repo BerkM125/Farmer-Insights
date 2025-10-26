@@ -2,6 +2,7 @@ flask
 flask-cors
 chromadb
 sentence-transformers
+scikit-learn
 supabase
 python-dotenv
 requests
