@@ -1,10 +1,17 @@
 <script>
-	// No need for goto since we're using links
 </script>
 
 <div class="container">
 	<header>
-		<h1>Demeter</h1>
+		<div class="title-section">
+			<h1>Demeter</h1>
+			<div class="accent-boxes">
+				<div class="accent-box red"></div>
+				<div class="accent-box yellow"></div>
+				<div class="accent-box green"></div>
+				<div class="accent-box blue"></div>
+			</div>
+		</div>
 		<p class="location">Ames, Iowa</p>
 	</header>
 
@@ -14,26 +21,45 @@
 			<h2>Weather</h2>
 			<p class="big-text">72°F</p>
 			<p class="small-text">Sunny</p>
-			<p class="alert">Rain tomorrow</p>
 		</a>
 
 		<a href="/market" class="widget market">
-			<h2>Market Prices</h2>
+			<h2>Market</h2>
 			<p class="price">Corn: $4.20/bu <span class="change up">↑2%</span></p>
 			<p class="price">Soy: $12.15/bu <span class="change down">↓1%</span></p>
 		</a>
 
-		<a href="/satellite" class="widget satellite">
-			<h2>Field Imagery</h2>
-			<p>Last updated: 2 days ago</p>
-			<p class="small-text">Tap to view NDVI analysis</p>
-		</a>
+		<div class="side-by-side">
+			<a href="/satellite" class="widget satellite">
+				<h2>Field Imagery</h2>
+				<p>Updated 2 days ago</p>
+				<p class="small-text"></p>
+			</a>
 
-		<a href="/crops" class="widget crops">
-			<h2>Environment</h2>
-			<p>Corn - Stage: Flowering</p>
-			<p>Estimated harvest: ~12 days</p>
-		</a>
+			<a href="/crops" class="widget crops">
+				<h2>Environment</h2>
+				<p>Soil moisture: 65%</p>
+				<p>pH level: 6.8</p>
+			</a>
+		</div>
+
+		<div class="widget action-items">
+			<h2>Action Items</h2>
+			<div class="action-list">
+				<div class="action-item">
+					<span class="action-icon">🌱</span>
+					<span>Fertilize corn field</span>
+				</div>
+				<div class="action-item">
+					<span class="action-icon">💧</span>
+					<span>Check irrigation system</span>
+				</div>
+				<div class="action-item">
+					<span class="action-icon">📊</span>
+					<span>Review market trends</span>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Chat Bar (navigates to chat) -->
@@ -54,18 +80,76 @@
 		justify-content: space-between;
 	}
 
-	header {
+	.title-section {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 	}
 
-	header h1 {
+	h1 {
 		margin: 0;
+		letter-spacing: -2%;
+	}
+
+	.accent-boxes {
+		display: flex;
+		transform: skewX(-15deg);
+	}
+
+	.accent-box {
+		width: 1rem;
+		height: 2rem;
+	}
+
+	.accent-box.red {
+		background: var(--red-1);
+	}
+
+	.accent-box.yellow {
+		background: var(--yellow-1);
+	}
+
+	.accent-box.green {
+		background: var(--green-1);
+	}
+
+	.accent-box.blue {
+		background: var(--blue-1);
 	}
 
 	.widgets {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.side-by-side {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 0.75rem;
-		margin-bottom: 3rem;
+		gap: 0.5rem;
+	}
+
+	.action-list {
+		margin-top: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.action-item {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem;
+		background: var(--bg-3);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-4);
+	}
+
+	.action-icon {
+		font-size: 1.25rem;
+		width: 1.5rem;
+		text-align: center;
 	}
 
 	.widget {
