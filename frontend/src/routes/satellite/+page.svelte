@@ -370,17 +370,19 @@
 	}
 
 	.metadata {
-		text-align: center;
 		padding: 1rem;
 		background: var(--bg-2);
 		border-radius: 1.75rem;
 		border: 1px solid var(--bg-3);
+		flex-direction: column;
+		display: flex;
+		gap: 0.5rem;
 	}
 
 	.metadata p {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 		color: var(--txt-3);
-		margin: 0.25rem 0;
+		margin: 0;
 	}
 
 	.loading-state {
