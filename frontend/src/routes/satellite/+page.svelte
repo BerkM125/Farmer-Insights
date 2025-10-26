@@ -58,124 +58,118 @@
 	<div class="content">
 		{#if satelliteData}
 			<!-- NDVI Section -->
-			<div class="section">
-				<h2>Vegetation Health (NDVI)</h2>
-				{#if satelliteData.ndvi_url}
-					<div class="map-container">
-						<img src={satelliteData.ndvi_url} alt="NDVI Vegetation Map" class="map-image" />
-					</div>
+			<h2>Vegetation Health (NDVI)</h2>
+			{#if satelliteData.ndvi_url}
+				<div class="map-container">
+					<img src={satelliteData.ndvi_url} alt="NDVI Vegetation Map" class="map-image" />
+				</div>
+			{:else}
+				<div class="map-placeholder">
+					<p class="placeholder-icon">🗺️</p>
+					<p class="placeholder-text">NDVI map not available</p>
+				</div>
+			{/if}
+
+			<div class="stats-card">
+				{#if satelliteData.mean_ndvi != null}
+					{@const status = getNDVIStatus(satelliteData.mean_ndvi)}
+					<p class="status-label">Status</p>
+					<p class="status-value {status.class}">{status.text}</p>
 				{:else}
-					<div class="map-placeholder">
-						<p class="placeholder-icon">🗺️</p>
-						<p class="placeholder-text">NDVI map not available</p>
-					</div>
+					<p class="status-label">Status</p>
+					<p class="status-value neutral">Unknown</p>
 				{/if}
 
-				<div class="stats-card">
-					{#if satelliteData.mean_ndvi != null}
-						{@const status = getNDVIStatus(satelliteData.mean_ndvi)}
-						<p class="status-label">Status</p>
-						<p class="status-value {status.class}">{status.text}</p>
-					{:else}
-						<p class="status-label">Status</p>
-						<p class="status-value neutral">Unknown</p>
-					{/if}
-
-					<div class="stats-grid">
-						<div class="stat">
-							<span class="stat-label">Mean</span>
-							<span class="stat-value">{formatStat(satelliteData.mean_ndvi)}</span>
-						</div>
-						<div class="stat">
-							<span class="stat-label">Median</span>
-							<span class="stat-value">{formatStat(satelliteData.median_ndvi)}</span>
-						</div>
-						<div class="stat">
-							<span class="stat-label">25th percentile</span>
-							<span class="stat-value">{formatStat(satelliteData['25th_ndvi'])}</span>
-						</div>
-						<div class="stat">
-							<span class="stat-label">75th percentile</span>
-							<span class="stat-value">{formatStat(satelliteData['75th_ndvi'])}</span>
-						</div>
+				<div class="stats-grid">
+					<div class="stat">
+						<span class="stat-label">Mean</span>
+						<span class="stat-value">{formatStat(satelliteData.mean_ndvi)}</span>
 					</div>
-
-					<div class="legend">
-						<p class="legend-title">NDVI Scale:</p>
-						<div class="legend-bar">
-							<span class="legend-label">-0.2</span>
-							<div class="gradient-bar ndvi-gradient"></div>
-							<span class="legend-label">1.0</span>
-						</div>
-						<p class="legend-desc">Red (poor) → Yellow (moderate) → Green (healthy vegetation)</p>
+					<div class="stat">
+						<span class="stat-label">Median</span>
+						<span class="stat-value">{formatStat(satelliteData.median_ndvi)}</span>
 					</div>
+					<div class="stat">
+						<span class="stat-label">25th percentile</span>
+						<span class="stat-value">{formatStat(satelliteData['25th_ndvi'])}</span>
+					</div>
+					<div class="stat">
+						<span class="stat-label">75th percentile</span>
+						<span class="stat-value">{formatStat(satelliteData['75th_ndvi'])}</span>
+					</div>
+				</div>
+
+				<div class="legend">
+					<p class="legend-title">NDVI Scale:</p>
+					<div class="legend-bar">
+						<span class="legend-label">-0.2</span>
+						<div class="gradient-bar ndvi-gradient"></div>
+						<span class="legend-label">1.0</span>
+					</div>
+					<p class="legend-desc">Red (poor) → Yellow (moderate) → Green (healthy vegetation)</p>
 				</div>
 			</div>
 
 			<!-- NDWI Section -->
-			<div class="section">
-				<h2>Water Resources (NDWI)</h2>
-				{#if satelliteData.ndwi_url}
-					<div class="map-container">
-						<img src={satelliteData.ndwi_url} alt="NDWI Water Resources Map" class="map-image" />
-					</div>
+			<h2>Water Resources (NDWI)</h2>
+			{#if satelliteData.ndwi_url}
+				<div class="map-container">
+					<img src={satelliteData.ndwi_url} alt="NDWI Water Resources Map" class="map-image" />
+				</div>
+			{:else}
+				<div class="map-placeholder">
+					<p class="placeholder-icon">🗺️</p>
+					<p class="placeholder-text">NDWI map not available</p>
+				</div>
+			{/if}
+
+			<div class="stats-card">
+				{#if satelliteData.mean_ndwi != null}
+					{@const status = getNDWIStatus(satelliteData.mean_ndwi)}
+					<p class="status-label">Status</p>
+					<p class="status-value {status.class}">{status.text}</p>
 				{:else}
-					<div class="map-placeholder">
-						<p class="placeholder-icon">🗺️</p>
-						<p class="placeholder-text">NDWI map not available</p>
-					</div>
+					<p class="status-label">Status</p>
+					<p class="status-value neutral">Unknown</p>
 				{/if}
 
-				<div class="stats-card">
-					{#if satelliteData.mean_ndwi != null}
-						{@const status = getNDWIStatus(satelliteData.mean_ndwi)}
-						<p class="status-label">Status</p>
-						<p class="status-value {status.class}">{status.text}</p>
-					{:else}
-						<p class="status-label">Status</p>
-						<p class="status-value neutral">Unknown</p>
-					{/if}
-
-					<div class="stats-grid">
-						<div class="stat">
-							<span class="stat-label">Mean</span>
-							<span class="stat-value">{formatStat(satelliteData.mean_ndwi)}</span>
-						</div>
-						<div class="stat">
-							<span class="stat-label">Median</span>
-							<span class="stat-value">{formatStat(satelliteData.median_ndwi)}</span>
-						</div>
-						<div class="stat">
-							<span class="stat-label">25th percentile</span>
-							<span class="stat-value">{formatStat(satelliteData['25th_ndwi'])}</span>
-						</div>
-						<div class="stat">
-							<span class="stat-label">75th percentile</span>
-							<span class="stat-value">{formatStat(satelliteData['75th_ndwi'])}</span>
-						</div>
+				<div class="stats-grid">
+					<div class="stat">
+						<span class="stat-label">Mean</span>
+						<span class="stat-value">{formatStat(satelliteData.mean_ndwi)}</span>
 					</div>
-
-					<div class="legend">
-						<p class="legend-title">NDWI Scale:</p>
-						<div class="legend-bar">
-							<span class="legend-label">-1.0</span>
-							<div class="gradient-bar ndwi-gradient"></div>
-							<span class="legend-label">1.0</span>
-						</div>
-						<p class="legend-desc">Black (dry) → Teal (saturated)</p>
+					<div class="stat">
+						<span class="stat-label">Median</span>
+						<span class="stat-value">{formatStat(satelliteData.median_ndwi)}</span>
 					</div>
+					<div class="stat">
+						<span class="stat-label">25th percentile</span>
+						<span class="stat-value">{formatStat(satelliteData['25th_ndwi'])}</span>
+					</div>
+					<div class="stat">
+						<span class="stat-label">75th percentile</span>
+						<span class="stat-value">{formatStat(satelliteData['75th_ndwi'])}</span>
+					</div>
+				</div>
+
+				<div class="legend">
+					<p class="legend-title">NDWI Scale:</p>
+					<div class="legend-bar">
+						<span class="legend-label">-1.0</span>
+						<div class="gradient-bar ndwi-gradient"></div>
+						<span class="legend-label">1.0</span>
+					</div>
+					<p class="legend-desc">Black (dry) → Teal (saturated)</p>
 				</div>
 			</div>
 
 			<!-- Insights Section -->
 			{#if satelliteData.crop_advice}
-				<div class="section">
-					<h2>Insights & Recommendations</h2>
-					<div class="insight-box">
-						<p class="insight-icon">💡</p>
-						<div class="insight-content">
-							<p class="insight-text">{satelliteData.crop_advice}</p>
-						</div>
+				<h2>Insights & Recommendations</h2>
+				<div class="insight-box">
+					<p class="insight-icon">💡</p>
+					<div class="insight-content">
+						<p class="insight-text">{satelliteData.crop_advice}</p>
 					</div>
 				</div>
 			{/if}
@@ -197,27 +191,26 @@
 
 <style>
 	.content {
-		padding: 1.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
-	.section {
-		background: white;
-		border-radius: 12px;
-		padding: 1.25rem;
-		margin-bottom: 1rem;
-	}
-
-	.section h2 {
-		margin: 0 0 1rem 0;
-		font-size: 1.1rem;
-		color: var(--txt-2);
+	.content h2 {
+		margin: 0;
+		padding: 1rem;
+		font-size: 1.25rem;
+		color: var(--txt-1);
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
 	.map-container {
-		border-radius: 8px;
+		border-radius: 1.75rem;
 		overflow: hidden;
-		margin-bottom: 1rem;
 		background: var(--bg-2);
+		border: 1px solid var(--bg-3);
 	}
 
 	.map-image {
@@ -227,11 +220,10 @@
 	}
 
 	.map-placeholder {
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.75rem;
 		padding: 3rem 1rem;
 		text-align: center;
-		margin-bottom: 1rem;
 	}
 
 	.placeholder-icon {
@@ -247,7 +239,8 @@
 
 	.stats-card {
 		background: var(--bg-2);
-		border-radius: 8px;
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 		padding: 1rem;
 	}
 
@@ -358,7 +351,8 @@
 		gap: 0.75rem;
 		padding: 1rem;
 		background: var(--bg-2);
-		border-radius: 8px;
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
 	.insight-icon {
@@ -380,6 +374,9 @@
 	.metadata {
 		text-align: center;
 		padding: 1rem;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
 	.metadata p {

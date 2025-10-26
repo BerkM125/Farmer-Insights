@@ -78,10 +78,10 @@
 				pointRadius: 3,
 				pointHoverRadius: 5,
 				pointBackgroundColor: colors.border,
-				pointBorderColor: '#fff',
+				pointBorderColor: colors.border,
 				pointBorderWidth: 2,
 				pointHoverBackgroundColor: colors.border,
-				pointHoverBorderColor: '#fff',
+				pointHoverBorderColor: colors.border,
 				pointHoverBorderWidth: 2
 			};
 		});
@@ -128,7 +128,7 @@
 						backgroundColor: 'rgba(255, 255, 255, 0.95)',
 						titleColor: 'rgb(17, 24, 39)',
 						bodyColor: 'rgb(55, 65, 81)',
-						borderColor: 'rgb(229, 231, 235)',
+						borderColor: 'rgb(55, 65, 81)',
 						borderWidth: 1,
 						padding: 12,
 						displayColors: true,
@@ -149,7 +149,7 @@
 				scales: {
 					x: {
 						grid: {
-							color: 'rgba(229, 231, 235, 0.5)',
+							color: 'rgba(55, 65, 81, 0.3)',
 							drawBorder: false
 						},
 						ticks: {
@@ -163,7 +163,7 @@
 					y: {
 						beginAtZero: false,
 						grid: {
-							color: 'rgba(229, 231, 235, 0.5)',
+							color: 'rgba(55, 65, 81, 0.3)',
 							drawBorder: false
 						},
 						ticks: {
