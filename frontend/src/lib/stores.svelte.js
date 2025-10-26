@@ -11,7 +11,9 @@ const BACKEND_URL = 'http://localhost:8080';
 function createFarmDataStore() {
 	let data = $state({
 		weather: [],
-		market: []
+		market: [],
+		satellite: null,
+		environmental: null
 	});
 
 	let loading = $state(false);
@@ -39,6 +41,7 @@ function createFarmDataStore() {
 					url += `?crops=${encodeURIComponent(cropsParam)}`;
 				}
 
+				// Fetch farm data (weather and market)
 				const response = await fetch(url);
 
 				if (!response.ok) {
@@ -54,6 +57,34 @@ function createFarmDataStore() {
 				// Update the state
 				data.weather = result.weather || [];
 				data.market = result.market || [];
+
+				// Fetch satellite data separately
+				const satelliteResponse = await fetch(`${BACKEND_URL}/api/satellite-data`);
+
+				if (!satelliteResponse.ok) {
+					throw new Error(`Failed to fetch satellite data: ${satelliteResponse.statusText}`);
+				}
+
+				const satelliteResult = await satelliteResponse.json();
+				console.log('Fetched satellite data:', satelliteResult);
+
+				// Update satellite data
+				data.satellite = satelliteResult;
+
+				// Fetch environmental data separately
+				const environmentalResponse = await fetch(`${BACKEND_URL}/api/environmental-data`);
+
+				if (!environmentalResponse.ok) {
+					throw new Error(
+						`Failed to fetch environmental data: ${environmentalResponse.statusText}`
+					);
+				}
+
+				const environmentalResult = await environmentalResponse.json();
+				console.log('Fetched environmental data:', environmentalResult);
+
+				// Update environmental data
+				data.environmental = environmentalResult;
 			} catch (err) {
 				errorMsg = err.message;
 				console.error('Error fetching farm data:', err);

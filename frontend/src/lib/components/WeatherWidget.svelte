@@ -102,13 +102,14 @@
 	}
 
 	.range-label {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		color: var(--txt-3);
 		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	.range-value {
-		font-size: 1.125rem;
+		font-size: 1.25rem;
 		color: var(--txt-1);
 		font-weight: 600;
 		text-align: right;

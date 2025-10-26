@@ -5,10 +5,29 @@ from supabase import create_client, Client
 import ee
 ee.Initialize(project="farmer-insights-project")
 
-# Initialize our Supabase client
-url: str = "https://hpcqmlskbyotkpgljslh.supabase.co"
-key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwY3FtbHNrYnlvdGtwZ2xqc2xoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTM5ODEsImV4cCI6MjA3Njk4OTk4MX0.PCAZxnWnKSpCzgZQRz5Pfl3oHHm3H1kh231rgi0zj2M"
-supabase_client: Client = create_client(supabase_url=url, supabase_key=key)
+# Initialize our Supabase client with environment variables
+def get_supabase_client() -> Client:
+    """
+    Initialize Supabase client using environment variables.
+    
+    Returns:
+        Client: Initialized Supabase client
+        
+    Raises:
+        ValueError: If required environment variables are missing
+    """
+    url = os.getenv("SUPABASE_URL")
+    key = os.getenv("SUPABASE_KEY")
+    
+    if not url:
+        raise ValueError("SUPABASE_URL environment variable is required but not set")
+    if not key:
+        raise ValueError("SUPABASE_KEY environment variable is required but not set")
+    
+    return create_client(supabase_url=url, supabase_key=key)
+
+# Initialize Supabase client
+supabase_client: Client = get_supabase_client()
 
 # Defines a global buffer radius for all satellite data calculations
 BUFFER_RADIUS = 3000
@@ -231,6 +250,13 @@ def get_normalized_diff_stats(latitude: float, longitude: float, nd_image: ee.Im
     )
 
     return stats.getInfo()
+
+def get_crop_task_recs(satellite_data_block):
+    # Return a list of strings that are recommendations for how to 
+    # treat the crop based on all the data this function recieves.
+    # Should use an LLM instance to generate this tasklist.
+    pass
+
 
 def crop_advice(satellite_data_block):
     ndvi_mean = satellite_data_block["mean_ndvi"]

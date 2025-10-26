@@ -109,12 +109,12 @@
 	.widget.market {
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
+		gap: 0.5rem;
 	}
 
 	h2 {
-		font-size: 1.25rem;
-		margin: 0 0 0.25rem 0;
+		font-size: 1.125rem;
+		margin: 0;
 	}
 
 	.price-item {
@@ -134,7 +134,7 @@
 
 	.price-value {
 		margin: 0;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-weight: 600;
 		color: var(--txt-1);
 		line-height: 1;
@@ -151,9 +151,9 @@
 		display: flex;
 		align-items: center;
 		gap: 0.25rem;
-		font-size: 1rem;
+		font-size: 0.875rem;
 		font-weight: 600;
-		padding: 0.375rem 0.625rem;
+		padding: 0.25rem 0.5rem;
 		border-radius: 0.5rem;
 		flex-shrink: 0;
 	}
