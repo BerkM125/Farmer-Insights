@@ -51,57 +51,6 @@ def get_lava_token():
         ).encode()
     ).decode()
 
-
-def split_query_into_search_terms(user_query: str):
-    """
-    Use LLM to split a complex user query into simpler search terms for RAG.
-
-    Args:
-        user_query: The original user question
-
-    Returns:
-        List of simplified search queries
-    """
-    token = get_lava_token()
-
-    # Load query splitter prompt from file
-    splitter_prompt_path = Path(__file__).parent / "query_splitter_prompt.md"
-    with open(splitter_prompt_path, "r") as f:
-        system_prompt = f.read()
-
-    try:
-        response = requests.post(
-            "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {token}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": "gpt-4o-mini",
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_query},
-                ],
-                "temperature": 0.3,
-            },
-        )
-
-        response_data = response.json()
-        split_queries = (
-            response_data["choices"][0]["message"]["content"].strip().split("\n")
-        )
-        # Clean up any empty lines
-        split_queries = [q.strip() for q in split_queries if q.strip()]
-
-        print(f"Split query into: {split_queries}")
-        return split_queries
-
-    except Exception as e:
-        print(f"Error splitting query: {e}")
-        # Fallback to original query if splitting fails
-        return [user_query]
-
-
 def get_rag_context(query: str, n_results: int = 3):
     """
     Retrieve relevant documents from the vector database.
