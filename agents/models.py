@@ -44,9 +44,16 @@ class MarketRequest(BaseModel):
     )
 
 class MarketResponse(BaseModel):
-    market_data: str = Field(
-        description="Market data for the requested crop"
-    )
+    commodity: str = Field(description="Name of the commodity")
+    units: str = Field(description="Units of measurement")
+    year_2021: float = Field(description="Price in 2021")
+    year_2022: float = Field(description="Price in 2022")
+    year_2023: float = Field(description="Price in 2023")
+    quarter_2024Q4: float = Field(description="Price in 2024 Q4")
+    quarter_2025Q1: float = Field(description="Price in 2025 Q1")
+    quarter_2025Q2: float = Field(description="Price in 2025 Q2")
+    one_month_ago: float = Field(description="Price one month ago (9/1/2025)")
+    current: float = Field(description="Current price")
 
 
 # Soil Environment Models
