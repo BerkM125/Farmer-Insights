@@ -50,6 +50,53 @@ def get_lava_token():
         "product_secret": os.getenv('LAVA_SELF_PRODUCT_SECRET')
     }).encode()).decode()
 
+def split_query_into_search_terms(user_query: str) -> list[str]:
+    """
+    Use LLM to split a complex user query into simpler search terms for RAG.
+
+    Args:
+        user_query: The original user question
+
+    Returns:
+        List of simplified search queries
+    """
+    token = get_lava_token()
+
+    # Load query splitter prompt from file
+    splitter_prompt_path = Path(__file__).parent / 'query_splitter_prompt.md'
+    with open(splitter_prompt_path, 'r') as f:
+        system_prompt = f.read()
+
+    try:
+        response = requests.post(
+            "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "gpt-4o-mini",
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_query}
+                ],
+                "temperature": 0.3
+            }
+        )
+
+        response_data = response.json()
+        split_queries = response_data['choices'][0]['message']['content'].strip().split('\n')
+        # Clean up any empty lines
+        split_queries = [q.strip() for q in split_queries if q.strip()]
+
+        print(f"Split query into: {split_queries}")
+        return split_queries
+
+    except Exception as e:
+        print(f"Error splitting query: {e}")
+        # Fallback to original query if splitting fails
+        return [user_query]
+
 def get_rag_context(query: str, n_results: int = 3):
     """
     Retrieve relevant documents from the vector database.
@@ -197,8 +244,22 @@ def rag_query():
         
         latest_user_prompt = user_messages[-1]['content']
 
-        # Get relevant context from RAG
-        context_items = get_rag_context(latest_user_prompt, n_results)
+        # Split the user query into optimized search terms
+        search_queries = split_query_into_search_terms(latest_user_prompt)
+
+        # Get relevant context from RAG using all split queries
+        all_context_items = []
+        seen_texts = set()  # Deduplicate results
+
+        for search_query in search_queries:
+            context_items = get_rag_context(search_query, n_results)
+            for item in context_items:
+                # Only add if we haven't seen this text before
+                if item['text'] not in seen_texts:
+                    all_context_items.append(item)
+                    seen_texts.add(item['text'])
+
+        context_items = all_context_items
 
         # Format context for LLM
         context_text = "\n\n".join([
