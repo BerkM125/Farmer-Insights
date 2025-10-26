@@ -153,8 +153,8 @@
 		gap: 0.25rem;
 		font-size: 0.875rem;
 		font-weight: 600;
-		padding: 0.25rem 0.5rem;
-		border-radius: 0.5rem;
+		padding: 0.375rem 0.5rem;
+		border-radius: 1.25rem;
 		flex-shrink: 0;
 	}
 

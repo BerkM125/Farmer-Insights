@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { farmDataStore } from '$lib/stores.svelte.js';
 	import BackButton from '$lib/components/BackButton.svelte';
+	import MarketChart from '$lib/components/MarketChart.svelte';
 
 	// User's crops (hardcoded for now, can be made dynamic later)
 	const USER_CROPS = ['corn', 'soybeans', 'wheat'];
@@ -77,89 +78,46 @@
 			const prices = groups[cropName].slice(-12); // Last 12 months
 			data.push({
 				crop: cropName,
-				prices: prices,
-				color: getCropColor(cropName)
+				prices: prices
 			});
 		});
 
 		return data;
-	});
-
-	// Helper function: Get color for crop
-	function getCropColor(cropName) {
-		const colorMap = {
-			corn: '#f59e0b',
-			soybeans: '#10b981',
-			wheat: '#8b5cf6'
-		};
-		return colorMap[cropName.toLowerCase()] || '#6b7280';
-	}
-
-	// Generate SVG path for line chart
-	function generatePath(prices, width, height, minPrice, maxPrice) {
-		if (prices.length === 0) return '';
-
-		const points = prices.map((p, i) => {
-			const x = (i / (prices.length - 1)) * width;
-			const y = height - ((p.price - minPrice) / (maxPrice - minPrice)) * height;
-			return `${x},${y}`;
-		});
-
-		return `M ${points.join(' L ')}`;
-	}
-
-	// Calculate chart bounds
-	let chartBounds = $derived(() => {
-		const data = chartData();
-		let allPrices = [];
-
-		data.forEach((crop) => {
-			allPrices = allPrices.concat(crop.prices.map((p) => p.price));
-		});
-
-		if (allPrices.length === 0) {
-			return { min: 0, max: 100 };
-		}
-
-		const min = Math.min(...allPrices);
-		const max = Math.max(...allPrices);
-		const padding = (max - min) * 0.1;
-
-		return {
-			min: min - padding,
-			max: max + padding
-		};
 	});
 </script>
 
 <div class="page">
 	<header>
 		<BackButton href="/" label="Back to home" />
-		<h1>Market Prices</h1>
+		<h1>Market</h1>
 		<div class="header-spacer"></div>
 	</header>
 
 	<div class="content">
 		{#if farmDataStore.loading}
-			<div class="loading">Loading market data...</div>
+			<div class="loading">
+				<div class="loading-spinner"></div>
+				<p>Loading market data...</p>
+			</div>
 		{:else if farmDataStore.error}
 			<div class="error">Error loading market data: {farmDataStore.error}</div>
 		{:else if priceItems().length === 0}
 			<div class="no-data">No market data available for your crops</div>
 		{:else}
-			<div class="section">
+			<!-- Current Prices Widget -->
+			<div class="widget">
 				<h2>Current Prices</h2>
 				<div class="price-list">
 					{#each priceItems() as item}
 						<div class="price-item">
 							<div class="price-info">
-								<p class="commodity">
+								<span class="commodity">
 									{item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-								</p>
-								<p class="price-value">
+								</span>
+								<span class="price-value">
 									${item.price.toFixed(2)}
 									<span class="unit">{item.unit}</span>
-								</p>
+								</span>
 							</div>
 							{#if item.hasChange}
 								<div class="change {item.change >= 0 ? 'up' : 'down'}">
@@ -176,56 +134,14 @@
 				</div>
 			</div>
 
-			<div class="section">
-				<h2>Price Trends (Last 12 Months)</h2>
+			<!-- Price Trends Widget -->
+			<div class="widget">
+				<h2>Price Trends</h2>
 				{#if chartData().length > 0 && chartData().some((d) => d.prices.length > 0)}
-					<div class="trend-chart">
-						<svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid meet">
-							<!-- Grid lines -->
-							<line x1="0" y1="0" x2="500" y2="0" stroke="#e5e7eb" stroke-width="1" />
-							<line x1="0" y1="62.5" x2="500" y2="62.5" stroke="#e5e7eb" stroke-width="1" />
-							<line x1="0" y1="125" x2="500" y2="125" stroke="#e5e7eb" stroke-width="1" />
-							<line x1="0" y1="187.5" x2="500" y2="187.5" stroke="#e5e7eb" stroke-width="1" />
-							<line x1="0" y1="250" x2="500" y2="250" stroke="#e5e7eb" stroke-width="1" />
-
-							<!-- Price lines -->
-							{#each chartData() as cropData}
-								{#if cropData.prices.length > 1}
-									<path
-										d={generatePath(
-											cropData.prices,
-											500,
-											250,
-											chartBounds().min,
-											chartBounds().max
-										)}
-										fill="none"
-										stroke={cropData.color}
-										stroke-width="2.5"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								{/if}
-							{/each}
-						</svg>
-
-						<!-- Legend -->
-						<div class="chart-legend">
-							{#each chartData() as cropData}
-								{#if cropData.prices.length > 0}
-									<div class="legend-item">
-										<span class="legend-color" style="background-color: {cropData.color}"></span>
-										<span class="legend-label">
-											{cropData.crop.charAt(0).toUpperCase() + cropData.crop.slice(1)}
-										</span>
-									</div>
-								{/if}
-							{/each}
-						</div>
-					</div>
+					<MarketChart chartData={chartData()} />
 				{:else}
-					<div class="trend-chart">
-						<p class="placeholder">📊 Insufficient data for chart</p>
+					<div class="no-chart">
+						<p class="placeholder">Insufficient data for chart</p>
 						<p class="chart-note">Need at least 2 months of data to display trends</p>
 					</div>
 				{/if}
@@ -236,26 +152,29 @@
 
 <style>
 	.content {
-		padding: 1.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
-	.section {
-		background: white;
-		border-radius: 12px;
-		padding: 1.25rem;
-		margin-bottom: 1rem;
+	.widget {
+		padding: 1rem;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
-	.section h2 {
+	.widget h2 {
 		margin: 0 0 1rem 0;
-		font-size: 1.1rem;
-		color: var(--txt-2);
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--txt-1);
 	}
 
 	.price-list {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 0.5rem;
 	}
 
 	.price-item {
@@ -263,22 +182,27 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 0.75rem;
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-4);
+	}
+
+	.price-info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
 	}
 
 	.commodity {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-weight: 600;
 		color: var(--txt-1);
-		margin: 0 0 0.25rem 0;
 	}
 
 	.price-value {
 		font-size: 1.5rem;
-		font-weight: bold;
+		font-weight: 600;
 		color: var(--txt-1);
-		margin: 0;
 	}
 
 	.unit {
@@ -294,17 +218,17 @@
 		font-size: 1rem;
 		font-weight: 600;
 		padding: 0.5rem 0.75rem;
-		border-radius: 6px;
+		border-radius: 1.5rem;
 	}
 
 	.change.up {
-		color: #10b981;
-		background: #d1fae5;
+		color: var(--green-2);
+		background: color-mix(in srgb, var(--green-1) 15%, transparent);
 	}
 
 	.change.down {
-		color: #ef4444;
-		background: #fee2e2;
+		color: var(--red-2);
+		background: color-mix(in srgb, var(--red-1) 15%, transparent);
 	}
 
 	.change.neutral {
@@ -317,22 +241,16 @@
 		font-size: 1.2rem;
 	}
 
-	.trend-chart {
-		background: var(--bg-2);
-		border-radius: 8px;
-		padding: 1.5rem 1rem;
-	}
-
-	.trend-chart svg {
-		width: 100%;
-		height: auto;
-		display: block;
+	.no-chart {
+		padding: 2rem 1rem;
+		text-align: center;
 	}
 
 	.placeholder {
-		font-size: 2rem;
+		font-size: 1.25rem;
 		margin: 0 0 0.5rem 0;
 		text-align: center;
+		color: var(--txt-2);
 	}
 
 	.chart-note {
@@ -342,44 +260,49 @@
 		text-align: center;
 	}
 
-	.chart-legend {
+	.loading {
 		display: flex;
-		justify-content: center;
-		gap: 1.5rem;
-		margin-top: 1rem;
-		flex-wrap: wrap;
-	}
-
-	.legend-item {
-		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 0.5rem;
+		justify-content: center;
+		gap: 1rem;
+		padding: 3rem 1rem;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
-	.legend-color {
-		width: 16px;
-		height: 16px;
-		border-radius: 4px;
+	.loading-spinner {
+		width: 2rem;
+		height: 2rem;
+		border: 3px solid var(--bg-4);
+		border-top-color: var(--txt-1);
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
 	}
 
-	.legend-label {
-		font-size: 0.9rem;
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.loading p {
+		margin: 0;
 		color: var(--txt-2);
-		font-weight: 500;
 	}
 
-	.loading,
 	.error,
 	.no-data {
 		text-align: center;
 		padding: 3rem 1rem;
-		background: white;
-		border-radius: 12px;
-		margin: 1rem 0;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 		color: var(--txt-2);
 	}
 
 	.error {
-		color: #ef4444;
+		color: var(--red-1);
 	}
 </style>

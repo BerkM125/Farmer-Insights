@@ -437,7 +437,7 @@
 		position: relative;
 		width: 70px;
 		height: 70px;
-		border-radius: 1rem;
+		border-radius: 1.75rem;
 		overflow: hidden;
 		border: 2px solid var(--bg-4);
 	}
