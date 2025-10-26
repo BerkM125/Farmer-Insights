@@ -5,7 +5,7 @@
 	import CropMonitorWidget from '$lib/components/CropMonitorWidget.svelte';
 	import EnvironmentalWidget from '$lib/components/EnvironmentalWidget.svelte';
 	import PhPlus from '~icons/ph/plus';
-	import PhArrowRight from '~icons/ph/arrow-right';
+	import PhArrowRight from '~icons/ph/paper-plane-right-duotone';
 </script>
 
 <div class="container">

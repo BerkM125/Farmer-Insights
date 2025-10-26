@@ -33,19 +33,22 @@
 		const windGusts = day.wind_gusts_max || 0;
 
 		// Check for severe conditions first
-		if (temp < 32) return { status: 'Freeze Warning', icon: '●', color: 'var(--blue-1)' };
-		if (rain > 70) return { status: 'Too Wet for Field Work', icon: '●', color: 'var(--red-1)' };
-		if (windGusts > 25) return { status: 'Too Windy for Spraying', icon: '●', color: 'var(--yellow-1)' };
+		if (temp < 32) return { status: 'Freeze Warning', icon: '●', color: 'var(--blue-2)' };
+		if (rain > 70) return { status: 'Too Wet for Field Work', icon: '●', color: 'var(--red-2)' };
+		if (windGusts > 25)
+			return { status: 'Too Windy for Spraying', icon: '●', color: 'var(--yellow-2)' };
 
 		// Check for spray conditions (50-85°F, wind < 10mph, humidity matters)
 		const canSpray = temp >= 50 && temp <= 85 && wind <= 10;
-		if (canSpray && rain < 30) return { status: 'Ideal for Spraying', icon: '●', color: 'var(--green-1)' };
+		if (canSpray && rain < 30)
+			return { status: 'Ideal for Spraying', icon: '●', color: 'var(--green-2)' };
 
 		// General field work
-		if (rain < 30 && wind < 15) return { status: 'Good for Field Work', icon: '●', color: 'var(--green-1)' };
-		if (rain < 50) return { status: 'Limited Field Work', icon: '●', color: 'var(--yellow-1)' };
+		if (rain < 30 && wind < 15)
+			return { status: 'Good for Field Work', icon: '●', color: 'var(--green-2)' };
+		if (rain < 50) return { status: 'Limited Field Work', icon: '●', color: 'var(--yellow-2)' };
 
-		return { status: 'Not Recommended', icon: '●', color: 'var(--red-1)' };
+		return { status: 'Not Recommended', icon: '●', color: 'var(--red-2)' };
 	}
 
 	let todayCondition = $derived(getFieldCondition(today));
@@ -67,38 +70,62 @@
 		{:else if farmDataStore.error}
 			<div class="error">Error loading weather data: {farmDataStore.error}</div>
 		{:else if today}
-			<!-- 1. Current Temperature & Today's Details -->
+			{@const WeatherIcon = getWeatherIcon(today.weather_code || 0)}
+			{@const iconColor = getWeatherIconColor(today.weather_code || 0)}
 			<div class="widget today-overview">
-				<div class="current-temp">
-					<p class="big-temp">{Math.round(today.temperature_high || today.temperature_mean || 0)}°F</p>
-					<p class="temp-label">Today's High</p>
-					<p class="location">Ames, Iowa • {getWeatherDescription(today.weather_code || 0)}</p>
+				<div class="weather-main">
+					<div class="weather-info">
+						<div class="weather-temp">
+							{Math.round(today.temperature_mean || 0)}°
+						</div>
+						<div class="weather-desc">{getWeatherDescription(today.weather_code || 0)}</div>
+					</div>
+					<div class="weather-range">
+						<span class="range-label">Hi</span>
+						<span class="range-value">{Math.round(today.temperature_high || 0)}°</span>
+						<span class="range-label">Lo</span>
+						<span class="range-value">{Math.round(today.temperature_low || 0)}°</span>
+					</div>
+					<WeatherIcon class="weather-icon-large" style="color: {iconColor}" />
 				</div>
 
 				<div class="today-details-grid">
 					<div class="detail-item">
 						<span class="detail-label">Rain Chance</span>
-						<span class="detail-value">{today.precipitation_chance ? Math.round(today.precipitation_chance) : 0}%</span>
+						<span class="detail-value"
+							>{today.precipitation_chance ? Math.round(today.precipitation_chance) : 0}%</span
+						>
 					</div>
 					<div class="detail-item">
 						<span class="detail-label">Precipitation</span>
-						<span class="detail-value">{today.precipitation_sum ? today.precipitation_sum.toFixed(2) : '0.00'} in</span>
+						<span class="detail-value"
+							>{today.precipitation_sum ? today.precipitation_sum.toFixed(2) : '0.00'} in</span
+						>
 					</div>
 					<div class="detail-item">
 						<span class="detail-label">Wind</span>
-						<span class="detail-value">{today.wind_speed_max ? Math.round(today.wind_speed_max) : 0} mph {today.wind_direction || ''}</span>
+						<span class="detail-value"
+							>{today.wind_speed_max ? Math.round(today.wind_speed_max) : 0} mph {today.wind_direction ||
+								''}</span
+						>
 					</div>
 					<div class="detail-item">
 						<span class="detail-label">Humidity</span>
-						<span class="detail-value">{today.humidity_mean ? Math.round(today.humidity_mean) : 'N/A'}%</span>
+						<span class="detail-value"
+							>{today.humidity_mean ? Math.round(today.humidity_mean) : 'N/A'}%</span
+						>
 					</div>
 					<div class="detail-item">
 						<span class="detail-label">Dew Point</span>
-						<span class="detail-value">{today.dew_point ? Math.round(today.dew_point) : 'N/A'}°F</span>
+						<span class="detail-value"
+							>{today.dew_point ? Math.round(today.dew_point) : 'N/A'}°F</span
+						>
 					</div>
 					<div class="detail-item">
 						<span class="detail-label">ET</span>
-						<span class="detail-value">{today.evapotranspiration ? today.evapotranspiration.toFixed(2) : 'N/A'} in</span>
+						<span class="detail-value"
+							>{today.evapotranspiration ? today.evapotranspiration.toFixed(2) : 'N/A'} in</span
+						>
 					</div>
 				</div>
 			</div>
@@ -109,13 +136,19 @@
 					<h2>Alerts</h2>
 					<div class="alerts">
 						{#if today.temperature_low < 32}
-							<div class="alert freeze">Freeze warning: Low of {Math.round(today.temperature_low)}°F</div>
+							<div class="alert freeze">
+								Freeze warning: Low of {Math.round(today.temperature_low)}°F
+							</div>
 						{/if}
 						{#if today.wind_gusts_max > 30}
-							<div class="alert wind">High wind gusts up to {Math.round(today.wind_gusts_max)} mph</div>
+							<div class="alert wind">
+								High wind gusts up to {Math.round(today.wind_gusts_max)} mph
+							</div>
 						{/if}
 						{#if today.precipitation_chance > 80}
-							<div class="alert rain">High chance of rain ({Math.round(today.precipitation_chance)}%)</div>
+							<div class="alert rain">
+								High chance of rain ({Math.round(today.precipitation_chance)}%)
+							</div>
 						{/if}
 					</div>
 				</div>
@@ -139,9 +172,13 @@
 								</div>
 								<div class="row-center">
 									<div class="row-temps">
-										<span class="row-temp-high">{Math.round(day.temperature_high || day.temperature_mean || 0)}°</span>
+										<span class="row-temp-high"
+											>{Math.round(day.temperature_high || day.temperature_mean || 0)}°</span
+										>
 										<span class="row-temp-divider">/</span>
-										<span class="row-temp-low">{Math.round(day.temperature_low || day.temperature_mean || 0)}°</span>
+										<span class="row-temp-low"
+											>{Math.round(day.temperature_low || day.temperature_mean || 0)}°</span
+										>
 									</div>
 								</div>
 								<div class="row-right">
@@ -157,30 +194,45 @@
 									<div class="detail-grid">
 										<div class="detail-item-small">
 											<span class="detail-label-small">Rain Chance</span>
-											<span class="detail-value-small">{day.precipitation_chance ? Math.round(day.precipitation_chance) : 0}%</span>
+											<span class="detail-value-small"
+												>{day.precipitation_chance
+													? Math.round(day.precipitation_chance)
+													: 0}%</span
+											>
 										</div>
 										<div class="detail-item-small">
 											<span class="detail-label-small">Precipitation</span>
-											<span class="detail-value-small">{day.precipitation_sum ? day.precipitation_sum.toFixed(2) : '0.00'} in</span>
+											<span class="detail-value-small"
+												>{day.precipitation_sum ? day.precipitation_sum.toFixed(2) : '0.00'} in</span
+											>
 										</div>
 										<div class="detail-item-small">
 											<span class="detail-label-small">Wind</span>
-											<span class="detail-value-small">{day.wind_speed_max ? Math.round(day.wind_speed_max) : 0} mph {day.wind_direction || ''}</span>
+											<span class="detail-value-small"
+												>{day.wind_speed_max ? Math.round(day.wind_speed_max) : 0} mph {day.wind_direction ||
+													''}</span
+											>
 										</div>
 										<div class="detail-item-small">
 											<span class="detail-label-small">Humidity</span>
-											<span class="detail-value-small">{day.humidity_mean ? Math.round(day.humidity_mean) : 'N/A'}%</span>
+											<span class="detail-value-small"
+												>{day.humidity_mean ? Math.round(day.humidity_mean) : 'N/A'}%</span
+											>
 										</div>
 										<div class="detail-item-small">
 											<span class="detail-label-small">Dew Point</span>
-											<span class="detail-value-small">{day.dew_point ? Math.round(day.dew_point) : 'N/A'}°F</span>
+											<span class="detail-value-small"
+												>{day.dew_point ? Math.round(day.dew_point) : 'N/A'}°F</span
+											>
 										</div>
 										<div class="detail-item-small">
 											<span class="detail-label-small">ET</span>
-											<span class="detail-value-small">{day.evapotranspiration ? day.evapotranspiration.toFixed(2) : 'N/A'} in</span>
+											<span class="detail-value-small"
+												>{day.evapotranspiration ? day.evapotranspiration.toFixed(2) : 'N/A'} in</span
+											>
 										</div>
 									</div>
-									<div class="condition-badge" style="border-color: {condition.color}; color: {condition.color};">
+									<div class="condition-badge" style="color: {condition.color};">
 										{condition.status}
 									</div>
 								</div>
@@ -211,32 +263,63 @@
 
 	/* Today's Overview */
 	.today-overview {
-		text-align: center;
+		text-align: left;
 	}
 
-	.current-temp {
-		padding: 1rem 0;
-		border-bottom: 1px solid var(--bg-4);
+	.weather-main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
 		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid var(--bg-4);
 	}
 
-	.big-temp {
-		font-size: 4rem;
-		font-weight: bold;
-		margin: 0;
+	.weather-info {
+		flex: 1;
+	}
+
+	.weather-temp {
+		font-size: 3rem;
+		font-weight: 600;
+		line-height: 1;
 		color: var(--txt-1);
+		margin-bottom: 0.25rem;
 	}
 
-	.temp-label {
-		font-size: 0.95rem;
-		color: var(--txt-3);
-		margin: 0.5rem 0;
+	.weather-desc {
+		font-size: 0.875rem;
+		color: var(--txt-2);
 	}
 
-	.location {
-		font-size: 0.9rem;
+	.weather-range {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 0.5rem 0.5rem;
+		flex-shrink: 0;
+		margin-right: auto;
+		align-items: center;
+	}
+
+	.range-label {
+		font-size: 1rem;
 		color: var(--txt-3);
-		margin: 0.5rem 0 0 0;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.range-value {
+		font-size: 1.25rem;
+		color: var(--txt-1);
+		font-weight: 600;
+		text-align: right;
+	}
+
+	:global(.weather-icon-large) {
+		width: 3.75rem;
+		height: 3.75rem;
+		flex-shrink: 0;
 	}
 
 	.today-details-grid {
@@ -248,10 +331,10 @@
 	.detail-item {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		padding: 0.75rem;
+		align-items: flex-start;
+		padding: 0.5rem;
 		background: var(--bg-3);
-		border-radius: 1rem;
+		border-radius: 1.25rem;
 		border: 1px solid var(--bg-4);
 	}
 
@@ -281,7 +364,7 @@
 	.alert {
 		padding: 0.75rem;
 		background: var(--bg-3);
-		border-radius: 1rem;
+		border-radius: 1.25rem;
 		border: 1px solid var(--bg-4);
 		font-size: 0.95rem;
 		color: var(--txt-2);
@@ -303,7 +386,7 @@
 	.forecast-row {
 		background: var(--bg-3);
 		border: 1px solid var(--bg-4);
-		border-radius: 1rem;
+		border-radius: 1.25rem;
 		overflow: hidden;
 	}
 
@@ -384,7 +467,6 @@
 
 	.row-details-expanded {
 		padding: 0 0.75rem 0.75rem 0.75rem;
-		border-top: 1px solid var(--bg-4);
 	}
 
 	.detail-grid {
@@ -399,7 +481,8 @@
 		flex-direction: column;
 		padding: 0.5rem;
 		background: var(--bg-2);
-		border-radius: 0.75rem;
+		border-radius: 1.25rem;
+		border: 1px solid var(--bg-4);
 	}
 
 	.detail-label-small {
@@ -417,10 +500,11 @@
 	.condition-badge {
 		padding: 0.5rem;
 		background: var(--bg-2);
-		border-radius: 0.75rem;
+		border-radius: 1.25rem;
 		text-align: center;
 		font-size: 0.9rem;
 		font-weight: 600;
+		border: 1px solid var(--bg-4);
 	}
 
 	/* Loading & Error States */

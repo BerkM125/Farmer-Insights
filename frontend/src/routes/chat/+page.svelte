@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { sendMessageStreaming } from '$lib/api.js';
 	import PhPlus from '~icons/ph/plus';
-	import PhArrowRight from '~icons/ph/arrow-right';
+	import PhArrowRight from '~icons/ph/paper-plane-right-duotone';
 	import PhThumbsUp from '~icons/ph/thumbs-up';
 	import PhThumbsDown from '~icons/ph/thumbs-down';
 	import BackButton from '$lib/components/BackButton.svelte';
