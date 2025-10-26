@@ -6,7 +6,7 @@ from models import (
     SoilEnvironmentRequest, SoilEnvironmentResponse
 )
 from supabase import create_client, Client
-from datetime import date
+from datetime import date, datetime, timedelta
 import os
 from dotenv import load_dotenv
 
@@ -50,29 +50,42 @@ def check_and_log_complete_data(ctx: Context):
         ctx.logger.info(f"Complete Data Dictionary: {collected_data}")
         ctx.logger.info("=" * 60)
         
-        # Insert weather data into Supabase
+        # Insert weather data into Supabase (7-day forecast)
         try:
             weather = collected_data["weather"]
+            daily_forecast = weather["daily_forecast"]
             
-            weather_record = {
-                "farm_id": FARM_ID,
-                "temperature_high_f": weather["temperature_high"],
-                "temperature_low_f": weather["temperature_low"],
-                "humidity_percent": weather["humidity"],
-                "rainfall_chance": weather["precipitation_chance"],
-                "rainfall_amount_mm": weather["precipitation_sum"],
-                "wind_speed_mph": weather["wind_speed"],
-                "wind_direction": weather["wind_direction"],
-                "condition": int(weather["condition"]),
-                "uv_index": float(weather["uv_index"]),
-                "date": date.today().isoformat()
-            }
+            # Get current conditions (these are only for "today")
+            current_humidity = weather["current_humidity"]
+            current_wind_speed = weather["current_wind_speed"]
+            current_wind_direction = weather["current_wind_direction"]
+            current_condition = weather["current_condition"]
             
-            # Upsert (insert or update if farm_id exists)
-            result = supabase.table("weather_data").upsert(weather_record).execute()
+            # Insert a row for each day in the 7-day forecast
+            weather_records = []
+            for i, day in enumerate(daily_forecast):
+                weather_record = {
+                    "farm_id": FARM_ID,
+                    "temperature_high_f": day["temperature_high"],
+                    "temperature_low_f": day["temperature_low"],
+                    "rainfall_chance": day["precipitation_chance"],
+                    "rainfall_amount_mm": day["precipitation_sum"],
+                    "uv_index": float(day["uv_index"]),
+                    "date": day["date"],
+                    # Current conditions only for the first day (today)
+                    "humidity_percent": current_humidity if i == 0 else None,
+                    "wind_speed_mph": current_wind_speed if i == 0 else None,
+                    "wind_direction": current_wind_direction if i == 0 else None,
+                    "condition": int(current_condition) if i == 0 else None,
+                }
+                weather_records.append(weather_record)
+            
+            # Upsert all records (insert or update if farm_id + date exists)
+            result = supabase.table("weather_data").upsert(weather_records).execute()
             
             ctx.logger.info(f"✅ Weather data inserted to Supabase for farm: {FARM_ID}")
-            ctx.logger.info(f"Record: {result.data}")
+            ctx.logger.info(f"Inserted {len(weather_records)} daily forecast records")
+            ctx.logger.info(f"Records: {result.data}")
             
         except Exception as e:
             ctx.logger.error(f"❌ Error inserting to Supabase: {e}")

@@ -10,16 +10,20 @@ class WeatherRequest(BaseModel):
         description="The longitude of the location"
     )   
 
-class WeatherResponse(BaseModel):
+class DailyWeather(BaseModel):
+    date: str = Field(description="Date of the forecast")
     temperature_high: float = Field(description="High temperature in Fahrenheit")
     temperature_low: float = Field(description="Low temperature in Fahrenheit")
-    humidity: float = Field(description="Humidity percentage")
     precipitation_chance: float = Field(description="Chance of precipitation (0-100)")
     precipitation_sum: float = Field(description="Total precipitation amount in mm")
-    wind_speed: float = Field(description="Wind speed in mph")
-    wind_direction: str = Field(description="Wind direction")
-    condition: str = Field(description="Weather condition (e.g., sunny, cloudy, rainy)")
     uv_index: int = Field(description="UV index (0-11+)")
+
+class WeatherResponse(BaseModel):
+    current_humidity: float = Field(description="Current humidity percentage")
+    current_wind_speed: float = Field(description="Current wind speed in mph")
+    current_wind_direction: str = Field(description="Current wind direction")
+    current_condition: str = Field(description="Current weather condition code")
+    daily_forecast: list[DailyWeather] = Field(description="7-day weather forecast")
 
 
 # Satellite Models
