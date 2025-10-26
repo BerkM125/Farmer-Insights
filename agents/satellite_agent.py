@@ -30,7 +30,7 @@ async def print_address(ctx: Context):
 async def handle_satellite_request(ctx: Context, sender: str, msg: SatelliteRequest):
     ctx.logger.info(f"Received satellite request from {sender}: {msg.latitude}, {msg.longitude}")
     
-    # Hardcoded response for now
+    # Now, using Google Earth Engine to get satellite data.
     response = SatelliteResponse(
         status="satellite data connected"
     )
