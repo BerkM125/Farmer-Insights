@@ -1,87 +1,88 @@
 <script>
 	import { goto } from '$app/navigation';
+	import { farmDataStore } from '$lib/stores.svelte.js';
+	import { getWeatherDescription, getWeatherIcon, getDayOfWeek } from '$lib/weatherHelpers.js';
+
+	// Get today's weather (first day in forecast)
+	let today = $derived(
+		farmDataStore.data.weather && farmDataStore.data.weather.length > 0
+			? farmDataStore.data.weather[0]
+			: null
+	);
 </script>
 
 <div class="page">
 	<header>
 		<button class="back-button" onclick={() => goto('/')} aria-label="Back to home"> ✕ </button>
-		<h1>☀️ Weather</h1>
+		<h1>Weather</h1>
 	</header>
 
 	<div class="content">
-		<div class="current">
-			<p class="big-temp">72°F</p>
-			<p class="condition">Sunny</p>
-			<p class="location">📍 Ames, Iowa</p>
-		</div>
+		{#if farmDataStore.loading}
+			<div class="loading">Loading weather data...</div>
+		{:else if farmDataStore.error}
+			<div class="error">Error loading weather data: {farmDataStore.error}</div>
+		{:else if today}
+			<div class="current">
+				<p class="big-temp">
+					{Math.round(today.temperature_high || today.temperature_mean || 0)}°F
+				</p>
+				<p class="condition">{getWeatherDescription(today.weather_code || 0)}</p>
+				<p class="location">📍 Ames, Iowa</p>
+			</div>
 
-		<div class="section">
-			<h2>7-Day Forecast</h2>
-			<div class="forecast-grid">
-				<div class="forecast-item">
-					<p class="day">Mon</p>
-					<p class="icon">☀️</p>
-					<p class="temp">75°</p>
-				</div>
-				<div class="forecast-item">
-					<p class="day">Tue</p>
-					<p class="icon">🌧️</p>
-					<p class="temp">68°</p>
-				</div>
-				<div class="forecast-item">
-					<p class="day">Wed</p>
-					<p class="icon">⛅</p>
-					<p class="temp">70°</p>
-				</div>
-				<div class="forecast-item">
-					<p class="day">Thu</p>
-					<p class="icon">☀️</p>
-					<p class="temp">73°</p>
-				</div>
-				<div class="forecast-item">
-					<p class="day">Fri</p>
-					<p class="icon">☀️</p>
-					<p class="temp">76°</p>
-				</div>
-				<div class="forecast-item">
-					<p class="day">Sat</p>
-					<p class="icon">🌤️</p>
-					<p class="temp">74°</p>
-				</div>
-				<div class="forecast-item">
-					<p class="day">Sun</p>
-					<p class="icon">☁️</p>
-					<p class="temp">71°</p>
+			<div class="section">
+				<h2>7-Day Forecast</h2>
+				<div class="forecast-grid">
+					{#each farmDataStore.data.weather as day}
+						{@const WeatherIcon = getWeatherIcon(day.weather_code || 0)}
+						<div class="forecast-item">
+							<p class="day">{getDayOfWeek(day.date)}</p>
+							<div class="icon">
+								<WeatherIcon />
+							</div>
+							<p class="temp">{Math.round(day.temperature_high || day.temperature_mean || 0)}°</p>
+						</div>
+					{/each}
 				</div>
 			</div>
-		</div>
 
-		<div class="section">
-			<h2>Details</h2>
-			<div class="details-grid">
-				<div class="detail-item">
-					<p class="label">Humidity</p>
-					<p class="value">65%</p>
-				</div>
-				<div class="detail-item">
-					<p class="label">Wind</p>
-					<p class="value">12 mph</p>
-				</div>
-				<div class="detail-item">
-					<p class="label">Precipitation</p>
-					<p class="value">20%</p>
-				</div>
-				<div class="detail-item">
-					<p class="label">UV Index</p>
-					<p class="value">7 (High)</p>
+			<div class="section">
+				<h2>Today's Details</h2>
+				<div class="details-grid">
+					<div class="detail-item">
+						<p class="label">Humidity</p>
+						<p class="value">{today.humidity_mean ? Math.round(today.humidity_mean) : 'N/A'}%</p>
+					</div>
+					<div class="detail-item">
+						<p class="label">Wind</p>
+						<p class="value">
+							{today.wind_speed_max ? Math.round(today.wind_speed_max) : 'N/A'} mph
+							{today.wind_direction || ''}
+						</p>
+					</div>
+					<div class="detail-item">
+						<p class="label">Precipitation</p>
+						<p class="value">
+							{today.precipitation_chance ? Math.round(today.precipitation_chance) : 'N/A'}%
+						</p>
+					</div>
+					<div class="detail-item">
+						<p class="label">Rain Amount</p>
+						<p class="value">
+							{today.precipitation_sum ? today.precipitation_sum.toFixed(2) : 'N/A'} in
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="alert-box">
-			<p class="alert-title">⚠️ Weather Alert</p>
-			<p>Heavy rain expected tomorrow evening. Consider delaying fieldwork.</p>
-		</div>
+			<div class="section">
+				<h2>All Weather Data (Debug)</h2>
+				<pre>{JSON.stringify(farmDataStore.data.weather, null, 2)}</pre>
+			</div>
+		{:else}
+			<div class="no-data">No weather data available</div>
+		{/if}
 	</div>
 </div>
 
@@ -190,6 +191,14 @@
 	.forecast-item .icon {
 		font-size: 1.5rem;
 		margin: 0.25rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.forecast-item .icon :global(svg) {
+		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	.forecast-item .temp {
@@ -225,22 +234,26 @@
 		margin: 0;
 	}
 
-	.alert-box {
-		background: #fff3cd;
-		border: 1px solid #ffc107;
-		border-radius: 8px;
+	.loading,
+	.error,
+	.no-data {
+		text-align: center;
+		padding: 2rem;
+		background: white;
+		border-radius: 12px;
+		margin: 1rem 0;
+	}
+
+	.error {
+		color: var(--red-1);
+	}
+
+	pre {
+		background: var(--bg-2);
 		padding: 1rem;
-		margin-top: 1rem;
-	}
-
-	.alert-title {
-		font-weight: 600;
-		color: #856404;
-		margin: 0 0 0.5rem 0;
-	}
-
-	.alert-box p:last-child {
-		margin: 0;
-		color: #856404;
+		border-radius: 8px;
+		overflow-x: auto;
+		font-size: 0.75rem;
+		line-height: 1.4;
 	}
 </style>

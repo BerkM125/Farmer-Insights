@@ -54,12 +54,10 @@ collected_data = {
 
 
 def check_and_log_complete_data(ctx: Context):
-    """Check if all data is collected and log it."""
+    """Check if all data is collected and insert into database."""
     if all(value is not None for value in collected_data.values()):
         ctx.logger.info("=" * 60)
-        ctx.logger.info("ALL DATA COLLECTED:")
-        ctx.logger.info("=" * 60)
-        ctx.logger.info(f"Complete Data Dictionary: {collected_data}")
+        ctx.logger.info("ALL DATA COLLECTED - PROCEEDING WITH DATABASE UPDATES:")
         ctx.logger.info("=" * 60)
 
         # Insert weather data into Supabase (7-day forecast)
@@ -67,28 +65,25 @@ def check_and_log_complete_data(ctx: Context):
             weather = collected_data["weather"]
             daily_forecast = weather["daily_forecast"]
 
-            # Get current conditions (these are only for "today")
-            current_humidity = weather["current_humidity"]
-            current_wind_speed = weather["current_wind_speed"]
-            current_wind_direction = weather["current_wind_direction"]
-            current_condition = weather["current_condition"]
-
             # Insert a row for each day in the 7-day forecast
             weather_records = []
-            for i, day in enumerate(daily_forecast):
+            for day in daily_forecast:
                 weather_record = {
                     "farm_id": FARM_ID,
-                    "temperature_high_f": day["temperature_high"],
-                    "temperature_low_f": day["temperature_low"],
-                    "rainfall_chance": day["precipitation_chance"],
-                    "rainfall_amount_mm": day["precipitation_sum"],
-                    "uv_index": float(day["uv_index"]),
                     "date": day["date"],
-                    # Current conditions only for the first day (today)
-                    "humidity_percent": current_humidity if i == 0 else None,
-                    "wind_speed_mph": current_wind_speed if i == 0 else None,
-                    "wind_direction": current_wind_direction if i == 0 else None,
-                    "condition": int(current_condition) if i == 0 else None,
+                    "weather_code": day["weather_code"],
+                    "temperature_high": day["temperature_high"],
+                    "temperature_low": day["temperature_low"],
+                    "temperature_mean": day["temperature_mean"],
+                    "precipitation_chance": day["precipitation_chance"],
+                    "precipitation_sum": day["precipitation_sum"],
+                    "wind_speed_max": day["wind_speed_max"],
+                    "wind_gusts_max": day["wind_gusts_max"],
+                    "wind_direction": day["wind_direction"],
+                    "humidity_mean": day["humidity_mean"],
+                    "evapotranspiration": day["evapotranspiration"],
+                    "sunshine_duration": day["sunshine_duration"],
+                    "dew_point": day["dew_point"],
                 }
                 weather_records.append(weather_record)
 
@@ -97,20 +92,57 @@ def check_and_log_complete_data(ctx: Context):
 
             ctx.logger.info(f"✅ Weather data inserted to Supabase for farm: {FARM_ID}")
             ctx.logger.info(f"Inserted {len(weather_records)} daily forecast records")
-            ctx.logger.info(f"Records: {result.data}")
 
         except Exception as e:
-            ctx.logger.error(f"❌ Error inserting to Supabase: {e}")
+            ctx.logger.error(f"❌ Error inserting weather data to Supabase: {e}")
 
-        # Reset for next collection
+        # Insert market data into Supabase (one row per price data point)
+        try:
+            market = collected_data["market"]
+            if market and market.get("price_records"):
+                price_records = []
+                for record in market["price_records"]:
+                    price_record = {
+                        "date": record["date"],
+                        "crop_name": market["crop_name"],
+                        "unit": market["unit"],
+                        "price": record["price"],
+                    }
+                    price_records.append(price_record)
+
+                # Upsert all records (insert or update if date + crop_name exists)
+                result = (
+                    supabase.table("market_prices")
+                    .upsert(price_records, on_conflict="date,crop_name")
+                    .execute()
+                )
+
+                ctx.logger.info(
+                    f"✅ Market data inserted to Supabase for crop: {market['crop_name']}"
+                )
+                ctx.logger.info(f"Inserted {len(price_records)} price records")
+                ctx.logger.info(
+                    f"Date range: {price_records[0]['date']} to {price_records[-1]['date']}"
+                )
+            else:
+                ctx.logger.warning("No market price records to insert")
+
+        except Exception as e:
+            ctx.logger.error(f"❌ Error inserting market data to Supabase: {e}")
+
+        # Reset all collected data for next collection
         for key in collected_data:
             collected_data[key] = None
+
+        ctx.logger.info("=" * 60)
+        ctx.logger.info("DATA COLLECTION CYCLE COMPLETE - READY FOR NEXT CYCLE")
+        ctx.logger.info("=" * 60)
 
 
 # Create the requests (after class definitions)
 WEATHER_REQUEST = WeatherRequest(latitude=40.7128, longitude=-74.0060)
 SATELLITE_REQUEST = SatelliteRequest(latitude=40.7128, longitude=-74.0060)
-MARKET_REQUEST = MarketRequest(crop_type="Wheat")
+MARKET_REQUEST = MarketRequest(crop_type="Corn")
 SOIL_ENVIRONMENT_REQUEST = SoilEnvironmentRequest(latitude=40.7128, longitude=-74.0060)
 
 

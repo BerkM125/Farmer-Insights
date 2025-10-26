@@ -1,205 +1,231 @@
 <script>
-	import { goto } from '$app/navigation';
+	import { farmDataStore } from '$lib/stores.svelte.js';
+	import WeatherWidget from '$lib/components/WeatherWidget.svelte';
+	import MarketWidget from '$lib/components/MarketWidget.svelte';
 </script>
 
-<div class="home">
+<div class="container">
 	<header>
-		<h1>🌾 Farmer Insights</h1>
-		<p class="location">📍 Ames, Iowa</p>
+		<div class="title-section">
+			<h1>Demeter</h1>
+			<div class="accent-boxes">
+				<div class="accent-box red"></div>
+				<div class="accent-box yellow"></div>
+				<div class="accent-box green"></div>
+				<div class="accent-box blue"></div>
+			</div>
+		</div>
+		<!-- <p class="location">Ames, Iowa</p> -->
 	</header>
 
 	<!-- Widget Grid -->
-	<div class="widgets">
-		<button class="widget weather" onclick={() => goto('/weather')}>
-			<div class="widget-header">
-				<h2>☀️ Weather</h2>
-				<span class="arrow">→</span>
-			</div>
-			<p class="big-text">72°F</p>
-			<p class="small-text">Sunny</p>
-			<p class="alert">⚠️ Rain tomorrow</p>
-		</button>
+	{#if farmDataStore.loading}
+		<div class="widgets-loading">
+			<div class="loading-spinner"></div>
+			<p class="loading-text">Loading farm data...</p>
+		</div>
+	{:else if farmDataStore.error}
+		<div class="widgets-error">
+			<p class="error-text">Error loading data: {farmDataStore.error}</p>
+		</div>
+	{:else}
+		<div class="widgets">
+			<WeatherWidget />
 
-		<button class="widget market" onclick={() => goto('/market')}>
-			<div class="widget-header">
-				<h2>📈 Market Prices</h2>
-				<span class="arrow">→</span>
-			</div>
-			<p class="price">Corn: $4.20/bu <span class="change up">↑2%</span></p>
-			<p class="price">Soy: $12.15/bu <span class="change down">↓1%</span></p>
-		</button>
+			<MarketWidget />
 
-		<button class="widget crops" onclick={() => goto('/crops')}>
-			<div class="widget-header">
-				<h2>🌱 Your Crops</h2>
-				<span class="arrow">→</span>
-			</div>
-			<p>Corn - Stage: Flowering</p>
-			<p>Estimated harvest: ~12 days</p>
-		</button>
+			<div class="side-by-side">
+				<a href="/satellite" class="widget satellite">
+					<h2>Field Imagery</h2>
+					<p>Updated 2 days ago</p>
+					<p class="small-text"></p>
+				</a>
 
-		<button class="widget satellite" onclick={() => goto('/satellite')}>
-			<div class="widget-header">
-				<h2>🛰️ Field Imagery</h2>
-				<span class="arrow">→</span>
+				<a href="/crops" class="widget crops">
+					<h2>Environment</h2>
+					<p>Soil moisture: 65%</p>
+					<p>pH level: 6.8</p>
+				</a>
 			</div>
-			<p>Last updated: 2 days ago</p>
-			<p class="small-text">Tap to view NDVI analysis</p>
-		</button>
-	</div>
+
+			<div class="widget action-items">
+				<h2>Action Items</h2>
+				<div class="action-list">
+					<div class="action-item">
+						<span class="action-icon">🌱</span>
+						<span>Fertilize corn field</span>
+					</div>
+					<div class="action-item">
+						<span class="action-icon">💧</span>
+						<span>Check irrigation system</span>
+					</div>
+					<div class="action-item">
+						<span class="action-icon">📊</span>
+						<span>Review market trends</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	{/if}
 
 	<!-- Chat Bar (navigates to chat) -->
-	<button class="chat-bar" onclick={() => goto('/chat')}>
-		<span class="chat-icon">💬</span>
-		<span class="chat-placeholder">Ask AI anything about your farm...</span>
-	</button>
+	<a href="/chat" class="chat-bar">
+		<span class="chat-icon"></span>
+		<span class="chat-placeholder">Ask anything...</span>
+	</a>
 </div>
 
 <style>
-	.home {
-		max-width: 600px;
+	.container {
+		max-width: 35rem;
 		margin: 0 auto;
-		padding: 1rem;
-		padding-bottom: 2rem;
+		padding: 0.75rem;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
-	header {
-		text-align: center;
-		margin-bottom: 2rem;
+	.title-section {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 	}
 
-	header h1 {
+	h1 {
 		margin: 0;
-		font-size: 1.75rem;
-		color: var(--txt-1);
+		letter-spacing: -2%;
 	}
 
-	.location {
-		margin: 0.5rem 0 0 0;
-		color: var(--txt-3);
-		font-size: 0.95rem;
+	.accent-boxes {
+		display: flex;
+		transform: skewX(-15deg);
+	}
+
+	.accent-box {
+		width: 1rem;
+		height: 2rem;
+	}
+
+	.accent-box.red {
+		background: var(--red-1);
+	}
+
+	.accent-box.yellow {
+		background: var(--yellow-1);
+	}
+
+	.accent-box.green {
+		background: var(--green-1);
+	}
+
+	.accent-box.blue {
+		background: var(--blue-1);
 	}
 
 	.widgets {
 		display: flex;
 		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.widgets-loading,
+	.widgets-error {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		gap: 1rem;
-		margin-bottom: 1.5rem;
+		padding: 3rem 1rem;
+	}
+
+	.loading-text {
+		color: var(--txt-2);
+		font-size: 1rem;
+		margin: 0;
+	}
+
+	.widgets-error .error-text {
+		color: var(--red-1);
+		margin: 0;
+	}
+
+	.side-by-side {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.5rem;
+	}
+
+	.action-list {
+		margin-top: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.action-item {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem;
+		background: var(--bg-3);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-4);
+	}
+
+	.action-icon {
+		font-size: 1.25rem;
+		width: 1.5rem;
+		text-align: center;
 	}
 
 	.widget {
-		background: white;
-		border: 1px solid #e5e7eb;
-		border-radius: 12px;
-		padding: 1.25rem;
-		text-align: left;
-		cursor: pointer;
-		transition: all 0.2s;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		padding: 1rem;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 	}
 
-	.widget:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-	}
-
-	.widget:active {
-		transform: translateY(0);
-	}
-
-	.widget-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 0.75rem;
-	}
-
-	.widget h2 {
+	h2 {
+		font-size: 1.25rem;
 		margin: 0;
-		font-size: 1.1rem;
-		color: var(--txt-2);
-	}
-
-	.arrow {
-		font-size: 1.5rem;
-		color: var(--acc-1);
-		opacity: 0.6;
 	}
 
 	.widget p {
 		margin: 0.5rem 0 0 0;
-		color: var(--txt-2);
 	}
 
-	.big-text {
-		font-size: 2.5rem;
-		font-weight: bold;
-		color: var(--txt-1);
-		margin: 0.5rem 0;
-	}
-
-	.small-text {
-		font-size: 0.9rem;
-		color: var(--txt-3);
-	}
-
-	.alert {
-		color: #e67700;
-		font-weight: 500;
-		margin-top: 0.75rem !important;
-	}
-
-	.price {
-		font-size: 1rem;
-		margin: 0.5rem 0;
-	}
-
-	.change {
-		font-size: 0.85rem;
-		font-weight: 600;
-	}
-
-	.change.up {
-		color: #10b981;
-	}
-
-	.change.down {
-		color: #ef4444;
-	}
-
-	/* Chat Bar */
 	.chat-bar {
-		position: fixed;
-		bottom: 1rem;
-		left: 1rem;
-		right: 1rem;
-		max-width: 580px;
-		margin: 0 auto;
-		background: white;
-		border: 2px solid var(--acc-1);
-		border-radius: 50px;
-		padding: 1rem 1.5rem;
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		cursor: pointer;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-		transition: all 0.2s;
-	}
-
-	.chat-bar:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-	}
-
-	.chat-icon {
-		font-size: 1.5rem;
+		padding: 1rem;
+		background: var(--bg-3);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-4);
+		cursor: text;
 	}
 
 	.chat-placeholder {
-		flex: 1;
-		text-align: left;
 		color: var(--txt-3);
-		font-size: 1rem;
+	}
+
+	.loading-spinner {
+		width: 2rem;
+		height: 2rem;
+		border: 3px solid var(--bg-4);
+		border-top-color: var(--txt-1);
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		margin: 0.5rem 0;
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.error-text {
+		color: var(--red-1);
+		font-size: 0.875rem;
 	}
 </style>
