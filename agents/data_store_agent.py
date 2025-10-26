@@ -43,7 +43,7 @@ def check_and_log_complete_data(ctx: Context):
 # Create the requests (after class definitions)
 WEATHER_REQUEST = WeatherRequest(latitude=40.7128, longitude=-74.0060)
 SATELLITE_REQUEST = SatelliteRequest(latitude=40.7128, longitude=-74.0060)
-MARKET_REQUEST = MarketRequest(crop_type="wheat")
+MARKET_REQUEST = MarketRequest(crop_type="Wheat")
 SOIL_ENVIRONMENT_REQUEST = SoilEnvironmentRequest(latitude=40.7128, longitude=-74.0060)
  
  
