@@ -1,4 +1,6 @@
 uagents
 pydantic
 requests
+supabase
+python-dotenv
 
