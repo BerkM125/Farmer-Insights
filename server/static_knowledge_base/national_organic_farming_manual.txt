@@ -1,0 +1,1853 @@
+190–612–H, 1st Ed., Nov 2015
+National Organic Farming Handbook
+November 2015
+190–612–H, 1st Ed., Nov 2015
+Title 190 – National Organic Farming Handbook
+November 2015
+Cover photos: Top photo: organic cow-calf operation in Iowa; bottom left: NRCS planner and
+producer walking by organic soybeans; bottom right: organic tomatoes. Photos by Ron Nichols,
+USDA NRCS.
+The USDA prohibits discrimination against its customers, employees, and applicants for
+employment on the bases of race, color, national origin, age, disability, sex, gender identity,
+religion, reprisal, and where applicable, political beliefs, marital status, familial or parental
+status, sexual orientation, or all or part of an individual's income is derived from any public
+assistance program, or protected genetic information in employment or in any program or
+activity conducted or funded by the Department. (Not all prohibited bases will apply to all
+programs and/or employment activities.)
+If you wish to file a Civil Rights Program complaint of discrimination, complete the USDA
+Program Discrimination Complaint Form (PDF), found online at http://www.ocio.usda.gov/sites/
+default/files/docs/2012/Complain_combined_6_8_12.pdf, or at any USDA office, or call (866) 632-
+9992 to request the form. You may also write a letter containing all of the information requested
+in the form. Send your completed complaint form or letter to us by mail at U.S. Department of
+Agriculture, Director, Office of Adjudication, 1400 Independence Avenue, SW., Washington, DC
+20250-9410, by fax (202) 690-7442 or email at program.intake@usda.gov.
+Individuals who are deaf, hard of hearing or have speech disabilities and you wish to file either
+an EEO or program complaint please contact USDA through the Federal Relay Service at (800)
+877-8339 or (800) 845-6136 (in Spanish).
+Persons with disabilities who wish to file a program complaint, please see information
+above on how to contact us by mail directly or by email. If you require alternative means of
+communication for program information (e.g., Braille, large print, audiotape, etc.) please contact
+USDA's TARGET Center at (202) 720-2600 (voice and TDD). 
+190–612–H, 1st Ed., Nov 2015
+Title 190 – National Organic Farming Handbook
+Acknowledgments
+NRCS Team Members
+Glen Abney, Area Resource Conservationist, Kentucky
+Thomas Akin, Conservation Agronomist, Massachusetts
+Alice Begin, Resource Conservationist, Maine
+Lindsay Haines, Conservation Program Specialist, National Headquarters
+James Howard, District Conservationist, California
+David Lamm, National Soil Health Team Leader, East National Technology Support Center
+Pat Murphy, State Resource Conservationist, Wisconsin
+Todd Peplin, Farm Bill Specialist, Oregon
+Susan Samson-Liebig, Soil Quality Specialist, North Dakota
+Ruth Shaffer, Water Quality Specialist, Michigan
+Cheryl Simmons, Natural Resources Specialist, Central National Technology Support Center
+Ben Smallwood, Conservation Specialist, National Headquarters
+Sudie Thomas, Wildlife Biologist, South Carolina
+Pedro Torres, Tribal Liaison, California
+Kalven Trice, Senior Economist, National Headquarters
+Rafael Vega, District Conservationist, Indiana
+Partner Team Members
+Lillian “Ebonie” Alexander, Executive Director, Black Family Land Trust, North Carolina
+Keith Baldwin, Farm Services Coordinator, Carolina Farm Stewardship Association, North Carolina
+Jo Ann Baumgartner, Director, Wild Farm Alliance, California
+Harriet Behar, Organic Specialist, Midwest Organic & Sustainable Education Service, Wisconsin
+Ben Bowell, Organic Education Specialist, Oregon Tilth, Oregon
+Sarah Brown, Education Director, Oregon Tilth, Oregon
+Traci Bruckner, Senior Associate for Agriculture and Conservation Policy, Center for Rural Affairs,
+Nebraska
+Rex Dufour, Manager, California Office, National Center for Appropriate Technology, California
+Greg Fogel, Senior Policy Specialist, National Sustainable Agriculture Coalition, District of Columbia
+Jennifer Miller, Director, Healthy Food and Farms Program, Northwest Center for Alternative to
+Pesticides, Idaho
+Jose Perez, Florida Organic Growers, Florida
+Jeff Schahczenski, Program Specialist, National Center for Appropriate Technology, Montana
+Mark Schonbeck, Newsletter Editor and Policy Liaison, Virginia Biological Farming Association, Virginia
+The NRCS Organic Farming Handbook was developed to support NRCS conservation planners and
+other agricultural professionals as they work with organic producers. The handbook describes organic
+systems and identifies key resources to guide conservation planning and implementation on organic farms.
+Producers and other audiences may also find the handbook useful, particularly the resources listed in
+various sections.
+This handbook was developed by a team comprised of NRCS staff and partner organizations from across the
+country and from a range of disciplines.
+Coordinator for the handbook was Ben Bowell, Organic Education Specialist, Oregon Tilth, Oregon.
+Contact Lindsay Haines (lindsay.haines@wdc.usda.gov) for comments or suggested revisions to this
+handbook.
+190–612–H, 1st Ed., Nov 2015
+Title 190 – National Organic Farming Handbook
+Table of Contents
+A. Overview of Organic Agriculture ............................................................................A-1
+1. Organic Farming System Principles............................................................................................ A-3
+2. Resource Conservation Needs, Opportunities, and Challenges in Organic Agriculture .......... A-3
+B. National Organic Program (NOP) ...........................................................................B-1
+1. USDA Organic Regulations and Roles......................................................................................... B-1
+2. Overview of Organic Certification Process Through NOP......................................................... B-4
+C. Conservation Planning With Existing Organic/Transitional Producers .......C-1
+1. Nine Steps of Conservation Planning in Organic Systems ........................................................ C-1
+2. Technical Service Providers ......................................................................................................... C-3
+3. CAP Supporting Organic Transition (CAP 138) ......................................................................... C-4
+4. Conservation Compliance............................................................................................................. C-4
+D. Integral Conservation Activities for Organic Production Systems ............... D-1
+1. Nutrient Management..................................................................................................................D-3
+2. Cover Crops ...................................................................................................................................D-4
+3. Compost.........................................................................................................................................D-6
+4. Crop rotations ...............................................................................................................................D-6
+5. Tillage and Residue Management................................................................................................ D-7
+6. Integrated Pest Management.......................................................................................................D-8
+7. Buffers and Natural Areas .........................................................................................................D-10
+8. Organic Grazing..........................................................................................................................D-12
+9. Livestock Living Conditions, Facilities, and Structures........................................................... D-13
+Appendix 1
+USDA Organic Regulatory Production Requirements Related to Resource Conservation .....App1-1
+Appendix 2
+Additional Resources .................................................................................................................. App2-1
+A-1
+National Organic Farming Handbook
+A. Overview of Organic Agriculture
+1. Organic Farming System Principles
+Organic farming systems reflect several fundamental principles that early innovators established through
+careful observation of soils, crops, livestock, and life processes in natural and agricultural systems.
+Practitioners have refined, updated, and expressed these principles in different ways over the past 75
+years, yet the foundational principles of organic agriculture remain relatively constant.1 In addition to over
+12,000 USDA-certified organic producers2, many other U.S. producers implement “sustainable,” “ecological,”
+“biological,” or “natural” methods derived from these same principles. While many producers may follow
+similar principals, all certified organic producers must comply with the USDA’s Agricultural Marketing
+Service (AMS) National Organic Program (NOP) regulations – commonly known as the USDA organic
+regulations. Only those producers following the USDA organic regulations may market their products as
+organic.
+Use Natural Materials
+In general, the USDA organic regulations allow the use of natural fertilizers and materials, and exclude
+synthetic substances. However, organic systems are more complex than this general standard and include
+broader principles described below. In the words of author and sustainable farming advocate Wendell Berry,
+“An organic farm, properly speaking, is not one that uses certain methods and substances and avoids
+others; it is a farm whose structure is formed in imitation of the structure of a natural system that has the
+integrity, the independence and the benign dependence of an organism.”3
+Protect the Health of the Soil and Natural Resources
+Organic practitioners and researchers emphasize healthy, living, nutritionally balanced soil as the
+foundation of crop, livestock, and human health, and of sustainable and successful farming.4 To maintain
+healthy soil, organic farmers control erosion, feed and protect the soil life, and replenish organic matter as
+well as plant nutrients. They adopt diverse crop rotations to balance nutrient demands on the soil, protect
+and enhance soil life, and control erosion by maintaining good tilth, planting cover crops, and adopting other
+conservation practices. More recently, research findings on the benefits of an active and diverse soil food
+web have refined this principle and established its importance throughout modern agriculture.
+Early leaders of the organic farming movement emphasized that, over the long term, successful farming
+depends on the health of all natural resources on the farm and in its surroundings. All farming inevitably
+alters the natural condition of soil and other resources within production areas to some degree, often with
+some decrease in biodiversity. To sustain biodiversity, organic farmers strive to protect water, wildlife,
+native plant communities, and other resources from agricultural impacts. In organic crop and livestock
+production pest, weed, and disease management emphasize cultural and preventative practices before the
+use of approved organic crop protection products. Producers support biodiversity by providing habitat for
+wildlife, pollinators and other organisms in cultivated and uncultivated areas of the farming system.
+1 Schonbeck, Mark W. 2014. A Brief History and Philosophy of Organic Farming. Handout (2 pp) originally developed and used for SARE PDP
+agricultural professional trainings offered by Southern Sustainable Agriculture Working Group, 2011 – 2013; revised June 2014.
+2 USDA National Organic Program. This does not include all certified operations (i.e. handling operations). Does not include farms exempt from
+certification. http://apps.ams.usda.gov/nop/.
+3 Berry, Wendell. 1981. The Gift of Good Land: Further Essays Cultural and Agricultural. San Francisco: North Point, 1981.
+4 Howard, Sir Albert. 1947. The Soil and Health: a Study of Organic Agriculture. Republished with a foreword by Wendell Berry in 2006,
+University Press of Kentucky, 307 pp.
+A-2
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+Early leaders of the organic farming movement emphasized that, over the long term, successful farming
+depends on the health of all natural resources on the farm and in its surroundings. All farming inevitably
+alters the natural condition of soil and other resources within production areas to some degree, often with
+some decrease in biodiversity. To sustain biodiversity, organic farmers strive to protect water, wildlife,
+native plant communities, and other resources from agricultural impacts. In organic crop and livestock
+production, pest, weed, and disease management emphasize cultural and preventative practices before the
+use of approved organic crop protection products. Producers support biodiversity by providing habitat for
+wildlife, pollinators, and other organisms in cultivated and uncultivated areas of the farming system.
+Simulate Nature in Farming Practices
+Organic producers strive to develop farming systems that mimic nature and utilize natural processes and
+materials to provide for crop and livestock nutrition, manage pests and weeds, and attain production goals,
+while conserving the biological diversity on which their farm depends.
+Crop and nutrient management
+Living plants in a natural ecosystem, such as a forest or prairie, derive essential nutrients from the
+breakdown of plant and animal residues that fall on or are deposited into the soil. As soil organisms
+decompose organic residues, they release plant-available nutrients to support the next season’s growth, and
+form humus that sustains soil quality. Mimicking this natural cycle, producers replenish soil organic matter
+and nutrients by returning animal and green manures, crop residues, and other organic sources to the soil,
+thereby maintaining soil fertility and crop yields. These practices feed the soil, and the soil feeds the crop.
+When crops need additional nutrients, organic producers choose plant, animal, and natural mineral-based
+fertilizers, most of which release nutrients gradually through the action of soil organisms. Synthetic
+fertilizers are prohibited in organic production systems.
+Pest management
+In natural ecosystems, insects, rodents, and
+other herbivorous organisms feed on vegetation;
+however, predators and parasites feed on the
+herbivores, thus helping to limit damage to the
+plant community. Native plants can fall prey to
+pathogenic fungi and other microorganisms, but
+most soil microorganisms play important roles in
+plant vigor, including disease suppression. The
+web of relationships among diverse organisms
+in a healthy, mature forest or prairie creates
+a balance that generally controls a particular
+pest from destroying other species. Organic
+farmers simulate and utilize these natural checks
+and balances to limit crop damage from pests.
+Producers establish beneficial habitat plantings
+to harbor predators of crop pests, build soil health
+to suppress soil-borne pathogens, diversify crop
+rotations to disrupt pest cycles, and plant cover
+crops to suppress weeds.
+Resource cycling
+Some organic proponents focus on cycling of
+resources within the farm and minimizing
+dependence on off-farm inputs. Crop rotations
+that include cover crops and a mix of deep and
+shallow-rooted crops may enhance nutrient and
+water utilization and cycling within the soil
+Figure 1 Examining organically managing soil under
+alfalfa
+190–612–H, 1st Ed., Nov 2015 A-3
+Title 190 – National Organic Farming Handbook
+profile. Practices that increase soil organic matter and structure, and hence water and nutrient retention,
+further improve resource cycling and reduce dependence on off-farm inputs. Integration of crop and
+livestock production can enhance nutrient cycling, as livestock consume on-farm forages and crop residues,
+and provide nutrient-rich manure for subsequent crop production.
+Biodiversity
+Organic systems attempt to mirror nature by maintaining biodiversity on the farm. Producers diversify
+and rotate crops, and plant field edges with flowering plants to support pollinators and other beneficial
+organisms. Fields may include hedge and tree rows of varied species, providing wildlife habitat and
+structural biodiversity above and below ground. Wildlife corridors and wildlife-friendly fences maintain
+connectivity for wide-ranging wildlife such as deer and predators.
+Tillage and weed management
+Without access to many herbicides, organic producers often use tillage in annual crop production as a tool
+to manage weeds and cover crops without herbicides. Recent advances in organic no-till and conservationtillage systems, such as the roller-crimper, and the use of flame weeders and mulches, have helped organic
+producers reduce the intensity of soil disturbance in annual crop rotations. In addition, planting “subsoiling”
+cover crops (deep-rooted plants that can break up a hard pan in the soil) such as tillage radish, sorghumsudangrass hybrids, and clovers allow producers to accomplish biologically what has traditionally been done
+with mechanical subsoilers and other deep tillage implements. While it is recognized that tillage to control
+weeds reduces soil organic carbon, the rotation, cover crop, and manure management practices employed
+generally increase soil carbon levels in organic production systems.
+Adapt to Local Conditions
+Selection of crop varieties and crop seed for organic production reflects the organic principles of working with
+nature (i.e., plant what will grow well locally in an organic system). Organic farmers seek out and plant
+varieties that tolerate locally prevalent pests and diseases with minimum intervention, and that perform
+well in the farm’s climate and soils. Many prefer locally or regionally produced seed, which may show
+enhanced adaptation to local conditions.
+2. Resource Conservation Needs, Opportunities, and Challenges in Organic Agriculture
+As described below, the NOP’s definition of organic production codifies the organic movement’s historical
+emphasis on ecologically sound practices and resource conservation: organic production is a system managed
+to “foster cycling of resources, promote ecological balance, and conserve biodiversity.” To achieve these
+objectives, organic producers commonly implement a number of conservation practices that align well
+with NRCS conservation activities. For example, the 2008 USDA Organic Production Survey identified
+frequently used conservation practices such as using green manures and animal manures as nutrient
+sources (65 percent of respondents), buffer strips (58 percent), water management practices (51 percent), notill or minimum-till (38 percent), beneficial insect habitat (32 percent), and rotational grazing (21 percent).
+As the organic farming sector continues to expand in the United States, both new and established organic
+farmers will seek NRCS assistance to clarify and meet their resource stewardship goals. The high diversity
+and emphasis on specialty crops characteristic of many organic farms create both opportunities and
+challenges for the conservation professional.
+Environmental Benefits of Organic Farming Systems
+While the environmental benefits vary by farm, in general organic systems can benefit environmental
+quality in several ways:
+• Soil.—Soil-building practices such as crop rotations, cover crops, organic fertilizers, residue
+management, and minimum tillage are central to organic practices. These practices replenish soil
+organic matter, feed soil life, reduce erosion, improve soil structure, and enhance nutrient cycling and
+water retention.
+A-4
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+• Water.—Well-managed organic systems rely mainly on slow-release forms of nutrients, which reduce
+the risk of nutrient runoff and leaching. Enhanced soil structure, water infiltration, and better
+nutrient retention also reduce the risk of water quality impairment.
+• Air and Climate Change.—Organic farming practices increase the return of carbon to the soil, thus
+removing carbon dioxide (CO2) from the atmosphere and mitigating global warming.
+• Biodiversity.—Organic systems enhance biodiversity at several levels. A variety of seeds and breeds
+are preferred for their greater resistance to diseases, climate, and pests. Producers employ diverse
+combinations and rotations of plants and animals. The maintenance and planting of natural areas
+within and around organic fields and the minimal use of synthetic inputs create suitable habitats for
+wildlife.5
+Environmental Challenges of Organic Farming Systems
+Organic farming systems also present some distinct environmental challenges:
+• Nutrients.—Organic nutrient sources release slowly, and it is difficult to calibrate application rates for
+optimum production. A reliance on manure and compost to provide adequate nitrogen (N) for organic
+crops can lead to nutrient imbalances, especially a buildup of excessive soil phosphorus (P). Inadequate
+crop-available N, especially in early spring when the soil is cool, is a common production constraint for
+organic farms. Legume cover crops can address this constraint without adding P or other nutrients.
+• Tillage.—Without broad-spectrum herbicides, organic annual crop production is more reliant on
+tillage and cultivation for weed management and seedbed preparation. This can lead to soil erosion,
+compaction, and organic matter loss. Integrated, ecological weed management strategies, including
+cover crops and crop rotation, can reduce reliance on cultivation, and additions of organic matter to the
+soil can mitigate negative impacts of tillage. Awareness of this issue has led an increasing number of
+organic farmers to implement flame weeding, mulches, reduced-till, and sometimes no-till systems.
+• Residues.—Some specialty crop rotations may not provide sufficient crop residues to replenish soil
+organic carbon or control erosion. Farmers producing high-value crops on limited acreage may find it
+difficult to implement a crop rotation with substantial residue return because of financial or logistical
+constraints.
+• Transition.—The required 3 years free of NOP-prohibited materials can create an incentive for a
+farmer to break sod if existing cropland has had recent use of NOP-prohibited materials, while areas in
+sod have not (see appendix 2 of this handbook, for information about converting Conservation Reserve
+Program (CRP) land to production). Breaking sod located on sloping land, highly erodible land (HEL),
+or high conservation value (HCV) land, such as native grassland or prairie, especially raises concerns
+about resource degradation.
+Resources
+Describing Organic Agricultural Production in Virginia: Results of the 2004 Farm Survey (Virginia Tech
+Rural Economic Analysis Program) http://econpapers.repec.org/paper/agsvpturp/14844.htm.
+USDA 2008 Organic Production Survey:
+http://www.agcensus.usda.gov/Publications/2007/Online_Highlights/Organics/.
+5 Food and Agriculture Organization of the United Nations. “What are the environmental benefits of organic agriculture.”
+http://www.fao.org/organicag/oa-faq/oa-faq6/en/.
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015 B-1
+B. National Organic Program (NOP)
+1. USDA Organic Regulations and Roles
+Establishment of the NOP
+Consumer demand for assurances regarding products marketed as organic led to the establishment of
+organic certification programs in the 1970s. These programs were administered by private nonprofit
+organizations and State departments of agriculture, which developed rules or standards for organic
+production and handling. Although certification programs shared a common theme of allowing natural
+materials and methods and largely excluding synthetics, differences among programs caused confusion for
+producers and consumers. A widely recognized need for a consistent nationwide definition and standards for
+organic agriculture led to the establishment of the USDA’s Organic Program. In addition to regulations, the
+NOP Handbook provides guidance and instructions to help operations comply with the regulations.
+Organic Food Production Act of 1990
+Part of the Food, Agriculture, Conservation, and Trade Act of 1990 (1990 Farm Bill), the Organic Food
+Production Act created the NOP within the USDA AMS. After considerable public input, the USDA
+published a final rule in December 2000. The rule went into effect in April 2001, and was fully implemented
+in October 2002 after a waiting period to allow time for producers to comply with the new regulations.
+Since October 2002, the word organic is regulated and all agricultural products labeled organic must be
+in compliance with USDA organic regulations. Operations with $5,000 or more in gross sales of organic
+products must be certified.6
+According to the 2008 USDA Organic Production Survey, 10,903 USDA-certified organic farms and 3,637
+exempt organic farms (annual gross sales <$5,000) managed 4.1 million acres and generated $3.16 billion
+in annual gross sales. In that survey, 37 percent of organic farmers planned to increase organic production,
+41 percent planned to maintain current levels, only 8 percent planned to reduce or discontinue organic
+production, and 14 percent were undecided. As of 2014, the number of USDA-certified organic producers
+had increased to approximately 12,000.7
+NOP Requirements and Conservation
+Organic producers and conservation professionals share a commitment to resource protection and
+environmental stewardship. USDA organic regulations and NRCS technical and program implementation
+guidelines reflect these commonly shared principles. Organic producers, not NRCS staff, are responsible
+for ensuring they comply with organic regulations. However, numerous NRCS conservation practices can
+help producers meet USDA organic regulations. Section D of this handbook for organic production systems
+includes a table that lists Conservation Stewardship Program (CSP) and Environmental Quality Incentive
+Program (EQIP) practices that can help producers meet USDA organic regulations.
+For reference, the full USDA National Organic Program Regulations (7 CFR part 205) can be viewed at
+http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&sid=3f34f4c22f9aa8e6d9864cc2683cea02&tpl=/ecfrbrowse/
+Title07/7cfr205_main_02.tpl.
+It provides specific definitions and information for implementing the organic program. Selected excerpts
+from the USDA organic regulations are provided in appendix 1 of this handbook.
+Guidance and Instruction
+The NOP periodically publishes guidance and instructions on the interpretation of standards to help certified
+operations comply with regulations. For example, the NOP has published guidance on the regulation
+covering the use of seeds and planting stock in organic production. The guidance describes practices for
+certified operations to demonstrate their efforts to procure all organic seeds; clarifies “equivalent variety”;
+and describes the form, quality, or quantity criteria that need to be met before organic seeds or planting
+6 Organic Trade Association. “US Organic Standards” http://ota.com/.
+7 USDA National Organic Program. This does not include all certified operations (i.e,. handling operations). http://apps.ams.usda.gov/nop/.
+B-2
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+stock for a desired crop or variety can be considered commercially unavailable. Other guidance includes
+details on recordkeeping procedures and pesticide testing.
+New guidance is first published in draft form for public comment. After reviewing all public comments, NOP
+publishes finalized guidance in the NOP Handbook and in the Federal Register.8
+National Organic Standards Board
+The Organic Foods Production Act established a 15-member National Organic Standards Board (NOSB).
+Members are appointed by the Secretary of Agriculture to serve a 5-year term. The NOSB must represent
+the organic community as follows:
+• Four farmers or growers
+• Three environmentalists or resource conservationists
+• Three consumer or public interest advocates
+• Two handlers or processors
+• One retailer
+• One scientist (toxicology, ecology, or biochemistry)
+• One USDA-accredited certifying agent
+NOSB members also serve on standing subcommittees that develop recommendations for the full NOSB.
+Subcommittees include: Compliance, Accreditation, and Certification; Crops; Handling; Livestock;
+Materials; and Policy Development.9
+NOSB roles
+The NOSB’s main roles are to make recommendations about whether a substance should be allowed or
+prohibited in organic production or handling, to assist in the development of standards for substances to
+be used in organic production, and to advise the Secretary on other aspects of Organic Foods Production
+Act (OFPA) implementation. In addition to the authority to make recommendations concerning additions
+to the National List of Allowed and Prohibited Substances (National List), the NOSB must also review
+each substance on the National List every 5 years to confirm that it continues to meet all required criteria.
+This is referred to as the “sunset” review. If USDA agrees with the NOSB’s recommendation to remove a
+substance, then it may remove the substance from the National List. Changing the National List requires
+USDA to complete rulemaking, a process that includes another public comment opportunity. The NOSB
+makes recommendations on a wide variety of topics such as unannounced inspections at certified operations
+or criteria for commercial availability when searching for organic seeds.10
+Accreditation of Organic Certifiers and Organic Certification of Operations
+The NOP itself does not certify farms and other operations as organic; rather a USDA-accredited certifying
+agent, or certifier, provides the certification. Certifiers, which may be private, State, or foreign entities,
+are responsible for certification. To become a certifier, an entity must submit a fee and application which
+includes information relevant to the entity’s capacity to conduct organic certification. Once approved,
+organizations are accredited for 5 years. An additional onsite assessment is conducted halfway through the
+5 years and at the end of that period for entities that renew.11
+8 National Organic Program. “NOP Guidance”
+http://www.ams.usda.gov/rules-regulations/organic/draft-guidance.
+9 National Organic Program. “National Organic Standards Board New Member Guide 2013.”
+www.ams.usda.gov/sites/default/files/media/NOP-NOSB-NewMemberGuide.pdf.
+10 National Organic Program. “National Organic Standards Board.”
+http://www.ams.usda.gov/NOSBHome.
+11 National Organic Program. “FAQ: Becoming a Certifying Agent.”
+http://www.ams.usda.gov/services/organic-certification/faq-becoming-certifying-agent.
+190–612–H, 1st Ed., Nov 2015 B-3
+Title 190 – National Organic Farming Handbook
+Most farms and businesses that grow, handle, or process products that are sold as organic must be certified
+to verify that they comply with the USDA organic regulations. If an operation’s gross agricultural income
+from organic sales does not exceed $5,000 per year, it is considered an “exempt” operation. These operations
+do not need to be certified in order to sell, label, or represent products as organic, but they must follow USDA
+organic regulations and cannot use the USDA organic seal.
+Operations that are interested in certification can work with any certifier to become certified in one or
+more of four categories of organic products: crops, livestock, processed products, and wild crops. To become
+certified, operations must complete an organic system plan (OSP) that describes their practices and
+substances used. An inspector conducts an onsite inspection to determine if the operation complies with
+USDA organic regulations. The producer must provide an update annually to maintain organic certification,
+and inspections are conducted annually.12
+International markets
+Several other countries have separate organic standards and labels such as Canada, the European Union,
+Japan, Korea, Switzerland, and Taiwan. Through trade agreements, organic products grown in the
+United States may be sold in these countries as organic. There are only a few additional regulations that
+producers should be aware of if they are interested in these markets; an operation’s certifier can help ensure
+compliance with these regulations. For example, Canada requires livestock (except ruminants) be produced
+according to specified stocking rates.13
+Compliance and Enforcement
+To ensure the integrity of the organic standards and use of the term “organic,” USDA enforces the OFPA
+and standards in a number of ways. Certifiers verify compliance annually with an on-site inspection which
+may be either announced or unannounced. Additionally, at least 5 percent of certified organic operations’
+products are tested for residues of prohibited substances (such as synthetic pesticides) every year. Certifiers
+and the public also may submit complaints of alleged regulatory violations to the NOP. If the violation is
+confirmed through investigation, enforcement action may include (depending on the nature and severity of
+the violation) product label changes, financial penalties of up to $11,000 per violation, and suspension or
+revocation of the operation’s organic certificate.14
+A certifier can take any of several steps to address instances of noncompliance by USDA certified organic
+operations. The certifier may issue a notice of noncompliance for minor issues, such as inadequate
+recordkeeping, or major issues, such as application of a prohibited substance. If necessary, a certifier may
+issue a notice of proposed suspension to give the operation some time to work on the noncompliance, achieve
+compliance, and be reinstated. If the noncompliance is deemed egregious, willful, or not correctable, a Notice
+of Proposed Revocation may be sent. A certified operation may appeal a notice of proposed suspension
+or revocation of certification directly to the USDA through the AMS Administrator.15 Finally, a written
+notification of suspension or revocation may be sent when a certified operation fails to respond to the
+previous notices.
+Resources
+The following resources provide additional information about USDA organic regulations including the use of
+organic seeds and allowed materials.
+12 National Organic Program. “Becoming a Certified Operation.”
+http://www.ams.usda.gov/services/organic-certification/faq-becoming-certified.
+13 National Organic Program. “Information for International Trade Partners.”
+http://www.ams.usda.gov/NOPInternationalAgreements.
+14 National Organic Program. “Compliance and Enforcement.”
+http://www.ams.usda.gov/NOPComplianceandEnforcement.
+15 National Organic Program. “Instruction: National Organic Program Enforcement.”
+www.ams.usda.gov/sites/default/files/media/4002.pdf.
+B-4
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+Association of Official Seed Certifying Agencies (AOSCA). http://www.organicseedfinder.org/.
+Organic Seed Finder (Web site) lists sources of organic seeds and indicates when no organic source of crop
+varieties with selected characteristics can be found.
+Organic Materials Review Institute (OMRI) http://www.omri.org.
+OMRI reviews and maintains listings of generic and brand names of fertilizers, soil amendments, pest
+controls, and other inputs that are allowed, restricted, or prohibited for certified organic production.
+USDA AMS National Organic Program http://www.ams.usda.gov/nop.
+USDA AMS NOP Program Handbook http://www.ams.usda.gov/NOPProgramHandbook.
+Handbook provides supplemental information to facilitate understanding and implementation of the
+Standards, including Guidance Documents, Instruction Documents, and Policy Memos.
+USDA NOP Guidance 5029: Seeds, Annual Seedlings, and Planting Stock in Organic Crop Production
+http://www.ams.usda.gov/sites/default/files/media/5029.pdf.
+Clarifies the Seeds and Planting Stock Standard (NOP 205.204) and its interpretation.
+2. Overview of Organic Certification Process Through NOP
+Transition to Organic
+While production activities and documentation required by the organic regulations must be followed for
+36 months prior to the first sale of an organic crop, producers are not required to be certified during this
+transition period. Producers can, however, discuss organic requirements, including whether specific
+inputs are allowed, restricted, or prohibited, with an organic certification agency during this transition.
+In addition, there are numerous organizations that support producers during the transition and provide
+assistance concerning what activities are required in order to achieve organic certification (see resources in
+this section).
+Land that has had no prohibited materials applied for 36 months is eligible to be certified as organic with
+no waiting period. Documentation from landowners and operators of how that land has been used and
+managed must be provided to the organic certification agency to verify there were no prohibited materials
+applied. If the land is currently in crop production, the operator must document that any inputs, including
+seeds and seed treatments, meet the organic standards. Certified organic seed is not required during the
+transition.
+Organic certification can be done on a field-by-field basis, as long as there are defined field boundaries.
+There is no requirement that the entire farm be certified organic; a farmer may choose to manage both
+organic and nonorganic fields. If a producer grows both organic and nonorganic crops of the same species,
+the certifier will closely scrutinize the management, harvest, storage, and sale of these organic and
+nonorganic crops. Buffer zones between organic and nonorganic crop fields need to be in place before the
+organic part of the operation can receive certification.
+There is no nationally recognized definition, labeling category, or market for crops during the 3-year
+transition period. During this time, crops may not be represented as organic. Producers may state
+truthfully that they are transitioning when selling direct to consumers, and there are some commodity crop
+buyers that will pay a small premium for crops that are non-genetically modified organisms (GMOs) or are
+grown without synthetic inputs.
+Typically the producer applies for organic certification the first year they can sell an organic crop. When
+applying for certification, producers must provide 3 years of land history to the organic certification agency
+to document that the requirements have been met. If a producer has not had control of the land for all of
+the 3 transition years, they will need to obtain a signed document from the previous operators of that land
+describing what materials had been used as well as the crops grown and seeds planted. Many certifiers
+provide a form that landowners can use to verify this compliance.
+190–612–H, 1st Ed., Nov 2015 B-5
+Title 190 – National Organic Farming Handbook
+Organic Certification Agencies
+Producers may work with any certification agency and all use the same USDA organic regulations.
+Producers seeking organic certification for the first time will need to search and decide which agency meets
+their needs. Other organic farmers in their region should have knowledge of certification agencies that have
+provided satisfactory service.
+Organic certification agencies are accredited by the USDA to perform organic certification activities by scope:
+crop, wild crops, livestock, and handling. Producers should discuss which scope a certifier covers to ensure
+the certifier can provide them with the services they need. Handling refers to any activity beyond raw
+agricultural production on the farm and includes activities such as grain cleaning and food processing. Some
+operations may be certified under two or more scopes.
+The USDA’s AMS Web site lists organic certification agencies alphabetically by name as well as by State, at
+http://www.ams.usda.gov/services/organic-certification/certifying-agents.
+OSP and Application
+A producer should begin working with an organic certification agency at least 6 months prior to the planned
+sale of their first certified organic crop. The agency will send them a packet containing their fee schedules,
+the organic regulations, and an organic certification application which may also be called the OSP. This
+OSP covers all aspects of farm management and typically follows the organic regulation section by section,
+asking questions that can be answered in narrative or multiple-choice formats. The OSP is extensive,
+including a full description of inputs (ingredients, rates, and dates of use); crop rotations with 3 years of past
+field histories and projected current year’s cropping plans; weed, pest and disease management; adjoining
+land use and buffer zones; all equipment and storage used; and transportation, labeling, and sales records.
+Depending on the complexity of the operations, the first OSP may take a farmer 4 to 6 hours to complete.
+Updating OSPs in subsequent years may only take an hour to complete.
+A producer sends their completed OSP along with a base payment to the certification agency. If all farm
+management information, field maps, and input ingredient information is complete, the certification agency
+reviews the OSP and then assigns the file to an inspector. If it appears the operation does not meet organic
+regulations, the certification agency will typically discuss areas of noncompliance with the operator and
+outline steps that need to be taken before the organic certification process can move forward. Once certified,
+organic producers must update their OSP throughout the year.
+Organic Inspection
+To renew certification, the producer must submit
+an updated OSP and have an onsite organic
+inspection each year. Many certifiers have shorter
+forms for the annual OSP update. Organic
+inspectors may be staff of the organic certification
+agency or they may be independent contractors
+that work for a variety of certifiers. Depending
+on the complexity and size of the operation, an
+organic inspection typically takes between 3 to 6
+hours. The organic inspector will verify the items
+on the OSP, both with documentation and by
+physically reviewing the fields, livestock, buildings,
+and equipment. At the end of the inspection, the
+inspector will discuss with the producer any areas
+of concern or items that need to be submitted
+before organic certification can be granted. The
+inspector is an objective observer and reporter and
+Figure 2 NRCS staff and producers discuss organically
+managed lettuce seed production
+B-6
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+does not make the final decision whether or not to certify an operation. Organic inspections do not always
+occur the same time of year, although they typically happen when crops are growing or the activity being
+certified (such as maple syrup production) is occurring. Organic certification agencies are also mandated by
+the USDA to perform unannounced inspections on 5 percent of certified operations annually.
+Review and Certification Decision
+The organic inspector submits a written report to the organic certification agency along with any further
+supporting documentation such as input labels or photographs where applicable. An employee of the
+organic certification agency reviews these items along with the OSP and determines whether the operation
+complies with USDA organic regulations. The certification agency will then communicate its findings with
+the producer through a certification determination letter. The letter may grant organic certification, request
+further information so that a determination can be made, or state a requirement that the farmer must meet
+in order to receive or retain organic certification. Finally, the letter may deny certification on one or more
+fields if a prohibited material had been used within 36 months of the planned organic harvest.
+The operator may need to pay an additional fee to cover the cost of the inspection before receiving their
+organic certificate. Once issued, the organic certificate remains in effect until surrendered, suspended,
+or revoked. Operators typically use their organic certificates as documentation to prove current organic
+certification to buyers at the wholesale and retail levels. The USDA’s AMS also maintains a listing of
+certified organic operations on their Web site. This list is updated at least annually, and as of September
+2015, AMS launched a new version of the database that provides more timely and accurate information
+about certified operations. The new “Organic Integrity Database” allows users to search for any certified
+organic farm, ranch or food processor, both domestically and internationally, and to view a new series of
+summary reports.
+There is an appeals process (section A-2 of this handbook) for certified organic operators and operators
+applying for organic certification if they feel the determination by the organic certifier is not correct.
+Resources
+List of Certified USDA Organic Operations (USDA AMS NOP) http://apps.ams.usda.gov/nop/.
+Guide for Organic Crop Producers (USDA AMS and the National Sustainable Agriculture Information
+Service/ATTRA http://www.ams.usda.gov/services/organic-certification/is-it-an-option. This publication
+provides a detailed overview of the certification process for crop producers.
+Guide for Organic Livestock Producers (USDA AMS and ATTRA)
+http://www.ams.usda.gov/sites/default/files/media/GuideForOrganicLivestockProducers.pdf.
+This publication provides a detailed overview of the certification process for livestock producers.
+Organic Crop Production Overview (ATTRA)
+https://attra.ncat.org/attra-pub/summaries/summary.php?pub=66. This publication provides an overview of
+conservation practices and principles used on organic farms.
+Organic Certification of Farms and Businesses Producing Agricultural Products (USDA AMS and ATTRA)
+https://attra.ncat.org/attra-pub/summaries/summary.php?pub=152. This publication provides an overview of
+the certification process, who needs to be certified, and more.
+OSP Template for Crop and/or Livestock Production (USDA AMS and ATTRA)
+https://attra.ncat.org/attra-pub/summaries/summary.php?pub=359. This publication provides OSP
+templates for both crop and livestock production.
+Guidebook to Organic Certification (Midwest Organic and Sustainable Education Service (MOSES))
+http://mosesorganic.org/publications/guidebook-for-certification/. Along with this guidebook organized
+in a question and answer format, MOSES has more than 30 fact sheets detailing organic certification
+requirements for various farming systems as well as describing a variety of organic production activities.
+190–612–H, 1st Ed., Nov 2015 B-7
+Title 190 – National Organic Farming Handbook
+How to Choose a Certification Agency & the Organic Certification Process (MOSES)
+http://mosesorganic.org/wp-content/uploads/Publications/Fact_Sheets/07CertificationAgencyprocess.pdf
+Organic Education Organizations
+Ecological Farming Association-California http://www.eco-farm.org
+California Certified Organic Farmers http://www.ccof.org/
+Carolina Farm Stewardship Association http://www.carolinafarmstewards.org
+Florida Organic Growers http://www.foginfo.org
+Georgia Organics http://georgiaorganics.org
+Illinois Organic Association http://illinoisorganicgrowers.org/
+Iowa Organic Association http://iowaorganic.org
+Louisiana Organic Association http://www.ibiblio.org/farmingconnection/index.html
+Maine Organic Farmers and Gardeners Association www.mofga.org
+Maryland Organic Food and Farming Association http://marylandorganic.org/
+Michigan Organic Food and Farm Alliance http://www.moffa.net
+Midwest Organic and Sustainable Education Service www.mosesorganic.org
+Missouri Organic Association http://www.missouriorganic.org
+Montana Organic Association http://montanaorganicassociation.org
+Northeast Organic Farming Association—
+Chapters in Connecticut, Massachusetts, New Hampshire,
+New Jersey, New York, Rhode Island and Vermont
+www.nofa.org
+Northern Plains Sustainable Agriculture Society-North
+Dakota
+http://www.npsas.org
+Ohio Ecological Food and Farming Association http://www.oeffa.org
+The Kerr Center for Sustainable Agriculture-Oklahoma http://www.kerrcenter.com
+Oregon Tilth http://tilth.org/
+Pennsylvania Association for Sustainable Agriculture https://www.pasafarming.org
+Texas Organic Farmers and Gardeners Association http://www.tofga.org
+Tilth Producers of Washington http://tilthproducers.org
+Virginia Association for Biological Farming http://vabf.org
+Wild Farm Alliance www.wildfarmalliance.org
+190–612–H, 1st Ed., Nov 2015
+Title 190 – National Organic Farming Handbook
+This page intentionally left blank
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015 C-1
+C. Conservation Planning With Existing Organic and Transitional Producers
+1. Nine Steps of Conservation Planning in Organic Systems
+USDA organic regulations, organic production principles, and NRCS conservation planning objectives
+align closely and include many opportunities for conservation objectives and organic regulations to be met
+simultaneously. Although organic standards regarding natural resources do not set quantitative criteria,
+they require the producer to maintain (not degrade) natural resources and encourages them to improve the
+resource condition. The NRCS conservation planning process applies to all types of agricultural operations,
+including organic farms. There are, however, a few considerations unique to organic systems that may
+impact the planning process. This section focuses only on the issues and opportunities related to organic
+systems, not the general conservation planning process.
+Conservation Planning Phase I: Collecting and Analyzing Information
+Step 1: Identify Problems and Opportunities
+Organic farms are subject to the same resource concerns as all farming operations. However, there are some
+resource problems and opportunities that commonly occur in organic systems (some challenges described in
+section A of this handbook):
+• Natural Resources.—There are a range of opportunities to work with organic producers as they are
+required to maintain or improve the natural resources of the operation defined as the “physical,
+hydrological, and biological features of a production operation, including soil, water, wetlands,
+woodlands, and wildlife.”
+• Natural Areas.—Organic producers are required to maintain or improve biodiversity and prevent
+exposure of organic production areas to NOP-prohibited substances. In addition, many producers
+would like to provide habitat for natural enemies (predators and parasites) of crop pests, and enhance
+natural areas on the farm through the use of native plants. Conservation plantings such as field
+borders, hedgerows, and riparian buffers established to protect water and soil resources and provide
+wildlife and pollinator habitat, may also harbor natural enemies of pests and intercept pesticide and
+GMO pollen drift from neighboring nonorganic farms.
+• Nutrients.—In organic systems that exclude synthetic fertilizers, the use of plant and animal materials
+for fertility can enhance soil health and biological activity. However, a reliance on manure and
+compost to provide adequate N for organic crops can lead to nutrient imbalances, especially a buildup
+of excessive soil P. Legume cover crops can address this constraint. Installing suitable facilities for
+composting and manure storage can help organic producers meet organic regulatory requirements to
+protect water quality.
+• Livestock and Pasture.—Organic livestock producers must provide ruminant animals with pasture
+throughout the grazing season, and prevent negative resource impacts from the livestock operation.
+These requirements offer opportunities to implement livestock-related conservation practices such as
+prescribed grazing, forage planting, and watering facilities.
+• Tillage.—Without a cost-effective choice of allowed herbicides, organic annual crop production is more
+reliant on tillage and cultivation for weed management and seedbed preparation. This can lead to
+soil erosion, compaction, and organic matter loss. Integrated, ecological weed management strategies
+that include cover crops and rotation can reduce reliance on cultivation. Cover crops and other inputs
+of organic materials to the soil can mitigate negative impacts of tillage. In addition, more organic
+producers are implementing conservation tillage, including no-till termination of high-biomass cover
+crops.
+• Residues.—Some specialty crop rotations (not limited to organic systems) may not provide sufficient
+crop residues to replenish soil organic carbon or control erosion. Producers can integrate high residue
+cover or production crops into the rotation, and can minimize bare soil periods through tight rotation
+schedules and relay intercropping.
+C-2
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+• Transition.—The required 3 years free of NOP-prohibited materials can create an incentive for a
+farmer in transition to organic production to use formerly idle land for production. Previously unused
+land may be sloping, HEL, or HCV land, such as native grassland or prairie, all of which raise resource
+issues.
+Step 2: Determine Objectives
+USDA organic regulations requires organic producers to protect a wide range of natural resources, and many
+producers seek to enhance resource conditions beyond the level of nondegradation. At a broad level, the
+objective of a producer may be to develop an organic production system that addresses all resource concerns
+and meets organic regulatory requirements. More specifically, a producer may want to develop riparian and
+other natural areas for enhanced wildlife and beneficial habitat, native plants, or improved water quality
+and aquatic habitat. Other producers may want to enhance vegetative buffers to increase the biodiversity
+of the farm by providing habitat for beneficial organisms, produce organic milk from a 100-head jersey dairy
+and address runoff issues of the farmstead, or produce both edible and feed-grade organic soybeans while
+enhancing the soil’s health.
+Step 3: Inventory Resources & Step 4: Analyze Resource Data
+• Soil.—Due to the complex nature of many organic cropping systems, the use of the Revised Universal
+Soil Loss Equation 2 (RUSLE2) and the Wind Erosion Prediction System (WEPS) to calculate soil
+loss may be challenging. Ensure that appropriate tillage operations are selected. Cover crops and
+applications of compost and other organic materials can mitigate the negative impacts of tillage. See
+RUSLE 2 in Organic Systems webinar for more information.
+• Water.—Use of slow-release sources of crop nutrients in organic systems can reduce risks to water
+quality. However, heavy reliance on compost and manure for fertility, especially when application
+rates are not closely matched to plant needs, may lead to excessive P or soluble N and negative impacts
+on water quality. Some organic producers use pest control substances such as pyrethrum, azadirachtin,
+and spinosad, which can present a risk to water quality that should be evaluated with the assessment
+tool, Windows Pesticide Screening Tool: (WIN-PST).
+• Air.—Organic producers near conventionally managed land (farmland, residential, commercial land,
+etc.) are often concerned about chemical spray drift and airborne soil particulates that could contain
+prohibited substances.
+• Plants.—USDA organic standards require organic growers to emphasize prevention, avoidance, and
+biological controls to deal with crop pests. This approach can reduce resource impacts of organic pest
+management practices.
+• Animals.—Organic livestock producers are required to have ruminants on pasture for at least 120
+days during the grazing season, and to provide 30 percent of dry-matter intake for ruminants during
+that period. Although USDA organic standards do not specify stocking rates, producers must manage
+pastures to maintain adequate forage quality and quantity, and to protect water resources.
+• Energy, People, and Environmental Law Compliance.—These concerns include many considerations
+that affect all agricultural producers. NRCS can support producers by providing recommendations or
+designs that are compatible with USDA organic regulations.
+Conservation Planning Phase II: Decision Support
+Step 5: Formulate Alternatives & Step 6: Evaluate Alternatives
+While developing the list of NRCS conservation practices that might be needed, consider those practices
+within the context of organic systems whose implementation can be modified for greater conservation
+benefit. For example, while many organic farmers use cover crops, they may plant only one species,
+terminate the cover crop before it achieves high biomass, or terminate it by harvest.
+When formulating and evaluating alternatives, it is important to consider USDA organic regulations that
+may limit some options and affect costs of implementation. USDA organic regulations that may impact
+implementation of conservation practices include:
+190–612–H, 1st Ed., Nov 2015 C-3
+Title 190 – National Organic Farming Handbook
+• Unless specifically allowed, organic producers may not use synthetic substances for weed, insect pest,
+and disease control; fertility; and seed treatment.
+• During transition to organic, the last application of NOP-prohibited materials must be 3 years prior to
+the harvest of an organic crop.
+• Producers must use organically grown seeds and planting stock unless they are not commercially
+available.
+• The USDA organic regulations do not allow use of lumber treated with prohibited materials if the
+lumber will contact animals, manure, compost, plants, or soil that are parts of the organic production
+system.
+Step 7: Make Decisions
+Once a client has selected a practice to implement, encourage the producer to contact their certifying agent.
+Unless the practice is already included in their OSP, producers should obtain approval from their certifier
+prior to implementation.
+Section D of this handbook, has information and resources related to many conservation activities and
+practices integral to organic systems. Please see the respective sections for details about implementing
+those practices in organic systems.
+Conservation Planning Phase III: Application and Evaluation
+Step 8: Implement the Plan
+Many States have developed organic job sheets for a number of practices. If available, use these job
+sheets when installing practices in organic systems. Section D of this handbook ("Integral Conservation
+Activities"), also includes implementation guides and other resources to support conservation activities in
+organic production.
+Producers are responsible for contacting their certifier to verify compliance of planned activities with organic
+standards. They should ensure that plans and specifications for implementation of NRCS practices align
+with USDA organic regulations.
+Step 9: Evaluate the Plan
+When evaluating the conservation plan and practices with the producer, assist them as they assess how
+effectively the plan has utilized opportunities to address both their conservation and USDA organic
+compliance objectives. In addition, help them look for any barriers to success that are specifically related
+to the producer’s organic certification. Let your supervisor and appropriate technical specialists know if
+practice standards, specification, designs, or job sheets conflict with organic regulations or organic practices.
+Resources
+The NRCS Title 180, National Planning Procedures Handbook
+http://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=36483.wba.
+2. Technical Service Providers
+In many States, NRCS technical service providers (TSPs) play an important role in conservation planning
+in organic systems. Unfortunately there is often a lack of TSPs certified to provide this assistance. If your
+State needs TSPs for conservation activity plans (CAPs) or other conservation work with organic producers
+(described below), contact EQIP organic program specialists or other NRCS organic contacts listed here:
+http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/landuse/crops/organic/.
+Resources
+Becoming a Technical Service Provider for NRCS: An Introduction (Midwest Organic and Sustainable
+Education Service (MOSES)) http://www.youtube.com/watch?v=mZdq5z5hAu0&feature=youtube.
+C-4
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+3. CAP Supporting Organic Transition (CAP 138)
+CAP 138 helps farmers who are interested in transitioning from conventional to organic production by
+addressing the natural resource concerns on their operation. As with all CAPs, to receive financial and
+technical assistance from NRCS for completion, it must be prepared by NRCS certified TSPs.
+CAP 138, which was revised for 2015, consists of three sections: Resource Inventory, Erosion Control
+Inventory, and Summary Record of Planned NRCS Conservation Practices. The resource inventory section
+may serve as a portion of an OSP, but it is not a replacement for the OSP. The information included in
+the resource inventory can be relevant and useful in helping the producer apply for organic certification;
+however, the producer is responsible for completing all of the OSP requirements not addressed by the
+resource inventory. The AMS NOP worked closely with NRCS to develop the 2015 CAP 138 resource
+inventory. The resource inventory, when submitted with the supplemental companion document "Resource
+Inventory Supplement," contains all of the required components of an OSP. Current USDA organic
+regulations do not require the use of a specific OSP. The use of the resource inventory and the "Resource
+Inventory Supplement" is completely optional.
+Some TSPs have voluntarily provided additional information needed to meet requirements of an OSP as part
+of their deliverables for the CAP 138, however, NRCS payment rates do not include or address this extra
+work. It is important that when approving EQIP CAP agreements that the participant is informed that
+NRCS will not reimburse producers for any extra work provided by TSP beyond the CAP requirements and
+the grower will be responsible for any additional charges from the TSP.
+After receiving a CAP 138, farmers can develop a full conservation plan with NRCS and apply for
+financial assistance to implement conservation practices or enhancements.
+Resources
+Conservation Activity Plan (CAP) 138 and OSP Supplements
+http://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/programs/financial/eqip/?cid=stelprdb1262227.
+4. Conservation Compliance
+As with all producers, in order for organic producers to receive some USDA benefits (e.g., NRCS conservation
+programs, including EQIP Organic Initiative, crop insurance, and farm loans, etc.) they must be in
+compliance with conservation provisions for HEL conservation and wetland conservation as set forth by the
+Food Security Act of 1985. USDA organic regulations also align with the intention of these conservation
+provisions. As described appendix 1 of this handbook, USDA organic regulations require organic producers
+to “select and implement tillage and cultivation practices that maintain or improve the physical, chemical,
+and biological condition of soil and minimize soil erosion.” Additionally, producers must “maintain or
+improve the natural resources of the operation, including soil, water wetlands, woodlands and wildlife.”
+As a component of organic certification, all fields are inspected and soil erosion concerns are documented
+by the organic certification agency in the annual inspection report. The certification agency may require
+remedial action to address a concern and any mitigating activities will be reviewed and reported in the
+following year’s organic inspection. In response to concerns regarding appropriate soil conservation practices
+on organic farms, the AMS NOP began working with certifiers in 2014 to evaluate compliance with the HEL
+provisions. The effort may result in training, tools, or potentially guidance on the topic. USDA organic
+regulations do not require the use of tools such as RUSLE2 to measure erosion. To assess this, certifiers
+typically rely on visual observations at the time of an inspection along with other indicators such as soil
+tests, and management practices including crop rotations, cover cropping, and compost applications.
+Resources
+Highly Erodible Land Conservation & Wetland Conservation Compliance (NRCS)
+http://www.nrcs.usda.gov/wps/portal/nrcs/detailfull/national/programs/farmbill/?cid=stelprdb1257899.
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015 D-1
+D. Integral Conservation Activities for Organic Production Systems
+Implementation of NRCS conservation activities offered through EQIP and CSP can assist organic producers
+in meeting a range of USDA organic requirements. Some conservation practices can play an integral role in
+organic systems and help transitioning organic producers bring their operations into compliance with USDA
+organic standards. CSP enhancement activities that build upon these practices provide an opportunity for
+organic producers to attain higher levels of resource stewardship.
+The table below lists integral conservation practices for each of several USDA organic standards. Many
+other NRCS conservation activities can contribute to effective resource conservation on organic farms
+and ranches and nearly all offer USDA organic-compatible implementation scenarios. NRCS maintains
+an Organic Crosswalk document for EQIP and CSP that shows the correlation among USDA organic
+regulations, NRCS resource concerns, and relevant conservation activities.
+Table 1 Integral NRCS Conservation Activities for Organic Systems
+USDA Organic Standard Integral Conservation Practice
+Standards (CPS)
+Natural Resources & Biodiversity -
+• Maintain and improve soil, water,
+woodlands, wetlands, wildlife
+• Conserve biodiversity
+• CPS 395 Stream Habitat Improvement and Management
+• CPS 612 Tree/Shrub Establishment
+• CPS 643 Restoration and Management of Rare and Declining Habitats
+• CPS 644 Wetland Wildlife Habitat
+Management
+• CPS 645 Upland Wildlife Habitat
+Management
+• And all practices listed in the following sections
+Land Requirements -
+• 3 years without prohibited substances • CPS 327 Conservation Cover
+• Buffers and barriers to protect organic
+production areas
+• CPS 362 Diversion
+• CPS 380 Windbreak/Shelterbelt
+• CPS 386 Field Border
+• CPS 390 Riparian Herbaceous Cover
+• CPS 391 Riparian Forest Buffer
+• CPS 393 Filter Strip
+• CPS 422 Hedgerow
+Soil Fertility and Crop Nutrient Management
+-
+• Implement tillage practices that
+improve soil condition and minimize
+erosion
+• Manage nutrients through rotations,
+cover crops, and use of plant and animal materials
+• CPS 329 No-till
+• CPS 332 Contour Buffer Strips
+• CPS 345 Reduced Till
+• CPS 585 Stripcropping
+• CPS 340 Cover Crop
+• Avoid contamination of crops, soil,
+water
+• CPS 590 Nutrient Management
+D-2
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+USDA Organic Standard Integral Conservation Practice
+Standards (CPS)
+Crop Rotation -
+• Including sod, cover crops, green manures, catch crops
+• Control erosion, increase soil organic
+matter, manage nutrients and pests
+• Alley cropping, intercropping, hedgerows, etc., for perennials
+• CPS 328 Conservation Crop Rotation
+• CPS 340 Cover Crop
+• CPS 311 Alley Cropping
+• CPS 422 Hedgerow
+Crop Pest, Weed, & Disease Management
+-
+• Crop rotation, cultural practices for
+crop health
+• CPS 595 Integrated Pest Management
+• Habitat for natural enemies of pests • CPS 327 Conservation Cover
+• CPS 386 Field Border
+• Mowing, mulching, grazing, cultivation
+for weeds
+• CPS 484 Mulching
+- • CPS 649 Structures For Wildlife
+Livestock Living Conditions -
+• Access to outdoors, sun, shade, clean
+water, shelter, pasture (ruminants)
+• CPS 311 Alley Cropping (shade)
+• CPS 380 Windbreak (shelter)
+• CPS 516 Livestock Pipeline
+• CPS 576 Livestock Shelter
+• CPS 614 Watering Facility
+• CPS 317 Compost Facility
+• CPS 367 Roofs and Covers
+• CPS 558 Roof Runoff Structure
+• CPS 590 Nutrient Management
+• Manage manure, outdoor areas to protect water and soil
+Pasture (Ruminants) -
+• 30% of dry matter intake
+• Pasture quality
+• Minimize diseases and parasites
+• CPS 511 Forage Harvest Management
+• CPS 512 Forage Planting
+• CPS 550 Range Planting
+• CPS 381 Silvopasture Establishment
+• CPS 528 Prescribed Grazing
+-
+• Fencing, shade, water
+• Protect soil & water quality
+• Prevent erosion
+• Protect wetlands and riparian areas
+-
+• CPS 382 Fence
+• CPS 390 Riparian Herbaceous Cover
+• CPS 391 Riparian Forest Buffer
+• CPS 657 Wetland Restoration
+190–612–H, 1st Ed., Nov 2015 D-3
+Title 190 – National Organic Farming Handbook
+The following sections include resources that can help producers and NRCS field staff implement the
+Conservation Practice Standards (CPSs) listed in the table above in the context of organic production
+systems. The resources listed below are the most comprehensive and relevant to organic systems. In
+some topic areas, additional resources were identified to provide more information and are included in the
+appendix.
+1. Nutrient Management
+Organic growers rely on a healthy soil food web to release crop-available nutrients from soil organic matter
+and organic amendments. To support this ecology, they must continually replenish organic materials in the
+soil. Because synthetic fertilizers are generally not allowed in organic systems, the majority of nutrients
+must come from plant-derived or animal-derived products, in which nutrients are combined with carbon (C).
+In organic systems, the N and C cycles are closely linked and nutrients, particularly N, must be managed
+with this in mind.
+Compared to conventional fertilizers, most organic fertilizers have lower concentrations of nutrients and
+act more slowly because nutrient release depends on the level of soil biological activity in order to digest
+the applied materials. As a result, some portion of the nutrients will be released in years subsequent to the
+application. In this context, implementation of CPS Code 590, Nutrient Management, may differ for organic
+versus conventional systems. NRCS can help organic and transitioning producers to understand nutrient
+cycling in their soil, develop nutrient budgets, and implement practices that support and build soil health.
+Resources
+Nutrient Management Plan (590) for Organic Systems: Western State Implementation Guide (Oregon Tilth,
+National Center for Appropriate Technology (NCAT), NRCS)
+http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/landuse/crops/organic/
+State-specific versions of this guide are being
+developed for certain States; final versions will
+be available here: http://www.nrcs.usda.gov/wps/
+portal/nrcs/main/national/landuse/crops/organic/.
+This publication discusses CPS 590 as a tool for
+meeting the USDA organic regulations’ nutrient
+management requirements and minimizing
+environmental risks from applied N and P. It
+covers major and minor nutrients, and how to
+estimate N release from cover crops, past organic
+inputs, and soil organic matter.
+Soil Fertility in Organic Systems: A Guide
+for Gardeners and Small Acreage Farmers
+(Washington State University)
+https://pubs.wsu.edu/ItemDetail.aspx?ProductID=1
+5585&SeriesCode=&CategoryID=&Keyword=646.
+This guide covers soil and nutrient dynamics in
+organic systems and provides nutrient management
+guidelines for wetter and drier parts of the
+Northwest that take into account N credits for cover
+crops, soil organic matter, and past inputs, and
+environmental concerns.
+See appendix 1 of this handbook, USDA Organic Production Requirements Related to Resource
+Conservation, for the text of applicable regulations. In addition to regulations, the NOP Handbook
+provides guidance and instructions to help operations comply with the regulations.
+Figure 3 Roots and soil under organically
+managed sudan grass cover crop
+D-4
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+Soil Fertility Management for Organic Crops (University of California)
+http://anrcatalog.ucdavis.edu/pdf/7249.pdf. Written specifically for California climate, soils, and production
+systems, this publication offers practical guidance on nutrient sourcing and N mineralization from soil
+organic matter, cover crops, compost, and purchased organic fertilizers.
+Managing Manure Fertilizers in Organic Systems (University of Illinois, eOrganic)
+http://www.extension.org/pages/18628/managing-manure-fertilizers-in-organic-system.
+This article covers USDA organic regulations regarding manure as a nutrient source in certified organic crop
+production. It addresses food safety and environmental considerations, and provides protocols for manure
+testing and determining application rates based on soil test trends.
+Nutrient Management on Organic Vegetable Farms (University of Vermont) http://www.uvm.edu/
+vtvegandberry/factsheets/Nutrient%20Management%20on%20Organic%20Vegetable%20Farms.pdf.
+This bulletin covers practical nutrient management for New England organic producers, including crop
+rotation, cover crops, and instructions for determining N, P, and K application rates, which consider
+nutrient credits from cover crops, manure, compost, and mineralization from soil organic matter.
+Sources of Organic Fertilizers and Amendments (The National Sustainable Agriculture Information Service
+(ATTRA)) https://attra.ncat.org/attra-pub/org_fert/. Database listing suppliers of organic fertilizers, soil
+amendments, compost, and mycorrhizal and other inoculants for compost or soil by State.
+Using Organic Nutrient Sources (Pennsylvania State University, Sustainable Agriculture Research and
+Education (SARE))
+http://www.sare.org/Learning-Center/SARE-Project-Products/Northeast-SARE-Project-Products/WholeFarm-Nutrient-Planning-for-Organic-Farms. This resource covers how to: use a soil test report to guide
+organic nutrient management and compost application rates, account for the slower release of organic
+sources, provide balanced crop nutrition, optimize cost efficiency, protect water and other resources, and
+meet USDA organic regulatory requirements.
+See appendix 2 of this handbook for additional resources.
+2. Cover Crops
+The purposes of cover cropping (CPS Code 340, Cover Crop) in organic systems do not differ from those in
+conventionally managed systems. However, the multiple functions of cover crops take on greater importance
+in organic systems in which synthetic chemical fertilizers and pesticides are generally not used. Cover crops
+can fix N (legumes); improve availability of P, K, and other soil nutrients; add organic matter and feed the
+soil food web; protect the soil from erosion and compaction; suppress weeds and disrupt pest and disease
+life cycles; and provide habitat for beneficial organisms. USDA organic standards cite cover cropping as an
+important component of organic crop rotations and a key practice for soil and nutrient management. NRCS
+staff can help producers by understanding the farmers’ goals for their cover crop, and helping them design a
+cover crop mix that is manageable, economically viable, and that meets their needs.
+Resources
+CPS Code 340, Cover Crop, in Organic Systems: Western State Implementation Guide (Oregon Tilth, NCAT,
+NRCS, Xerces Society)
+http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/landuse/crops/organic/.
+State-specific versions of this guide are being developed for certain States; final versions will be available
+here: http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/landuse/crops/organic/. This guide discusses
+the selection and management of cover crops for various objectives (N, organic matter, beneficial insects,
+etc.), soils and climates, cropping systems, and seasonal niches in the crop rotation. It covers seeding rates,
+planting dates, field preparation, and planting and termination methods.
+190–612–H, 1st Ed., Nov 2015 D-5
+Title 190 – National Organic Farming Handbook
+Cover Cropping in Organic Farming Systems
+(eOrganic)
+http://www.extension.org/pages/59454/covercropping-in-organic-farming-systems. This Web
+site houses an extensive list of guides, videos,
+webinars, and other resources organized by cover
+crop species and cover cropping purpose.
+Cover Crops for Organic Farms (Center for
+Environmental Farming Systems)
+http://www.cefs.ncsu.edu/resources/
+organicproductionguide/covercropsfinaljan2009.
+pdf. This publication discusses cover crop species
+best suited for the Southeast and their benefits
+and drawbacks in relation to the region’s soils,
+climates, and prevalent insects, pest nematodes,
+and crop diseases. It also offers instruction
+on cover crop planting and termination, and
+estimating cover crop biomass, total and available
+N.
+Managing Cover Crops Profitably, 3rd edition
+(SARE)
+http://www.sare.org/Learning-Center/Books/
+Managing-Cover-Crops-Profitably-3rd-Edition.
+This handbook describes how cover crops work
+and how to integrate them into various cropping
+systems for soil fertility, pest management, and
+other purposes. A set of charts summarizes best
+cover crops for different regions, seasons, and objectives; and advantages, drawbacks, planting rates and
+methods for each cover crop species. Detailed chapters cover 20 of the most widely used cover crops.
+Midwest Cover Crop Council www.mccc.msu.edu. Resource for cover cropping in the Midwest which
+includes research, info sheets, cover crop selector tools, and farmer profiles about cover crop use in crop
+rotations, including a few on organic farms.
+Northern Great Plains Cover Crop Chart (USDA, ARS)
+http://www.ars.usda.gov/Services/docs.htm?docid=20323. Chart organized by cover crop species which links
+to a summary of information about that species.
+Cover Crops for All Seasons: expanding the cover crop tool box for organic vegetable producers (Virginia
+Association for Biological Farming (VABF))
+http://vabf.files.wordpress.com/2012/03/seasonalcovercrops_sm.pdf. Information in narrative and tabular
+form on the performance, benefits, and best planting and management methods for over 30 cover crops
+evaluated for organic vegetable cropping systems in the mid-Atlantic and upper Southeast.
+Reduced Tillage and Cover Cropping Systems for Organic Vegetable Production (VABF)
+http://vabf.files.wordpress.com/2012/03/reducedtillage_sm.pdf. Recommendations for cover crop
+management and no-till cover crop termination and cash crop planting for organic vegetable production,
+based on research conducted at Virginia Tech as well as the mid-Atlantic and upper Southeast.
+2013 Cover Crop Innovations Webinar Series (Pennsylvania State University)
+http://www.sare.org/Learning-Center/SARE-Project-Products/Northeast-SARE-Project-Products/2013-CoverCrop-Innovations-Webinar-Series.
+This webinar series includes cover crops for organic no-till and reduced-till systems, interseeding, cover
+Figure 4 Organically managed buckwheat cover crop.
+D-6
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+crops for small dairy farms, managing beneficial and pest insects, nutrient and weed management in organic
+no-till cover crop systems, and managing N with cover crop mixtures.
+NRCS Cover Crop Termination Guidelines (NRCS)
+www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=STELPRDB1263099&ext=pdf. This
+document describes guidelines applicable to all USDA programs that were developed by NRCS, RMA and
+FSA.
+See Section 4, "Crop Rotation," of this handbook, for additional resources.
+3. Compost
+Compost is an important soil amendment for many organic farms because it provides an inoculum of
+beneficial soil organisms as well as humus, micronutrients, and slow-release N, P, and K. When farms or
+fields with poor soil health and low nutrient levels are first brought into organic production, heavy compost
+applications (10–20 tons per acre) can be the quickest way to improve soil fertility. Manure-based compost
+may have relatively high levels of salts, as well as P, so the producer should ask the supplier to provide
+information about levels of nutrients and salts, and conduct soil tests regularly to determine appropriate
+compost application rates.
+Organic livestock producers can optimize nutrient cycling and protect water and other resources through
+proper composting of manure. NRCS can assist organic producers in constructing a suitable composting
+facility (CPS Code 317) and applying compost in a manner consistent with sound nutrient management
+(CPS Code 590).
+Resources
+Making and Using Compost for Organic Farming (University of Illinois, eOrganic)
+http://www.extension.org/pages/18567/making-and-using-compost-for-organic-farming. This article
+discusses USDA organic regulations and guidance regarding composition, production, and use of compost on
+organic farms and briefly summarizes the composting process and farm-scale composting methods (windrow,
+aerated static pile, in-vessel) with links to other resources.
+Guidance: Compost and Vermicompost in Organic Crop Production (AMS NOP)
+http://www.ams.usda.gov/NOPProgramHandbook. This publication reviews USDA organic regulations and
+includes guidance about compost and vermicompost in organic systems.
+4. Crop rotations
+Crop rotations are required on organic farms and are used to reduce pest and disease problems, reduce
+weed pressure, reduce soil erosion, build organic matter, and support a diverse soil microbial community.
+Rotations that include several crops of different plant families support better soil health than simpler
+rotations. A diverse crop rotation that includes legumes and deep rooted crops can enhance the efficient
+cycling and utilization of crop nutrients. On sloping land, integrating a conservation crop rotation (CPS
+Code 328) with other practices such as strip cropping (CPS Code 585) or contour buffer strips (CPS Code
+332) can greatly reduce soil erosion and protect soil health.
+Resources
+Crop Rotation on Organic Farms: A Planning Manual (SARE, Natural Resource, Agriculture, and
+Engineering Service (NRAES)) http://www.sare.org/Learning-Center/Books/Crop-Rotation-on-OrganicFarms. Utilizing input from experienced organic farmers, this manual gives detailed guidance in designing
+a crop rotation to improve soil health under different field conditions; manage pests, diseases, and weeds
+for various crops; and support the transition to organic farming. The book lists problems and opportunities
+for over 500 crop sequences, outlines pest and disease considerations for more than 60 crops and 70 weed
+species, and provides 13 examples of crop rotations from working organic farms.
+Crop Rotations on Organic Farms (Center for Environmental Farming Systems)
+http://www.cefs.ncsu.edu/resources/organicproductionguide/croprotationsfinaljan09.pdf. This publication 
+190–612–H, 1st Ed., Nov 2015 D-7
+Title 190 – National Organic Farming Handbook
+offers practical information on designing and implementing crop rotations to provide for soil fertility;
+enhance organic matter; and manage crop pathogens, plant-parasitic nematodes, insect pests, and weeds
+prevalent in North Carolina and elsewhere in the Southeast.
+See appendix 2 of this handbook for additional resources.
+5. Tillage and Residue Management
+Without a cost-effective choice of allowed herbicides, organic annual crop production is more reliant on
+tillage and cultivation for weed management and seedbed preparation. However, excessive tillage is
+harmful to soil, accelerating organic matter degradation, disturbing and killing soil organisms, creating
+compaction layers, and bringing weed seeds to germination depth. Residue management is closely connected
+with tillage and there is an increasing focus on organic no-till or reduced till to support soil health.
+NRCS staff can support organic farmers by advising them on reduced till and no-till financial assistance
+opportunities (CPS Codes 345 and 329), as well as providing information on effective tillage implements.
+Resources
+Use of Tillage in Organic Farming Systems: The Basics (University of Illinois, eOrganic)
+http://www.extension.org/pages/18634/useof-tillage-in-organic-farming-systems:-thebasics. This article describes the benefits
+and drawbacks of different forms of tillage
+and considerations when making decisions
+about tillage and tillage implements.
+Conservation tillage and no-till are also
+discussed briefly.
+Cover Crops and No-Till Management for
+Organic Systems (Rodale Institute, SARE)
+http://www.sare.org/Learning-Center/
+Project-Products/Northeast-SAREProject-Products/Cover-Crops-and-NoTill-Management-for-Organic-Systems.
+Description of cover crop-based organic
+no-till systems developed at the Rodale
+Institute for the Northeast and mid-Atlantic
+regions including vegetable and agronomic
+crop rotations, cover crop selection, rollercrimpers for cover crop termination, notill planting equipment, and energy and
+financial budgets for no-till versus tilled
+systems.
+Pursuing Conservation Tillage Systems
+for Organic Crop Production (ATTRA)
+https://attra.ncat.org/attra-pub/viewhtml.
+php?id=107. This bulletin provides an
+overview of organic conservation tillage
+options, including mulch till, ridge till, ridge
+zone/ strip till, killed cover crop mulch for
+no-till, and living mulch systems. Examples
+of innovative farmer applications of organic
+conservation tillage are included.
+See appendix 2 of this handbook for
+additional resources.
+Figure 5 Diverse mixture of vegetable crops on an organic farm
+D-8
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+6. Integrated Pest Management
+Pest management on organic or transitioning farms relies on the "PAMS" strategy: prevention, avoidance,
+monitoring and suppression, with a strong emphasis on prevention and avoidance. USDA organic
+regulations allow use of certain botanical and other natural pesticides as a last resort. NRCS conservation
+planners can help farmers protect resources, manage pests, and minimize their need for pesticides by
+supporting good soil management practices, which in turn support healthy, resilient plants. Crop rotation,
+cover crops, organic mulches, and various conservation tillage practices are all part of an ecological pest
+management system, as is supporting biodiversity above ground.
+The goal of the CPS Code 595, Integrated Pest Management (IPM), is to reduce or mitigate the risks
+associated with a particular pest suppression technique to specific natural resources (e.g. water, pollinators
+and other beneficial organisms). This standard defines IPM differently than some producers, who may think
+of IPM as a long-term system that focuses on prevention of pests through a combination of strategies such
+as biological controls, cultural practices and resistant varieties. Some pesticides allowed in organic farming
+can pose significant risks to natural resources, such as pyrethrum to fish, spinosad to bees, or any botanical
+or soap-based pesticide to nontarget and beneficial arthropods. Implementation of CPS Code 595 in
+conjunction with other practices can help the organic producer eliminate or mitigate these risks. Producers
+should work closely with their organic certifier to ensure their pest suppression and mitigation practices are
+consistent with their OSP and USDA organic regulations.
+The organic approach of prevention and avoidance is consistent with the definition of IPM. In addition,
+organic producers can avoid or reduce many pest and disease problems through other NRCS conservation
+activities such as CPS Codes 328, Conservation Crop Rotation; 340, Cover Crop; 386, Field Border; 422,
+Hedgerow; Water Quality Enhancement Activity (WQL21) IPM for Organic Farming; and many others.
+The last purpose in CPS Code 595, IPM, addresses the risk that a cultural, mechanical, or biological
+mitigation technique used in lieu of chemical methods to protect one resource may cause an impact on
+other resources. An example would be tillage for weed control which replaces herbicide applications, but
+which could adversely impact soil health. To maintain soil health, other practices such as CPS Codes 484,
+Mulching; 328, Conservation Crop Rotation; 340, Cover Crops; or any of the residue management practices
+could be used as well.
+Resources
+Common NRCS Practices Related to Pest Management on Organic Farms (Oregon Tilth)
+http://tilth.org/resources/common-nrcs-practices-related-to-pest-management-on-organic-farms-2/. This
+publication outlines the application of CPS Code 595, IPM, to organic systems and describes how several
+other key NRCS practices that have primary
+resource protection benefits can also offer
+significant benefits to organic producers.
+Biorationals: Ecological Pest Management
+Database (ATTRA) https://attra.ncat.org/attrapub/biorationals/. This tool provides information
+on organic and other pesticides as well as
+preventive measures for common pests; allows
+searches by pest, trade name, or active ingredient;
+has links to labels and manufacturer information;
+and notes which materials are listed by OMRI
+(Organic Materials Review Institute). Because
+OMRI listings are frequently updated, organic
+producers should check with their certifiers
+prior to applying any materials to their crops or
+livestock.
+Figure 6 Roller crimper
+190–612–H, 1st Ed., Nov 2015 D-9
+Title 190 – National Organic Farming Handbook
+Farming with Native Beneficial Insects (Xerces Society)
+http://www.xerces.org/farming-with-native-beneficial-insects/. A comprehensive guide that discusses the
+ecology of native beneficial insects and demonstrates how to create a farm or garden habitat that will attract
+beneficial insects.
+Manage Insects on Your Farm: A Guide to Ecological Strategies (SARE)
+http://www.sare.org/Learning-Center/Books/Manage-Insects-on-Your-Farm. This book covers ecological
+pest management practices used on organic farms such as improving soil health, building and managing
+plant and microbial biodiversity, cover cropping, beneficial habitat, hedgerows, and trap cropping. It
+includes photo illustrations of pests and their natural enemies and many farm stories of successful practical
+applications.
+A Whole-Farm Approach to Managing Pests (SARE)
+http://www.sare.org/Learning-Center/Bulletins/A-Whole-Farm-Approach-to-Managing-Pests. This
+bulletin covers field border plantings and other farmscaping methods among a full range of ecological pest
+management practices such as crop rotation, cover cropping, and tillage and residue management. It
+showcases successful field applications by farmers from different regions.
+Steel in the Field: a Farmer’s Guide to Weed Management Tools (SARE)
+http://www.sare.org/Learning-Center/Books/Steel-in-the-Field. Describes a wide range of cultivation tools
+available for mechanical weed control. The book also covers cost-effective weed-management strategies that
+integrate improved cultivation tools with cover crops and crop rotations that can help organic producers get
+the most weed suppression for the least soil disturbance.
+Resource Guide for Organic Insect and Disease Management, 2nd Edition (SARE)
+http://www.sare.org/Learning-Center/Project-Products/Northeast-SARE-Project-Products/Resource-Guidefor-Organic-Insect-and-Disease-Management. This manual provides in-depth information on organic
+management of vegetable crop pests and diseases in the Northeast, including cultural controls and NOPallowed materials for each major pest and pathogen; a photo section to assist identification; and material
+fact sheets for 17 classes of biological, botanical, mineral, and other NOP-approved materials.
+Biointensive Integrated Pest Management ( ATTRA) https://attra.ncat.org/organic.html#pests. Includes
+biointensive or high-level IPM that utilizes ecological principles to understand and manage pests within
+the context of the whole farm, including crops, pests and their natural enemies, soil life, livestock, etc. This
+manual covers planning based on knowledge of pest and
+beneficial life cycles, cropping system design, sanitation and
+other preventive cultural practices, and physical, mechanical,
+biological, and chemical controls.
+Farmscaping to Enhance Biological Control (ATTRA) https://
+attra.ncat.org/organic.html#pests. This bulletin gives indepth guidance on developing a beneficial insect habitat
+based on farmer objectives, crops grown, prevalent pests
+and natural enemies, and characteristics of various annual
+and perennial insectary plants. It also covers habitat
+for predatory birds and bats, and includes an annotated
+bibliography of information resources.
+See appendix 2 of this handbook for additional resources
+that address mammal pest management, weed and invasive
+species control, solarization for site preparation, and
+prescribed grazing for invasive plant control.
+Figure 7 Flowers from dill
+D-10
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+7. Buffers and Natural Areas
+Conservation buffers and natural areas support compliance with USDA organic regulations concerning
+natural resources and biodiversity while aiding in production goals. Although buffers are generally
+designed for other purposes, such as erosion control, some organic producers also use them to reduce
+pesticide and pollen transport. There are several NRCS buffer practices listed in table 1 that can help
+producers meet their objectives such as CPS Codes 422, Hedgerows, and 386, Field Borders. CPS Codes
+362, Diversions, and 412, Grassed Waterways, are used to divert and convey runoff water, and are relevant
+because they can help organic growers meet USDA organic regulatory requirements to protect organic crops
+against prohibited substances or other pollutants from off-farm sources.
+Natural areas are nonagricultural areas that support ecological processes and native species. Since not
+all organic growers enroll their natural areas in organic certification, the requirement to meet the USDA
+organic regulations for maintaining and improving soil, water, wetlands, woodlands, and wildlife in these
+areas depends on the certification status. Conservation of the natural areas may significantly improve food,
+shelter, and reproduction sites for wildlife, sequester carbon in woody biomass, filter pollutants, conserve
+water, dissipate floodwaters, serve as wildlife corridors, and support rare species. Several NRCS buffer
+practices listed in table 1 can help producers meet their objectives, such as CPS Codes 395, Stream Habitat
+Improvement and Management, and 612, Tree/Shrub Establishment.
+A number of practices can be used to prevent or control invasive species and weeds, such as CPS Codes 314,
+Brush Management, and 315, Herbaceous Weed Control.
+While buffers and natural areas do not typically produce organic food and fiber, producers must ensure
+they comply with USDA organic regulations. They should recognize the restrictions on synthetic pesticides,
+treated wood, plastic mulches, and burning under certain conditions. By first checking in with the certifier
+before planting the buffer or restoring the natural area, the producer will ensure they are in compliance.
+Resources
+Biodiversity and Natural Resources Management
+Biodiversity Conservation: An Organic Farmer’s Guide (Wild Farm Alliance (WFA))
+http://wildfarmalliance.org/resources/BD%20Guide%20Organic%20Farmers%20.pdf. Includes a range of
+farm management practices that maintain and enhance biodiversity as they relate to the USDA organic
+regulations.
+How NRCS TSPs Support Biodiversity in Organic Systems (WFA, MOSES, Hedgerows Unlimited)
+http://www.wildfarmalliance.org/resources/organic_BD.htm#WebinarTSPs. This webinar covers how TSPs
+can write conservation plans for practices that address the biodiversity conservation needs of the farm
+including those offered in the CAP 138 development criteria list for transitioning farmers, and others that
+support woodland, wetlands, and wildlife habitat.
+Increasing Plant and Soil Biodiversity on Organic Farmscapes (University of California at Davis, eOrganic)
+http://www.extension.org/pages/27049/increasing-plant-and-soil-biodiversity-on-organic-farmscapeswebinar#.U-0yukj8W58. This webinar examines research results from a case study in California on an
+organic farm with hedgerows, preservation of a riparian corridor, and tailwater ponds.
+Linking Biodiversity Requirements, Organic Systems, and NRCS Conservation Practice Standards (WFA,
+University of Minnesota, Live Earth Farm)
+http://wildfarmalliance.org/resources/organic_BD.htm#Webinar-1. CPSs that improve soil and water
+resources, support beneficial organisms and natural functions, and protect and restore wildlife habitat are
+covered in this webinar, and real-life examples of practices used by an organic farmer on his operations.
+Promoting High Quality Conservation on the Organic Farm (WFA, MOSES)
+https://www.youtube.com/watch?v=HENSvtveY0U&feature=youtu.be. This webinar describes how NRCS 
+190–612–H, 1st Ed., Nov 2015 D-11
+Title 190 – National Organic Farming Handbook
+conservation practices and enhancements can provide high-value production and biodiversity benefits while
+at the same time aiding producers in obtaining or maintaining their USDA organic status.
+Buffers
+Conservation Buffers in Organic Systems (NCAT, Oregon Tilth, Xerces Society)
+http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/landuse/crops/organic/. This publication covers
+design, preparation and maintenance of NRCS field borders, hedgerow plantings, herbaceous wind barriers,
+windbreaks/shelterbelt establishment, riparian forest buffers, and conservation cover.
+Conservation Buffers: Design Guidelines for Buffers, Corridors, and Greenways (National Agroforestry
+Center) http://nac.unl.edu/buffers/index.html. This publication provides over 80 illustrated design
+guidelines which describe how a vegetative buffer can be applied to protect soil, improve air and water
+quality, enhance fish and wildlife habitat, or meet other objectives.
+Hedgerows for California Agriculture (Community Alliance with Family Farmers)
+http://caff.org/wp-content/uploads/2010/07/Hedgerow_manual.pdf. This manual helps growers choose and
+care for appropriate plants that attract beneficial insects and prevent erosion.
+Protecting Riparian Areas: Farmland Management Strategies (ATTRA)
+https://attra.ncat.org/attra-pub/summaries/summary.php?pub=115. This publication is designed to help
+farmers, watershed managers, and environmentalists understand what healthy riparian areas look like,
+how they operate, and why they are important for the environment and society. It also discusses the costs
+and benefits of riparian management, and how watershed residents can work together to protect this vital
+resource.
+Co-Managing Food Safety and Conservation
+A Farmer's Guide to Food Safety and
+Conservation: Facts, Tips and Frequently
+Asked Questions (WFA, CAFF) http://www.
+wildfarmalliance.org/resources/FS_FactsTipsFAQ.
+pdf. This publication discusses basic factors
+that affect the survival and movement of food
+borne pathogens on the farm, and how healthy
+diverse ecosystems can help to keep pathogens
+in check. A set of frequently asked questions
+addresses topics from wildlife and compost issues
+to visitors on the farm. It provides tips on how to
+have a successful food safety inspection, and the
+resources list includes links to Web pages where
+your auditor can learn about the co-management
+of food safety and conservation.
+On-Farm Food Safety and Conservation (WFA)
+http://www.conservationwebinars.net/webinars/
+on-farm-food-safety-and-conservation. This
+webinar covers how pathogens get on the farm,
+their prevalence in animals, and environmental
+factors that influence pathogen reduction.
+A multibarrier approach is discussed where
+conservation practices and food safety good
+agricultural practices (GAPs) are used to
+minimize food safety concerns.
+Figure 8 Plants in a buffer area attracting beneficial
+goldenrod soldier beetles
+D-12
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+Pollinator Habitat
+Pollinator Habitat Assessment Form and Guide for Organic Farmers (Xerces Society)
+http://www.xerces.org/wp-content/uploads/2009/11/OrganicPollinatorHabitatAssessment.pdf. This guide
+assesses pollinator habitat in orchards and field crop settings.
+Organic Farming for Bees Toolkit (Xerces Society)
+http://www.sare.org/Learning-Center/Books/Managing-Alternative-Pollinators. This guide contains both fact
+sheets, as well as information about native bee biology, artificial nest management, and regional plant lists
+for pollinator habitat restoration.
+Pollinator Conservation Resource Center (Xerces Society) www.xerces.org/pollinator-resource-center.
+This Web site provides information on pollinator plant lists, conservation guides, pesticide protection, seed
+venders, nurseries, and more.
+Managing Alternative Pollinators: a Handbook for Beekeepers, Growers, and Conservationists (SARE)
+http://www.sare.org/Learning-Center/Books/Managing-Alternative-Pollinators. The book includes expert
+information on the business and biology of pollination, and color-illustrated how-to guidance on rearing
+and managing bumble bees, mason bees, leafcutter bees, and other bee species that provide pollination
+alternatives to the rapidly declining honey bee.
+See appendix 2 of this handbook for additional resources including the IPM section for resources on weed
+and invasive species control, solarization for site preparation, and prescribed grazing for invasive plant
+control.
+8. Organic Grazing
+The USDA organic pasture standard requires the livestock producer to provide pasture of sufficient quantity
+and quality to meet 30 percent of the dry matter (DM) nutritional needs of ruminants (cattle, goats, sheep,
+etc.) for at least 120 days during the grazing season. The producer must provide, as part of the OSP, a
+detailed pasture management plan adequate to meet these criteria, prevent erosion, and protect soil and
+water resources, wetlands, and riparian areas. Implementation of CPS Code 528, Prescribed Grazing,
+can help the organic producer meet USDA organic pasture requirements. Grazing plans under CPS Code
+528 include pasture system maps, soils maps and information, typical grazing season or seasons, tools to
+ensure and document adequate herd DM intake from pasture, and contingency management measures
+such as reduced stocking rates, temporary removal from pasture due to weather, and supplemental
+feed. Other conservation practices, such as CPS Codes 512, Forage and Biomass Planting; 511, Forage
+Harvest Management; 550, Range Planting; and 381, Silvopasture Establishment, can help the grower
+meet USDA organic requirements for adequate pasture and forage. Practices such as CPS Codes 390,
+Riparian Herbaceous Cover; 391, Riparian Forest Buffer; and 382, Fence, in conjunction with CPS Code
+614, Livestock Watering Facilities, to keep animals away from streams, can help protect water quality and
+prevent streambank erosion.
+Pastures, regardless of organic status, can become overgrazed, which can contribute to livestock internal
+parasite problems, nutritional deficiencies, soil compaction, erosion, degradation of forage diversity and
+vigor, spread of diseases to wildlife, and water quality problems; all of which an organic producer must
+address. USDA organic standards require the producer to maintain pasture in a state of good health
+and productivity through management strategies that promote good forage quality and quantity, weed
+control, infiltration of precipitation, and erosion control. Some conservation practices for developing and
+maintaining healthy and productive pastures include—
+• Rotational grazing system and nutrient management appropriate for the climate and terrain. This is
+not particular to organic, but rotation is vital to pasture health and reduced environmental impacts, as
+required by NOP.
+• Occasional mowing or mixed-species grazing to reduce weeds and stimulate growth of desirable species.
+Avoid prescribing forage species that require burning for germination or maintenance, or allow for
+alternatives such as grazing and tillage.
+190–612–H, 1st Ed., Nov 2015 D-13
+Title 190 – National Organic Farming Handbook
+• Establishment of desirable or more productive forages as needed. Some producers may include annual
+plantings to extend the grazing season, provide forages during seasons when perennials are typically
+less productive, or have animals deposit manure on cropland.
+• Use of infrastructure such as animal trails and strategic locations of watering facilities, minerals,
+shade, and supplemental feed to support pasture rotation and utilization.
+• Infrastructure and management practices may also be used to meet USDA organic requirements to
+protect environmentally sensitive areas in or adjacent to the pasture.
+Ideally, a grazing system includes sufficient acreage to meet the maximum DM intake needs of the herd. In
+instances where there is insufficient acreage, and where a reduction in stocking rate is not possible, daily
+supplemental feeding will be required. In addition, diligent pasture management and rotational grazing
+are essential to prevent overgrazing while maintaining as high a DM intake as practical. Animals must
+be moved frequently and in accordance with planned target grazing heights, DM estimates, and targeted
+postgrazing residuals. When circumstances beyond the producer’s control result in less than the required
+30 percent of total seasonal DM intake being obtained from pasture, the organic producer must request a
+written variance from the certifying agent.
+See section 9 of this handbook for a discussion of USDA organic regulations related to fences.
+Resources
+Organic Standards for Livestock Production (ATTRA)
+https://attra.ncat.org/attra-pub/summaries/summary.php?pub=159. This collection of standards from the
+USDA AMS NOP provides the reader with key standards relevant to certified organic livestock production.
+Pastures: Going Organic (ATTRA): https://attra.ncat.org/attra-pub/summaries/summary.php?pub=179. This
+guide discusses relevant USDA organic regulations, including recordkeeping; and fertility, weed, and insect
+pest management.
+Pasture for Organic Ruminant Livestock – Understanding and Implementing the USDA Organic Pasture
+Rule (NCAT, USDA AMS NOP):
+http://prod.ams.usda.gov/sites/default/files/media/NOP-UnderstandingOrganicPastureRule.pdf. This
+publication explains the pasture rule and includes information on determining available DM on both pasture
+and rangeland.
+Calculating Dry Matter Intake from Pasture (USDA AMS NOP):
+http://prod.ams.usda.gov/sites/default/files/media/5017-1.pdf. This publication describes DM intake and a
+method to estimate it.
+Grazing Management on Organic Farms (eOrganic):
+https://www.extension.org/pages/59464/grazing-management-on-organic-farms. This Web site provides an
+extensive library of fact sheets and webinars on organic grazing.
+Guide for Organic Livestock Producers (NCAT, USDA AMS NOP): http://www.ams.usda.gov/organicinfo.
+This extensive publication includes discussions about hay, silage, and haylage harvest; seeds and planting
+stock; the USDA organic pasture rule; organic soil and weed management for pasture and hayland; and
+grazing for parasite management.
+9. Livestock Living Conditions, Facilities, and Structures
+The USDA organic standard for livestock living conditions requires producers to provide all livestock and
+poultry with year-round access to the outdoors, sunlight, shade, shelter, fresh air, exercise areas, clean
+water, and adequate nutrition. Temporary confinement is allowed under certain circumstances such as
+severe weather. Producers can implement practices such as CPS Codes 614, Livestock Watering Facility;
+516, Livestock Pipeline; 380, Windbreak Planting; 381, Silvopasture Establishment; and 576, Livestock
+Shelter Structure, as part of their plan to meet USDA organic requirements regarding water, shade, and
+shelter.
+D-14
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+Organic livestock producers must manage animal wastes and outdoor access areas in a way that protects
+soil and water quality. In some locations at certain times of the year, it can be a challenge to provide
+livestock outdoor access “in a manner that does not put soil or water quality at risk.” Outdoor feeding and
+confinement areas may require CPS Code 561, Heavy Use Area Protection, and other practices to protect
+groundwater and surface water, and to allow for removal and management of wastes. A suitable composting
+facility (CPS Code 317) can provide improved waste management and stabilize manure nutrients.
+Some sites may not have sufficient separation from groundwater and surface water to provide treatment
+of contaminated runoff from these facilities. In such cases, a roof (CPS Code 367, Roofs and Covers), or
+CPS Code 588, Roof Runoff Structure, may be needed to prevent runoff from transporting contaminants
+into nearby streams or lakes. In the event that site conditions demand a roofed heavy-use area to prevent
+environmental impacts from a livestock confinement area, it is very important to work with the certifying
+agency to ensure that the design does not conflict with the agent’s interpretation of livestock access to the
+outdoors or to direct sunlight. In some cases, the producer may need to consider moving the livestock to
+another site where they can be managed in a manner that will meet USDA organic requirements for both
+livestock outdoor access and protection of water resources.
+The USDA organic crop pest, weed, and disease management practice standard does not allow the use of
+lumber treated with prohibited materials if the lumber will contact animals, manure, compost, plants, or soil
+that are parts of the organic production system. New or replacement fence posts for pastures, and building
+materials for animal shade, shelter or confinement structures, and composting and waste storage facilities
+must be comprised of materials such as naturally rot-resistant wood, wood treated with NOP-allowed
+materials, metal, concrete, fiberglass, composite, or other accepted materials. At the time of this printing,
+raw linseed oil is the only NOP-approved wood preservative, but other products could become available in
+the future.
+When chromated copper arsenate (CCA) pressure-treated lumber or other treated materials must be used
+for structures, the producer must provide a protective sheathing or setback to prevent livestock, feed,
+hay, manure, or compost from coming into direct contact with the materials. When planning a structural
+conservation practice on an organic livestock operation, it is very important to communicate with the
+certifying agency to ensure that the design and materials will not place the producer in conflict with USDA
+organic regulations.
+Resources
+Guide for Organic Livestock Producers (NCAT, USDA AMS NOP): http://www.ams.usda.gov/organicinfo.
+This extensive publication includes discussions about hay, silage, and haylage harvest; seeds and planting
+stock; the USDA organic pasture rule;
+organic soil and weed management for
+pasture and hayland; and grazing for parasite
+management.
+Treated Wood on Organic Farms (University
+of Tennessee):
+https://utextension.tennessee.edu/publications/
+Documents/W235-H.pdf. This publication
+discusses the USDA organic rule, alternative
+materials, and other topics.
+Treated Lumber and Wood (Ohio Ecological
+Food and Farm Association):
+http://certification.oeffa.org/certfiles/facts/
+Treated%20Wood.pdf. This fact sheet
+discusses common issues, alternatives, and
+other topics.
+Figure 9 Cows in sudan grass on an organic farm
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015 App1-1
+Appendix 1
+USDA Organic Regulatory Production Requirements
+Related to Resource Conservation
+The following excerpts from the USDA organic regulations highlight those that relate to resource
+conservation. Organic producers, not NRCS staff, are responsible for ensuring they comply with organic
+regulations. The regulations listed below are for reference to illustrate opportunities to work with organic
+producers and help NRCS staff better understand the regulations organic producers follow.
+The full USDA organic regulations (7 CFR Part 205) can be viewed at http://www.ecfr.gov/cgi-bin/text-idx?SI
+D=cbc7174c2bae4dac67b0935617cfa740&mc=true&node=pt7.3.205&rgn=div5.
+NATURAL RESOURCES AND BIODIVERSITY
+205.200—Production practices “must maintain or improve the natural resources of the operation, including
+soil and water quality.”
+205.2—Natural resources are defined as “the physical, hydrological, and biological features of a production
+operation, including soil, water, wetlands, woodlands, and wildlife.”
+205.2—Organic production is a “system that is managed in accordance with…regulations…to respond to
+site-specific conditions by integrating cultural, biological, and mechanical practices that foster cycling of
+resources, promote ecological balance, and conserve biodiversity.”
+LAND AND BUFFERS
+205.202—“Any field or farm parcel from which harvested crops are intended to be sold, labeled, or
+represented as 'organic,' must: Have had no prohibited substances … applied to it for a period of 3 years
+immediately preceding harvest of the crop; and Have distinct, defined boundaries and buffer zones such as
+runoff diversions to prevent the unintended application of a prohibited substance to the crop or contact with
+a prohibited substance applied to adjoining land that is not under organic management.”
+SOIL AND CROP FERTILITY MANAGEMENT
+205.203—The producer must: “select and implement tillage and cultivation practices that maintain or
+improve the physical, chemical, and biological condition of soil and minimize soil erosion”; “manage crop
+nutrients and soil fertility through rotations, cover crops, and the application of plant and animal materials”;
+and “manage plant and animal materials to maintain or improve soil organic matter content in a manner
+that does not contribute to contamination of crops, soil, or water.”
+Raw animal manure must be “incorporated into the soil not less than 120 days prior to the harvest of a
+product whose edible portion has direct contact with the soil surface or soil particles; or incorporated into the
+soil not less than 90 days prior to the harvest of a product whose edible portion does not have direct contact
+with the soil surface or soil particles.”
+Animal manure may be applied at any time if it is composted through a process that “established an initial
+C:N ratio of between 25:1 and 40:1; and maintained a temperature of between 131 °F and 170 °F for 3 days
+using an in-vessel or static aerated pile system; or maintained a temperature of between 131 °F and 170
+°F for 15 days using a windrow composting system, during which period, the materials must be turned a
+minimum of five times.” Producers must not use “sewage sludge (biosolids)."
+App1-2
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+SEEDS AND PLANTING STOCK
+205.204—“The producer must use organically grown seeds, annual seedlings, and planting stock.” However,
+when “an equivalent organically produced variety is not commercially available,” producers may use
+nonorganically produced seeds. However, “organically produced seed must be used for the production of
+edible sprouts.”
+CROP ROTATION
+205.205—“The producer must implement a crop rotation including but not limited to sod, cover crops, green
+manure crops, and catch crops that provide the following functions that are applicable to the operation:
+maintain or improve soil organic matter content; provide for pest management in annual and perennial
+crops; manage deficient or excess plant nutrients; and provide erosion control.”
+205.2—Crop rotation is defined as the “practice of alternating the annual crops grown on a specific field in
+a planned pattern or sequence in successive crop years so that crops of the same species or family are not
+grown repeatedly without interruption on the same field. Perennial cropping systems employ means such as
+alley cropping, intercropping, and hedgerows to introduce biological diversity in lieu of crop rotation.”
+CROP PEST, WEED, AND DISEASE MANAGEMENT
+205.206—“The producer must use management practices to prevent crop pests, weeds, and diseases
+including but not limited to: crop rotation and soil and crop nutrient management practices…sanitation
+measures to remove disease vectors, weed seeds, and habitat for pest organisms; and cultural practices that
+enhance crop health, including selection of plant species and varieties with regard to suitability to sitespecific conditions and resistance to prevalent pests, weeds, and diseases.”
+Pests, weeds and diseases may be controlled through mechanical or physical methods, such as development
+of habitat for natural enemies of pests, mowing, and livestock grazing. If these methods are “insufficient
+to prevent or control crop pests, weeds, and diseases, a biological or botanical substance or a substance
+included on the National List of synthetic substances allowed for use in organic crop production may be
+applied to prevent, suppress, or control pests, weeds, or diseases.”
+WILD CROP
+205.207—A wild crop “represented as organic must be harvested from a designated area that has had no
+prohibited substance…for a period of 3 years immediately preceding the harvest.” A wild crop must be
+harvested in a manner is not “destructive to the environment and will sustain the growth and production of
+the wild crop.”
+LIVESTOCK ORIGIN
+205.236—Livestock products that are “represented as organic must be from livestock under continuous
+organic management from the last third of gestation or hatching.” Except, “poultry or edible poultry
+products must be from poultry that has been under continuous organic management beginning no later than
+the second day of life,” and “milk or milk products must be from animals that have been under continuous
+organic management beginning no later than 1 year prior to the production of the milk or milk products.”
+LIVESTOCK FEED AND PASTURE
+205.237:—The producer “must provide livestock with a total feed ration composed of agricultural products,
+including pasture and forage, that are organically produced and handled by operations certified to the NOP.”
+“The producer of an organic operation must not: use animal drugs, including hormones, to promote growth;
+provide feed supplements or additives in amounts above those needed for adequate nutrition and health.”
+“Ruminant animals must be grazed throughout the entire grazing season for the geographical region, which
+shall be not less than 120 days per calendar year.” Producers must “provide pasture of a sufficient quality
+and quantity to graze” and to provide ruminants “with an average of not less than 30 percent of their dry
+matter intake from grazing throughout the grazing season.”
+190–612–H, 1st Ed., Nov 2015 App1-3
+Title 190 – National Organic Farming Handbook
+PASTURE MANAGEMENT
+205.240—The producer must have “a functioning management plan for pasture.” The plan must include a
+description of the “cultural and management practices to be used to ensure pasture of a sufficient quality
+and quantity is available to graze throughout the grazing season…; the types of grazing methods to be used
+in the pasture system; location and types of fences”; location and source of shade and water; “soil fertility
+and seeding systems; erosion control and protection of natural wetlands and riparian areas practices.”
+Pasture must be managed “to refrain from putting soil or water quality at risk.”
+LIVESTOCK HEALTH CARE
+205.238—“The producer must establish and maintain preventive livestock health care practices, including:
+selection of species and types of livestock with regard to suitability for site-specific conditions and resistance
+to prevalent diseases and parasites; provision of a feed ration sufficient to meet nutritional requirements”;
+“appropriate housing, pasture conditions, and sanitation practices to minimize the occurrence and spread of
+diseases and parasites”; “vaccines and other veterinary biologics.”
+“When preventive practices and veterinary biologics are inadequate to prevent sickness, a producer may
+administer synthetic medications.” However, a producer may not use any antibiotics, any substance that
+contains a synthetic substance not allowed on the National List, any animal drug “in the absence of illness,
+hormones for growth promotion…or withhold medical treatment from a sick animal in an effort to preserve
+its organic status. All appropriate medications must be used to restore an animal to health when methods
+acceptable to organic production fail. Livestock treated with a prohibited substance must be clearly
+identified and shall not be sold, labeled, or represented as organically produced.”
+LIVESTOCK LIVING CONDITIONS
+205.239—The producer of an organic livestock operation must establish and maintain year-round livestock
+living conditions which accommodate the health and natural behavior of animals suitable to the species,
+its stage of life, the climate, and the environment. Including, but not limited to, year-round access for all
+animals to the outdoors, shade, shelter, exercise areas, fresh air, clean water for drinking, direct sunlight,
+and appropriate clean, dry bedding. Roughages used as bedding must be organically produced. The
+producer of an organic livestock operation may provide temporary confinement or shelter for an animal due
+to inclement weather; the animal's stage of life; to protect the health, safety, or well-being of the animal; to
+protect soil or water quality; breeding; shipping; or youth projects.
+“The producer of an organic livestock operation must manage manure in a manner that does not contribute
+to contamination of crops, soil, or water by plant nutrients, heavy metals, or pathogenic organisms and
+optimizes recycling of nutrients, and must manage pastures and other outdoor access areas in a manner that
+does not put soil or water quality at risk.”
+Additional USDA Organic Regulations and Guidance
+The following paragraphs describe several other aspects of the USDA organic regulations that may have a
+bearing on implementation of NRCS conservation programs and practices on organic farms.
+COMMINGLING
+205.272—“The handler of an organic handling operation must implement measures necessary to prevent the
+commingling of organic and nonorganic products and protect organic products from contact with prohibited
+substances.”
+RECORD KEEPING
+205.103—“A certified operation must maintain records concerning the production, harvesting, and handling
+of agricultural products that are or that are intended to be sold, labeled, or represented as…'organic’.”
+Records must “be maintained for not less than 5 years beyond their creation;” and “be sufficient to
+demonstrate compliance with the…regulations.”
+App1-4
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+THE NATIONAL LIST OF ALLOWED AND PROHIBITED SUBSTANCES
+205.601–604—Nonsynthetic or “natural” substances are allowed in organic crop and livestock production
+unless they are specifically prohibited on the National List. Synthetic substances are prohibited unless
+they are specifically allowed. The National List of Allowed and Prohibited Substances identifies these two
+groups of exceptions to the rule that synthetic substances are prohibited and nonsynthetic materials are
+allowed. For example, arsenic is a natural or nonsynthetic substance, but it is prohibited and thus on the
+National List. Aspirin is included on the National List as a synthetic substance allowed in organic livestock
+production to reduce inflammation. Some substances on the National List may only be used in specific
+situations or up to a maximum amount. For example, when used as an algicide in aquatic rice production,
+copper sulfate is limited to one application per field during any 24-month period.16
+EXCLUDED METHODS: GENETICALLY ENGINEERED SEEDS AND INPUTS
+205.2—In addition to being free from prohibited substances, products sold as organic must be produced and
+processed without the use of “excluded methods.” Excluded methods include genetically engineered crop
+seeds, seedlings, and planting stock, and biopesticides and other agricultural inputs based on or derived
+from genetically modified organisms (or GMOs).
+16 National Organic Program. “About the National List.” http://www.ams.usda.gov/AMSv1.0/ams.fetchTemplateData.do?template=Templat
+eJ&leftNav=NationalOrganicProgram&page=NOPNationalList&description=National%20List%20of%20Allowed%20and%20Prohibited%20Substances&acct=nopgeninfo.
+190–612–H, 1st Ed., Nov 2015 App2-1
+Title 190 – National Organic Farming Handbook
+Appendix 2
+Additional Resources
+Webinars on multiple relevant topics can be found at the NRCS Science and Technology Training Library
+located at ConservationWebinars.net.
+The following additional resources are also available on the topics listed below.
+Section A. Overview of Organic Agriculture:
+Resources concerning the conversion of Conservation Reserve Program (CRP) into production: Conservation
+Reserve Program: Alternatives and Options (NRCS):
+http://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/nrcs142p2_019293.pdf.
+Factors to Consider when Bringing Conservation Reserve Program (CRP) Land or Idle Land Back into
+Production (University of Kentucky): http://www2.ca.uky.edu/agc/pubs/id/id124/id124.htm.
+Converting CRP Land to Cropland or Pasture/Hayland: Agronomic and Weed Control Consideration (Ohio
+State University): http://ohioline.osu.edu/agf-fact/0024.html.
+Converting CRP Fields to Grain Crop Production (University of Missouri)
+http://extension.missouri.edu/p/G1651.
+Options for Expiring Conservation Reserve Program (CRP) Land (Oklahoma State University):
+http://pods.dasnr.okstate.edu/docushare/dsweb/Get/Document-7247/NREM%209016web.pdf.
+Section D. Integral Conservation Activities for Organic Production Systems
+1. Nutrient Management
+Managing Soil Fertility and Organic Matter (MOSES):
+https://mosesorganic.org/wp-content/uploads/Publications/Fact_Sheets/08ImportanceOrganicMatterToFertili
+ty.pdf. Succinct summary of organic soil and nutrient management practices.
+Manures for Organic Production (ATTRA):
+https://attra.ncat.org/attra-pub/summaries/summary.php?pub=182. This publication discusses the use of
+raw and composted manures in organic vegetable production, including, environmental and human health
+considerations, USDA organic regulations, and nutrient management for optimum, cost effective crop
+nutrition.
+Interpreting Soil Health Tests in New Hampshire (NRCS):
+http://soilhealth.cals.cornell.edu/extension/pdfs/NH_NRCS_SoilHealthManagementOptionsTable.pdf. This
+two-page table lists various soil-related physical, biological and chemical concerns, and short- and long-term
+management practices including NRCS cost-share practices to address each concern.
+4. Crop Rotations
+Northern Great Plains Crop Sequence Calculator (USDA, ARS):
+http://www.ars.usda.gov/Services/docs.htm?docid=10791. Program that includes information on crop
+production, economics, plant diseases, weeds, water use, and surface soil properties to evaluate management
+risks associated with different crop sequences.
+App2-2
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+5. Tillage & Residue Management
+Manitoba – North Dakota Zero Tillage Farmers Association: http://mandakzerotill.org/. Extensive Web
+site with a strong focus on soil health, but not specific to organic systems. The Web site includes a link to
+proceedings of annual conferences.
+6. Integrated Pest Management
+Agronomy Technical Note 5 (NRCS):
+http://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1043138.pdf. This note discusses practices
+to reduce risks including measures to reduce the need for pesticide applications.
+Agronomy Technical Note 9 (NRCS):
+http://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=32935.wba. This note provides
+additional information on pollinators and pollinator conservation.
+A Quick Guide to Establishing Wildflower Plantings for the Conservation of Beneficial Insects (SARE):
+http://www.sare.org/Learning-Center/SARE-Project-Products/North-Central-SARE-Project-Products/VideoA-Quick-Guide-to-Establishing-Wildflower-Plantings-for-the-Conservation-of-Beneficial-Insects. This video
+is an introductory guide to help establish wildflower plantings for the conservation of beneficial insects.
+Ecological Farm Design for Pest Management in Organic Vegetable Production: Successes and Challenges
+on Two Farms (eOrganic):
+http://www.extension.org/pages/61953/ecological-farm-design-for-pest-management-in-organic-vegetableproduction:-successes-and-challenges#.U_KlpUj8X6R. This webinar describes how two farms increased
+plant diversity though practices such as planting insectaries and hedgerows, and employed reduced tillage,
+pest thresholds and crop planting timing to manage pests in vegetable crops with minimal or no spraying.
+Ecological Understanding of Insects in Organic Farming Systems: Insects in Communities (Pennsylvania
+State University, eOrganic):
+https://www.extension.org/pages/18908/ecological-understanding-of-insects-in-organic-farming-systems:-
+insects-in-communities#.U_Jm0kj8W58. This article describes ecological principles and community
+interactions of insects.
+Farmscaping to Manage Insect Pests (Michigan State University, SARE):
+http://www.sare.org/Learning-Center/Conference-Materials/The-New-American-Farm-Conference/BreakoutSessions/Farmscaping-to-Manage-Insects. This PowerPoint presentation describes how to control insect
+pests by arranging fields, forests and borders into an insect-managing “farmscape” that helps grow healthier,
+more productive crops.
+Farmscaping: Making Use of Nature’s Pest Management Services (Clemson University, eOrganic):
+http://www.extension.org/pages/18573/farmscaping:-making-use-of-natures-pest-management-services#.U01rUj8W58. This publication covers farmscaping methods including the use of insectary plants, hedgerows,
+cover crops, and water reservoirs to attract and support populations of beneficial organisms such as insects,
+spiders, amphibians, reptiles, bats, and birds that parasitize or prey upon insect pests.
+Managing the Soil to Reduce Insect Pests (Clemson University, eOrganic):
+https://www.extension.org/pages/18574/managing-the-soil-to-reduce-insect-pests. This article addresses
+some of the main elements of soil management that can help to reduce insect pest problems, including soil
+and fertility management, below-ground biodiversity (enhancing the soil food web), use of mulches, and
+sanitation.
+Mammal Pest Management
+How to Manage Pests (University of California)
+• Pocket gopher: http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1058&context=vpc14.
+190–612–H, 1st Ed., Nov 2015 App2-3
+Title 190 – National Organic Farming Handbook
+• Deer Mouse: http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn74161.html.
+• Vole: http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7439.html.
+• Rabbit: http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7447.html.
+• Ground Squirrel: http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7438.html.
+Exclusionary Methods and Materials to Protect Plants from Pest Mammals—A Review (University of
+Nebraska): http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1058&context=vpc14. This paper
+covers pest mammal management methods for organic and sustainable agriculture. It includes various
+materials wrapped or tied directly on tree trunks; the larger loose-fitting protective cylinders or other
+individual exclosures, shields, or bands to prevent access to the upper tree portions via the trunk; mounding
+soil; or other materials around the base of trees to restrict feeding or to make the habitat less favorable to
+pest species.
+How can I control rodents organically? (ATTRA):
+https://attra.ncat.org/calendar/question.php/2007/03/12/how_can_i_control_rodents_organically. This article
+discusses trapping, habitat modification, predator control, and approved organically rodenticide materials.
+Wildlife Compatible Fencing (Arizona Game and Fish Department:
+http://www.azgfd.gov/hgis/documents/110125_AGFD_fencing_guidelines.pdf. Describes fence design for
+landowners.
+Wildlife Friendly Fencing (Montanans for Safe Wildlife Passage):
+http://www.montanans4wildlife.org/wildlife-friendly-fencing/. This Web site has many publications on the
+topic of wildlife friendly fencing and its role in maintaining habitat connectivity.
+Weed and Invasive Species Control
+A Management Guide for Invasive Plants in Southern Forests (US Forest Service):
+http://www.srs.fs.fed.us/pubs/gtr/gtr_srs131.pdf. This publication contains thorough discussion of all
+methods for controlling invasive plants, including mulching and other nonchemical methods.
+Policy Memorandum: Biodegradable Biobased Mulch Film (USDA AMS NOP):
+http://www.ams.usda.gov/NOPProgramHandbook. This 2015 policy memo describes how the USDA organic
+regulations were amended to allow the use of biodegradable biobased mulch film in organic crop production.
+Solarization for Site Preparation
+Introduction to Soil Solarization (University of Florida): http://edis.ifas.ufl.edu/in856. This publication
+includes steps, photos and frequently asked questions.
+Soil solarization (University of California Agriculture and Natural Resources):
+http://www.ipm.ucdavis.edu/TOOLS/TURF/SITEPREP/soilsolar.html. This site includes a listing of weeds
+commonly controlled through solarization.
+Soil Solarization, an Alternative to Soil Fumigants (Colorado State University):
+http://www.ipm.ucdavis.edu/TOOLS/TURF/SITEPREP/soilsolar.html. This publication described the
+method and includes a discussion of the impacts on weed, nutrients, and microbes.
+Prescribed Grazing for Invasive Plant Control
+Targeted Grazing: A Natural Approach to Vegetation Management and Landscape Enhancement (University
+of Idaho): http://www.webpages.uidaho.edu/rx-grazing/Handbook.htm. A handbook on grazing as a new
+ecological service.
+Goat-powered Invasive Removal (Clemson University): http://www.clemson.edu/public/hunnicutt/goats.
+html. Features ongoing research.
+App2-4
+Title 190 – National Organic Farming Handbook
+190–612–H, 1st Ed., Nov 2015
+Prescribed Grazing in Practice (US Fish and Wildlife Service):
+http://www.fws.gov/invasives/stafftrainingmodule/methods/grazing/practice.html. This site includes foraging
+behavior, dietary preferences, and management for grazing animals.
+7. Buffers and Natural Areas
+Biodiversity and Natural Resources Management
+Biodiversity and Natural Resources Conservation Guidance (USDA AMS NOP):
+http://www.ams.usda.gov/NOP. New guidance expected in 2015.
+Biodiversity and Organic Agriculture (University of Nebraska, eOrganic):
+http://www.extension.org/pages/67368/organic-farming-systems-research-at-the-university-ofnebraska#part%205. Brief webinar on research related to the topic; part of series on organic farming.
+Biodiversity Compliance Assessment in Organic Agricultural Systems (WFA):
+http://www.wildfarmalliance.org/resources/Biodiversity%20Compliance.pdf. Publication that summarizes
+major biodiversity noncompliance (with USDA organic regulations) indicators and details guidance outlining
+positive compliance approaches.
+Biodiversity Principles (BC Agricultural Council):
+http://www.agf.gov.bc.ca/resmgmt/EnviroFarmPlanning/EFP_Biodiversity_Guide/2010_Web_PDF_
+Documents/BiodiversityGuide2010_Chapter2_BiodiversityPrinciples.pdf. This document describes eight
+agricultural biodiversity principles including importance of location and connections.
+Incorporating Prairies into Multifunctional Landscapes (SARE):
+http://www.sare.org/Learning-Center/SARE-Project-Products/North-Central-SARE-Project-Products/
+Incorporating-Prairies-into-Multifunctional-Landscapes. This publication describes how prairies can be
+incorporated into farms and how they affect nearby crops. Necessary steps and resources to establish and
+manage prairies are covered, as are the various uses for prairies: livestock grazing, hay production, biomass
+feedstocks, and carbon sequestering.
+Agroforestry Planning, Practices, and Design (SARE):
+http://www.extension.org/pages/67368/organic-farming-systems-research-at-the-university-ofnebraska#part%205. Resource includes a Handbook for Agroforestry Practices and Design, and a Training
+Manual for Applied Agroforestry Practices.
+Biodiversity for Climate Resilience (California Climate& Agriculture Network, CalCAN):
+http://vimeo.com/90807898. This webinar discusses the climate benefits and additional environmental and
+economic benefits of on-farm biological diversity in farm products and in the landscape, as well as some tools
+and practical considerations.
+Climate Change Benefits of Farmscaping in Yolo County (University of California at Davis):
+http://agadapt.ucdavis.edu/farmscaping/. This Web page covers many specific ways in which farmscaping
+can enhance system resilience to climate change, including carbon storage and greenhouse gas mitigation;
+biodiversity, resilience, and adaptation; and practical constraints to successful farmscaping.
+Effects of Climate Change on Insect Communities in Organic Farming Systems (Washington State
+University, eOrganic):
+http://www.extension.org/pages/66899/effects-of-climate-change-on-insect-communities-in-organic-farmingsystems-webinar#.U-00KUj8W58. This webinar outlines the potential for climate change to affect insect
+communities, and their interactions with plants, in cropping systems. Topics covered include the effects
+of climate change on biodiversity and the functioning of agricultural ecosystems, and the role of organic
+farming practices in mitigating negative effects of climate change.
+190–612–H, 1st Ed., Nov 2015 App2-5
+Title 190 – National Organic Farming Handbook
+Farming for Success in the 21st Century: Increasing Biodiversity (CalCAN):
+http://calclimateag.org/wp-content/uploads/2013/04/BIodiversity-Fact-Sheet.pdf. This fact sheet covers crop,
+landscape and species diversity practices related to climate change adaption and mitigation.
+Buffers
+Planting Habitat on Farms: Design, Techniques and Issues (Community Alliance for Family Farmers):
+http://www.youtube.com/watch?v=A4YwpkOSVTA&feature=youtu.be&noredirect=1. This webinar shows a
+diversity of projects, focusing on established practices and lessons learned from 20 years of planting habitat
+on farms.
+Pollinator Habitat
+Xerces Society Pollinator Short Course (SARE):
+http://www.sare.org/Learning-Center/SARE-Project-Products/Southern-SARE-Project-Products/XercesSociety-Pollinator-Short-Course. This presentation (PowerPoint slides) provides training on topics such
+as principles of pollinator biology, the economics of insect pollination, basic bee field identification, and
+pollinator conservation through land management practices, habitat restoration, and plant selection.
+Maintenance of Natural Sustainable Riparian Communities Fact Sheet Series (SARE):
+http://www.sare.org/Learning-Center/SARE-Project-Products/North-Central-SARE-Project-Products/
+Maintenance-of-Natural-Sustainable-Riparian-Communities-Fact-Sheets-Series. Five extension fact sheets
+based on a study of riparian ecosystems along the Middle Sheyenne River of North Dakota. Four of them
+relate to proper grazing management of these ecosystems.
+Establishing Native Pollinator Habitat Organically: Tips from our Experience at Kerr Center (Kerr Center
+for Sustainable Agriculture):
+http://kerrcenter.com/publication/establishing-native-pollinator-habitat-organically-tips-from-our-experienceat-kerr-center/. The Kerr Center faced many challenges and learned many lessons. They summarize their
+work and recommendations based on their experience.
