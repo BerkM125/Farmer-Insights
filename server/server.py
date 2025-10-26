@@ -238,6 +238,31 @@ def format_realtime_data(realtime_data):
     return formatted_text
 
 
+@app.route("/api/farm-data", methods=["GET"])
+def get_farm_data():
+    """
+    API endpoint to fetch real-time farm data (weather and market prices).
+    Accepts optional 'crops' query parameter (comma-separated list).
+    """
+    try:
+        # Get crops parameter from query string
+        crops_param = request.args.get("crops")
+        crop_list = None
+
+        if crops_param:
+            # Split comma-separated crops and clean up whitespace
+            crop_list = [crop.strip() for crop in crops_param.split(",")]
+
+        # Fetch real-time data
+        realtime_data = get_realtime_farm_data(crop_list)
+
+        return jsonify(realtime_data), 200
+
+    except Exception as e:
+        print(f"Error in /api/farm-data endpoint: {e}")
+        return jsonify({"error": str(e), "weather": [], "market": []}), 500
+
+
 @app.route("/rag-query", methods=["POST"])
 def rag_query():
     try:
