@@ -52,12 +52,12 @@ collected_data = {
 
 
 def check_and_log_complete_data(ctx: Context):
-    """Check if all data is collected and log it."""
-    if all(value is not None for value in collected_data.values()):
+    """Check if weather data is collected and log it."""
+    if collected_data["weather"] is not None:
         ctx.logger.info("=" * 60)
-        ctx.logger.info("ALL DATA COLLECTED:")
+        ctx.logger.info("WEATHER DATA COLLECTED - PROCEEDING WITH DATABASE UPDATE:")
         ctx.logger.info("=" * 60)
-        ctx.logger.info(f"Complete Data Dictionary: {collected_data}")
+        ctx.logger.info(f"Collected Data Dictionary: {collected_data}")
         ctx.logger.info("=" * 60)
 
         # Insert weather data into Supabase (7-day forecast)
@@ -65,28 +65,27 @@ def check_and_log_complete_data(ctx: Context):
             weather = collected_data["weather"]
             daily_forecast = weather["daily_forecast"]
 
-            # Get current conditions (these are only for "today")
-            current_humidity = weather["current_humidity"]
-            current_wind_speed = weather["current_wind_speed"]
-            current_wind_direction = weather["current_wind_direction"]
-            current_condition = weather["current_condition"]
-
             # Insert a row for each day in the 7-day forecast
             weather_records = []
-            for i, day in enumerate(daily_forecast):
+            for day in daily_forecast:
                 weather_record = {
                     "farm_id": FARM_ID,
-                    "temperature_high_f": day["temperature_high"],
-                    "temperature_low_f": day["temperature_low"],
-                    "rainfall_chance": day["precipitation_chance"],
-                    "rainfall_amount_mm": day["precipitation_sum"],
-                    "uv_index": float(day["uv_index"]),
                     "date": day["date"],
-                    # Current conditions only for the first day (today)
-                    "humidity_percent": current_humidity if i == 0 else None,
-                    "wind_speed_mph": current_wind_speed if i == 0 else None,
-                    "wind_direction": current_wind_direction if i == 0 else None,
-                    "condition": int(current_condition) if i == 0 else None,
+                    "weather_code": day["weather_code"],
+                    "temperature_high": day["temperature_high"],
+                    "temperature_low": day["temperature_low"],
+                    "temperature_mean": day["temperature_mean"],
+                    "precipitation_chance": day["precipitation_chance"],
+                    "precipitation_sum": day["precipitation_sum"],
+                    "wind_speed_max": day["wind_speed_max"],
+                    "wind_gusts_max": day["wind_gusts_max"],
+                    "wind_direction": day["wind_direction"],
+                    "humidity_mean": day["humidity_mean"],
+                    "evapotranspiration": day["evapotranspiration"],
+                    "sunshine_duration": day["sunshine_duration"],
+                    "dew_point": day["dew_point"],
+                    "growing_degree_days": day["growing_degree_days"],
+                    "leaf_wetness_probability": day["leaf_wetness_probability"],
                 }
                 weather_records.append(weather_record)
 
@@ -100,9 +99,8 @@ def check_and_log_complete_data(ctx: Context):
         except Exception as e:
             ctx.logger.error(f"❌ Error inserting to Supabase: {e}")
 
-        # Reset for next collection
-        for key in collected_data:
-            collected_data[key] = None
+        # Reset weather data for next collection
+        collected_data["weather"] = None
 
 
 # Create the requests (after class definitions)

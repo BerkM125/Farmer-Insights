@@ -2,19 +2,74 @@ from uagents import Agent, Context
 from models import WeatherRequest, WeatherResponse, DailyWeather
 import requests
 
-agent = Agent(name="weather_agent",
-              seed="weather_agent_seed_123",
-              port=8001,
-              endpoint=["http://127.0.0.1:8001/submit"]
-              )
+agent = Agent(
+    name="weather_agent",
+    seed="weather_agent_seed_123",
+    port=8001,
+    endpoint=["http://127.0.0.1:8001/submit"],
+)
 
 
 def wind_direction_from_degrees(degrees):
     """Convert wind direction in degrees to cardinal direction."""
-    directions = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
-                  "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+    directions = [
+        "N",
+        "NNE",
+        "NE",
+        "ENE",
+        "E",
+        "ESE",
+        "SE",
+        "SSE",
+        "S",
+        "SSW",
+        "SW",
+        "WSW",
+        "W",
+        "WNW",
+        "NW",
+        "NNW",
+    ]
     index = round(degrees / 22.5) % 16
     return directions[index]
+
+
+def safe_get(data, key, index, default=0.0):
+    """Safely get a value from daily data array with null checking."""
+    if key not in data or not data[key] or len(data[key]) <= index:
+        return default
+    value = data[key][index]
+    return value if value is not None else default
+
+
+def create_daily_weather(daily_data, index):
+    """Create a DailyWeather object from daily API data."""
+    return DailyWeather(
+        date=safe_get(daily_data, "time", index, ""),
+        weather_code=int(safe_get(daily_data, "weather_code", index, 0)),
+        temperature_high=safe_get(daily_data, "temperature_2m_max", index),
+        temperature_low=safe_get(daily_data, "temperature_2m_min", index),
+        temperature_mean=safe_get(daily_data, "temperature_2m_mean", index),
+        precipitation_chance=safe_get(
+            daily_data, "precipitation_probability_max", index
+        ),
+        precipitation_sum=safe_get(daily_data, "precipitation_sum", index),
+        wind_speed_max=safe_get(daily_data, "wind_speed_10m_max", index),
+        wind_gusts_max=safe_get(daily_data, "wind_gusts_10m_max", index),
+        wind_direction=wind_direction_from_degrees(
+            safe_get(daily_data, "wind_direction_10m_dominant", index)
+        ),
+        humidity_mean=safe_get(daily_data, "relative_humidity_2m_mean", index),
+        evapotranspiration=safe_get(daily_data, "et0_fao_evapotranspiration", index),
+        sunshine_duration=safe_get(daily_data, "sunshine_duration", index),
+        dew_point=safe_get(daily_data, "dew_point_2m_mean", index),
+        growing_degree_days=safe_get(
+            daily_data, "growing_degree_days_base_0_limit_50", index
+        ),
+        leaf_wetness_probability=safe_get(
+            daily_data, "leaf_wetness_probability_mean", index
+        ),
+    )
 
 
 def fetch_weather_data(latitude: float, longitude: float):
@@ -23,13 +78,13 @@ def fetch_weather_data(latitude: float, longitude: float):
     params = {
         "latitude": latitude,
         "longitude": longitude,
-        "current": "temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m",
-        "daily": "temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,uv_index_max",
-        "temperature_unit": "fahrenheit",
+        "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,relative_humidity_2m_mean,et0_fao_evapotranspiration,temperature_2m_mean,growing_degree_days_base_0_limit_50,leaf_wetness_probability_mean,precipitation_probability_max,sunshine_duration,dew_point_2m_mean",
+        "timezone": "auto",
         "wind_speed_unit": "mph",
-        "timezone": "auto"
+        "temperature_unit": "fahrenheit",
+        "precipitation_unit": "inch",
     }
-    
+
     response = requests.get(url, params=params)
     response.raise_for_status()
     return response.json()
@@ -38,43 +93,32 @@ def fetch_weather_data(latitude: float, longitude: float):
 @agent.on_event("startup")
 async def print_address(ctx: Context):
     ctx.logger.info(agent.address)
- 
- 
+
+
 @agent.on_message(model=WeatherRequest, replies=WeatherResponse)
 async def handle_weather_request(ctx: Context, sender: str, msg: WeatherRequest):
-    ctx.logger.info(f"Received weather request from {sender}: {msg.latitude}, {msg.longitude}")
-    
+    ctx.logger.info(
+        f"Received weather request from {sender}: {msg.latitude}, {msg.longitude}"
+    )
+
     try:
         data = fetch_weather_data(msg.latitude, msg.longitude)
-        
-        current = data["current"]
+
         daily = data["daily"]
-        
+
         # Build 7-day forecast
         daily_forecasts = []
-        for i in range(7):
-            day_forecast = DailyWeather(
-                date=daily["time"][i],
-                temperature_high=daily["temperature_2m_max"][i],
-                temperature_low=daily["temperature_2m_min"][i],
-                precipitation_chance=daily["precipitation_probability_max"][i] if daily["precipitation_probability_max"][i] else 0.0,
-                precipitation_sum=daily["precipitation_sum"][i] if daily["precipitation_sum"][i] else 0.0,
-                uv_index=int(daily["uv_index_max"][i]) if daily["uv_index_max"][i] else 0,
-            )
+        for i in range(min(7, len(daily["time"]))):
+            day_forecast = create_daily_weather(daily, i)
             daily_forecasts.append(day_forecast)
-        
-        forecast = WeatherResponse(
-            current_humidity=current["relative_humidity_2m"],
-            current_wind_speed=current["wind_speed_10m"],
-            current_wind_direction=wind_direction_from_degrees(current["wind_direction_10m"]),
-            current_condition=str(current["weather_code"]),
-            daily_forecast=daily_forecasts
-        )
-        
+
+        # Create response with 7-day forecast
+        forecast = WeatherResponse(daily_forecast=daily_forecasts)
+
         ctx.logger.info(f"Sending 7-day weather forecast to {sender}")
-        ctx.logger.info(f"Current: Code {forecast.current_condition}, Humidity: {forecast.current_humidity}%")
+        ctx.logger.info(f"Forecast includes {len(daily_forecasts)} days")
         await ctx.send(sender, forecast)
-        
+
     except Exception as e:
         ctx.logger.error(f"Error fetching weather data: {e}")
 

@@ -10,17 +10,24 @@ class WeatherRequest(BaseModel):
 
 class DailyWeather(BaseModel):
     date: str = Field(description="Date of the forecast")
+    weather_code: int = Field(description="WMO weather code (0-99)")
     temperature_high: float = Field(description="High temperature in Fahrenheit")
     temperature_low: float = Field(description="Low temperature in Fahrenheit")
+    temperature_mean: float = Field(description="Mean temperature in Fahrenheit")
     precipitation_chance: float = Field(description="Chance of precipitation (0-100)")
-    precipitation_sum: float = Field(description="Total precipitation amount in mm")
-    uv_index: int = Field(description="UV index (0-11+)")
+    precipitation_sum: float = Field(description="Total precipitation amount in inches")
+    wind_speed_max: float = Field(description="Maximum wind speed in mph")
+    wind_gusts_max: float = Field(description="Maximum wind gusts in mph")
+    wind_direction: str = Field(description="Dominant wind direction")
+    humidity_mean: float = Field(description="Mean relative humidity percentage")
+    evapotranspiration: float = Field(description="Evapotranspiration in inches")
+    sunshine_duration: float = Field(description="Sunshine duration in seconds")
+    dew_point: float = Field(description="Dew point temperature in Fahrenheit")
+    growing_degree_days: float = Field(description="Growing degree days")
+    leaf_wetness_probability: float = Field(description="Leaf wetness probability")
+
 
 class WeatherResponse(BaseModel):
-    current_humidity: float = Field(description="Current humidity percentage")
-    current_wind_speed: float = Field(description="Current wind speed in mph")
-    current_wind_direction: str = Field(description="Current wind direction")
-    current_condition: str = Field(description="Current weather condition code")
     daily_forecast: list[DailyWeather] = Field(description="7-day weather forecast")
 
 
