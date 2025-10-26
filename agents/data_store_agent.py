@@ -1,5 +1,10 @@
-from uagents import Agent, Context, Protocol
-from pydantic import BaseModel, Field
+from uagents import Agent, Context
+from models import (
+    WeatherRequest, WeatherResponse,
+    SatelliteRequest, SatelliteResponse,
+    MarketRequest, MarketResponse,
+    SoilEnvironmentRequest, SoilEnvironmentResponse
+)
 
 agent = Agent(name="data_store_agent",
               seed="data_store_agent_seed_123",
@@ -11,65 +16,6 @@ WEATHER_AGENT_ADDRESS = "agent1qga95re2thygqrydtytm5zhg03jqznf8r08cv34fhdmsakc2m
 SATELLITE_AGENT_ADDRESS = "agent1qt6uwy02w48l49z007txkyys63e9tj73up3am4ftakejlmx8aqev7jzf37m"
 MARKET_AGENT_ADDRESS = "agent1q26j45u6rtm83csyqhre6l0qwmdc67y065emknmcv9wvhcltfte0zfa4s2r"
 SOIL_ENVIRONMENT_AGENT_ADDRESS = "agent1q0j9fcj57s70sm00asqpr4zh08juxk3wzzxz2zh2hua7el0alu4l27t40st"
-
-
-class WeatherRequest(BaseModel):
-    latitude: float = Field(
-        description="The latitude of the location"
-    )
-    longitude: float = Field(
-        description="The longitude of the location"
-    )
-
-class WeatherResponse(BaseModel):
-    temperature_high: float = Field(description="High temperature in Fahrenheit")
-    temperature_low: float = Field(description="Low temperature in Fahrenheit")
-    humidity: float = Field(description="Humidity percentage")
-    precipitation_chance: float = Field(description="Chance of precipitation (0-100)")
-    wind_speed: float = Field(description="Wind speed in mph")
-    wind_direction: str = Field(description="Wind direction")
-    condition: str = Field(description="Weather condition (e.g., sunny, cloudy, rainy)")
-    uv_index: int = Field(description="UV index (0-11+)")
-    visibility: float = Field(description="Visibility in miles")
-
-
-class SatelliteRequest(BaseModel):
-    latitude: float = Field(
-        description="The latitude of the location"
-    )
-    longitude: float = Field(
-        description="The longitude of the location"
-    )
-
-class SatelliteResponse(BaseModel):
-    status: str = Field(
-        description="Status of the satellite data connection"
-    )
-
-
-class MarketRequest(BaseModel):
-    crop_type: str = Field(
-        description="The type of crop to get market data for"
-    )
-
-class MarketResponse(BaseModel):
-    market_data: str = Field(
-        description="Market data for the requested crop"
-    )
-
-
-class SoilEnvironmentRequest(BaseModel):
-    latitude: float = Field(
-        description="The latitude of the location"
-    )
-    longitude: float = Field(
-        description="The longitude of the location"
-    )
-
-class SoilEnvironmentResponse(BaseModel):
-    soil_data: str = Field(
-        description="Soil and environment data for the requested location"
-    )
 
 
 # Create the requests (after class definitions)

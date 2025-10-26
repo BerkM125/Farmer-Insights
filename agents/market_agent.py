@@ -1,21 +1,11 @@
-from pydantic import BaseModel, Field
-from uagents import Agent, Context, Protocol, Model
+from uagents import Agent, Context
+from models import MarketRequest, MarketResponse
 
 agent = Agent(name="market_agent",
               seed="market_agent_seed_123",
               port=8003,
               endpoint=["http://127.0.0.1:8003/submit"]
               )
-
-class MarketRequest(BaseModel):
-    crop_type: str = Field(
-        description="The type of crop to get market data for"
-    )
-
-class MarketResponse(BaseModel):
-    market_data: str = Field(
-        description="Market data for the requested crop"
-    )
 
 
 @agent.on_event("startup")

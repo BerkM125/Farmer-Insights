@@ -1,24 +1,11 @@
-from pydantic import BaseModel, Field
-from uagents import Agent, Context, Protocol, Model
+from uagents import Agent, Context
+from models import SoilEnvironmentRequest, SoilEnvironmentResponse
 
 agent = Agent(name="soil_environment_agent",
               seed="soil_environment_agent_seed_123",
               port=8004,
               endpoint=["http://127.0.0.1:8004/submit"]
               )
-
-class SoilEnvironmentRequest(BaseModel):
-    latitude: float = Field(
-        description="The latitude of the location"
-    )
-    longitude: float = Field(
-        description="The longitude of the location"
-    )
-
-class SoilEnvironmentResponse(BaseModel):
-    soil_data: str = Field(
-        description="Soil and environment data for the requested location"
-    )
 
 
 @agent.on_event("startup")
