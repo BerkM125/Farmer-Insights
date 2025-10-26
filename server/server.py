@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, Response, stream_with_context
 from flask_cors import CORS
 import chromadb
 from chromadb.utils import embedding_functions
@@ -41,16 +41,58 @@ supabase: Client = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_
 
 # Initialize Lava Payments token
 def get_lava_token():
-    return base64.b64encode(
-        json.dumps(
-            {
-                "secret_key": os.getenv("LAVA_API_KEY"),
-                "connection_secret": os.getenv("LAVA_SELF_CONNECTION_SECRET"),
-                "product_secret": os.getenv("LAVA_SELF_PRODUCT_SECRET"),
-            }
-        ).encode()
-    ).decode()
+    return base64.b64encode(json.dumps({
+        "secret_key": os.getenv('LAVA_API_KEY'),
+        "connection_secret": os.getenv('LAVA_SELF_CONNECTION_SECRET'),
+        "product_secret": os.getenv('LAVA_SELF_PRODUCT_SECRET')
+    }).encode()).decode()
 
+def split_query_into_search_terms(user_query: str):
+    """
+    Use LLM to split a complex user query into simpler search terms for RAG.
+
+    Args:
+        user_query: The original user question
+
+    Returns:
+        List of simplified search queries
+    """
+    token = get_lava_token()
+
+    # Load query splitter prompt from file
+    splitter_prompt_path = Path(__file__).parent / 'query_splitter_prompt.md'
+    with open(splitter_prompt_path, 'r') as f:
+        system_prompt = f.read()
+
+    try:
+        response = requests.post(
+            "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "gpt-4o-mini",
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_query}
+                ],
+                "temperature": 0.3
+            }
+        )
+
+        response_data = response.json()
+        split_queries = response_data['choices'][0]['message']['content'].strip().split('\n')
+        # Clean up any empty lines
+        split_queries = [q.strip() for q in split_queries if q.strip()]
+
+        print(f"Split query into: {split_queries}")
+        return split_queries
+
+    except Exception as e:
+        print(f"Error splitting query: {e}")
+        # Fallback to original query if splitting fails
+        return [user_query]
 
 def get_rag_context(query: str, n_results: int = 3):
     """
@@ -136,18 +178,21 @@ def format_realtime_data(realtime_data):
         formatted_text += "** Weather Forecast (Next 7 Days) **\n"
         for day in realtime_data["weather"]:
             formatted_text += f"Date: {day.get('date', 'N/A')}\n"
-            formatted_text += f"  - Temperature: {day.get('temperature_low_f', 'N/A')}°F to {day.get('temperature_high_f', 'N/A')}°F\n"
-            formatted_text += (
-                f"  - Rainfall Chance: {day.get('rainfall_chance', 'N/A')}%\n"
-            )
-            formatted_text += (
-                f"  - Rainfall Amount: {day.get('rainfall_amount_mm', 'N/A')} mm\n"
-            )
-            if day.get("humidity_percent"):
-                formatted_text += f"  - Humidity: {day.get('humidity_percent')}%\n"
-            if day.get("wind_speed_mph"):
-                formatted_text += f"  - Wind Speed: {day.get('wind_speed_mph')} mph from {day.get('wind_direction', 'N/A')}\n"
-            formatted_text += f"  - UV Index: {day.get('uv_index', 'N/A')}\n\n"
+            formatted_text += f"  - Temperature: {day.get('temperature_low', 'N/A')}°F to {day.get('temperature_high', 'N/A')}°F\n"
+            formatted_text += f"  - Mean Temperature: {day.get('temperature_mean', 'N/A')}°F\n"
+            formatted_text += f"  - Precipitation Chance: {day.get('precipitation_chance', 'N/A')}%\n"
+            formatted_text += f"  - Precipitation Amount: {day.get('precipitation_sum', 'N/A')} inches\n"
+            if day.get('humidity_mean'):
+                formatted_text += f"  - Humidity: {day.get('humidity_mean')}%\n"
+            if day.get('wind_speed_max'):
+                formatted_text += f"  - Max Wind Speed: {day.get('wind_speed_max')} mph from {day.get('wind_direction', 'N/A')}\n"
+            if day.get('wind_gusts_max'):
+                formatted_text += f"  - Wind Gusts: {day.get('wind_gusts_max')} mph\n"
+            if day.get('evapotranspiration'):
+                formatted_text += f"  - Evapotranspiration: {day.get('evapotranspiration')} inches\n"
+            if day.get('sunshine_duration'):
+                formatted_text += f"  - Sunshine Duration: {day.get('sunshine_duration')} seconds\n"
+            formatted_text += "\n"
     else:
         formatted_text += "** Weather Forecast **\nNo weather data available.\n\n"
 
@@ -176,57 +221,8 @@ def format_realtime_data(realtime_data):
     formatted_text += "\n=== END REAL-TIME DATA ===\n"
     return formatted_text
 
-
-@app.route("/api/farm-data", methods=["GET"])
-def get_farm_data():
-    """
-    Get real-time farm data from Supabase.
-
-    Query parameters:
-        crops: Optional comma-separated list of crop names to filter (e.g., "corn,soybeans,wheat")
-
-    Returns:
-    {
-        "weather": [...],  // 7-day forecast
-        "market": [...]    // market prices (filtered by crops if provided)
-    }
-    """
-    try:
-        # Get optional crops filter from query params
-        crops_param = request.args.get("crops")
-        crop_list = (
-            [c.strip().lower() for c in crops_param.split(",")] if crops_param else None
-        )
-
-        realtime_data = get_realtime_farm_data(crop_list)
-        return jsonify(realtime_data), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/rag-query", methods=["POST"])
+@app.route('/rag-query', methods=['POST'])
 def rag_query():
-    """
-    Process a RAG query and return LLM response with context.
-
-    Expected JSON body:
-    {
-        "messages": [
-            {"role": "system", "content": "..."},
-            {"role": "user", "content": "..."},
-            {"role": "assistant", "content": "..."},
-            ...
-        ],
-        "n_results": 3  // optional, defaults to 3
-    }
-
-    Returns:
-    {
-        "response": "LLM response",
-        "context": [...],  // retrieved documents
-        "model": "gpt-4"
-    }
-    """
     try:
         data = request.get_json()
 
@@ -288,9 +284,79 @@ def rag_query():
             },
             json={"model": "gpt-4o-mini", "messages": llm_messages},
         )
+        
+        # Check if streaming is requested
+        should_stream = data.get('stream', False)
+
+        if should_stream:
+            # Return streaming response
+            def generate():
+                try:
+                    lava_response = requests.post(
+                        "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
+                        headers={
+                            "Authorization": f"Bearer {token}",
+                            "Content-Type": "application/json"
+                        },
+                        json={
+                            "model": "gpt-4o-mini",
+                            "messages": llm_messages,
+                            "stream": True
+                        },
+                        stream=True
+                    )
+                    
+                    # Stream the response
+                    for line in lava_response.iter_lines():
+                        if line:
+                            decoded_line = line.decode('utf-8')
+                            # Forward the SSE data directly to client
+                            if decoded_line.startswith('data: '):
+                                data_content = decoded_line[6:]  # Remove 'data: ' prefix
+                                
+                                # Remove ** from content if present
+                                if data_content != '[DONE]':
+                                    try:
+                                        parsed = json.loads(data_content)
+                                        if 'choices' in parsed and len(parsed['choices']) > 0:
+                                            if 'delta' in parsed['choices'][0] and 'content' in parsed['choices'][0]['delta']:
+                                                content = parsed['choices'][0]['delta']['content']
+                                                content = content.replace('**', '')
+                                                parsed['choices'][0]['delta']['content'] = content
+                                                data_content = json.dumps(parsed)
+                                    except:
+                                        pass
+                                
+                                yield f"data: {data_content}\n\n"
+                    
+                    # Send completion marker
+                    yield "data: [DONE]\n\n"
+                    
+                except Exception as e:
+                    yield f"data: {json.dumps({'error': str(e)})}\n\n"
+            
+            return Response(stream_with_context(generate()), mimetype='text/event-stream')
+        else:
+            # Non-streaming response (legacy)
+            lava_response = requests.post(
+                "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": "gpt-4o-mini",
+                    "messages": llm_messages
+                }
+            )
 
         lava_data = lava_response.json()
         response_text = lava_data["choices"][0]["message"]["content"]
+            lava_data = lava_response.json()
+            response_text = lava_data['choices'][0]['message']['content']
+
+            # Remove markdown formatting symbols
+            response_text = response_text.replace('**', '')
 
         return (
             jsonify(
@@ -302,6 +368,11 @@ def rag_query():
             ),
             200,
         )
+            return jsonify({
+                'response': response_text,
+                'context': context_items,
+                'model': lava_data.get('model', 'gpt-4o-mini')
+            }), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

@@ -1,0 +1,2976 @@
+POTATO PRODUCTION
+HANDBOOK
+NATIONAL POTATO COUNCIL OF KENYA
+A GUIDELINE FOR FARMERS AND TRAINERS
+2 POTATO PRODUCTION HANDBOOK
+Photographs
+© NPCK
+NPCK is responsible for the content of this publication.
+October 2018
+In partnership with:
+POTATO PRODUCTION HANDBOOK 3
+Table of Contents
+ACKNOWLEDGEMENT 8
+CHAPTER 1 : INTRODUCTION 9
+1.1 BACKGROUND TO THE POTATO INDUSTRY 9
+1.2 JUSTIFICATION FOR THE HAND BOOK 10
+1.3 ABOUT THIS HANDBOOK 11
+CHAPTER 2 : BACKGROUND TO POTATO IN KENYA 12
+2.1 NUTRITIONAL VALUE 12
+2.2 CONSUMPTION AND USES 13
+2.3 INDUSTRIAL PROCESSING 13
+2.4 MARKET REQUIREMENTS 14
+2.5 POTATO GROWING REGIONS IN KENYA 14
+2.6 ECOLOGICAL REQUIREMENTS 15
+2.7 STAKEHOLDERS IN THE VALUE CHAIN 18
+2.8 COMMERCIAL WARE POTATO PRODUCTION 19
+CHAPTER 3 : POTATO PRODUCTION 20
+3.1 NUTRIENTS MANAGEMENT IN POTATOES 20
+3.2 ROTATIONAL PLANNING 30
+3.3 LAND PREPARATION 32
+3.4 PLANTING 34
+3.5 WEEDING 40
+3.6 EARTHING UP / HILLING 41
+FORWARD 6
+ACRONYMS 5
+4 POTATO PRODUCTION HANDBOOK
+CHAPTER 5 : HARVESTING AND POST-HARVEST HANDLING 81
+5.1 DEHAULMING 81
+5.2 HARVESTING 82
+5.3 PACKAGING AND TRANSPORTING 83
+5.4 SORTING AND GRADING 84
+5.5 CURING 84
+5.5 STORAGE 84
+5.5 TUBER QUALITY 85
+CHAPTER 6 : MARKETING POTATO 87
+6.1 MARKET REQUIREMENTS 87
+6.2 MARKET ASSESSMENT 87
+6.3 PLANNING AND BUDGETING FOR POTATO PRODUCTION 90
+6.4 GROSS MARGIN ANALYSIS 95
+6.5 RECORDS KEEPING 97
+ANNEXES 100
+REFERENCES 99
+CHAPTER 4 : POTATO DISEASES AND PESTS MANAGEMENT 43
+4.1 POTATO DISEASES AND MANAGEMENT 43
+4.2 POTATO PEST AND MANAGEMENT 70
+POTATO PRODUCTION HANDBOOK 5
+ASL Above Sea Level
+ASDS Agriculture Sector Development Strategy
+CIP International Potato Center
+CM Centimeter
+DV Daily Value
+GDP Gross Domestic Product
+GAP Good Agricultural Practices
+GIZ Deutsche Gesellschaft Fur Internationale Zusammenarbeit
+GMP Good Manufacturing Practices
+GM Gross Margin
+HA Hectare
+IFDC International Fertilizer Development Centre
+IPM Integrated Pest Management
+KALRO Kenya Agriculture and Livestock Research Organization
+KEPHIS Kenya Plant Health Inspectorate Services
+KM Kilometer
+KGS Kilograms
+MoALF&I Ministry of Agriculture Livestock Fisheries and Irrigation
+MD Man Days
+NPCK National Potato Council Of Kenya
+PCPB Pest Control Product Board
+PTM Potato Tuber Moth
+SMS Short Message Service
+SNV Netherlands development organization
+T Tonnes
+ToT Trainer of Trainers
+Acronyms
+6 POTATO PRODUCTION HANDBOOK
+Foreward
+Agriculture directly contributes 25% and indirectly 27% to Gross Domestic Product (GDP). The
+sector also contributes 65% of export earnings in Kenya. The government of Kenya has outlined
+the importance of agriculture to national economy, through the Kenya Vision 2030 and the
+Agricultural Sector Development Strategy (ASDS) 2009-2020.
+Potato (Solanum tuberosum L) is an important food and cash crop in Kenya. It plays a key role in
+contributing towards food and nutrition security, poverty eradication and employment creation.
+The potato consumption is growing tremendously and this is attributed to urbanization and
+population growth and changing consumer tastes and preferences towards consuming value
+added products such as chips and crisps.
+However, the current productivity levels are low, averaging below 10 tons per ha vis-a-vis 40
+tons per ha achievable under recommended agronomic practices. Improvement in production
+and use of certified seed, optimization of use of inputs, disease control, and improved storage
+and marketing has the potential to transform the subsector into a more competitive industry.
+Strategic interventions in the industry are also important in helping achieve the government’s
+Big 4 agenda of 100% food and nutrition security.
+The Potato Production Handbook was developed through review of the training materials
+previously produced by different players in the potato subsector and consolidating the various
+aspects of potato production into a harmonized handbook. This publication provides insights on
+the background of potato production in Kenya, harvesting and post-harvest handling practices,
+pest and disease management, and potato marketing.
+It is a tool that will help achieve one of the objectives of the National Potato Strategy (2016-
+2020) of improving extension through providing standardized and balanced training material for
+trainers. The Handbook is expected to guide a farmer, entrepreneur and any other stakeholder, 
+POTATO PRODUCTION HANDBOOK 7
+including the youths on how to go about potato production business.
+I believe the handbook will become a reference for the trainers in the industry and a guide in
+preparing training materials for farmers, Trainer of Trainers (ToTs) and the youth..
+Prof John H. Nderitu
+Chairman, National Potato Council of Kenya
+8 POTATO PRODUCTION HANDBOOK
+Acknowledgement
+The NPCK appreciates GIZ - Nutrition Sensitive Potato Partnership Project (NuSePPP) for the
+financial support in the development and publication of this Potato Production Handbook.
+The Potato Production Handbook was developed collaboratively by a team of technical experts
+drawn from the potato training committee under the umbrella of National Potato Council of
+Kenya (NPCK). The committee constitutes key institutions in the potato value chain namely:
+NPCK, Ministry of Agriculture Livestock Fisheries and Irrigation (MoALF&I), Kenya Agriculture
+and Livestock Research Organization (KALRO-Tigoni), Kenya Plant Health Inspectorate Services
+(KEPHIS), Agriculture Food Authority (AFA), Pest Control Product Board (PCPB), Deutsche
+Gesellschaft für Internationale Zusammenarbeit (GIZ), International Potato Center (CIP), SNVNetherlands development organization, International Fertilizer Development Centre (IFDC) and
+potato producing Counties represented by Kiambu and Nakuru department of Agriculture Livestock
+Fisheries (AL&F).
+Special gratitude goes to the technical team which included: Charity Maina (NPCK), Judith Oyoo
+(KALRO-Tigoni), Meshach Rono (GIZ), Mary Mendi (MoALF-Kiambu), Charles Mwangi (KEPHIS),
+Judith Chabari (IFDC), John Burke and Seamus Crosse (Teagasc), and Antony Njogu (consultant) for
+their hard work and dedication in developing this handbook.
+Other contributors are: Jackson Muchoki (GIZ), James Mugo (CIP), Peter Kariuki (NPCK), Florence
+Wambeti (PCPB), Duncan Maina (Toyota tsusho), Hannah Odour (department of AL&F Nakuru),
+Alex Kang’eri (MoALF&I), Gillian Kadenyi (SNV) and Elizabeth Langat (AFA). I wish also to thank the
+NPCK chairman Prof. John H. Nderitu and all the other individuals who shared their valuable inputs
+in preparation of this Handbook.
+Wachira Kaguongo
+Chief Executive Officer, National Potato Council of Kenya
+POTATO PRODUCTION HANDBOOK 9
+Chapter 1
+Introduction
+1.1 Background to the Potato Industry
+Agriculture directly contributes 25% to GDP and indirectly 27% to Gross Domestic Product (GDP).
+The sector also contributes 65% of export earnings in Kenya. The Kenya government has outlined
+the importance of agriculture to the national economy, through the Kenya Vision 2030 and the
+Agricultural Sector Development Strategy (ASDS) 2009-2020. Both policies aim at improving the
+standard of living of Kenyans by substantially reducing the number of people affected by hunger,
+famine and starvation (Machangi et al., 2016).
+Potato (Solanum tuberosum L) has high productivity per unit area and its versatility in utilization
+makes it the second most important food crop in Kenya after maize. Potatoes are grown twice
+annually (long and short rains) and it is estimated 1.5 million tonnes are produced on about
+161,000 hectares of land. This is worth between Ksh 40-50 billion each year and compares well
+with annual maize production of 40 million bags worth Ksh 120 billion (Potato Strategy, 2016).
+However, yields are generally low with an average yield of 10 tonnes per hectare (potential being
+40 tonnes per ha achievable under recommended agronomic practices) due to a number of
+challenges such as inadequate use of high quality seed potato and other inputs. Lack of proper
+storage facilities on-farm and at the marketing centres has led to huge losses during marketing.
+Farmers do not store potatoes due to lack of technical know-how; need for immediate cash
+and poor quality produce due to pests, diseases or mechanical damage. The industry directly
+and indirectly employs about 3.3 million actors, as producers, market agents, transporters,
+processors, vendors, retailers and exporters.
+10 POTATO PRODUCTION HANDBOOK
+1.2 Justification for the Hand Book
+Potato farmer training is a key aspect in improving the livelihoods of small holder producers in
+Potato farmer training is a key aspect in improving the livelihoods of small holder producers in
+Kenya. Training is a learning process that involves imparting knowledge, sharpening of skills,
+concepts, change in attitude, behavior and functional capacity of an individual and institution
+towards the achievement of a predetermined goal. However, many farmer trainers working
+for various organizations conduct trainings using training materials or methodologies that
+are not standardized. Different trainers refer to different training materials that give different
+recommendations, which end up confusing the farmers. Among the issues that are not provided
+in a standardized way are planting methods, seed rates, timing of agronomic activities like
+earthing up, de-haulming and post-harvest handling.
+Further there are a number of agri-entreprenuers, among them the youth, who cannot access
+simplified and easy to read materials on the various aspects along the potato value chain. This
+is despite the fact that there are huge employment and business opportunities in investing and
+engaging them in the value chain.
+To address this problem, NPCK working with the potato training committee, has produced this
+Potato Production Handbook. The handbook was developed through review of the training
+materials currently in use by different players in the potato subsector and consolidating the
+various aspects of potato production into this handbook. Areas of concern, which had previously
+brought conflict and confusion, have been standardized. It is hoped that this handbook shall
+become a reference for the trainers in the industry and a guide in preparing training materials for
+farmers, Trainer of Trainers (ToTs) and the youth.
+POTATO PRODUCTION HANDBOOK 11
+1.3 About this Handbook
+The Potato handbook aims to provide standard recommendations for Kenyan farmers and agrientrepreneurs who wish to engage in production of potatoes.
+This handbook is presented in six easy to read chapters on: introduction, background to potato in
+Kenya, potato production, harvesting and post-harvest handling, pest and disease management,
+and marketing potato. Each of the topics covered can be designed in the form of modules, with
+topics and sessions covering production to marketing of potato depending on the stage of the
+crop growth and the needs of the trainees.
+A separate handbook on seed potato production has also been produced targeting agrientrepreneurs with interest to engage in seed multiplication and distribution.
+12 POTATO PRODUCTION HANDBOOK
+Potatoes were first grown in Kenya in the 1880’s. The importance of potato is attributed to its
+high nutritive value, high productivity and good processing qualities for starch, flour, bread,
+soap, alcohol, weaning foods and animal feed. Potatoes present an important food source with
+a number of industrial and processing uses, which depend on the market needs. There are many
+varieties with singular or multiple uses, whose information is available in existing networks and
+platforms such as the (Potato Variety Catalogue, 2017) which can be accessed through
+www.npck.org.
+2.1 Nutritional Value
+The potato tuber is best known for its carbohydrate content (approximately 26 grams in a medium
+potato). It also contains vitamins and minerals, as well as an assortment of phytochemicals, such
+as carotenoids and polyphenols. If one takes a medium-size 150 grams potato tuber with its
+skin, they shall consume 27 milligrams(mg) of vitamin C (45% of the Daily Value (DV)), 620mg of
+potassium (18% of DV), 0.2 mg vitamin B6 (10% of DV) and trace amounts of thiamin, riboflavin,
+foliate, niacin, magnesium, phosphorus, iron, and zinc (Figure1). A detailed nutritional value
+chart is presented in Annex 1.
+Chapter 2
+Background To Potato In Kenya
+Figure 1: Nutritional value of potato tuber pith and skin
+POTATO PRODUCTION HANDBOOK 13
+The fiber content of a potato with skin is equivalent to that of many whole grain breads, pastas,
+and cereals. Just under the potato skin is a thin layer of high-grade protein, with a biological
+value close to that of whey or egg protein. The best ways to take advantage of the nutrition from
+the skin and the underlying high grade protein layer is to consume them whole, or boil them and
+very carefully peel the skin and consume everything else. This explains the reason why potatoes
+taken with skin are more beneficial than potatoes peeled before cooking.
+2.2 Consumption and Uses
+Potato is extremely versatile and can be served boiled, stewed, roasted, baked, shallow-fried
+or deep-fried in fresh form. Change of eating habits especially in the urban centres has led to
+increased consumption of processed products such as chips (French fries) and roasted potato.
+It is estimated that there are over 40 local processors of crisps in Kenya. There are many potato
+varieties, each of which has its own qualities and uses (Annex 2). Varieties with high dry matter
+content and low levels of the reducing sugars, glucose and fructose, are preferred for processing
+into chips and crisps. Tubers having these attributes produce ‘bright’ fry colours, which consumers
+prefer.
+2.3 Industrial Processing
+There are over 200 companies that process potatoes in Kenya. The processors can be categorized
+into large and cottage undertakings based on processing capacity. It is estimated that about 9% of
+the total potato produced in Kenya goes into processing. Five percent of the potato that goes into
+processing is processed into chips, 3 percent into crisps, while 1 percent goes into processing of
+various forms of snacks (Kaguongo et al., 2014). Industrial level processing of potatoes involves
+production of starch and snack foods such as;
+• Crisps – a product prepared from fresh potato tubers (ware potato tubers) by peeling,
+ washing, slicing, blanching, dewatering, frying, de-oiling and flavoring 
+14 POTATO PRODUCTION HANDBOOK
+• Chevda (a mixture of potato crisps, corn)
+• Frozen potato chips
+• Dried potato cubes
+2.4 Market Requirements
+A number of varieties have multiple uses, which presents a greater marketing opportunity. As an
+agri-entrepreneur, before venturing into potato production it is advisable to conduct a market
+assessment to determine which varieties and quantities to produce.
+Understanding of the characteristics of each variety such as suitability to agro-ecological
+production zones, growth period, yields, tolerance to drought or diseases is equally important.
+This information can be obtained from the Variety Catalogue 2017 (www.npck.org). Once farmers
+have produced potatoes, they can market their potatoes through NPCK ICT platform- Viazi soko
+(Annex 3).
+2.5 Potato Growing Regions in Kenya
+Potatoes are cultivated mainly in the high altitude areas between 1,500 and 3,000 meters above
+Sea Level (ASL). These areas are found mostly in Central, Rift Valley, Western, Nyanza, Eastern and
+Coast Regions (Table 1). The regions with 1,500 m a.s.l and below should have night temperatures
+of between 150
+C to 180
+C to be suitable for potato production; tuberization does not occur when
+temperature in the soil around the stolon is above 210
+ C.
+POTATO PRODUCTION HANDBOOK 15
+Region County
+Central Nyeri, Nyandarua, Kiambu, Kirinyaga, Muranga
+Eastern Upper parts of Meru, Machakos, Makueni, Embu, Tharaka Nithi
+Rift Valley
+Nakuru, Narok, Bomet, Elgeyo Marakwet, Kericho, Uasin Gishu, Nandi,
+Laikipia, West Pokot, Baringo, Trans-Nzoia and Kajiado
+Western Bungoma, Kakamega
+Coast Taita-Taveta and Kwale
+Nyanza Nyamira and Kisii
+2.6 Ecological Requirement
+Potatoes will do well in areas with a combination of the following agro ecological set up.
+2.6.1 Site Selection
+Having prepared a potato production action plan the next step is to select a site suitable for potato
+production. Nematodes, Fusarium wilt and Bacterial wilt are serious soil borne potato pests
+and diseases. The disease and pest infestation may have been from previous potato or related
+crops. They could also have been washed down to the farm from other infected farmer fields.
+When potatoes are planted on infected soil it will lead to high yield losses. This can also result
+in excessive use of pesticides and fungicides, which is harmful to both humans and beneficial
+organisms.
+Criteria for Site Selection: A farmer should seek the following information when choosing a site;
+• Has the site been used for production of potato or crops in the Solanaceous family such
+ as tomato, tree tomato, brinjals, capsicum, pepino melons and black night shade for the
+Table 1: Potato growing counties in Kenya
+16 POTATO PRODUCTION HANDBOOK
+ last 3 seasons and were there serious diseases/pest incidences?
+• Is the site prone to run off from fields where potato or crops from Solanaceous family
+ have been cultivated before?
+• Is the surface topography gently sloping to allow proper drainage?
+If the answer to the first two questions is positive, then the site is not suitable and an alternative
+site should be identified and subjected to the same selection criteria. Once the above procedure
+is completed, take soil samples from the appropriate sites for testing for Fusarium wilt, bacterial
+wilt, potato cyst nematode (PCN) and nutrient analysis by a recognized laboratory.
+2.6.2 Soils
+Potato can be grown in a wide range of soil types but well-drained loamy to sandy loam soil is
+the most recommended. It also grows well with adequate fertilization even in sandy soils. Black
+soils that have undesirable physical and chemical qualities should be avoided. The pH should
+range between 5.0 and 7.0 but the ideal pH should be 5.5. The soil should be deep, light, loose
+and well drained but able to retain moisture. It should also be free from pests and diseases such
+as bacterial wilt, nematodes and blight. Blight requires a living host to survive between seasons.
+Partially decomposed tubers, which give rise to plants known as ‘volunteers’, infected with late
+blight, are a major source of blight infestation in subsequent potato crops. Poultry can be used to
+remove the partially decomposed tubers from the field after the crop has been harvested.
+2.6.3 Topography and Drainage
+The low lying areas which are likely to be drained with surface run offs from other higher potato
+growing zones should be avoided. This is because other than carrying away soil nutrients, run off
+may contain soil borne disease caused by pathogens such as bacterial wilt, Fusarium wilt, blights
+and soil borne pests like nematodes. 
+POTATO PRODUCTION HANDBOOK 17
+2.6.4 Altitude
+Potatoes are grown mainly in the high altitude areas between 1,500 and 3,000 meters a.s.l.
+However, some new varieties can still do well in altitude below 1500 meters a.s.l. (Variety
+Catalogue, 2017).
+2.6.5 Temperature
+Potatoes require an average daily temperature of between 15 to 180
+ C. Temperatures above 210
+C have adverse effects on growth of potato as it leads to sharp decline in tuberization (Otieno
+et al., 2015). Above 290
+ C there is little or no tuber formation. The cooler the soil temperature,
+the more rapid the initiation of tubers and the greater the number of tubers formed. Optimum
+soil temperature for tuber formation is 15-240
+C. Higher temperatures reduce tuber formation.
+One way of avoiding high soil temperatures is timely ridging and adequate ridge volumes. It is
+common practice for small holder farmers to mulch their potato garden with maize stovers to
+reduce soil temperature. This is done mostly when the potatoes are planted before the onset of
+rains. Moist and cloudy conditions, high temperatures and humidity lead to insect pest, foliar
+disease and virus epidemics.
+2.6.6 Soil Moisture
+Potatoes require a good supply of soil moisture to maximize the yields and quality. They require
+between 400 and 800 mm of rains during the growth period (Otieno et al., 2015). Whenever the
+roots have inadequate water, consequently the leaves and stems are subjected to moisture
+stress; the growth rate is reduced affecting yields and quality of tubers. The soil moisture content
+can be enhanced by;
+• Addition of manure to the seed bed
+• Cutting furrows along the contours to harvest and conserve surface water
+• Deep ploughing to loosen an adequate amount of soils for water storage
+• Mulching with maize stover after planting
+• Hilling and earthing up to increase surface water harvesting in the furrows and reduce 
+18 POTATO PRODUCTION HANDBOOK
+ chances of surface erosion
+2.6.7 Irrigation
+Soil moisture from rains can be supplemented by irrigation. The irrigation methods available
+are drip, sprinkler and furrow. Drip irrigation is more effective; however it is more expensive
+than sprinkler irrigation and may not contribute to establishment and spread of foliar diseases.
+Sprinkler irrigation may not cover all parts of the field adequately and may spread foliar diseases
+like late blights by extending the duration of availability of moisture in the canopy. Infections
+in the upper leaves can be spread to the lower leaves as water drains down the crop. Furrow
+irrigation can also be used but if the drainage along the furrows is not well maintained, this may
+lead to water logging, inducing anaerobic conditions and spread of soil borne disease caused by
+pathogens in the field.
+The most critical stages for water requirements are: emergence, tuber setting and tuber bulking.
+Potatoes are sensitive to moisture stress especially after tuber initiation which occurs during
+flowering; lack of water during this stage leads to misshapen tubers and low yields (Otieno et al.,
+2015). Depending on the crop growth period, a farmer should plan for irrigation based on these
+critical periods which should be done either early in the morning or late afternoon to minimize
+evaporation.
+2.7 Stakeholders in the Value Chain
+The key stakeholders in the potato value chain are farmers, input and service providers,
+extension agents, researchers, academia, aggregators, market off takers, National and County
+governments, and organizations including NPCK, development partners among others. Farmers
+with an interest to venture into potato production are advised to consult these stakeholders for
+a number of reasons. Firstly, is to have a better understanding of the different functions along
+the value chain and what each actor is doing or can offer support in service. Secondly, the 
+POTATO PRODUCTION HANDBOOK 19
+stakeholders have in their possession experiences and insights on challenges and potentials of
+the value chain and lastly, the stakeholders have knowledge of the various value chain actors and
+can easily link one to the network hubs.
+2.8 Commercial Ware Potato Production
+The next most important task after an overview of the varietal characteristics and ecological
+requirements for potato is to understand what opportunities exist in the market before production
+commences. This is to ensure that production is aligned to customer or market needs. Secondly,
+for a potential investor to become successful in commercial potato production they need to have
+entrepreneurial attitudes. An entrepreneurial attitude is a business attitude, which starts with
+identifying the market needs, planning and budgeting for production, and implementing the
+production and marketing plan. Other skill needed is the ability to carry out simple calculations
+that will assist in computing cost-benefit analysis for the production plan. The market assessment
+techniques and entrepreneurial attitude is covered in Chapter 6 of this handbook.
+20 POTATO PRODUCTION HANDBOOK
+3.1 Nutrient Requirements
+Nutrient management for potatoes starts immediately after site selection. This involves using
+simple observations to identify symptoms of nutrient deficiency or preferably, sampling soils,
+conducting chemical analysis to quantify the nutrients, and linking deficiency syndromes and
+analysis results with what needs to be done to improve nutrients supply. The potato plant has
+a shallow root system; nonetheless it has a high demand for nutrients. Potatoes require 14 soil
+derived elements, both macro and micronutrients, for proper growth and optimal yields.
+Soil pH: Determining soil pH is the primary step that should be undertaken at the site selection
+stage. The pH value of a soil defines the concentration of hydrogen ions present in the soil
+solution. pH values span the range from 0 to 14 where a value of 7 is neutral, below 7 acidic and
+values above 7 alkaline. Acidic substances release hydrogen ions (H+) whereas alkaline or base
+substances release hydroxyl ions (OH-). The higher the concentration of hydrogen ions in the
+soil relative to the basic ions the lower the pH, at low soil pH values, the levels of exchangeable
+aluminium in the soil solution may become toxic to potato roots. Soil pH is a critically important
+chemical property, which has a major influence on nutrient availability. Figure 2 illustrates the
+effect of pH on the availability of essential nutrients required by the potato crop. Potato crops
+grow best when the pH is slightly acidic to neutral since most soil derived mineral nutrients
+required for plant growth are in chemical forms that roots can absorb at this pH range. Long
+term use of ammonium fertilizers and leaching of cations from the root zone can cause soils to
+become more acidic. Fortunately, potatoes can be grown successfully in soils with pH values
+as low as 5.5 or lower. This is particularly helpful as low pH discourages the development of
+Streptomyces scabies, the organism responsible for causing common scab. Caution is required as
+low pH values can induce magnesium deficiency and also the fore mentioned aluminium toxicity.
+Chapter 3
+Potato Production
+POTATO PRODUCTION HANDBOOK 21
+1. Macronutrients
+The most important macronutrients are nitrogen (N), phosphorus (P) and potassium (K). Sulphur
+(S), calcium (Ca) and magnesium (Mg) are called secondary macronutrients because they
+required in lesser volumes than the first three macro nutrients but are needed in higher volumes
+than micro nutrients.
+Nitrogen is a very important and dynamic nutrient because it plays a key role in the growth of
+leaves and stems when combined with adequate levels of phosphorus and potassium. Having
+an adequate supply of nitrogen throughout the growing season sustains leaf growth, promotes
+the growth of branches and ensures that the canopy continues to intercept light. Extending
+the duration of a green canopy, which intercepts sunlight is the basis for an increase in yield.
+It is important to note that nitrogen does not directly increase tuber size. N is a component of
+chlorophyll, amino acids and other plant building blocks, which are necessary for photosynthesis
+to take place. It is also required for cell division, composition of vitamins and also carbohydrates.
+Apply the recommended rates at the right time since too much and late application of N extends
+the vegetative stage at the expense of tuber formation and may cause low dry matter tubers
+Figure 2: The relative availability of plant nutrients as affected by soil pH
+22 POTATO PRODUCTION HANDBOOK
+if the crop is harvested before reaching maturity. High levels of N application produces a lush
+canopy, which provides a micro-climate that leads to increased susceptibility of the crop to
+blight infection. Deficiency symptoms manifest as yellowing of older leaves moving towards the
+younger leaves, since nitrogen moves from older to younger leaves or to the tubers.
+Phosphorus is an essential element in every metabolic process and is also required during early
+plant growth for proper early root formation and tuber initiation and at the end of the growth
+cycle, to promote tuber maturity. It is crucial in photosynthesis, energy production and transfer,
+storage, respiration, cell division and enlargement. The primary role of phosphorus is to facilitate
+the transfer of sugars synthesized in the leaves to their storage site in the tubers and their inter
+conversion to sugars and starch. It is a component of the nucleic acids, Deoxyribonucleic acid
+(DNA) and Ribonucleic acid (RNA) which regulate protein synthesis. As a constituent of Adenosine
+Tri-Phosphate (ATP) it is commonly regarded as the “power supply” in the plant. P provides a
+major stimulus to root development, especially through promoting root branching and root hair
+formation. N and P complement each other; N facilitates the trapping of energy from sunlight,
+while P permits the utilization of this energy. N is a major component of plant protein while
+P regulates protein synthesis. N and P compete for uptake sites on the root hairs and excess
+nitrogen can mitigate against phosphorus uptake.
+At tuber initiation phosphorus stimulates formation of many tubers but plays only an indirect
+role in tuber enlargement. A large number of tubers per plant are a desirable trait in crops grown
+for seed. P also helps the plant to survive harsh cold conditions and enhances efficient use of
+water.
+Since the potato roots explore only 30% of the cultivated area, place the fertilizer within this
+area. Many soils, especially those with low organic matter ‘lock up’ phosphorus, reducing its
+availability to the plant roots. This problem can be addressed by accurate placement close to
+the plant roots. Low pH values in the soils reduce the availability of phosphorus. An advantage 
+POTATO PRODUCTION HANDBOOK 23
+accruing from the lack of mobility in the soil is that it is not readily lost by leaching. Deficiency
+symptoms manifest in purple coloration on the edges of the potato leaves. This phenomenon
+is a symptom of the accumulation of unutilized sugars not transported to the storage site in the
+tubers.
+Potassium has various roles in the potato plant. In the photosynthesis process, K regulates
+the opening and closing of stomata, and thereby regulates Carbon dioxide CO2 uptake. K plays
+a related role through the regulation of water loss in plants (known as osmo-regulation). It
+regulates both water uptake through the potato plant roots, water circulation within the plant
+and its subsequent loss from the leaves through the stomata. Furthermore, K has been shown
+to improve drought resistance. It triggers enzyme activation and is the element essential for
+production of ATP. ATP is a primary energy source for crucial chemical processes occurring in
+plant tissues. K is essential for both protein and starch synthesis and is important in metabolism,
+breakdown and distribution of sugars within plant tissues. K also enhances photosynthesis and
+disease resistance.
+Potatoes absorb K in its ionic form, K+ and they absorb more of it from the soil than any other
+nutrient; by week 6 from planting, over 70% of the season’s requirement has been absorbed
+rapidly. Potato is a luxury consumer of K, takes up 10kg/ha per day however, excessive supply
+beyond the recommended rates leads to low dry matter content. As the plant matures and dies,
+some potash is returned to the soil. By harvest time, 75% of the uptake is found in tubers, which
+contain approximately 5.8kg K2O per ton of tubers. This figure is assumed to be constant over
+the normal yield range and the maximum supply should be 300kg/ha. Deficiency symptoms
+include inter-venial chlorosis from older to younger leaves, dark-green or silver colorations on
+leaf margins and stunted growth. K deficiency causes severe chlorosis in young leaves when soil
+levels of iron are low. It is advised that K should range between 90 to 130ppm in solution in the
+soil. Although most soils in Kenya have this level of K, farmers are advised to add a little K to soils
+exhibiting deficiency. Potato crop grown in K deficient soil exhibit hollow hearts though this may 
+24 POTATO PRODUCTION HANDBOOK
+vary with variety and size. Large tubers (>100mm diameter) are more susceptible to hollow hearts
+than smaller tubers (<100mm diameter). K is sometimes referred to as the “quality nutrient” and
+the form of K applied will affect tuber dry matter. Sulphate of potash (potassium sulphate) can
+provide higher dry matter values than muriate of potash (potassium chloride). Crops destined for
+processing should be grown using the sulphate form in preference to the chloride form.
+2. Micronutrients
+Micronutrients are required in very small amounts nonetheless they are still essential for crop
+growth to progress. They include iron (Fe), boron (Bo), zinc (Zn), manganese (Mn), copper (Cu),
+molybdenum (Mo), chlorine (Cl) and nickel (Ni). The highest yields of potatoes are obtained when
+the correct balance exists between the micronutrients and the macronutrients. A deficiency
+of any nutrient will limit crop growth and restrict yield. The application of high-analysis NPK
+fertilizers means that these compounds no longer contain micronutrients as a contaminant.
+However, Kenyan soils are usually sufficient in micronutrients to meet potato crop’s growth
+requirement apart from Boron which is limited in some areas. More details on macro, secondary
+and micronutrients is provided in Annex 4.
+The remaining elements Carbon (C) and Oxygen (O) are obtained from the air and Hydrogen (H)
+is obtained when the water molecule is split during photosynthesis. Ninety-four to 99.5 per cent
+of fresh plant material is made up of only three elements C, O and H. The other nutrients make
+up the remaining 0.5 to 6.0 per cent.
+3.1.1 Physical Signs of Nutrients Deficiencies
+Table 2 presents symptoms on potato plants that may indicate nutrients deficiencies and the
+corrective measures needed to remedy them. The physical signs of deficiency may not be
+conclusive hence a farmer may be required to sample soil from the site for testing and laboratory
+analysis. 
+POTATO PRODUCTION HANDBOOK 25
+Table 2: Physical signs of nutrients deficiencies (Source: GIZ ToT manual on potato production (2017))
+Physical Signs on Plant Parts Causes Remedy
+Nitrogen
+deficiency
+Apply foliar feed with more nitrogen
+If application of nitrogen is recommended
+in potatoes during soil analysis, use the
+recommended rates next season
+Potassium
+deficiency
+Foliar spray with potash
+Apply the rate of fertilizer recommended
+is intended to satify crop needs and build
+soil potassium levels to the optimum
+range
+Phosphorus
+deficiency
+Foliar spray of phosphate foliar spray
+Use manures and green matter
+A warm, moist and well aerated soil at pH
+of 6.5 optimises the release of phosphorus
+Calcium
+Spray foliar with calcium
+Use lime like gypsum (calcium sulphate)
+Magnesium
+If Mg supply is low and liming is required,
+dolomite lime is used
+Or spray Epsom salt (magnesium
+sulphate) as foliar
+Sulphur
+Moderate application of manure
+or compost will generally result
+in adequate soil sulphur levels
+Foliar spray with sulphur rich foliar spray
+26 POTATO PRODUCTION HANDBOOK
+3.1.2 Visual Nutrient Deficiency Symptoms Diagnosis
+Nutrient deficiencies can also be identified by looking at usual symptoms of deficiency, either
+the upper or lower leaves as outlined in Figure 3. The chart can also be useful in identifying toxic
+or excessive nutrients levels. After picking the leaves from the lower part, go to the chart on your
+left side, if using upper leaves refer to the right side of the chart to identify the issues.
+3.1.3 Soil Testing Procedure
+Soil testing should be done following the steps outlined below;
+1. Soil sampling - Collection of soil samples from the field by the farmer or extension
+ officer and packaging ready for dispatch.
+2. Chemical, physical or health analysis – The process of determining the
+ characteristics
+3. Correlation and calibration of results - Interpretation of soil analysis results and
+Viral Symptoms
+Lower Leaves Upper Leaves
+Browning of
+leaf edges
+Salt or boron
+toxicity
+Potassium
+(K)
+Leaf edges
+brown or
+scorched
+Ammonium
+toxicity
+Calciun (Ca)
+Yellowing
+between leaf
+veins
+Potassium
+excess
+Magnesium (Mg)
+Yellowing
+between
+veins
+Phosphorus excess
+Iron (Fe)
+Manganese (Mn)
+Zinc (Zn)
+Copper (Cu)
+Purple leaf colors
+Phosphorus (P)
+Death of
+growing point
+Ammonium
+toxicity
+Boron (B)
+Calcium (Ca)
+Leaf
+yellowing
+Nitrogen (N)
+Sulfur (S)
+Leaf
+yellowing
+Sulfur (S)
+Figure 3: Simple visual nutrient deficiency symptoms diagnosis chart (Source: GIZ ToT manual on
+potato production (2017))
+POTATO PRODUCTION HANDBOOK 27
+ includes calculation of nutrients required.
+4. Correction/remedial process - This is done by the farmer and includes taking action
+ based on the results of soil analysis.
+3.1.4 Soil Sampling
+During planning, it was observed that soil testing is a necessary procedure used to identify
+presence of pests, diseases and nutrients levels in the soils. In this section an outline is provided
+of how a farmer can sample soils and interpret test results with assistance from experts. Soil
+testing results are also used to confirm deficiency symptoms that visual method was unable to
+resolve. Farmers regularly apply soil nutrients such as fertilizers and manure following blanket
+recommendation. There are no region-specific recommendations on fertilizer use for potatoes
+and thus soil analysis and result interpretation is the first step towards helping potato farmers to
+budget the type and amounts of fertilizers required by the plants. The timing for sampling is very
+important and should be done;
+• As close as possible to the planting period because most tests take 1 to 2 weeks to
+ complete. A farmer should therefore take samples 2-3 weeks before planting.
+• When soils are dry since it is easier to collect samples. It is not recommended to submit
+ wet samples to the laboratory because this may interfere with the results.
+• Where a field designated for a potato crop is suspected to have low pH, this field should
+ be sampled in the preceding season and lime applied if necessary. This will help reduce
+ the infestation of common scab on tubers, which is promoted by freshly applied lime.
+Materials and tools required for sampling include: Auger, tape measure, paper bags, felt pens,
+masking tape, clean bucket and data sheet.
+Caution when preparing for soil sampling:
+• Avoid sampling hot spots like ant hills, terrace channels or where burning has taken
+ place or manure was heaped. 
+28 POTATO PRODUCTION HANDBOOK
+• Do not use galvanized tools or containers since they may contaminate the sample with
+ Zinc.
+• Use clean tools always between samples.
+• Keep tools and containers away from fertilizers and manures because of contamination.
+• Use new paper bags to package soil samples.
+• It is important to take a representative sample as possible.
+3.1.5 Soil Sampling Procedure
+Step 1 - Field preparation
+• Randomly select 3 sampling sites per acre of land and mark with wooden pegs.
+• Remove trash from the sampling sites selected.
+Step 2 - Auguring and compositing for top soil
+• Dig out 20 cm depth of soil using panga or augur tool and place in a bucket.
+• Repeat procedure in other sites selected and place in same bucket.
+• Mix the soil samples uniformly to form a composite.
+• Package ½ kg of the composite soil sample in a sampling bag and label properly as top
+ soil.
+Step 3 - Auguring and compositing for sub soils
+• Dig out the sub soil 20-50 cm depth.
+• Repeat procedure as outlined above and label as sub soil.
+Step 4 -Packaging
+• Package the soil sample into a carton ready for sending to the testing laboratory
+ indicating field and farmer details.
+• Address the package to the laboratory and send.
+Documentation and record keeping
+The soil samples should be accompanied with the following information: Depth (top or sub
+soil), depth in centimeters, date of sampling, samplers name, field number, farmer name, recent 
+POTATO PRODUCTION HANDBOOK 29
+history on use of the site on crops grown, yields, fertilizer used, reason for analysis and a sketch
+map showing farm layout and marked sites sampled. The names of some of the recommended
+laboratories for soil testing are provided for in Annex 5.
+Results, interpretation and remedy
+Table 3 presents a summary of different expected results with regards to soil fertility tests and
+proposed remedies.
+Nutrient Recommendation Remedial Action
+Nitrogen (N) Deficient-apply N
+Use Basal fertilizers at planting like DAP or NPK.
+Top dressing with nitrogen has not been observed
+to increase yields
+Phosphorus (P) Deficient
+A warm, moist and well aerated soil at a pH
+of 6.5 optimizes the release of this element. If
+recommended apply inorganic Phosphorous
+containing fertilizer like NPK
+Potassium (K) Optimal levels
+Apply fertilizers containing Potassium like NPK.
+Supply Potassium through foliar
+fertilizers that contain the element
+Calcium (Ca) Less than optimal
+Liming is necessary. Gypsum (Calcium
+Sulphate) may be used.
+Magnesium (Mg) Low
+Liming is required use dolomite lime. When lime
+is not required, Epsom salt
+(Magnesium Sulphate) is used.
+Sulphur (S) Low
+Apply gypsum and Potassium Sulphate. Compost
+or manure
+30 POTATO PRODUCTION HANDBOOK
+pH
+Below 5.2 (acidic)
+Availability of N, P, and
+K is reduced. There are
+usually low amounts of
+Ca in the soil
+Apply agricultural lime
+pH High 7.0 (alkaline) Use acidifying fertilizers like DAP
+3.1.6 Maintaining and Improving Soil Fertility
+Soil fertility in a potato farm can be improved and maintained through interventions such as:
+• Application of mulches
+• Application of Bio-fertilizer (compost)
+• Application of Farm Yard Manure (FYM)
+• Application of Green manure
+• Application of Plant tea/ Liquid manure
+• Soil conservation measures
+• Planting of Nitrogen fixing plants like legumes
+• Practicing crop rotation and other recommended cultural practices
+• Use of inorganic fertilizers
+Caution
+• Avoid manure from livestock fed with potato /Solanaceae crop residues
+• Organic fertilizers should not be made using potato crop residue
+3.2 Crop Rotation Plan
+Once the site has been selected it is important to draw a crop rotation plan for the whole farm. Crop
+rotation is an important agricultural practice in potato production because it helps in managing
+build-up of pests and diseases associated with potatoes and other crops from Solanaceae family.
+Table 3: A summary of soil test interpretation chart
+POTATO PRODUCTION HANDBOOK 31
+Adoption of suitable rotation plans cuts down on spread of potato pests and diseases between
+crop seasons. Farmers should always ensure that they grow potatoes only on virgin or fallow
+land or land where potatoes and other Solanaceous crops have not been grown in the previous
+seasons. They should also avoid land where volunteer plants from these crops are present since
+these crops usually act as alternate host for most potato pests and diseases.
+Designing a potato crop rotation program
+Step 1: Inquire about the farm and market/use of alternative crops
+• Ask about the history of the farm-what was grown there before? What pests and diseases
+ have been observed in the past on the farm?
+• Observe the topography and drainage of the farm (is it sloping or flat?)
+• Observe the soil types (is it sandy, black cotton or loam soil?)
+• Seek information on the climatic conditions such as rainfall, temperatures, wind etc
+• Determine your household food requirements or what other crops are in demand in the
+ local market. What other crops if grown in rotation with potato will be of benefit for the
+ household or have ready markets?
+Other questions you may need answers for are;
+• What are the rooting depths for various crops to be used in rotational program?
+• What are the feeding habits of the rotational crop (heavy feeders, light feeders, moderate
+ feeders, and givers)?
+• What plant residues result from harvest of these crops?
+• Is there a need to diversify enterprises for risk management and increased income?
+Step 2: Design the rotational plan
+After collecting the necessary information, seek the assistance of an agricultural officer to develop
+the rotation plan. Developing the plan involves dividing the farm into 4 plots for instance and
+allocating a crop per season for each plot. The crops are rotated on the plots making sure the 
+32 POTATO PRODUCTION HANDBOOK
+same family of crop is not planted repeatedly on the same plot. A five season rotation plan for
+four plots is suitable for small scale farms. An example is presented in Table 4 and Figure 4.
+Session Plot 1 Plot 2 Plot 3 Plot 4
+1 Brassica Fallow Cereals Legume
+2 Legume Potatoes Fallow Cereals
+3 Cereals Brassica Potatoes Fallow
+4 Potatoes Legume Brassica Potatoes
+5 Fallow Cereals Legume Brassica
+3.3 Land Preparation
+The land should be prepared early before onset of rain to avoid soil compaction. Preparing
+the land when it is not wet allows for increased aeration, free drainage, destruction of weeds
+and decomposition of other crop residues. Potato roots and tubers need loose soils that have
+adequate air supply and are well drained to produce good yields. Compacted soils or waterlogged soils have poor air supply and lead to poor yields. Plough the soil to loosen it and reduce
+the soil resistance to root penetration and tuber development. The following are the steps and
+methods for land preparation:
+Step 1: Vegetation clearing
+The first step is to slash bushes and weeds. Remove and destroy volunteer potato plants if any.
+The trash residues can be placed on the contours as trash lines.
+Table 4: An example of a five season rotational plan using 4 plots (Source: GIZ ToT manual on potato
+production (2017))
+POTATO PRODUCTION HANDBOOK 33
+Step 2: Ploughing
+Plough the land at least 3 weeks before planting. This
+should be done to a depth of 25cm when using disc
+plough and 15 cm when using hand hoes. If the land
+is virgin, it is recommended that 2 ploughing should
+be done at an interval of 1 week but if it is a cultivated
+land, 1 ploughing is sufficient
+.
+Step 3: Harrowing
+Harrow the ploughed land one week later to allow better soil working conditions. Carry out at
+least two harrowing passes, with the last one being done just before preparing of furrows or ridges
+so as to destroy young weeds for virgin land but for cultivated land 1 harrowing is sufficient.
+Step 4: Levelling
+Levelling is done to allow equal surface water distribution. Using hand hoes, level the land by
+moving soil into depressed surfaces along the contour. When using a tractor, run a harrow along
+the contours to achieve a flat site.
+Figure 5: Mechanized harrowing and pulverization (Photo courtesy of A.Njogu field
+collections (2018) from LATIA Resources Center)
+Figure 4: Mechanized ploughings
+(Photo courtesy of A. Njogu field
+collections (2018) from LATIA Resources
+Center)
+34 POTATO PRODUCTION HANDBOOK
+3.4 Planting
+Planting should coincide with start of the rains so as to maximize water utilization. There exists
+different recommendation on planting potatoes which include: planting on ridges or furrows,
+spacing, manure and fertilizer use, amount of seed needed and depth of covering. The seed
+should be planted with the sprouts facing up whether in ridges or in furrows.
+3.4.1 Planting on Furrows and Ridges
+Furrows
+Furrows are prepared after harrowing and it should be opened just before planting at the depth
+of between 8 and 12 cm deep. The soils should be well drained and the area should not be water
+logged. When potatoes are planted by hand, a range of row/drill spacing options are available.
+Three values are typical, 65 cm, 75 cm and 90 cm. Varieties with a short growing season should
+be planted at 65 cm inter row spacing, since these types generally produce smaller canopies.
+Varieties that are late maturing generally have larger canopies and will benefit from the extra
+width, an inter row spacing of 90 cm could be considered for Dutch varieties. For Kenyan varieties
+a spacing of 75cm is recommended. When potatoes are planted using machinery, the row spacing
+will be dictated by the wheel spacing of the tractor.
+Ridges
+Prepare ridges after harrowing. Ridges which are
+raised planting beds are used for planting where
+there is possibility of water logging. At ridging up, a
+narrow top on the drill is desirable in wet conditions
+as it facilitates water to run down the outside allowing
+the potato crop to grow on elevated beds. In dry
+conditions, a flatter, wider drill will conserve more
+moisture.
+Figure6: Bed forming
+POTATO PRODUCTION HANDBOOK 35
+3.4.2 Manure Application
+Manure as an organic source of nutrients contains N, P and K if well prepared. Apply manure at
+the rate of 5-10 tons/ha (2-4 tons/acre). Ensure the manure is well prepared and ready for use by
+‘feeling’ with your hands. It should feel like ‘cotton’, crumbles easily and when dry it’s ‘floury’. The
+best manure has the following characteristics;
+• Not made from livestock fed with potato family crop residue. This is to reduce chances
+ of spread of bacterial wilt diseases.
+• Not made from compost with crop residue from potato family.
+• Well-decomposed manure so as to prevent occurrence of black leg and black scurf
+ diseases.
+• Free from potato pests and other diseases.
+Steps in applying manure uniformly on a potato farm are as outlined below;
+• Divide the land into 4 equal quarters.
+• Divide available manure into 4 equal portions.
+• Allocate each quarter portion of manure to each quarter portion of land.
+• Apply each portion of manure to the allocated portion of land.
+• If manure has been placed in ridges or furrows, mix it or cover it lightly with soil before
+ placing fertilizers.
+Application of manure by spreading: Manure can be applied on land just after ploughing before
+harrowing. If the amount required is available, spread 2-4 tons/acre. Then incorporate into the
+soil during harrowing and furrow preparation. You can also spread it in the field using a fork,
+jembe or rake for smaller plots. Thereafter incorporate it when making furrows and or ridging.
+36 POTATO PRODUCTION HANDBOOK
+Application of manure in furrows: This is done in case there is adequate supply of manure or for
+large scale farmers. Place it in the furrows and mix with soil before placing fertilizer and seeds
+tubers.
+3.4.3 Fertilizer Application
+Fertilizers are fast acting inorganic materials supplying one or more key nutrients to the plant.
+Nutrients required by the potato crop may be supplied either through organic (commercial organic
+fertilizers, farmyard manure, compost, liquid tea, green manure and mijingu rock phosphate)
+or inorganic fertilizer (Diammonium phosphate (DAP), nitrogen-phosphorus-potassium (NPK),
+triple superphosphate (TSP), monoammonium phosphate (MAP), calcium ammonium nitrate
+(CAN) and Urea). Customized and blended fertilizer according to crop specific and soil test result
+is advisable. Liming is also highly recommended for acidic soils. Micronutrients are usually
+supplied through foliar sprays in cases of deficiency but it is advisable to apply through field
+grade fertilizer.
+Farmers are also advised to consider their target yield when considering nutrient application
+rate. For instance, to produce 56 tons/Ha potatoes require about 235 kg N/Ha, 31 kg P/Ha and
+336 kg K/Ha according to Westermann (2005). Although, the recommended rate in Kenya is 90kg
+Figure 7: Farmyard manure that is well decomposed for use in Potato production
+POTATO PRODUCTION HANDBOOK 37
+N/Ha and 230 kg P/Ha based on the commonly used fertilizer (DAP), experts do not recommend
+the blanket application rate because of the following reasons: potato is a heavy feeder of K
+which DAP does not have because it contains only nitrogen and phosphorus; DAP has too much
+P which could cause long term acidity if used for a long time; and lastly it is advisable to split
+N applications during the lifetime of a crop because loses of N occur much faster and cannot
+survive until crop maturity.
+Different fertilizer companies formulate different fertilizers for potato crop. Fertilizers used for
+planting potato are;
+• DAP (Diammonium Phosphate)
+• NPK (17:17:17; 20:20:20; 23:23:0)
+• Blended NPK (14:28:14+Te, NPK 18:0:21+Te)
+• Single Superphosphates (SSP)
+• Triple superphosphates (TSP)
+Steps in applying fertilizer
+• Divide the land or furrow into 4 equal quarters.
+• Divide available fertilizer into 4 equal portions.
+• Allocate each quarter portion of fertilizer to each quarter portion of land.
+• Apply each portion of fertilizer to the allocated portion of land and cover with soil
+ awaiting seed placement.
+3.4.4 Seed Potato Acquisition
+Potato growers are advised to purchase certified seed potato from seed merchants who have
+been certified and registered by KEPHIS (Annex 6). Seed purchased should be checked for
+availability of the certificate of authenticity. Check the seed purchased to ensure it meets the
+information given on the label such as crop species, variety, seed class, seed size grade in mm,
+grower number, lot number, packaging unit (kg), year of production, date of certification, country 
+38 POTATO PRODUCTION HANDBOOK
+of production and unique certificate’s number (Figure 9).
+Sprouting the seed prior to planting allows the seed tuber to commence growth in the store
+before planting in the field, producing a consequent reduction in the time from planting until
+emergence. Sprouting in a diffused light store (DLS) and tubers spread thinly on a flat surface,
+either on the floor of the DLS or in crates, permits controlled sprout growth in contrast to the
+uncontrolled growth which occurs when seed tubers are stored in bags. Remove the seed from
+the bags and spread thinly in trays in the diffused light store. The seed tubers should not be
+stacked more than three layers deep. This will ensure good sprouting and the sprouts formed
+will be strong with good colour, so that during transportation to the field for planting, sprouts do
+not break off easily.
+Inspect the boxes at regular intervals to check for aphid infestation of the new sprouts and to
+discard any tubers showing symptoms of rotting. It is essential that the tubers are planted directly
+from the sprouting box. Tipping them into bags or other containers will knock off the sprout,
+negating the growth already achieved. This will result in uneven and /or delayed emergence,
+as the sprouted tubers will emerge before those whose sprouts were broken off. Keep the
+certification label for future use and traceability. Farmers can get seed information through Viazi
+soko by sending SMS to NPCK to get information on the variety available, quantity and price and
+Figure 8: Front and back of the certification label of certified seed potato (Photo
+courtesy of Judith Oyoo, KALRO Tigoni)
+POTATO PRODUCTION HANDBOOK 39
+contact detail of the seed merchant (Annex 3).
+3.4.5 Establish Seed Rate
+To maximize production, there is need to have the right plant density in the farm. When the
+spacing is 75cm between furrow/ridges and 30 cm between tubers, 18,000 tubers will be required
+for an acre or 44,444 tubers per hectare. Seed tubers which are physiologically young may have
+only a single sprout, to achieve more ‘eyes’ it is recommend knocking off the apical sprout and
+store for 10 to 14 days for more lateral sprouts to form. Each seed should have at least 3 sprouts
+for good plant density.
+Using Table 5 a farmer can calculate the amount of seed required. A 50kg bag of large potato
+tubers (size II and III) contain less seeds than 50kg bag of smaller size tuber (size I). Thus larger
+seed sizes are more expensive but have the potential to yield more. It is recommended to use
+medium size seed (size II).
+Class of Seed
+Average tuber
+diameter size (mm)
+Average tuber
+weight (grams)
+Number of 50kg
+bags of seeds
+needed per acre
+1 (Small) 25-35 39-45 14-16
+2 (Medium) 35-45 50-57 18-20
+3 (Large) 45-55 60-73 24-26
+3.4.6 Placing and Covering the Seeds
+Place seed tubers on the furrow or ridges with the sprouts facing upwards. Space between the
+tubers should be 30cm or one foot. This is approximately the space between the ankle and the
+toe of an adult. Once the tuber has been placed correctly, cover with soil to height of 15cm for
+drills and 10cm for ridges.
+Table 5: Seed potato characteristics
+40 POTATO PRODUCTION HANDBOOK
+3.5 Weeding
+Weeding is the removal of unwanted plants from the field. Volunteer crops and weeds compete
+for nutrients, water, light and space with potatoes in the field. They need to be removed as soon
+as they germinate in order to curb yield losses associated with their presence. All volunteer plants
+and off type crops should be weeded out.
+Off type plants: These are plants that grow among the crops planted on the farm but may not
+have been the targeted crop. They sprout from the seeds used and may be of different varieties or
+deformed plants. To ensure uniformity, these plants should be uprooted and destroyed as soon
+as they are spotted in the field.
+Volunteer plants: These are potato plants, which grow from tubers that remained in the field
+from the previous crop after harvesting. These plants will grow among your crop and may host
+pests and diseases. They therefore need to be removed preferably before the target crop emerges
+to reduce chances of pests and disease infestations and spread.
+Advantages of weeding
+• It reduces competition for nutrients, light, moisture and space.
+• Alternate hosts for pest and diseases are eliminated.
+• Conditions for disease build up will not be favorable hence you will use pesticides and
+ fungicides less frequently.
+Steps and methods of weed management
+1. Prepare to weed 2 weeks after crop emergence or on appearance of weeds so that you
+ reduce damages to the potato crop.
+2. To weed, rogue or uproot weeds as they grow or use hand tools to uproot.
+3. Spray weeds with selective herbicides in situations where labour is not available or is 
+POTATO PRODUCTION HANDBOOK 41
+ expensive. However, ensure you get assistance from experts on herbicide selection, its
+ mode of action, application timing and application protocol and techniques.
+4. Weed again after two weeks, incase new weeds will have germinated. When using a
+ hoe to remove weeds, take care not to damage the tips of the stolons which may have
+ grown out to near edges of the ridge.
+5. Do not weed again once the crop canopy has covered the ground because few weeds
+ will grow when the inter row is covered. Walking through a mature crop will damage the
+ leaves and stems and risk spreading Virus X from infected to healthy plants.
+3.6 Earthing up/Hilling
+Earthing up is the raising of loose soil from the
+inter row space and placing on the ridges along
+the rows where the potato plants are growing.
+It is common for potato tubers to be exposed
+to the surface mostly if planting was done on
+ridges and/or during high intensity rainfall. Such
+tubers are usually small with cracks on the skin
+surface, deformed and tend to turn green, some
+with scalded skins because they are exposed to
+sunlight.
+In addition, exposed tubers are prone to attacks by the potato tuber moth (PTM) which lowers
+their quality significantly. Tuber development is triggered by cool and dark conditions. As they
+enlarge, they require complete dark conditions. Loose soil cover is necessary to allow tuber
+expansion without hindrance. It is recommended that earthing up or hilling should be done at
+least twice during the potato growing season.
+Figure 9: An earthed up/ hilled potato field
+42 POTATO PRODUCTION HANDBOOK
+Advantages of earthing up
+• Keeps the tubers cool and hence reducing chances of brown spots associated with high
+ temperature.
+• Provide fluffy medium for more stolons and tubers to grow.
+• Prevent greening of exposed tubers by sunlight.
+• Prevent water logging in case of heavy rains.
+• Reduce chances of infection with diseases.
+• Reducing chances of Potato Tuber Moth (PTM) infestation, which can lead to heavy
+ losses at the field or in the storage after harvest.
+• Reduce chances of stolon developing into secondary and non-productive stems thereby
+ increasing productivity of your land.
+Guidelines on how and when to earth up/Hill
+• It should be done during weeding or when crop is 20cm high. Use hand held tools like
+ jembe to scoop and to heap the soil along the inter rows space on the potato stems.
+• Heap the rows such that the final ridge should be about 25 cm high from the ground
+• Repeat the practice 2-3 weeks later if the crop canopy has not covered the inter row
+ space.
+• If conditions allow, do the last hilling 2 weeks after the second hilling.
+Note - Earthing up should be avoided when the soil is too wet so as to minimize soil compaction
+and spread of fungal diseases like late blight. Also carry out spot checks to check for any exposed
+tubers.
+POTATO PRODUCTION HANDBOOK 43
+Chapter 4
+Potato Diseases and Pest Management
+Potato pests and diseases results into high yield losses both in the field and during storage. This
+condition has forced farmers to resort to excessive use of pesticides, which is posing danger to
+the environment, to humans and beneficial organisms. Cost of inputs like agro-chemicals and
+labor is also increasing. Land size is declining, challenging crop rotation protocol which is being
+advocated as a management strategy to reduce infestation by most potato pest and diseases.
+There is therefore a need to understand the field and Integrated Pest Management (IPM) practices
+to reduce cost of using agro-chemicals. It is also good to note that some varieties are tolerant to
+some diseases while others require an intensive crop-spraying regime to prevent the damage.
+4.1 Potato Diseases and Management
+The potato diseases are caused by fungi, bacteria or viruses. The diseases are therefore described
+as fungal, bacterial or viral. The following are the most important diseases, their causal agents,
+symptoms, mode of transmission and recommended management measures for adoption.
+4.1.1 Fungal Diseases
+Some of the most serious fungal diseases are late blight and early blight. Most farmers tend to
+think that these diseases, especially late blight, are caused by cold weather conditions. The truth
+is that the pathogen spreads faster in wet conditions. Each of these fungal pathogens is discussed
+in details below.
+1. Potato Late Blight
+Late blight is caused by an oomycete (water mold) Phytophthora infestans and is the most
+important disease of potato.
+44 POTATO PRODUCTION HANDBOOK
+Effects on potato productivity
+The disease damages leaves, stems and tubers. It can wipe out a potato crop in a short period of
+time in less than two weeks after disease establishment. Soft rot of tubers is often observed in
+the store when a potato field is infected with late blight.
+Symptoms
+Early symptoms are small pale to dark green spots appearing on underside of leaves. The
+symptoms spread later to the stem and tubers. Round, dark brown watery looking blotches
+appear on the underside of potato leaves. The blotches appear wet and irregular at the margins;
+the blotches appear brown when dry and black when wet. Sometimes these blotches can be
+surrounded by a yellowish green ring and may extend to the tip of the leaf. Also on the margins of
+these lesions, a white mildew like (fuzzy or cottony growth) appears. This white growth is due to
+the presence of microscopic structures called sporangia, which are formed on sporangiophores.
+After sporulation these sporangia are carried by wind currents, rain splashes etc. to previously
+healthy leaves and plants, where the infection cycle recommences.
+Symptoms on the stem are dry, dark brown elongated blotches. With severe infections, these
+blotches may encircle the stem, causing it to break at the location of the blotch. Infected stem
+wilts and dries. On tubers, light brown blotches that are slightly sunken may appear on the
+surface. Dry, light brown blotches, having a granular texture, may be seen under the skin when
+the tubers are cut into sections. Tubers with late blight symptoms do not produce bad odor
+unless they are subjected to a secondary infection by bacterial soft rots.
+Late blight symptoms can be confused with symptoms of early blight, frost bite and Septoria leaf
+spots. The key indicator of late blight infection is the white downy growth on the underside of the
+leaf. Early blight lesions are confined to areas between the leaf veins whereas late blight lesions
+freely cross the veins to cover large areas of the leaf.
+POTATO PRODUCTION HANDBOOK 45
+Signs
+The signs of the causal agent are white fuzz around the grey blotch on the underside of the leaves.
+The white fuzz is caused by the spores of the causal agent being held by a thin thread.
+Transmission
+The Phytophthora infestans life cycle may last between three and fifteen days, depending on
+prevailing weather conditions and the level of plant resistance.
+Sources of primary infection (primary inoculum)
+Sources of the fungus could be infected plants in neighboring fields, wild plants, volunteer crops
+or infected plants in the growers’ field, which release spores (minute balls) that reach healthy
+plants or healthy parts of the plant through being carried there by wind, irrigation splashes or
+rain water.
+Spread /secondary infection
+When blight spores (sporangia) land on the above ground parts of healthy potato plants, they
+become established and initiate primary infections under favorable environmental conditions
+(prolonged moist conditions) producing initial symptoms like brown blotches. When a spore
+lands on a healthy leaf, spore germination requires high moisture content on the leaf surface
+(free water) and moderate temperature. Weather conditions that favour the spread of late blight
+are known as ‘blight periods’. One example of a blight period is “two consecutive days where the
+temperature is above 10oC and the relative humidity is above 90%”. A local meteorological station
+could calculate the occurrence of blight periods and advice growers when conditions suitable
+for the spread of late blight existed. This would assist with scheduling of fungicide applications
+and improve the efficiency of application. The germinating spore produces a structure that
+penetrates the leaf surface and grows internally in the leaf, killing the tissue. At sporulation the
+white fuzzy growth (discussed above) appears and the infection cycle is set to continue when
+these spores are spread to new plants. Many reproductive cycles can occur during a season, 
+46 POTATO PRODUCTION HANDBOOK
+causing significant crop loss.
+The first blight blotches may also appear on emerged plants from seed tubers latently infected
+(i.e. displaying no symptoms) with Phytophthora infestans. Symptom development is hastened
+by conducive temperatures (high temperatures up to 250
+C). For the white fuzz (mycelium) to
+appear there must be high humidity. Most of the time mycelium appears at night because of the
+high humidity caused by dew. If there is rain or fog, the mycelium can appear at any time.
+Favorable conditions for spread
+The favorable conditions for establishment and spread of the fungal pathogen include: high
+humidity (>85%) and warm temperatures (>150
+C).
+The store should have shelves; and before storage the stores and shelves should be sprayed with
+insecticides to kill tuber moth adults. Spread the tubers on shelves and turn ounce in a day to
+prevent spoilage. Also you can place Mexican marigold or Eucalyptus leaves and branches on the
+tubers to repel potato tuber moth infestation.
+Management
+POTATO PRODUCTION HANDBOOK 47
+Figure 10: Transmission routes for fungus causing blight
+48 POTATO PRODUCTION HANDBOOK
+To reduce infection, many approaches should be initiated and implemented.
+1. Use healthy seed potato tubers at planting.
+2. Use varieties that have high levels of late blight resistance as presented in Figure 10.
+3. Always cover tubers with soil during hilling to prevent tuber infections.
+4. Before harvesting, destroy leaves that are infected to reduce chances of tubers coming
+ into contact with the spores.
+5. Harvest tubers when they are fully mature to reduce incidences of skin damage and
+ spores entry during harvesting and storage.
+6. Chemical control with fungicide;
+• Apply protective fungicides (such as Mancozeb) after emergence and repeat
+ regularly based on prevailing weather conditions. Ensure the underside of leaves
+ is covered during fungicidal application.
+• For susceptible varieties start spraying protective fungicides (such as Mancozeb)
+ when plants are 10 cm tall and repeat depending on the prevailing weather
+ conditions
+Potato Variety Level of tolerance to Late Blight
+Kenya Faulu Good
+Kenya Karibu Good
+Chaguo Good
+Kenya Mavuno Good
+Kenya Sifa Good
+Tigoni Good
+Asante Fair
+For varieties with some resistance, start spraying systemic fungicides (such as Metalaxyl) when
+symptoms start appearing and alternate applications of contact and systemic fungicides to avoid
+Table 6: Potato varieties tolerance to late blight
+POTATO PRODUCTION HANDBOOK 49
+resistance development by the pathogen to fungicides used.
+Integrated management
+• Always plant clean or certified seeds.
+• Before planting, select potato varieties that have some resistance to late blight (Potato
+ variety catalogue, 2017).
+• Hill or earth up exposed tubers to prevent transmission of fungus from above ground
+ plant parts to tubers.
+• Scout regularly for signs of the fungus on the underside of the leaves and stems of the
+ plants after the plant emergence.
+• Use fungicides as the last option and as per the recommended application rates by the
+ manufacturers.
+2. Potato Early Blight
+Early blight is caused by the fungus Alternaria solani and it is found in all potato producing
+regions. Despite its name the diseases is found to be more severe during the end of the growing
+season. The disease mainly affects older leaves. The fungus survives in soil as mycelium, on leaf
+debris and as spores.
+Source and spread
+Sources of infection are: contaminated seed tubers and plant remnants, tools and machinery.
+Spores may be spread by wind or by water droplets during rainy conditions.
+Symptoms
+Symptoms include dry brown spots, usually restricted by the leaf veins forming an angular shape.
+The spots enlarge and join together to form big concentric/circular rings. Affected tubers develop
+circular to irregular lesions, which are slightly sunken and often surrounded by raised purple to
+dark-brown borders. The underlying tissues are leathery to corky in texture, dry and turn darkbrown. 
+50 POTATO PRODUCTION HANDBOOK
+Management
+Infection at the late stage of plant growth (during tuber bulking phase) does not affect harvest
+quality or yield; therefore, it is not economical to manage the disease during at this stage.
+However, if symptoms appear during the early stages of plant growth, yield loss up to 30%
+has been demonstrated. The following integrated disease management techniques should be
+adopted (KEPHIS, 2016).
+• Use of resistant/tolerant varieties.
+• Removing sources of infection by using healthy seed, destroying contaminated plants
+ and strict crop rotation helps to eliminate inoculum in the soil.
+• Using good irrigation systems such as drip irrigation to reduce drought stress and to
+ support the uptake of nutrients.
+• Balanced use of fertilizer (especially increased level of potassium) to produce healthy
+ plants more resistant to infection from this disease. The recommended rates should be
+ used during planting to give the crop a good start.
+• Use of fungicides to prevent early foliar disease development.
+• Reduce mechanical damage during harvesting, transportation, sorting and grading.
+3. Black Scurf/ Stem Canker
+The phase of the disease known as ‘black scurf’ is observed on tubers, where hard brown masses
+adhere to the tuber surface. While the phase of the disease where the stem and stolons are
+infected is known as ‘stem canker’. The disease is caused by the fungus Rhizoctonia solani and
+is common in all potato growing regions worldwide. It does not damage seed potato tubers, but
+attacks the sprouts, stolons and roots. At early onset of disease, the fungus grows from the seed
+surface to the new sprout. Reddish-brown to brown lesions develops on sprouts, stolons and
+young stems. Severe crop damage results when Rhizoctonia lesions destroy sprouts before plant
+emergence. The secondary sprouts that develop from the damaged sprouts are considerably less
+vigorous and emerge much later, producing irregular, uneven stands. Early infection of stolons
+often results in decay before tuber formation or interrupts the development of newly formed 
+POTATO PRODUCTION HANDBOOK 51
+tubers.
+Disease spread
+The disease is spread through contaminated soil and infected seed. The pathogen overwinters as
+sclerotia and mycelium on infected tubers, in plant residue, and in infected soils. When potatoes
+are planted too frequently in the rotation, the risk of infection is enhanced due to inoculum build
+up.
+Symptoms
+Rhizoctonia solani forms spots which are dry and sunken on the stem which enlarge and join
+together forming dead tissue areas. This affects transportation of both photosynthetic products
+from the leaves to the tubers and soil nutrients as well as water from the roots to the above
+ground parts of the plant. A whitish mold forms on stems just above the soil line. The affected
+part of the stem may have the top skin peel off (girdling) affecting the functions of the stem.
+Damage is most severe at low temperatures when emergence and growth of stems and stolons
+from the seed tuber are retarded, giving the fungus time to invade the new growth as it is formed.
+On seed tubers, black scurf infection gives rise to irregular black or brown hard masses, known as
+sclerotia or resting bodies. Such sclerotia are formed on the daughter tubers before harvesting.
+These masses of mycelium perpetuate the disease and infect the emerging sprout during the
+next field growth stage. With early infection, the disease results in a low stem density due to the
+fungal attack on sprouts, leading to reduced or non-emergence and also weak stems. The plant
+may have a reduced stolon system that leads to the reduced number and size of tubers. Tubers
+may have irregular black to brown hard masses on the surface, which may reduce the visual
+quality and market acceptability.
+Management
+• Use certified seed which has sprouted well.
+52 POTATO PRODUCTION HANDBOOK
+• Do not plant in soils that are cold (<7oC) or wet. Soils should have proper drainage to
+ prevent water logging.
+• Plant shallow to facilitate rapid emergence however, hill up to the desired cover when
+ the crop is established.
+• Applications of potassium fertilizer, both potassium chloride and potassium sulfate
+ have shown some effect on disease incidence.
+• Crop rotation program of 1 to 5 seasons is advised.
+• After dehaulming, wait for two to three weeks for tuber skin to harden. Harvest the
+ tubers immediately after two weeks to keep off tuber infection.
+• Seed treatment with relevant fungicides can also be adopted. To ensure effective
+ control, the fungicide must be applied using specialized apparatus that facilitates total
+ coverage of the seed tuber.
+4. Fusarium Dry Rot
+Fusarium dry rot is a fungal disease caused by Fusarium spp and is called dry rot. It is one of the
+most destructive post-harvest diseases of potato, where it causes loss in the store. It also causes
+severe crop loss when it infects the developing sprout, resulting in delayed or non-emergence
+and producing weakened stands. This results from the damage to the original sprout and the
+subsequent development of weaker secondary or tertiary sprouts.
+Source and spread
+The Fusarium fungus lives in the soil for long periods as resistant spores and also in infected
+tubers. The disease is spread during planting, weeding, harvesting, transportation and grading.
+The tuber cannot become infected until it suffers damage. Infection commences at wound sites
+then spreads in all directions around the tuber.
+Symptoms
+In storage, the spots/lesions develop on the skin as small brown areas, which are dry and 
+POTATO PRODUCTION HANDBOOK 53
+spongy. Infected tissues on the tuber surface become necrotic as the infection spreads to the
+flesh beneath the skin. As the spots expand to cover the entire tuber, the skin on the lesions
+shrivels due to water loss (KEPHIS, 2016). The skin becomes wrinkled in concentric rings as the
+flesh beneath dries out. When infected tubers are cut, dry internal browning or black coloration
+of the dead tissues is seen. The heart of the tubers may also be infected where mycelia grows
+(white or yellow cotton like) and hardens to form dry necrotic areas. It may be difficult to make a
+diagnosis of dry rot infection if late blight infection is also present and/or if soft rot bacteria have
+invaded; this may happen if the humidity levels in the store are high or if the tubers are stored
+while wet. In the past the benzimidazole fungicides were commonly used to control dry rot of
+potato, but more recently strains of resistant Fusarium spp. have developed, rendering these
+fungicides ineffective. Research is currently being conducted to determine the effectiveness of
+biofungicides, based on the Bacillus organism, to control dry rot on potatoes.
+Management
+• Use certified seed potato tubers.
+• Crop rotation of 1 to 7 seasons to eliminate the disease from the soil.
+• Alternating wet and dry cycles, due to drought or improper irrigation scheduling, can
+ induce growth cracks in tubers and these can facilitate the entry of the Fusarium fungus.
+• Dehaulm the crop to ensure good skin development and ensure minimal bruising of
+ tubers during harvesting or grading. The pathogen can only enter the tuber through a
+ wound or cut. Tubers should be handled carefully to avoid damage.
+• Promote wound healing after harvesting and transporting tubers to the store by
+ providing adequate ventilation and maintaining temperatures of 15°C to 20°C with
+ relative humidity of 90 to 95 % for 14 to 21 days. Do not allow condensation to wet the
+ tuber surface as this promotes infection.
+• Field and store sanitation-clean and disinfect all tools and equipment for handling
+ potato tubers. 
+54 POTATO PRODUCTION HANDBOOK
+The identification and management of the fungal diseases is described in Table 7
+Physical Symptoms of
+Disease
+Name of Fungal Disease Management
+Symptoms on underside of
+leaves
+IPM
+English: Late potato blight
+Scientific:
+Phytophythorainfestans
+Use healthy seeds
+Use varieties that have high levels of
+late blight resistance
+Always cover tubers with soil during
+hilling to prevent tuber infection
+Before harvesting, destroy leaves
+that are infected
+Harvest tubers when fully mature
+Symptoms on potato stem Pesticides
+Susceptible varieties - Spray
+Mancozeb after emergency and every
+7 days later.
+Resistant varieties - Spray Metalalyx
+when symptoms appear and
+alternate with Mancozeb 7 days
+English: Early blight on
+potato leaves
+Scientific: Alternariasolani
+Pesticides
+Use preventive fungicides like
+Mancozeb as above
+Table 7: Summary presentations of signs, identity and management of fungal diseases (Source: GIZ
+ToT manual on potato production (2017))
+POTATO PRODUCTION HANDBOOK 55
+4.1.2 Bacterial Diseases
+The key bacterial diseases in potatoes are bacterial wilt and black leg.
+1. Bacterial Wilt
+Bacterial wilt disease is caused by a bacterium Ralstonia solanacearum.
+Signs /symptoms
+Above ground symptoms of bacterial wilt include wilting, stunting and yellowing of the foliage.
+The browning of vascular bundles may be seen when the cortex is peeled. Another characteristic
+of the disease is the initial wilting of only part of the stems of a plant, or even one side of a
+leaf or stem. If disease development is rapid, the entire plant wilts quickly, without yellowing.
+Alternatively, the diseased stem can wilt completely and dry up, while the remainder of the plant
+appears healthy. Infected plants and plant parts wilt even when the soil is moist. Infected plants
+may wilt as a single plant or in patches. External symptoms on the tuber are visible at harvest
+when infection is severe. Bacterial ooze collects at tuber eyes or the stolon end, causing soil to
+adhere to the secretions. When infected tubers are cut into two pieces, tubers show brownish
+discoloration of the vascular ring, and slight squeezing forces a pus-like slime out of the ring, or it
+may exude naturally. The vascular ring, or the whole tuber, may disintegrate completely at more
+advanced stages of necrosis development.
+Sources of infection
+• Infected tubers or seeds.
+• Contaminated soils: under favorable conditions the pathogen can survive in soils for
+ long periods of time. There is no agreement among plant pathologists on the duration
+ of the survival period and intervals of 3 to 5 even 10 or more years have been proposed.
+• Crop residues.
+• Volunteer plants.
+• Contaminated irrigation water.
+56 POTATO PRODUCTION HANDBOOK
+• Contaminated soils adhering to tools, shoes and machinery.
+• Alternative hosts like weeds.
+Transmission route
+Pathogens enter roots through wounds or damaged skins caused by tools, nematodes or insects.
+Simple test for bacterial wilt
+Procedure
+• Cut a 2-3 cm piece of stem from the
+ base of the suspected plant. Discard
+ the lower and upper parts.
+• Tie the piece with the string provided.
+• Suspend the piece of stem horizontally
+ in the glass full of clean clear water
+ as illustrated in Figure 11 and wait
+ for about 15 minutes. If the plant was
+ infected with bacterial wilt, it will
+ exude white smoky liquid / milky threads down wards from one or both ends of the cut
+ stem.
+Management
+Bacterial wilt in potatoes in Kenya is largely caused by race 3 biovar 2 of R. solanacearum. This
+race has a narrow host range and can be successfully controlled by IPM when the strategies are
+stringently applied.
+There are a number of reasons why its difficulty to control this disease;
+• There is no chemical control and once infection occurs there is no treatment.
+• It has many alternative hosts apart from crops in the Solanacea family.
+Figure 11: Bacterial diseases identification
+and management (Source: GIZ ToT potato
+production manual (2017))
+POTATO PRODUCTION HANDBOOK 57
+• These pathogens are soil borne and as result, they are able to survive/overwinter in soils
+ in the absence of hosts.
+• They have many biological variations, which behave differently under different
+ environmental conditions.
+• Infected plants bear tubers carrying the pathogens hence the pathogen is easily
+ transferred from one season to other.
+An IPM strategy should be adopted to control the disease such as:
+• Plant disease free seed tubers which should be obtained from authorized seed
+ merchants.
+• Crop rotation with non-host plants because it reduces inoculum potential in the soil.
+• Avoid injury of roots, stolons and tubers during farm operations such as weeding.
+• Control soil borne vectors such as nematodes.
+• Field sanitation. Steps to follow include;
+a. Load and carry away in a bag or bucket and destroy remnants of diseased
+ materials.
+b. Rogue and destroy the sick plant and all the plant parts including tubers or
+ dispose them in a pit.
+c. Never use potato crop residue to feed livestock for manuring /composting.
+d. Apply a handful of wood ash and a handful of lime in the station from the sick
+ plant was rouged.
+e. Wash tools and shoes using diluted household bleach to disinfect them before
+ and after the exercise.
+2. Blackleg or Soft Rot
+In Kenya blackleg or soft rot is a widespread seed borne disease caused by the bacterium
+Pectobacterium atrosepticum (Synonym: Erwinia carotovora subsp. atroseptica). The disease
+derived its name from the black lesions produced on infected stems, but the disease affects both 
+58 POTATO PRODUCTION HANDBOOK
+stems and tubers. The stems of infected plants typically have inky black symptoms, which usually
+commence at the decaying seed piece and may extend up the entire length of the stem. When
+black leg develops early, plants are stunted, leaves turn yellow and leaflets tend to roll upwards
+at the margins. Young plants with severe infections may die.
+Source and spread
+Blackleg, or soft rot, is spread through seed tubers, other infected plants, contaminated soils and
+water. It can spread from plant to plant via water, soil and infected seed tubers, farming tools and
+machinery. Damage caused by pests, small worms or harvesting can facilitate infection as these
+can act as entry points of the pathogen. Severe infection can cause plants to wilt and die.
+Blackleg or soft rot can affect potatoes at various stages of plant growth. At planting, the bacteria
+can be present on infected seed tubers. They have pectinolytic capability and produce a variety
+of cell wall degrading enzymes that allow infiltration and maceration of the plant tissues on
+which they feed. As the sprouts develop and emerge from the soil as young shoots, the base of
+the shoot becomes infected. Black lesions coalesce and girdle the stem as they proceed upwards.
+Transport of water and solutes is impaired. Infected plants begin to show chlorotic symptoms
+(turn yellow) while other plants are healthy. Black spots, which are soft and slimy, develop on the
+Figure 12: Black leg in the field stem
+becomes black, rots and exudes slime
+(Photo courtesy of KALRO Tigoni)
+Figure 13: Symptoms of soft rot on potato
+tubers (Photo courtesy of KALRO Tigoni)
+POTATO PRODUCTION HANDBOOK 59
+stem in the field. When the stem with spots is cut, the vascular tissues and the pith are brown or
+black in colour. Stem bases become black, rot and exude slime. When seed tubers rot in the field
+before emergence, blank space occurs resulting in a reduced stand.
+Tubers may become infected either in the storage or in the field. Tuber infection in the field occurs
+through wounds under wet conditions, or through the lenticels or via the stolons, where the
+bacteria pass from the stem. The point where the tuber is attached to the stolon develops black
+spots, which spread to the entire tubers causing rotting of the tubers. During storage, bacteria
+invade the tubers through wounds or lenticels causing breakdown of the skin and granular surface
+developing. The pectolytic enzymes result in the tuber tissue becoming macerated to a creamy
+consistency, which turns black in the presence of air. Infected tubers can develop an unpleasant
+smell when invaded by secondary organisms. When the store is cool and inadequately ventilated,
+rotting can spread to adjoining tubers as liquid from the rotting tubers percolates onto others.
+This can lead to large rotting pockets in the stored tubers.
+Note: Tubers infected with Pectobacterium do not exude the white slime you will find with
+bacterial wilt.
+Survival
+The soft rot bacteria do not overwinter in soil. Survival in soil is restricted to short periods of 1
+week to 6 months. The duration will depend on prevailing environmental conditions such as soil
+temperature, moisture and pH. Survival can be extended when the organism is in association
+with plant material, including volunteer potatoes. In the absence of a potato host, the bacteria
+cannot survive in the soil during a typical crop rotation cycle of 3–8 years.
+Management
+• Use healthy seed tubers not contaminated with the disease or certified seed at planting.
+• Adopt crop rotation program of 1 to 7 seasons because the bacterium persists in the soil, 
+60 POTATO PRODUCTION HANDBOOK
+ and particularly on volunteer potatoes.
+• Avoid planting in wet or flooded fields.
+• Improve drainage systems to allow water to flow in and out of the field more easily.
+• Destroy sources of the disease, particularly infected plants by burning or burying in a
+ pit, which is 6 feet deep.
+• Avoiding damage to tubers when weeding, hilling up, harvesting and when transporting
+ harvested produce. In addition, chitting of seed tubers should be done to develop strong
+ sprouts that will not break off during handling and planting. Break off points become
+ entry points for the bacteria.
+• Harvest during dry weather conditions. Drying of tubers or exposing the tubers to warm
+ dry conditions may prevent further rotting of the tuber through formation of wound
+ periderm forming bacterial hard/pit rots.
+• Sanitize the store and all equipment for handling seed tubers such as trays, machinery
+ and tools.
+Physical Symptoms of
+Disease
+Name of Fungal Disease Management
+English: Bacterial wilt infected
+plant
+Scientific: Ralstonia
+solanacearum
+IPM
+Plant disease free tubers
+Crop rotation
+Avoid injury of roots, stolons
+and tubers
+Control nematodes
+Destroy infested plants
+POTATO PRODUCTION HANDBOOK 61
+English: Black leg bacterial on
+seedlings
+Scientific: Erwinia caratova
+Avoid suspected seeds
+Avoid excessive soil moisture
+before harvesting
+Dry tubers before storage
+Proper cutting of tubers
+4.1.3 Viral Diseases
+There are several viral diseases that affect potatoes namely: Potato Leaf Roll Virus (PLRV), Potato
+Virus A (PVA), Potato Virus Y (PVY), Potato Virus X (PVX), Potato Virus S (PVS) and Potato Virus M
+(PVM). Viruses have no cure; however, control of the vectors before spreading the virus is very
+critical. Viruses do not kill potato plants, but are responsible for seed degeneration and the gradual
+decrease in tuber yields in subsequent field generations. Viruses can be transmitted through
+infected seed tubers by aphids and through contact (farm machinery, tools and equipment,
+plants, human movement). Four modes of virus transmission by aphids are known:
+• Non-persistent (strictly stylet-borne viruses)
+• Semi-persistent (limited to the foregut)
+• Persistent and circulative, and
+• Persistent and propagative
+Virus transmission by aphids occurs mainly as persistent or non-persistent. Non-persistent
+transmission is when the aphid acquires the virus by feeding on infected plants for a very short
+time like a few seconds and transmits the virus to the new uninfected plant when feeding on it.
+The virus particles are quickly acquired, and there is no latency period before virus inoculation
+to another plant. Viruses spread in this form include: PVY, PVA and PVS.
+Persistent transmission of viruses occurs when an aphid feeds on the infected plant for a long
+Table 8: Summary presentation on bacterial diseases (Source: GIZ ToT manual on potato production
+(2017))
+62 POTATO PRODUCTION HANDBOOK
+time, approximately 30 minutes and the virus is incubated in the aphid’s body for several hours.
+During the incubation period, the aphid cannot infect any plants. The virus remains in the aphid’s
+body and the aphid remains infectious for the rest of its life and can transmit the virus each time
+it feeds on a potato plant. A virus transmitted in this form is PLRV.
+1. Potato Leaf Roll Virus (PLRV)
+PLRV is an important disease in potato plants and can cause reduced yields of up to 90%.
+Sources and spread
+PLRV is transmitted by aphids in a persistent manner. This means that once an aphid acquires
+the virus, it can transmit the virus for its entire life. The virus is picked up by colonizing aphids
+during prolonged feeding for at least one hour on an infected plant. The peach potato aphid
+(Myzus persicae) is regarded as the most efficient vector in transmitting virus while feeding on
+the plant sap. First the aphid must acquire the virus by feeding on a PLRV infected plant. This is
+accomplished by the aphid inserting its stylet into the circulatory system of the plant, to access
+the sugars and nutrients circulating there. The virus particles in the infected leaf are ingested
+by the aphid, along with the sap. The virus then circulates from the gut of the aphid, through
+its circulatory system until it finally gets into the salivary glands. It passes from here to the leaf
+when the aphid feeds on healthy plants. The transmission of PLRV is referred to as persistent (or
+circulative) because the aphid can only infect new plants after a latency period required for the
+transit of the virus in the insect’s intestine and then into its salivary glands
+PLRV can be introduced into a potato field by infected seed tubers or by all stages of winged
+aphids, which act as vectors spreading the disease from one field to another. A plant developed
+from an infected seed tuber is already infected and can act as a virus source to neighboring
+plants. All tubers produced from an infected plant will carry the virus.
+Symptoms
+Primary symptoms are those exhibited in the year of infection and may not be easily observed in 
+POTATO PRODUCTION HANDBOOK 63
+visual inspection, since they are likely to be confined to slight rolling of leaves at the top of the
+plant, with a slight purple to red discolouration. Secondary symptoms, are those observed in
+the season following infection (when the new plant is established from the infected seed tuber,
+are highly visible). These symptoms appear during the early stages of potato growth. Leaves curl
+upwards and roll inwards, tighten and turn pale green. If you press them they feel brittle and
+fragile. In advanced infections, plants become stunted while leaves and stems stand upright/
+erect. Yield loss is associated with both primary and
+secondary infection. Yield loss from secondary infection
+may be dramatic when severe infections cause potato
+plants to produce tiny tubers, or prevent them from
+producing any tubers at all.
+Observation
+Make observations by walking along the rows in the
+field and looking for plants showing symptoms of the
+disease. It is important to note that infections by other
+pathogens, such as the organism that causes black leg, can induce leaf rolling, but with additional
+symptoms at the base of the stem. Some nutrient deficiencies will also induce leaf rolling. Plants
+infected with PLRV become stiff and make a rattling noise when shaken. Other causes of leaf roll
+do not induce this response; therefore, care should be taken before making a diagnosis of PLRV.
+A laboratory test using the Enzyme-linked Immunosorbent Assay (ELISA) procedure can detect
+the presence of PLRV and other potato viruses in seed tubers prior to planting.
+Management
+• Use certified seed for planting.
+• Rogueing diseased plants (and removing any newly formed tubers) starting as early as
+ when the symptoms are visible.
+• Use monitoring traps. Place 6 yellow water traps or sticky traps per acre for monitoring
+Figure 14: Upward curling and rolling
+of leaves due to PLRV (Photo courtesy
+of KALRO Tigoni)
+64 POTATO PRODUCTION HANDBOOK
+ the aphid populations.
+• Use insecticides at the recommended rates to kill virus vectors (mainly aphids).
+2. Potato Virus Y (PVY)
+PVY is the second most important virus after PLRV. It can be spread through infected tubers or by
+insect pests and can reduce yield by up to 90%, if left uncontrolled in the field. PVY mostly affects
+plants in the family Solanaceae. The Solanaceous plants include economically important ones
+like potato (Solanum tuberosum), as well as tomato, green pepper, chili pepper, tree tomato,
+pepino, eggplant, petunia and many weeds, such as the nightshades.
+Source and spread
+PVY is mostly transmitted by aphids, which act as vectors in spreading the disease from one field
+to another. Aphids can acquire the virus within seconds of commencement of feeding on infected
+leaves and can transmit the virus immediately, in a non-persistent manner. They usually retain
+the virus for only several hours without continued feeding on infected leaf material. The nymph
+stage causes more damage than the adult stage.
+Symptoms
+Leaf surfaces become uneven and brittle, leaves shrink and their ribs turn yellow. In mild
+infections, plants often show no signs of disease at all. The level of crop damage is determined
+by the strain of PVY infecting the plants. Three major strains of PVY are recognized: PVYN PVYNTN
+and PVYO
+• PVYO is the original wild strain of PVY. The O stands for “ordinary.”
+• PVYN the N stands for “necrotic,” which means “dead.” These strains cause a necrotic
+ reaction on tobacco leaves but not on potato foliage. They also cause milder symptoms
+ in potato than those caused by PVYO.
+• PVYNTN is a PVYN type that causes necrosis on tobacco but can also cause necrotic
+ flecking and ring spot symptoms in the tubers of some potato varieties. The NTN stands 
+POTATO PRODUCTION HANDBOOK 65
+ for “n - tuber necrotic.”
+Infection of plants by virus Y strains can be varied in the symptoms. Infection can include: veinal
+necrosis, mosaic symptoms as well as leaf malformation. Mottling and yellowing of the leaflets
+occurs leading to leaf drop, stunted growth and eventual death of the plants. Plants that have
+latent infection, for instance, do not show symptoms, may have infected canopies and will
+yield lower quality tubers than their healthy counterparts. Tubers may have ring spots on the
+surface which may coalesce and cover the entire tuber. The rings may be sunken and cracks may
+develop on the skin. Peeling the skin below the rings may reveal tissues that are thicker than the
+surrounding areas
+
+Observation methodology: by walking along the rows in the field and looking for plants
+showing symptoms of the disease. Collect leaves and conduct laboratory analysis using the
+ELISA procedure.
+Management
+• Use healthy, certified seed tubers at planting. Using the seed tubers for several
+ consecutive generations will lead to a progressive increase in viral load, with consequent
+Figure 15: Symptoms of PVY infection
+in tubers (Photo courtesy of KALRO
+Tigoni)
+Figure 16: Chlorosis or yellowing of
+foliage due to PVY (Photo courtesy
+of Judith Oyoo, KALRO Tigoni)
+66 POTATO PRODUCTION HANDBOOK
+ crop loss.
+• Rogueing of infected plants during active growth as well as removing any newly formed
+ tubers of those plants.
+• Use of resistant cultivars.
+• Application of mineral oils to prevent virus transmission by aphids.
+• Consider planting a non-host border crop around the potato crop about four weeks
+ before planting, for example, maize, wheat, oats and sorghum. This can act as a
+ “cleansing barrier” for aphids. If PVY is entering the crop from neighbouring fields then
+ infective aphids may feed on the barrier crop, lose the virus and will no longer be
+ infective when they land on the potato crop.
+Application of insecticides has little effect on spread of PVY due to the rapid (non-persistent)
+way of virus transmission by aphids. The aphid does not feed for long enough on the insecticide
+treated plant to acquire a lethal dose of the insecticide.
+3. Potato Virus X (PVX)
+PVX is found in all potato growing regions though its effects are not as severe as compared to other
+viruses. Although it is not a major threat to tuber yield, PVX does exert economic impact and its
+effects can be worsened by co-infection with other viruses, in particular PVY; a phenomenon also
+known as “synergism”. In the foliage it is sap transmissible through contact either by humans,
+animals, plants, machinery or in tubers by cutting since the virus accumulates in tubers. The
+virus can even be spread when sprouts on infected tubers rob on healthy sprouts in the store.
+There is no insect or fungal vector for this virus. PVX is very contagious and from the moment it is
+attached on something such as clothing or machinery the virus remains infective for many hours
+as long as the surface is wet. In addition, viruses picked from infected plants by contact can be
+transmitted to other plants. Hence, restricted movement from fields suspected of PVX infection
+should be observed.
+POTATO PRODUCTION HANDBOOK 67
+Symptoms
+Patterns of light and dark green on leaflets with the lighter
+small irregular blotches between the veins may be seen on
+leaves, it is sometimes known as “potato interveinal mosaic”.
+Mosaic design on leaves with advanced infections leading to
+streaks and leaf mottling. PVX can also result in mild or no
+symptoms in some potato varieties, but when PVY is present,
+synergy between these two viruses causes severe symptoms
+in potatoes. A further difficulty in diagnosing PVX in the field
+arises because the symptoms can vary with the strain and the
+prevailing weather.
+Management
+• Use certified or healthy seed tubers during seed multiplication and bulking processes.
+• Do not cut seed potatoes.
+• Rogueing of diseased plants and removing any newly formed tubers of those plants.
+• Field and store hygiene and sanitation should be maintained.
+• Restricted movements in fields suspected to have infection.
+• Clean and disinfect machinery and clothing before entering seed crop.
+Note: Since infections with PVX and PVY can reduce potato production, in extreme cases up to
+80%, resistance breeding is one of the major goals of plant breeders. Wild potato species are good
+sources of resistance (R) genes. The resistant plants respond to viral infection with hypersensitive
+reaction (HR) or extreme resistance (ER). HR is accompanied by programmed cell death, while
+ER localizes the virus at the primary infection site and limits virus replication without visible
+symptoms. Farmers await new resistant varieties).
+Figure 17: Mosaic patter on
+potato foliage due to PVX
+(Adopted from Diseases
+and Physiological disorders
+of Potato in Ireland)
+68 POTATO PRODUCTION HANDBOOK
+4. Potato Virus S (PVS)
+PVS is the most frequently found virus as compared to all the others in potato growing regions.
+Traditionally, PVS has been regarded as existing in two strains, Ordinary (PVSO) and Andean
+(PVSA), based on reaction in herbaceous indicator species.
+Source and spread
+PVS is commonly spread in the same way as PVX through contact by human, machinery and
+plants. Some strains of this virus are also transmitted by aphids, including Peach aphids (Myzus
+persicae) and Aphis nurstatii, in a non-persistent manner. Plants tend to become more resistant
+towards the end of the growing season. It is also transmissable through tubers.
+Symptoms
+PVS is difficult to diagnose under field conditions as it induces no conspicuous symptoms in
+many potato cultivars. However, symptoms like rugosity of leaf surfaces, vein deepening and leaf
+bronzing occur in susceptible cultivars. Yield reduction caused by PVS infection is usually low,
+at worst 10 to 20%, except in the case of mixed infections with other viruses. PVS co-infection
+enhances the severity of other viruses, such as PVA, PVY and PVX. Mixed infection with PVX and
+PVS increased the titer of PVS and produce enhanced expression of foliar symptoms in primarily
+and secondarily infected plants.
+Management
+• Use of healthy, certified seed tubers during seed multiplication process.
+• Do not cut seed potatoes.
+• Rogueing of diseased plants (in case symptoms are visible) and removing any newly
+ formed tubers of those plants.
+• Field and store hygiene should be observed.
+• Restricted movement from infected to uninfected fields
+POTATO PRODUCTION HANDBOOK 69
+5. Potato Virus A (PVA)
+PVA is found wherever potato is grown.
+Symptoms
+PVA symptoms are almost similar to PVX causing mild mottling of leaves but the mottling
+appears on veins with the leaves looking shiny. A mild pattern of yellowish or light green patches
+alternating with patches of very dark green is present on most potato cultivars. The patches vary
+in size and can cross veins. The leaf surface is usually rougher than normal. Edges of infected
+leaflets may be slightly crinkled or wavy. The stems of the plant bend outward, giving the plants
+an open look. Tubers are usually unaffected, except for a slight decrease in size. It is transmitted
+by several aphid species in a non-persistent manner.
+Management
+• Use of healthy, certified seed tubers during seed
+ multiplication process.
+• Rogueing of diseased plants and any newly
+\ formed tubers of those plants.
+• Early harvesting of seed crop.
+• Application of mineral oils to prevent virus
+ transmission by aphids.
+4.1.4 Field Sanitation and Disease Management
+Sanitation includes all activities that aim at eliminating or removing disease pathogens/inoculum
+present in a plant, field or potato stores. Sanitation also prevents the spread of disease pathogens
+to healthy plants. Discipline, ethics and consistency are important aspects in sanitation for the
+benefits to be realized both in the field and in potato stores. Practice the following sanitation
+Figure 18: Mottling and shiny leaves
+due to PVA (Source: www.teagasc.ie/
+Crops/Potato/knowledge transfer)
+70 POTATO PRODUCTION HANDBOOK
+requirements to reduce costs of management of diseases and improve yields and income.
+• Implement crop rotation plans prepared.
+• Plant barrier crops between different crops that share diseases.
+• Remove/uproot and destroy volunteer plants.
+• Rogue and burn or destroy diseased plants preferably in a properly designated disposal
+ pit.
+• Disinfect tools before and after working in a potato field.
+• Manage insect pests/ vectors well.
+• Sort and discard potato tubers suspected of being infected.
+• Avoid feeding livestock with potato tubers, peelings and potato plant remnants, if the
+ livestock manure will be used on the potato farm.
+• Avoid use of potato crop residues for mulching or composting into farmyard manure or
+ feeding livestock and recycling the same as manure.
+4.2 Potato Pest and Management
+Insect pests of potato can broadly be divided into two major groups: those that are soil inhabiting
+and those that attack above ground parts of the plant. The latter group can again be divided into
+leaf feeding pests and sucking pests. Impotant pests that need to be identified by the potato
+grower include cut worms, aphids, potato tuber moths (PTM), Tuta absoluta, white flies, Potato
+Cyst Nematodes (PCN) and Root Knot Nematodes (RKN). These pests contribute to reduced
+productivity in various ways, hence they are economically important since:
+• They transmit viruses from unhealthy plants to healthy ones.
+• They affect the physical quality of tubers by damaging the tubers and accelerating entry
+ of disease causing organisms. This affects the quality of potato tubers and reduces the
+ quantity of tubers that can be marketed. 
+POTATO PRODUCTION HANDBOOK 71
+1. Aphids
+Aphids are soft-bodied pear shaped insects that may be winged or wingless. They cause primary
+damage by sucking ‘sap’ (plant solutes) from the leaves and stems of potato plants. This sap
+contains water, plants nutrients in solution and sugars - the products of photosynthesis, which
+are required by the plant to increase the size of the tubers. Aphids feeding of potato plants may
+induce curling or stunting of new growth. Unless the infestation is extremely severe, the loss of
+yield caused by direct feeding is not ususally of economic significance. They exert their major
+influence through their secondary role as the main vectors for transmitting of persistent and
+non-persistent potato viruses. The main aphid species associated with potatoes worldwide are
+non-specific to the crop. Most of them are cosmopolitan in that they can adapt freely to different
+environments and ecological niches also they are polyphagous, which allows them to feed on
+different types of plants.
+The aphids will fly long distances aided by the wind. They infest the leaves, flowers and stems and
+the sprouting tubers. Winged aphids can infest potato fields in significant numbers. They settle
+on the leaves and commence feeding. During this period, they are also capable of producing large
+numbers of wingless aphids that in turn place an even greater stress on plants. The presence of
+distorted leaves and "sticky" leaf surfaces (resulting from the secretion of honey dew) are signs of
+aphid infestation. Natural enemies and diseases can often keep aphid populations under control.
+Three species of aphids are regularly found on potato crops, the melon, potato and green peach
+aphids. The green peach aphid (Myzus persicae) is pear shaped and pale yellow to green. Melon
+aphids (Aphis gossypii) vary in color from yellow to dark green. Potato aphids (Macrosiphum
+euphorbiae) are soft-bodied, elongated tear-shaped insects that may be solid pink, a green-pink
+mottle or light green with a dark stripe. Aphids have complex life cycles, and their classification
+depends on host alternation and on their mode of reproduction.
+Management
+To control aphids and the viral infections it is important to use certified seeds, practice crop 
+72 POTATO PRODUCTION HANDBOOK
+rotation and good seedbed hygiene. Where aphids have invaded a potato crop, rougeing of the
+affected plants should be carried out. In the diffused light store the new sprouts on seed tubers
+are an attractive target for aphids, therefore sprouting tubers should be checked regularly. To
+control aphids use insecticides or biological control using lady bird beetles (coccinelidae), birds
+or wasps.
+2. Cutworms
+Cutworms are the larval stage of nocturnal moths and can damage potatoes. There are three major
+species of cutworm, of the genus Agrotis, whose larvae develop mainly in the soil (terricolous
+cutworms), on the foliage (defoliator cutworms) or in the stems (borer cutworms). The colour
+of the larvae is usually dull, grey or brown. Cutworms are polyphagous insects which develop
+mainly in light and moist soils. The adults and larvae are mostly active at night. Hibernation can
+occur either in the larval stage or as a chrysalis; egg laying can be abundant when the weather
+is favourable. Females deposit eggs on grasses, or weeds and weedy fields are preferential egglaying sites. Eggs hatch in 5 to 10 days.
+Cutworms (Agrotis sp) target young plants by cutting the stems of potato seedlings at the soil level
+after emergence particularly under dry conditions. The damaged points become entry points
+for other pathogens such as bacteria causing soft rot. Major damage caused by cutworm to the
+potato is relatively rare and results from large populations of larvae in the fields (sometimes in
+discreet patches) which feed on root systems or cut stems, thus resulting in reduced plant cover
+and even losses or failure of emergence. Regular scouting should be done during emergence to
+check for infections. Cutworms have a distinguishing feature that when disturbed curl their body
+into a tight ‘C’ shape. Use contact or systemic pesticides to control the pests.
+3. Potato Tuber Moth (PTM)
+The PTM (Phthorimae operculella) infests the potato while in the field and in storage. It is the
+most widely distributed potato insect in the world. It is usually found in warm climates for 
+POTATO PRODUCTION HANDBOOK 73
+overwinter survival and considered a subtropical pest. It is favoured by warm and dry climate in
+high altitude zones. The larvae bore through stems, leaf petioles, shoots, tubers and also mine
+the leaves, causing them to form transparent blisters, then move into stem tissue causing death.
+Tubers are spoiled when larvae reach tubers by two major means. After hatching from eggs laid
+on leaves, larvae can drop to the ground and burrow through cracks in the soil to a tuber, entering
+it through the eye. This is a common occurrence after vine desiccation. Another common way is
+that the female PTM lays its eggs directly on exposed tubers at or near the eye. When the larvae
+hatch, they enter the tuber through the eye, create tunnels and leave excreta on them, leading
+to secondary infection and rotting due to infection with dry rot and soft rot. No potato vaiety is
+resistant to attack.
+A good soil cover is essential and in areas with high levels of infestation, also select a variety that
+sets its tubers deep in the soil. Farm hygiene is mandatory where all plant residues are removed
+after harvest. The harvested crop should be sorted out and infected tubers discarded. Applying
+plant rich in essential oils such as Euchalyptus or Lantana camara helps to drive away the moth.
+The seed tubers should be stored in diffused light; after planting, ensure early and proper earthing
+up/hilling as recommended. After harvesting, use recommended insecticides, which should be
+dusted on the tubers.
+4. Nematodes
+a. Root Knot Nematodes (RKN)
+RKN is the common nematode which occurs throughout the world and are primarily important
+in tropical and subtropical climates. RKN from the genus Meloidogyne cause significant losses
+in potato crops. They are obligate sedentary endoparasites, which complete almost all their life
+cycle within the host. In Kenya, there are four species of RKN (M. arenaria, M. hapla, M. incognita
+and M. javanica) that are capable of attacking vegetables and can cause serious damage in
+irrigated fields. The RKN species, M. incognita, is the most widespread and probably the most
+serious plant parasitic nematode pest of tropical and subtropical regions. It occurs as a pest on 
+74 POTATO PRODUCTION HANDBOOK
+a very wide range of crops, while losses of potatoes due to M. incognita are estimated at 25% or
+more. The roots and tubers, when attacked by the nematodes, develop knotty swellings and galls
+resulting in stunted growth, poor plant development, premature yellowing of foliage, also leaf
+fall and wilting ensues, particularly during hot periods. Affected plants appear in patches.
+The most characteristic symptom is formation of root galls which can be seen with the naked eye.
+If infested plants are pulled from the soil, it will be observed that the roots are severely distorted,
+swollen and have lumps known as galls or root knots. The galls range in size from smaller than a
+pinhead to 25 mm or more in diameter. Affected roots rot, while very heavily infested plants are
+killed.
+RKN are microscopic slender worms that are transparent and live in the soil. They attack the
+roots and tubers causing lesions creating avenues for bacteria and fungal infestation of the
+crop. Nematodes are spread by planting infested seed, or from soil washed down slopes or after
+sticking to farm implements and foot ware. They may also be spread by irrigation water. The
+disease is most serious on light, sandy soils and in furrow irrigated areas. If the roots are already
+attacked by nematodes, the severity of symptoms is greatly increased, when potato plants are
+also infected by bacterial, Fusarium and Verticillium wilt diseases.
+Management
+Crop rotation, long fallow periods on affected soils, planting of trap crops such as Mexican
+marigold , soil sterilization and use of soil insecticides.
+b. Potato Cyst Nematodes (PCN)
+PCN is a serious pest of potatoes world-wide and is subject to stringent quarantine and/
+or regulatory procedures wherever it occurs. PCN can be a devastating pest of potatoes in
+temperate regions if not controlled. There are two widely distributed species of PCN, Globodera
+rostochiensis and Globodera pallida, but only G. rostochiensis is known to cause problems in 
+POTATO PRODUCTION HANDBOOK 75
+Kenya, causing up to 80% loss of yield. PCN co-evolved with the potato in South America, but
+has subsequently been introduced elsewhere with the production of potatoes. Nematodes or
+eelworms are small worm-shaped organisms, less than 1 mm in length, which inhabit soil and
+attack plant roots sucking nutrients from plants through the roots, causing decline in yields. The
+cysts of G. rostochiensis (golden nematode) are white, yellow or golden in colour when they first
+form on roots, as immature cysts, and subsequently become brown in colour when they mature.
+Cysts containing viable eggs can survive in soil for up to 20 years in the absence of host species,
+like potatoes.
+Transmission
+As a soil borne pest, PCN is transmitted through infested or contaminated planting materials, soil,
+water, farm tools/equipment/ machinery and human traffic through foot wear. Cysts can also be
+transported by wind and flood water. In very rare cases in heavily infested crops, PCN cysts can
+develop on the potato tubers themselves. It can take 20 years from the time PCN is introduced
+into an area before it is detected, and depending on the number of non-resistant crops grown,
+it takes approximately 6-7 years from its introduction into a potato field before numbers of cysts
+reach a detectable level. Locally, PCN is usually dispersed by farming activities such as sharing
+farm equipment contaminated with infested soil. PCN has spread with the trade in new potato
+cultivars into the major potato producing regions of the world.
+Symptoms
+Infested potato plants usually have stunted growth, may wilt during periods of water stress, leaves
+may yellow or display a dull colour and mature early, producing very tiny tubers. Affected plants
+have a reduced root system, which is abnormally branched and brownish in colour. Significant
+damage can be done below the ground, before symptoms are even visible above ground. At
+flowering or later, minute-white, yellow or brown spheres or cysts, about the size of a pin head
+(0.5 mm), can be seen on the outside of roots. Damage to the crop varies from small patches of
+poor growing plants to complete crop failure. Diseased plants first occur in isolated patches and 
+76 POTATO PRODUCTION HANDBOOK
+these become larger with each new crop, if potatoes are continually grown on the infested site. In
+light infestations, potato plants may show no above ground symptoms, but yield can be reduced.
+Light infestations can reduce tuber size, whereas heavy infestations reduce both number and size
+of tubers. PCN is not greatly influenced by soil type and temperature allowing the nematode to
+thrive wherever potatoes are grown.
+Survival
+This organism survives in soil, in the absence of a host, as cysts, which are the tanned remains
+of dead female nematodes each containing as many as 400 eggs. Each egg contains a curled-up
+juvenile nematode. Immature nematodes or larvae emerge when eggs hatch under favourable
+conditions. Hatching is stimulated by chemicals leaking from potato roots, as the roots seek to
+take up water and nutrients. The juvenile nematode moves between soil particles and locates and
+invades potato roots. Once inside the root, the nematode punctures the plant cells and feeds with
+its needle-like stylet. Feeding induces changes in the plant root cells, which become abnormally
+large. Female nematodes, which establish feeding sites on the roots become sedentary and
+progressively enlarge, rupturing the outer root tissue. Slender, male nematodes leave the roots
+and mate with females which now only have their heads embedded in the root and the lower
+parts of their bodies exposed. Once fertilized, eggs develop inside the females, which die about
+the same time as the potato crop forms flowers, becoming the white cysts on the outside of the
+roots.
+Although most PCN development occurs within the root system, the cyst mature outside the
+roots and then fall into the soil at harvest, making them easily transported within soil attached to
+tubers, especially in natural crevices such as tuber eyes. Only under exceptional circumstances,
+e.g. at very high densities, will cysts be found directly attached to potato tubers. When potato
+plants are lifted, the mature cysts drop off and remain dormant in the soil until further crops
+of potatoes are grown. In general, only one life cycle occurs on each growing crop and takes
+from 38-48 days to complete. The host range of PCN is broad, including potato (Solanum spp.), 
+POTATO PRODUCTION HANDBOOK 77
+tomato (Lycopersicon spp.), eggplant (Solanum melongena) and some solanaceous weeds. Thus
+populations of nematode can build up in the soil as long as solanaceous crops are grown.
+Management
+Since the main route by which PCN spreads is through the movement of infested material, primarily
+soil which may be transferred with tubers, plants, waste material or farm machinery, the higher
+the population of PCN in a field, the greater the risk of spreading it to other land. Therefore, the
+key principles of PCN control is biosecurity, targeted at seed potatoes. The objective is to ensure
+that the land on which the seed is grown has been tested and the sample has been found to
+be free from PCN prior to planting. A very low tolerance is set for soil, where seed potatoes are
+grown for marketing. The following measures should be practiced to control PCN.
+• Early land preparation to expose the pest to solar heat for destruction.
+• Use of certified seed in PCN free land.
+• Practise crop rotation of over 5 years with non Solanaceous crops such as cereals,
+ legumes, cabbage family vegetables among others.
+• Destroy promptly volunteer crops as soon as they emerge.
+• Strict field hygiene – cleaning farm tools/equipment/machinery and have a foot bath
+ with disinfection.
+• Use of trap crops such as night shades and egg plants which are planted and uprooted
+ 5 to 6 weeks and disposal off by burning or burying very deep in a pit.
+• Bio-fumigation particulalry with brassica residues.
+• Apply neem-based fungicides such as bionematon.
+Table 9 below presents the signs of these common pests, their identity and management options
+78 POTATO PRODUCTION HANDBOOK
+Signs of Pests /
+Pest Damage Name of Pests Management Options
+English: Cut worm
+Scientific: Agrotis spp
+Pesticides
+Spray with Alphacypermethrin or Dimethoate at 30-40
+mls per 20 litres of water 10
+days after germination
+English: Adult aphids
+Scientific: Myzuspersicae
+IPM
+Rogue destroy infested plants
+Pesticides
+Spray with Alphacypermethrin or Dimethoate at 30-40
+mls per 20 litres of waters
+English: Root knot nematodes
+Scientific: Meloidogymejavanica
+and Mincognita
+IPM
+Examine seeds before use
+Rotation with brasiccas
+Spray Bio nematicides
+Chop brasicca crop residue
+and mix with soils
+Long fallow periods
+Destroy crop residues
+Removal of volunteer plants
+English: Root knot nematodes
+Scientific: Phthorimaeopercullela
+IPM
+Crop rotation
+Use clean seeds
+Hilling
+Destroy infested tubers
+Use moth repellents in store
+Store potato in a store with
+difused light
+POTATO PRODUCTION HANDBOOK 79
+Pesticides
+Spray with Alphacypermethrin or Dimethoate at 30-40
+mls per 20 litres of waters
+Spray store walls and floor as
+below
+Spray potato tubers in store
+Diazinon, Imidacloprid
+6-10mls per 20 litres of water
+English: Larvae and pupae
+Scientific: Tuta absoluta
+Damage plant parts and even
+tubers
+IPM
+Trapping
+Pesticides
+Spray Imidacloprid,
+Indoxacarb and spinosad
+Spray Deltamethrin
+English: White flies
+Scientific:
+Spraying
+1. Mix 20ml of hydrogen
+peroxide with 20 litres of
+water
+2. Add 20ml of liquid cooking
+oil into the solution
+3. Spray the solution on potato leaves including under side
+of leaves
+Trapping
+1. Smear yellow plastic papers with used engine oil
+2. Places the smeared plastic
+papers around the edges of
+the potato farm at least 1m
+above the ground
+3. After the white flies are attracted, remove all the polyethylene papers with used
+engine oil and discard them
+safely
+80 POTATO PRODUCTION HANDBOOK
+English: Potato cyst nematodes
+Scientific: Globodera
+rostochiensis
+Test soils for potato cyst
+nematode
+Use clean seeds
+Solarization of farm
+Plough in cabbages, kales
+into soil
+Trap nematodes and destroy
+Crop rotation
+Field hygiene
+Table 9: Common pests, identify and management (Source: GIZ ToT manual on potato production
+(2017))
+POTATO PRODUCTION HANDBOOK 81
+Chapter 5
+Harvesting and Post-Harvest Handling
+5.1 Dehaulming
+This is the removal or destruction of the haulm (the plant part above the ground level) to allow
+the skin to harden and reduce damage to the tubers during harvest. It improves the storability of
+potato tubers and prevents diseases from spreading from the plant stem to tubers especially viral
+diseases, late blight and stem rot. For plants infected with bacterial wilt, it is too risky to assume
+that the infection has not spread to the tubers simply by removing the haulm. The infected plants
+should be removed totally (roots, stems and tubers) and destroyed.
+When and how to dehaulm: De-haulm two weeks before harvesting when the crop has attained
+physiological maturity and atleast 50% of the haulms have started to turn yellow. This can be
+done using hand tools or uprooting the entire stems from the ground or use of herbicides as
+described below. When the potato crop is dehaulmed it is easier to detach the tubers from the
+stolons at harvest, resulting in less tuber damage.
+1. Cutting of the base of the stem: Use hand tools like slashers to cut off the stems at
+ground level. Even though this method saves on labor, it has limitations. Some varieties may
+start growing /sprouting after slashing. There is an increased risk of virus spread from infected to
+healthy plants, where the cuts above ground can act as entry points for plant pathogens, which
+may later spread to the tubers. Also the tools used may spread disease pathogens from unhealthy
+to healthy plants during dehaulming process.
+2. Pulling off stem and roots: This involves stepping on the base of the plant with both
+legs such that the plant is in between your legs and pulling out the stem and roots carefully
+without exposing the tubers. This procedure is highly recommended but may be tedious and if
+not done properly, the tubers may be exposed to the sun and/or PTM attack. 
+82 POTATO PRODUCTION HANDBOOK
+5.2 Harvesting
+Untimely and poor lifting, handling and storage of potato tubers leads to infestation with PTM
+or infection with disease causing pathogens and thus tuber damage. Potatoes tubers are highly
+perishable (easily deteriorate in quality) due to their high moisture content (about 80% water),
+and if not handled properly after harvesting one may experience 20-45% losses.
+When and how to harvest: Determine if the plant has matured and is ready for harvesting, by first
+uprooting some plants at random, examining the tubers and rubbing the ends to see if the skin
+peels off easily or it has hardened. This technique for determining tuber maturity and skin set is
+known as the ‘Thumb Test”; thumb pressure and lateral force are applied to the skin. When the
+skin does not slip readily, the tubers are deemed to have achieved skin set and may be safely
+harvested. The following should also be considered:
+• Harvest when the soil is dry.
+• Harvest when it is relatively cool with cloud overcasts.
+• Do not expose harvested tubers to sunlight for a long time so as to prevent them from
+ drying out too quickly, and avoid greening of the white skin varieties, which would
+ reduce their keeping quality and consumer acceptance.
+• Avoid harvesting when the soils are wet in order to avoid pathogens sticking on tubers.
+• Shield harvested tubers from rain to avoid the risk of rotting.
+• When packaging into bags ensure you fill the bags half way for ease of lifting and
+ transporting from the farm.
+Steps in harvesting by hand
+• Uproot/ lift the tubers by using hand held hoes or 2-pronged sticks after the haulms are
+ completely dry.
+• Using sticks or fork jembes dig out any tubers that could be stuck in the ground along
+ the ridges or furrows.
+• After harvest ensure the soil on the tuber is dry before transporting the tubers to the
+POTATO PRODUCTION HANDBOOK 83
+ store because soil could spread diseases or pests in the store later. Also soil restricts
+ the movement of oxygen through the pile, inducing anaerobic conditions and
+ consequent tuber rotting.
+Mechanized harvesting
+A mechanized harvester can also be used to harvest the tubers and this saves on time and labour
+costs. Adequate skin set is crucial to prevent mechanical damage to the tubers. The machine
+should be used with care to avoid severe tuber bruising, which results in blackening of the flesh
+underneath the bruise area.
+5.3 Packaging and Transporting
+If the potato farm is far from the store or homestead,
+there will be need for packaging and transporting
+from the field using carts, wheelbarrows, pickups
+etc. Package the potatoes in bags weighing not
+more than 50 kilograms for ease of handling and to
+avoid damaging the tubers.
+5.4 Sorting and Grading
+Select and remove the damaged/bruised, diseased, deformed tubers and any other foreign
+material such as soil clods. All damaged and cut tubers should be removed after harvesting to
+discourage infestation by PTM and rotting in the case of cut tubers. Grading should be carried out
+to separate the ware, seed and chatts. It is advisable that each bag is well labeled according to
+variety description and weight for ease of identification.
+Figure 19: Mechanized potato harvesting
+84 POTATO PRODUCTION HANDBOOK
+5.5 Curing
+Up to 80 % of potato tuber content is water and this needs to be maintained to avoid loss of
+weight and quality. A warm temperature in the shed or holding area before storage is desirable
+as it promotes wound healing and further skin set. The shed area should be well ventilated to
+allow good exchange of air and to achieve good temperature control. High humidity of 85 to 90%
+is essential for optimum wound healing and curing of the tubers.
+5.6 Storage
+The potato tuber is a living entity and it continues to respire in storage, this means that the
+starch is broken down to simple sugars and in turn they are broken down to carbon dioxide and
+water. An effective storage management protocol will slow this process down but it cannot be
+stopped completely. When the process is allowed to proceed rapidly, tubers lose weight through
+the pores on the skin developing a shrivelled appearance. If long storage period (longer than 5
+months) is anticipated, the tubers must be stored at temperatures of between 4o to 8oC in dark
+cool conditions to prolong dormancy. To achieve this, maintain a 95% relative humidity at all
+times.
+Good storage conditions should be cool, dry, dark and well ventilated so as to: keep tubers
+alive, reduce deterioration through natural process of starch breakdown, reduce storage pest
+infestation and damage, and reduce storage loses through rotting, greening and increase tuber
+dormancy period. The store should be sprayed with insecticides to kill tuber moth adults. Spread
+the tubers on crates and turn ounce in a day to prevent spoilage. Also you can place Mexican
+marigold or Eucalyptus leaves and branches on the tubers to repel PTM infestation.
+POTATO PRODUCTION HANDBOOK 85
+5.7 Tuber Quality
+When referring to potato tubers, the term quality can be defined as “the suitability of the
+tubers for the intended end use”. While the market for potatoes becomes more sophisticated,
+the quality criteria also become correspondingly sophisticated. Since potatoes are primarily
+a foodstuff, nutritional quality is of prime importance. As the demand for processed product
+grows, processing quality assumes greater importance. Tuber quality is influenced by the fact
+that the potato is maintained in a fresh state throughout its existence, constantly respiring and
+exposed to physiological and environmental influences during both the field growth stage and
+during storage.
+In crops destined for direct consumption, nutritional value is a major quality attribute. The
+nutritional value of potato tubers is influenced by several factors which are: soil factors, such as
+pH, available nutrients, texture, organic matter content and soil-water relationships; fertilizer
+applications; cultural practices; weather and climatic factors, including temperature, rainfall and
+light intensity; the variety; also postharvest handling and storage.
+In crops destined for processing, dry matter and specific gravity are considered the major quality
+attributes. Dry matter content has been shown to influence the texture of boiled or baked tubers
+and the quality and yield of fried potato pieces. Processors require tubers with high dry matter
+content, as this produces a product with higher consumer acceptability. Consumers prefer french
+fries, which are light in colour, crisp on the outside, fluffy or mealy on the inside and having a
+minimum of oiliness.
+Similarly, high quality potato crisps are light in colour and absorb a minimum of oil during frying.
+Lower dry matter potatoes are more costly to process. More water must be fried out of lower
+dry matter potatoes to meet minimum quality standards. More potatoes must be processed to
+produce the same volume of product and the longer the frying time, results in potatoes absorbing 
+86 POTATO PRODUCTION HANDBOOK
+more fat. Low reducing sugar content, associated with tubers grown to maturity is also desired,
+as this does not produce the dark brown fry colours and the associated bitter taste of the cooked
+product.
+Tuber dry matter content is tedious to determine, with slicing and oven drying for 24 hours being
+the normal procedure. Specific gravity is widely used as an alternative quality attribute of tubers
+and is quick and easy to measure. It is used as an estimate of the solids or dry matter content
+of tubers. The higher the dry matter content, the lower the water content and the higher the
+specific gravity. The specific gravity of a tuber depends not only on the percentage of dry matter
+in it but also on the density of the dry matter and the percentage of air in the tissue. The following
+formula is used to calculate specific gravity:
+Specific gravity = (weight in air) divided by [(weight in air) - (weight in water)]
+There is a close relationship between dry matter content and specific gravity and over the range
+normally observed in potato tubers (14% to 28%) the relationship can be considered as linear
+POTATO PRODUCTION HANDBOOK 87
+Chapter 6
+Marketing Potato
+6.1 Market Requirements
+Market Requirements
+As a farmer there is need to assess the market and prepare a marketing strategy before embarking
+on potato production. The market assessment report should inform the farmer on the following
+marketing information.
+• Annual price trends at farm gate level, aggregation (broker) level and at wholesale
+ market level.
+• Market players (aggregators, transporters, wholesalers, retailers, consumers and market
+ managers) and their roles.
+• The customer behavior and preferences in terms of variety preference, amounts
+ demanded, quality required, payment modes among others.
+• Cost benefit ratios of marketing own produce verses selling through brokers.
+• Identify competitors (other farmers) including an assessment of their strengths and
+ weaknesses.
+Other key information required after analyzing market findings;
+• Lists of names and number of market players, their contacts and locations.
+• Generate average prices, volumes and trends.
+• Calculate value added by each player as potatoes moves to the consumer, challenges
+ and opportunities.
+6.2 Market Assessment
+Farmers “produce and sell” and not “produce to sell”. They plant potatoes because the rain season 
+88 POTATO PRODUCTION HANDBOOK
+has come or because it has been grown by their neighbors and relatives and this tends to become
+as a “habit”. The methods and tools (Annex 8) required to conduct the market assessment will
+be explored and used to develop a potato production and marketing plan. The aim is to increase
+income and provide business opportunities for an agri-entreprenuer. The information gathered
+will help in marketing and assist in understanding;
+• Where and how many potato buyers are there?
+• What varieties do the buyers require from your potato farm and when?
+• What prices are they offering and how are payments made?
+• What volumes, quality, grade and quantity are required?
+1. Steps in preparing market assessment
+As the old age saying goes “To fail to plan is to plan to fail”. Therefore one needs to prepare as a
+form of planning to achieve the goal in market assessment.
+• Identify and define the problem to be addressed by the market assessment exercise
+ for example where can I sell my ware potatoes to get the best returns? - How can you do
+ this? - discussions with other farmers /farmer group/market players on their experiences
+ in potato markets.
+• Identify and define information required to address the problem- market price trends,
+ volumes and trends, supply and demand trends. How? – collect and review reports from
+ market management officers, Ministry of Agriculture extension officers or potato
+ processors.
+• Choose the method (focus group discussions or individual interviews) to use to get
+ market information. In focus group discussion, identify a group of consumers and
+ prepare a checklist of questions for discussion and record the answers. If you choose
+ to interview individual aggregators, wholesalers, processors or retailers or students
+ prepare a questionnaire which has questions you need answers. How? – consult /discuss
+ with consumers or review assessment reports or use own experiences.
+POTATO PRODUCTION HANDBOOK 89
+• Decide on the target market players to reach in the assessment and how to sample
+ them in order to get accurate information required –preferably aggregators, wholesalers,
+ processors or retailers. How? – review previous assessment reports or do rapid market
+ walk assessment using observations, note books or check lists among others.
+• Decide on approaches to reach the respondents (telephone calls, visits or electronic
+ mail). How? - recall previous experiences or refer to other assessment reports.
+• Make a decision how you will analyze the information required (percentages,
+ frequencies/occurrences, averages or values like numbers, volumes, weights or prices).
+ Prepare analysis programs e.g. simple tables, excel data sheet, SPSS template. How? -
+ recall previous experiences or refer to experts in the area.
+• Develop questions to ask or observations to make to collect the information required.
+ How? - refer to the market assessment objectives or refer to assessment reports.
+• Finalize and produce the questionnaires or checklists ready for field data collection
+• Prepare market assessment charts for market information, price trends as presented
+ in Annex 8.
+2. Steps in market data collection
+• Inform the market players early enough and set days for interactions. How? – telephone
+ calls, SMS, make pre interview visits.
+• Prepare a data collection plan. How? –list market players and dates and time of the day
+ to visit them and inform them.
+• Collect data. How?– (record observations on camera or notebook), read out questionnaires
+ and fill in data sheets or leave data sheets with market players to fill and collect them
+ later. Its however important to allocate adequate time and collect as much information
+ as you can by yourself.
+90 POTATO PRODUCTION HANDBOOK
+3. Steps in analyzing , concluding and action planning
+Analysis is simply trying to make sense from data collected. The results of the analysis makes
+one arrive at conclusion and a way forward or recommendation. The guiding steps depending on
+data collected are as follows;
+• Enter the data into simple analysis programs and generate information required e.g.
+ average price trends , volume demanded, potato preferences among others
+• Draw conclusions like “the best time to market potatoes because prices are usually
+ highest is month Y and particularly to market player A. This is because player A has the
+ best offer on prices, volumes and varieties”. They also pay cash through MPESA which is
+ safe for me."
+• Make simple recommendations like “I will produce for Player A because their prices
+ are reasonable and my farm can supply the volumes and varieties required. However a
+ storage structure is required to store for 6 months after harvest which is the best time to
+ sell”
+• Develop an enterprise business plan (what and how to produce and handle after
+ harvesting )
+• Enter into a supply contract or agreement with your market (supermarket, hotel,
+ aggregator, retailer or processor.
+6.3 Planning and Budgeting for Potato Production
+Farmers who produce potatoes at subsistence level produce for home use and only sell the
+surplus. While farmers operating at commercial level produce for the market and only consume
+what cannot be sold. Subsistence level farmers rely on low cost input strategies such as own
+saved inputs (seeds, remnant inputs from previous crops) or own family labor which are rarely
+documented. However commercial farming is different and requires planning for success.
+POTATO PRODUCTION HANDBOOK 91
+Most subsistence and semi commercial farmers do not know relationship between land size,
+crops spacing and optimal amount of inputs needed. They underestimate on inputs and hence
+get lower yields and lower incomes. This is because they have inadequate skills in inputs
+measurement, operational records and application using local containers.
+In order to develop a potato production and marketing plan you need to seek answers to the
+following questions
+• Inputs required-types, volume, costs?
+• Operational activities-land preparation up to harvesting and storage?
+• Marketing activities-transport, processing, storage, insurance, financing?
+• How much to produce and when to sell?
+The planning for production involves tasks that require having knowledge in units of land,
+manure, fertilizer, pesticides rates, volumes, weights of common containers on the farm and
+record keeping.
+Steps in costing production and marketing
+Step 1: Understanding the common units of measurement on a farm
+a. Units of measuring farm size
+Knowledge of units of measurement is important because a farmer will need to know how
+much input is required as per recommendations from experts and as per the farm size. It is also
+important for farmers to familiarize themselves with units of conversion of land area from acres,
+to hectares to meters square and vice versa (Figure 20)
+92 POTATO PRODUCTION HANDBOOK
+b. Units of measure of volumes and weights
+Table 10 presents simple standard units of measure of weight, volumes, time and agricultural
+work. Knowledge of these units will assist one in calculating how to measure or calibrate
+common containers and how to use them on the farm. The table is therefore useful for the farmer
+to accurately interpret recommendations for example on amount of water to use when spraying
+potatoes with fungicides
+Figure 20: Units of measuring land sizes (Source: GIZ ToT manual on potato production (2017))
+POTATO PRODUCTION HANDBOOK 93
+c. Common containers used on farms and their calibration
+In most you cases recommendations like use of fertilizer application will be given in bags per
+acre or kilograms per hectare. There most likely won’t be any weighing equipment to weigh the
+fertilizer in kilograms. Therefore, the containers likely to be used include: tins or buckets or wheel
+barrows and to some extend use of hands. Figure 21 presents some of the basic containers and
+an approximation of their capacities in weights or volumes
+Distance Kilometer (km): 1 km is 1,000 meters
+Length or width of a field Meter (m): 1 m is 100 centimeters
+Surface area Measured in meters squared (m2)
+Hectare (ha): 1 ha is equal to 10,000 m2
+1 acre is equal to 4,000 m2
+1 hectare is equal to 2.1/2 acres
+Yield per unit area Yield per hectare: Yield per 2.1/2 acres
+e.g 4,000 kg/ha potatoes; 1,600 kg/acre
+Volume Measured in litres (L)
+Weight Grams (g)
+Kilograms (kg): 1 kg is 1,000 grams
+Ton (t): 1 ton is 1,000 kg
+Time Minutes (mm)
+Hour (h): 1 hour has 60 minutes
+Man (M): MD 1 day has 8 working hours
+Agricultural work Man Day (MD): The work unit of an adult man in one day
+Example: Work on one hectare requires 10 man days (10MD/ha)
+The work can be done by 1 man in 10 days or 10 men in 1 day
+Table 10: Units of measurement (Source: GIZ ToT manual on potato production (2017))
+94 POTATO PRODUCTION HANDBOOK
+Step 2: Identify and list the inputs involved in commercial potato production
+Seeds, fertilizers, agro chemicals, land, capital, machinery, transport among other inputs.
+Step 3: Identify and list the operational activities involved in commercial potato production
+These are operations that require labor, which for a commercial farmer may not be available as
+free family labor. You must identify the operations and how much labor they need and the cost
+Figure 21: Containers used in measurement in a typical farm (Photo courtesy of A.
+Njogu field experiences)
+POTATO PRODUCTION HANDBOOK 95
+of labor for example;
+• Land preparation
+• Sowing /planting
+• Agronomic practices-spraying, weeding, ridging, fertilizing
+• Harvesting, handling and storage.
+Steps 4: Identify and list the marketing activities in potato farming
+• Transport of the products to the market
+• Packaging, labeling and other handling activities include carting
+• Storage
+• Insurance
+6.4 Gross Margin Analysis
+After identifying the inputs and operations for the amount of potatoes to grow, it’s important
+to know whether the enterprise will result in income or loss. This will involve carrying out
+calculations on costs of inputs and operations and benefits accrued from sales of produce. This is
+also called Gross margin analysis (GMA) or cost benefit ratios in other circles. GM is the difference
+between total sales of item (potatoes) and the total costs of producing that item.
+GM = Total Sales –Total Costs of Production
+The key benefits of carrying out GMA are that it facilitates one to:
+• Compare returns from two enterprises’
+• Make decisions on inputs and costs in relation to expected returns or net incomes
+• Decide on management of inputs and operations for optimal production and return
+Step 1: Calculating the total production costs – inputs and operational costs
+Using the list of inputs and operations costs in step 3, generate the quantities of inputs required 
+96 POTATO PRODUCTION HANDBOOK
+and cost of each unit. Then calculate the total cost of each input or operation and sum them up.
+These are the costs of production and an example is presented in Table 11 and 12.
+Input Name Units Required Average Unit Cost Total Unit Costs
+Seed 200 kgs 25.00 5,000.00
+Fertilizer (DAP) 50 kg bag 2,400.00 2,400.00
+Others C
+Total Costs 7,400.00 +c
+Operation Name Units Required Average Unit Cost Total Unit Costs
+Land Preparation 4 man days 300.00 1,200.00
+Applying Fertilizer 1/8 man days 300.00 37.50
+Others - weeding D
+Total Costs 1,237.50 +d
+Step 2: Calculating marketing costs
+If the farmer will also be engaged in marketing the produce rather than selling on the farm gate,
+marketing costs such as packaging bags will be incurred (Table 11).
+Table 11: Inputs costs calculation
+Table 12: Operational costs
+Table 13: Marketing costs 
+POTATO PRODUCTION HANDBOOK 97
+Marketing Costs Units Required Average Unit Cost Total Unit Costs
+Gunny Bags 4 30.00 120.00
+Loading / Offloading
+from truck
+4 20.00 80.00
+Fuel, Cess, etc E
+Total Costs 200.00 +e
+Step 3: Calculating the sales values
+The sales value is the product of number of units of produce (potatoes) produced multiplied by
+the price on offer.
+Step 4: Calculating the GM and net income
+To calculate GM deduct the inputs and operations costs from the GM
+(GM=sales value – production costs)
+Net income is equal to the GM less that marketing cost. To calculate the net income, deduct the
+marketing costs from the GM
+Net income = Gross margin – (marketing cost)
+6.5 Record Keeping
+Records assist farmers to evaluate their farms past performance and plan for the next season’s
+activities. The key records required for a potato enterprise include:
+• Previous records of potato land used
+• Soil tests results
+• Rotational plans
+Table 13: Marketing costs
+
+98 POTATO PRODUCTION HANDBOOK
+• Activity calendars
+• Financial records – inputs, operations, sales and GM tabulation
+POTATO PRODUCTION HANDBOOK 99
+References
+D. T. Westermann (2005) Nutritional Requirements of Potatoes, Amer J of Potato Res
+(2005) 82:301-307
+GIZ (2017) TOT Training Manual for Good Agricultural Practices, Facilitation and Business
+Skills in Potato Production, Master Trainers Manual Nairobi, Kenya
+GIZ (2017) TOT Manual for Good Agricultural Practices, Facilitation and Business Skills in
+Potato Production, Participants Hand Outs Nairobi, Kenya
+GOK (2015) Draft Root and Tuber Crops Policy, Ministry of Agriculture, Livestock and
+Fisheries Nairobi, Kenya
+Kaguongo, W., Gladys M. and Sigrid G. (2014). Post-harvest losses in potato value chains in
+Kenya: Analysis and recommendations for reduction strategies. Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) and German Federal Ministry for Economic Cooperation and
+Development (BMZ), Bonn, Dahlmannstraße, 53113 Bonn, Germany.
+KEPHIS (2016) Seed Potato Production and Certification Guidelines, Nairobi, Kenya
+Machangi J. M., Gathumbi, M., Onchieku, P., Ng’ang’a, N., Kagundu A., Kibet, S., Muchoki,
+J., Dinah, B., (2016) The National Potato Strategy 2016 – 2020, Ministry of Agriculture, Livestock
+and Fisheries, Nairobi, Kenya
+Njogu A, (2017) Potato Farmer Training Guide on Good Agricultural Practices and Business
+Skills –Farmers handouts GIZ, Nairobi, Kenya
+NPCK (2015) The Potato Variety Catalogue 2015, Eagle Creations, Nairobi, Kenya
+NPCK (2017) The Potato Variety Catalogue 2017, Eagle Creations, Nairobi, Kenya
+Otieno S, Nyongesa M, Nganga N , Mbiyu M, Lungaho C, Muchui M (2015) Potato Hand
+Book, KALRO, Kenya
+www.teagasc.ie/Crops/Potato/knowledge transfer
+100 POTATO PRODUCTION HANDBOOK
+Annexes
+Annex 1: Percent Daily Nutritional Value From Potato Tuber
+Potato (Baked, Flesh with Salt): Percent Daily values are based on a 2,000 calorie diet
+1 cup (122g) 2 cups (244g)
+Nutrients % Daily Value % Daily Value
+Calories 113 5.65% 227 11.35%
+Total Fat 0 0% 0 0%
+Cholesterol 0 0% 0 0%
+Sodium 294 mg 12% 588 mg 25%
+Total Carbohydrate 26 g 9% 53 g 18%
+ Fibre 2 g 7% 4 g 15%
+ Sugars 2 g 2 g
+Protein 2 g 5 g
+Vitamin A 0% 0%
+Vitamin B1 (Thiamin) 0.13 mg 9% 0.26 mg 17%
+Vitamin B2 (Riboflavin) 0.03 mg 2% 0.05 mg 3%
+Vitamin B3 (Niacin) 1.7 mg 9% 3.4 mg 17%
+Vitamin B5 (Pantothenic Acid) 0.68 mg 7% 1.4 mg 14%
+Vitamin B6 (Pyridoxine) 0.37 mg 18% 0.73 mg 37%
+Vitamin B9 (Folate) 11 mcg 3% 22 mcg 5%
+Vitamin B12 (Cobalamin) 0 mcg 0% 0 mcg 0%
+Vitamin C 15.6 mg 26% 31.2 mg 52%
+Vitamin D 0 mg 0% 0 mg 0%
+Vitamin E 0.05 mg 0% 0.01 mg 0%
+Vitamin K 0.37 mg 0% 0.73 mg 1%
+Calcium 6.1 mg 1% 12.2 mg 1%
+Iron 0.43 mg 2% 0.85 mg 5%
+Magnesium 30.5 mg 8% 61 mg 15%
+Phosphorus 61 mg 6% 122 mg 12%
+Potassium 477 mg 14% 954 mg 27%
+Zinc 0.35 mg 2% 0.71 mg 5%
+Copper 0.26 mg 13% 0.52 mg 26%
+Manganese 0.2 mg 10% 0.39 mg 20%
+Selenium 0.37 mcg 1% 0.73 mcg 1%
+Water 92 mg 75.4% 184 g 75.4%
+POTATO PRODUCTION HANDBOOK 101
+Annex 2: Uses of Potato Tubers In The Kenyan Market
+Use Suitable Varieties
+Table Shangi, Kerr’s pink, Acoustic, ambition, Annet, Arizona, Arvona,
+Asante ,Carolus , Challenger, Chulu, Connect , Derby, Desire, El
+Mundo, Evora, Faluka, Jelly, Kenya Baraka, Kenya Karibu, Kenya
+Mavuno, Kenya Mpya, Kenya Sifa, Konjo, Kuroda, Lady Amarilla,
+Manitou, Mayan Gold, Milva, Musica, Nyota, Panamera, Rodeo,
+Royal, Rudolf, Sagita, Sarpo Mira, Saviola, Sherekea, Shifra, Tigoni,
+Toluca, Unica, Voyager, Zafira,
+Chips Rosalin Tana, Wanjiku, Shangi, Sherekea, Annet, Arizona, Arvona,
+Carolus, Caruso, Challenger, Chulu, Connect, Derby, Desire, Jelly,
+Kenya Baraka, Kenya Mavuno, Kenya Mpya, Kenya Sifa, Kerr’s pink,
+Konjo, Kuroda, Lady Amarilla, Laura, Lenana, Manitou, Markies,
+Mayan Gold, Musica, Royal, Rudolf, Sagita, Sarpo Mira, Toluca,
+Unica, Voyager,
+Crips Wanjiku, Sherekea, Caruso, Chulu, Derby, Destiny, Dutch Robijn,
+Kenya Karibu, Kenya Mavuno, Kerr’s pink, Konjo, Lady Amarilla,
+Lenana, Markies, Purple Gold, Rumba, Rudolf, Sagita, Taurus,
+Toluca, Unica,
+Dehydrated products Caruso, Royal, Sarpo Mira,
+Mashing Kerr’s pink, Kenya Chaguo, Kenya Dhamana,
+Frozen chips Arizona, Tigoni,
+102 POTATO PRODUCTION HANDBOOK
+Annex 3: NPCK Viazi Soko Platform
+POTATO PRODUCTION HANDBOOK 103
+104 POTATO PRODUCTION HANDBOOK
+Annex 4: Additional Information On Nutrient Requirement
+Macronutrients
+Nitrogen (N)
+When planting is delayed, a heavy application of nitrogen will not necessarily compensate for
+the truncated growing season and may provide immature tubers with low dry matter at harvest.
+Nitrogen application rate should therefore take account of the expected length of the growing
+season. Optimal application rate will vary depending on soil type and previous cropping history.
+The crop demand for nitrogen is highest during the critical tuber bulking phase and if the crop
+is showing early symptoms of nitrogen deficiency this can be corrected by top dressing prior to
+tuber bulking. Heavy rain, when the crop is young (40 to 50 days after planting) and the demand
+for nitrogen is low, can result in loss of nitrogen due to leaching towards lower soil strata or
+through run off. Splitting the application of nitrogen should be considered if this phenomenon
+is considered a risk. Care should be exercised when applying urea to supply nitrogen as a top
+dressing. Do not apply the urea granules to the whole field and then start to incorporate it into
+the topsoil. Urea should be spread only minutes before it is incorporated into the soil.
+The end use of the crop should also be considered when determining the nitrogen application
+rate. A crop destined for processing will require tubers having high dry matter and therefore
+should receive less nitrogen. Early maturing cultivars require less nitrogen that the late maturing
+types, because the canopy is shorter lived.
+The form of nitrogen applied will affect plant growth and tuber quality. Chemical fertilizers
+supply nitrogen to the soil in one of two forms: ammonium-nitrogen and nitrate-nitrogen. Potato
+roots can only take up the nitrate form directly. When nitrogen is supplied in the ammonium
+form it must first be converted to the nitrate form by soil micro-organisms during the growing
+season through a process known as nitrification. The young plant requires a balance of nitrate
+and ammonium in the root zone. However excess ammonium should be avoided as it reduces
+pH in the root zone (a serious issue when crops are growing in low pH soils) and facilitates the 
+POTATO PRODUCTION HANDBOOK 105
+development of the Rhizoctonia organism. As the crop progresses from tuber initiation on
+through tuber bulking, nitrate nitrogen is more preferable as is it more readily available during
+this period of intense demand.
+Secondary Macronutrients
+Sulphur (S) is traditionally regarded as a secondary element, but now many plant nutritionists
+regard sulphur as the 4th major nutrient due to its importance in the plant. Sulphur along
+with N is a key element in the amino acids, cysteine and methionine, two essential protein
+building blocks. Unlike magnesium, S is not a constituent of chlorophyll, but it is essential in the
+formation of chlorophyll as it is a major component of an enzyme responsible for the synthesis of
+chlorophyll. It helps to reduce incidences of common scab (Streptomyces scabiei) and improves
+tuber dry matter content. It is also readily leached from the soil surface layers to lower strata. The
+S requirements of the potato crop can often be provided through the breakdown of soil organic
+matter. When additional S is required it can be provided by the application of either ammonium
+sulfate or potassium sulfate. Avoid excess application rates as sulphate can be oxidised to
+sulphuric acid and this will further reduce soil pH in already acid soils. In the past, sulphur was
+supplied to the soil as a contaminant of chemical fertilizers. The new high purity formulations
+do not contain S as a contaminant and farmers must plan for its inclusion in a crop nutrition
+program.
+Calcium (Ca) is also regarded as a secondary nutrient, nonetheless it is critical to crop growth
+and development. In the plant it is required in large amounts as calcium pectate for sustaining
+cell wall structural rigidity and cell adherence, providing stability through a process known as
+cross linking. Furthermore it maintains the integrity of cell membranes, where low calcium
+concentrations increase the permeability, resulting in solute leakage. Calcium can only move
+upwards with water through the xylem transport system and when sequestered in plant parts,
+cannot be remobilized to new expanding tissues, unlike for example nitrogen.
+In the soil it is regarded as an ameloiorant and is essential for sustaining soil structure. It assists 
+106 POTATO PRODUCTION HANDBOOK
+crumb formation – a process known as flocculation. This makes the soil more friable, permits
+water to drain down through the large pores created and also enhances soil water retention. Soils
+deficient in Ca permit poor water penetration due to dispersion of clay particles. High potassium
+levels in the soil can inhibit Ca uptake due to competition for uptake sites on the plant roots. The
+cation exchange properties of the soil (a function of soil pH) influence the retention of calcium
+and facilitate its role as a balancing agent. Potatoes have their highest requirement for Ca during
+the rapid phase of tuber bulking, when cell division and expansion rates peak and there is a high
+requirement for products to manufacture new cell walls.
+Calcium is very important in cell division, improved plant resistance to diseases and enhanced
+nitrogen metabolism. Deficiency leads to internal brown spots, hollow hearts and poor colour
+development in red skinned varieties. On tubers, deficiency may manifest as severe cracking
+of the tuber. On foliage, particularly on young leaves deficiency manifests as a pale green
+colour, leaves are small in size and curling downwards of leaf ends. Calcium deficiency is readily
+manifest in stored tubers, and results in tissue blackening due to bruise damage or under severe
+deficiency, in tuber tissue breakdown.
+Magnesium (Mg) is the central atom in the chlorophyll molecule hence its role in chlorophyll
+production. Only some 20% of the plant Mg occurs in chlorophyll, the remainder is involved
+in metabolic reactions. It facilitates the utilization and mobility of phosphorus and promotes
+uniform tuber maturity. Magnesium in the soil is held on clay particles and organic matter and is
+readily available to the potato plant. Magnesium, N and K all influence tuber dry matter content.
+Low levels of Mg will reduce the starch content of tubers and research has confirmed the positive
+benefits of Mg on tuber dry matter and specific gravity. Its deficiency will have a negative effect on
+quality before it has an effect on yield. Low P levels or high K levels in the soil will exacerbate Mg
+deficiency. Magnesium should be supplied to the soil when soil test result shows concentrations
+of <50ppm. Fresh poultry manure is a valuable source of Mg.
+POTATO PRODUCTION HANDBOOK 107
+Zinc (Zn) acts as a binding agent in enzymatic reactions and thus protects proteins from
+denaturing. It has a major role activating enzymes involved in nitrogen assimilation, so deficient
+crops will have lower levels of protein, Zn deficient crops will also have lower starch content.
+Deficiency is usually observed on alkaline soils or is associated with excessive applications of P.
+Deficiency symptoms include stunting, leaf malformation and rolling of young leaves. The latter
+symptoms resemble those caused by infection with PLRV, so caution with diagnosis is required.
+Many fungicides used for the control of late blight (Phytophthora infestans) contain zinc and that
+would be sufficient to fulfill crop requirements. Zinc also reduces incidences of powdery scab
+(Spongospora subterranean, Wallr).
+Micronutrients
+Boron (Bo) has both a functional role and a structural role in the plant, where it is localized mainly
+in the cell wall. It is required for essential growth process such as, cell membrane and cell wall
+development to proceed. It is also involved in fructose metabolism and carbohydrate transport.
+It has a further role in optimizing calcium utilization. Boron deficiency has a detrimental effect
+on the ultrastructure and physical properties of plant cell walls. It prevents internal browning in
+tubers. A deficiency results in plants having a ‘bushy’ appearance due to the necrosis of growing
+points and the consequent compensatory growth of lateral branches.
+Copper (Cu) has a role similar to iron where they provide a site for reaction with molecular oxygen
+during photosynthesis. It plays a key role in the electron transport system and is also involved
+in lignification of plant cell walls. It promotes the production of Vitamin A in potato tubers and
+also facilitates protein synthesis. Copper enhances Mn uptake which also reduces incidences of
+common scab (Streptomyces scabiei).
+Manganese (Mn) is both a constituent and an activator of enzymes involved in metabolism and
+energy transfer. It has a critical role in the photosynthesis reaction where it is associated with the
+photosystem II reaction center. Deficiency is usually observed only on high pH soil (greater than 
+108 POTATO PRODUCTION HANDBOOK
+8.0) while toxic levels may be encountered in acidic soils (pH < 5.0). A deficiency in the plant can
+be moderated by the compound Mancozeb, where Mn and Zn are two of the molecules in the
+fungicide applied to control late blight (Phytophthora infestans) disease in potatoes.
+Iron (Fe) has a homeostatic role in the potato plant and offers protection against abiotic stress
+such as temperature extremes. Deficiency is associated with either water logged or high pH soils;
+it is readily available in acid soils. Excess water during furrow irrigation can induce anaerobic
+conditions in the root zone and promote iron deficiency. The typical symptom is interveinal
+chlorosis. Deficiency can be ameliorated by foliar applications of chelated iron.
+Molybdenum (Mo) is one of the least abundant elements required for plant nutrition. It has
+chemical properties similar to sulphate and phosphate. This feature allows the three elements to
+interact in assimilation and metabolism reactions. Molybdenum shares a root uptake mechanism
+with P. It is required by major enzymes such as nitrate reductase to carry out reactions where it
+converts nitrate to nitrite and then to ammonia before the N is assimilated into amino acids. The
+Mo deficiency in plants is rare, but can be important in low pH soils. Molybdenum availability can
+be improved by the application of lime.
+Chlorine (Cl) has only been considered an essential micronutrient since 1954. In plants it is found
+as the free anion or else bound to organic molecules. Like Mn, it is associated with photosystem
+II where it is involved in catalyzing the oxidation of water, which provides the oxygen required to
+sustain life on the planet. In plant cells it helps maintain turgor through osmoregulation, while
+at the leaf level, it has a role in stomatal functioning. It is applied to plants either in the form
+of ammonium or potassium chloride. However excess application will lead to chlorine toxicity
+which is a problem to potatoes.
+Nickel (Ni) is regarded as the 17th element required for plant growth. It is important in plant
+nitrogen metabolism where it is a functional constituent of eight enzymes, including the urease 
+POTATO PRODUCTION HANDBOOK 109
+enzyme. Urease is a nickel-dependent enzyme, which catalyzes the hydrolysis of urea to produce
+ammonia and carbon dioxide. Hydrolysis of one molecule of urea results in the release of
+two molecules of ammonia and one molecule of carbon dioxide. When Ni is not present, urea
+conversion is impossible, allowing toxic levels to accumulate, leading to chlorosis and necrosis.
+It is required in only trace amounts, with the critical level suggested as about 0.1 parts per million.
+Nickel availability is reduced in soils with high pH.
+Growers are advised to exercise caution when considering the application of micronutrients.
+It is essential that a deficiency is confirmed through laboratory analysis. The application rate
+of the micronutrient must be chosen so as to raise the availability of the micronutrient in the
+soil to produce optimum yields but not elevate its concentration to toxic levels. If an application
+is recommended, adhere rigorously to the advice since some micronutrients are phytotoxic at
+excess rates.
+Organic Matter
+Although organic matter is not strictly a plant nutrient, it is considered one of humanity’s most
+important natural resources and its value to crop nutrition has been appreciated by our farmer
+ancestors since the dawn of agriculture. Farmers have always recognized that soil fertility can be
+maintained or improved through the addition of organic material. Organic matter content can
+be used to classify soil as mineral of organic, with mineral soils having up to 30% organic matter,
+while organic soils may have up to 95% organic matter. Productive soils generally have between
+3 and 6% organic matter.
+Plants can acquire nutrients from two natural sources: organic matter and minerals. It is useful
+to consider the organic matter fraction in the soil under two headings, the fraction comprising
+decomposed plant debris from preceding crops combined with soil microbiota and then the
+recently acquired fraction, generally consisting of plant material from the most immediately
+harvested crop and farm yard manure. This freshly acquired fraction might better be described 
+110 POTATO PRODUCTION HANDBOOK
+as organic material or sometimes as detritus. Such organic material is unstable and the major
+portion disappears rapidly due to decomposition, especially in a warm wet climate. The former
+major, more stable organic matter fraction is known as humus. It is derived from material that
+has been decomposed and is resistant to further decomposition. Decomposing plant tissue
+already contains all the nutrients required for plant growth; while the humus stores nutrients in a
+plant available form. Successive cropping will deplete these resources unless they are constantly
+replenished. The valuable nutrients may also be lost through leaching or erosion.
+In addition to its role as a nutrient reserve, organic matter helps reduce crust formation and
+soil compaction when it contributes to soil particle aggregation, which improves drainage and
+water holding properties. Organic matter further provides a crucial role when it helps to reduce
+soil loss due to erosion. Increasing the soil organic matter content from 1% to 3% helped reduce
+erosion loss by 20% to 33% through improving water infiltration and providing stable aggregate
+formation. Most of the soil organic matter resides in the topsoil and when this is lost to erosion
+the organic matter is also lost.
+What factors does the potato crop require to grow and produce a high yield of tubers?
+• Sunlight
+• Carbon Dioxide (CO2)
+• Water (H2O)
+• Nutrients
+• Correct Temperature
+The plants absorb water through their roots and in the process they also absorb nutrients from
+the soil. Soil and air temperature can affect the levels of H2O absorption and nutrient intake. The
+plant has a system of veins in the stems and leaves that allows the water and nutrients to move
+to all parts from the root tip to the shoot tip.
+Photosynthesis is the process by which plants synthesize their food using sunlight, water and 
+POTATO PRODUCTION HANDBOOK 111
+carbon dioxide. Photosynthesis takes place in the leaf cells, in microscopic structures known as
+chloroplasts. These chloroplasts contain a green pigment, known as chlorophyll, which absorbs
+energy from the sunlight. Chlorophyll is the compound that provides the green colour in leaves.
+The CO2 from the air enters the leaves through tiny openings known as stomata. The energy
+absorbed from the sunlight is used to split the CO2
+ and H2
+O molecules to produce the sugars
+mainly glucose and fructose and also oxygen. The oxygen is released to the atmosphere through
+the stomata. Some of the sugar is broken down to produce structures such as cell walls in new
+leaves, some to produce metabolic products, which sustain the plant, helping it to grow; while
+the remaining sugar is transported to the tubers, where it is converted to starch and stored.
+How to explain differences in tuber yield between fields and seasons
+Farmers often ask “why did my neighbours field yield a bigger crop of tubers than mine?” or “why
+did I have a bigger crop of potatoes last season?”
+Recent developments in crop growth analysis have provided a basis whereby differences in tuber
+yield may be examined against a set of measurable criteria. Tuber yield is determined by:
+• The amount of sunlight intercepted by the canopy
+• The efficiency with which this sunlight is converted to dry matter and
+• The proportion of accumulated dry matter partitioned to the canopy and the tubers.
+The amount of sunlight intercepted: This is determined by the date of planting, the time from
+planting to emergence and the time from emergence to the attainment of full ground cover by
+the shoots - which means that all the sunlight falling on the field is intercepted by the canopy
+and not wasted by simply hitting the soil. The next most important factor is to maintain a healthy
+canopy, which is long lived; this requires the planting the seed tubers at the correct depth and
+spacing, applying the appropriate amount of nutrients, a plentiful supply of water and efficient
+protection against pests and diseases. Attention to these parameters will maximize the amount
+of sunlight intercepted by the canopy.
+112 POTATO PRODUCTION HANDBOOK
+The efficiency of sunlight conversion: This is largely a function of variety – different varieties will
+have different conversion efficiencies. However the process requires that the entire parameters
+essential for growth (water, nutrients and plant protection) are available at the appropriate time
+and in the correct amounts.
+The proportion of accumulated dry matter partitioned to the canopy and the tubers: This
+factor is heavily influenced by variety, but the type of plant nutrient, the amount applied and
+the timing of application, combined with the availability of water, all combine to influence dry
+matter partitioning. Application of excessive levels of nitrogen will promote the development of
+a luxurious canopy, where the dry matter is partitioned to producing longer stems, more leaves
+and new branches at the expense of partitioning to the tubers. Dry matter invested in the canopy
+can be recovered however, if the canopy can be protected against pathogens and pests, then
+sufficient water is available to allow it to grow on to maturity. If the crop-growing season is cut
+short by infestation with late blight or due to scarcity of water, then the investment into a luxurious
+canopy will be wasted, resulting in a yield of small tubers having low dry matter content.
+POTATO PRODUCTION HANDBOOK 113
+Annex 5: Some Recommended Soil Testing Laboratories in Kenya
+Name of Laboratory Location Contacts
+SGS Kenya Limited SGS House Shimazi
+Mombasa
+P.O Box 72118-00200 Nairobi
+Tel:020 2733693
+Email: sgsinquiries-kenya@sgs.com
+University of Nairobi
+Public Health Engineering
+Laboratories
+University of NairobiMain Campus
+P.O Box 30197-00100, Nairobi
+Tel: 020 318262 Ext 28394
+University of Nairobi
+Chemistry DepartmentPesticide Research
+Laboratory
+University of Nairobi
+Chiromo Campus,
+Riverside Drive
+P.O Box 99376-00100, Nairobi
+Tel: 020 4446138
+University of Nairobi
+Department of Land
+Resource Management and
+Agricultural Technology
+University of Nairobi,
+Upper Kabete Campus
+P.O Box 29053-0625, Nairobi
+Tel: 020 631225 Fax: 020 631253
+Email: larmat@gmail.uoni.ac.ke
+Kenya Bureau of
+Standards (KEBS)
+KEBS Centre Popo
+Road, South C, Nairobi
+P.O BOX 54974-00200, Nairobi
+Tel: 020 605490, 020 605506
+Email: info@kebs.org
+Mines and Geological
+Department,
+Chemistry Laboratory
+Machakos Road,
+Industrial Area Nairobi
+P.O Box 30009-00100, Nairobi
+Tel: 020 558034 Fax: 020 554366
+Email: cmg@bidii.com
+Kenya Industrial Research
+and Development Institute
+(KIRDI) Laboratories
+Ndungu Road,
+Industrial area Nairobi
+P.O BOX 30650-00100, Nairobi
+Tel: 020 535966 Fax: 020 555738
+Email: dir@kirdi.go.ke
+114 POTATO PRODUCTION HANDBOOK
+Kenya Agricultural
+Research Institute
+National Agricultural
+Research Laboratories
+Waiyaki Way
+Kabete, Nairobi
+P.O Box 14733-00800, Nairobi
+Tel: 020 4444144, 020 4444251
+Email: ed@iconnect.co.ke
+Kenya Plant Health
+Inspectorate Services
+(KEPHIS)
+Karen Ololua
+Ridge, Nairobi
+P.O BOX 49592,Nairobi
+Tel:882933 Fax:882265
+Email: director@kephis.org
+POTATO PRODUCTION HANDBOOK 115
+Annex 6: Registered Seed Potato Producers
+Name County Contacts Varieties
+ADC-Molo Nakuru 0721 202565 - Judy
+adcmolo@gmail.com
+Markies, Shangi, Sherekea,
+Dutch Robjin, K. Karibu, K.
+Mpya, Bvumbwe, Asante,
+Desiree, Mavuno, Tana,
+K.Sifa, Tigoni, Ambition,
+Manitou, Toluca
+Gene Biotech
+Seeds LTD
+Kajiado 0739 532993 - Nayarani
+narayanimanatan@
+yahoo.com
+Shangi
+Agrico East Africa Nairobi 0722 206179 Mercy
+info@agrico.co.ke
+Markies, Arnova, Rudolph,
+Destiny, Ambition,
+Arizona, Manitou, Toluca,
+Saviola, Faluka, Carolus,
+Kuroda, Zafira
+Kirinyaga Seeds Kiambu 0705 729755 - Koome
+info@keviankenya.com
+Dutch varieties, Tornado,
+Infinity and Imagine
+Charvi Investment NakuruMau Narok
+0724 739739
+Sygenta
+Jelly, Rumba, Milva, Laura
+GTIL (Apical
+cuttings and
+minitubers only)
+Nairobi 0722 662037
+kae@africaonline.co.ke
+Dutch Robijn, Shangi
+and Konjo
+KALRO-Tigoni Kiambu 0712 456653/
+0733 834675
+karitigoni@yahoo.com
+Shangi, Tigoni, Unica,
+Kenya Karibu, Arka,
+Sherekea, Kenya, Mavuno
+116 POTATO PRODUCTION HANDBOOK
+Savannah Fresh
+Hort. Farmers’
+Cooperative
+Society Ltd
+Meru 0721 289617
+0708 347959
+Asante, Sherekea, Sagittal,
+Taurus, Challenger,
+Panamera, Unica, Dutch
+robjin, Konjo and Voyager
+Kenya Highland
+Seeds (Royal seed)
+Nairobi 0706 825555
+Peter.francombe@
+khs.co.ke
+Royal, Sarpo Mira
+Suera Farm Nyandarua 0706 186579
+Suera.flowers@gmail.com
+Musica, Lady Amarilla
+Kisima Farm Meru 0716-968766
+kibet@kisima.co.ke
+Tigoni, Asante, Sherekea, K.
+Mpya, Derby, Sagitta, Taurus,
+Challenger, Evora, Panamera,
+Rodeo, Sifra, Voyager
+Syngenta E.A Ltd Nairobi 0703 018000
+syngenta.east_africa@
+syngenta.com
+Jelly, Rumba
+Stockman Rozen
+Ltd
+Naivasha 0720 603990
+info@srk.co.ke
+Apical stem cuttings and
+mini-tubers of Shangi,
+Unica, Konjo etc
+Singus Enterprises NakuruMolo
+0722 691245 Shangi
+Starlight
+Cooperative
+Society
+NakuruMolo
+0721 109200 Shangi and Sherekea
+Mahindra and
+Mahindra Africa Ltd
+Nairobi P.O. Box 14596-00800
+Nairobi
+0734 282818
+POTATO PRODUCTION HANDBOOK 117
+Baraka Agricultural
+College
+NakuruMolo
+0727 652769 - Virginia Shangi
+Stet Holland B.V The
+Netherlands
+HoltslagHenk- Henk.
+Holts@stet-potatom>
+Den Hartigh The
+Netherlands
+Br.krijger@denhartighpotato.nl
+Connect and Caruso
+Leah Rono Nandi 0727 566988 Dutch robijn
+Grace Rono Trans-Nzoia 0722 460326 Shangi
+Benjamin
+Cheruiyot
+Uasin-Gishu 0726 619426 Dutch robjin
+118 POTATO PRODUCTION HANDBOOK
+Annex 7: Additional Information on Potato Diseases and Pests Management
+Potato Diseases Management
+1. Bacterial Diseases
+a. Bacterial Wilt
+Transmission route
+Ralstonia solanacearum (Rs) causes bacterial wilt of more than 200 species and 50 families of
+plants. Strains of Rs differ in host range, geographical distribution, pathogenicity, epidemiological
+relationships, and physiological properties. Classification of the pathogen relies on two different
+approaches, race and biovar, where race places emphasis on host range characterization and
+biovar classification relies on the use of selected biochemical properties. Thus five races and six
+biovars have been described and designated; races, according to the hosts primarily affected
+and biovars, to the metabolism of different carbon sources. The potato race (race 3; biovar 2)
+is a low-temperature-adapted biovar and it survives at cool temperatures in plant debris and
+latently infects potato tubers. In terms of disease spread, the heavily infected tuber is not a
+serious problem since these generally rot away, but of course serving to maintain contamination
+of the land in which they were grown. However, slightly infected tubers, which show no visible
+symptoms, pose a serious threat of spreading the disease to new areas.
+Soil types have been differentiated as being either conductive or suppressive to bacterial
+wilt; their indirect influence on soil moisture determines the population size of antagonistic
+microorganisms, which affect, in turn, the persistence of R. solanacearum.
+Various cultural practices, whether deliberate or not, have been effective in reducing the
+occurrence of bacterial wilt. Rotation to a non-host crop forces pathogens to persist as survival
+structures and/or as saprophytes. Starvation of the pathogen is a key mechanism of crop rotation.
+2. Viral Diseases
+a. Potato Virus Y
+POTATO PRODUCTION HANDBOOK 119
+Transmission of PVY by aphids occurs in a non-persistent, non-circulative manner, which suggests
+a less intimate interaction between virion and vector than with PLRV. Since the virus Y particles
+are transmitted in a non-persistent fashion, it means that viral replication does not occur within
+the aphid vector and that, unless the aphid feeds on infected plants, it loses its ability to infect
+plants after two to three feedings. Virus Y is transmitted when the virions attach to the aphid
+stylet in a matter of seconds and may remain infectious for four to seventeen hours. Because the
+virions are attached to the outside of the stylet they can be rubbed off it when the aphid feeds
+on other plants growing close by, like for example maize. This explains why the transmission is
+referred to as non-persistent. Virus Y concentration in an infected potato plant is high and this
+significantly increases the chance of uptake by aphids.
+The green peach aphid (Myzus persicae) has been found to be most effective in its role as viral
+vector. Other aphid spp. such as the potato aphids (Macrosiphum euphorbiae) is also capable of
+viral transmission; some 25 species have been identified as having the capability to function as
+PVY vectors. Species differ significantly in their ability to act as vectors.
+Potato Pest and Management
+1. Nematodes
+a. Root Knot Nematodes
+Juveniles (young nematodes) penetrate the root tips and occasionally invade roots in the zone
+of root elongation. Invading nematodes initiate the development of giant cells in the root tissues
+and galling of roots occurs. Eggs are laid inside roots and may number up to 1000. Reproduction
+does not require males. The juvenile emerges from the egg and is the infective agent penetrating
+roots. Juveniles will repeatedly infect roots and may infect tubers as well. They enter tubers
+through the lenticels.
+Environmental factors that influence development of Meloidogyne spp. are moist soils and
+relatively warm temperatures. Temperature and moisture may directly or indirectly affect 
+120 POTATO PRODUCTION HANDBOOK
+nematode abundance and distribution. Temperature directly affects different nematode
+processes such as rate of feeding and root penetration, while nematode infection rate is directly
+impacted by moisture. Plant penetration by root-knot nematodes occurs over a wide range
+of temperatures, between 100
+C and 350
+C, with the optimum at about 270
+C depending on the
+species. Eggs are not laid when temperatures are lower than 14.20
+C or higher than 31.70
+C. Under
+average conditions a female produces 300 to 800 eggs. A new generation can arise within 25 days,
+but under less favourable conditions, the time may be prolonged to 30 to 40 days. Root-knot
+nematodes measure about 0.5 mm to 1.5 mm in length.
+Management
+Note: Several plants show a resistance to nematodes and this is attributed to the presence of
+certain active compounds, such as flavonoids and isothiocyanates. These plant extracts have
+shown potential as raw material for the production of natural nematicides. The efficiency of
+the nematicidal activity can depend on the plant used for the preparation of the extract and
+the extraction method. Plant derived compounds achieve their nematicidal effect, through the
+presence of naturally occurring glucosinolates present in brassica species such as cabbage and
+rapeseed (Brassica napus). The enzyme myrosinase hydrolyses the glucosinolates, to release the
+nematicidal compounds. The development of naturally occurring nematicides is a worthwhile
+activity and deserves investigation.)
+2. Potato Cyst Nematode (PCN)
+A strategy to control PCN
+Since PCN cysts are extremely long lived in soil, even in the absence of suitable host plants,
+eradication of PCN from an infested site is not possible in the short term. However, eradication
+remains as the long term objective for all infested land. Research studies have shown that
+cysts may survive longer than 20 years, even in the absence of suitable host plants. Ongoing
+management of PCN outbreak sites should aim to progressively reduce PCN populations,
+eventually to the point where PCN may be considered to be eradicated. In some countries there 
+POTATO PRODUCTION HANDBOOK 121
+is a major emphasis on the use of resistant cultivars to suppress soil populations of PCN.
+Growing a potato variety, which has complete resistance to the Ro1 strain of Globodera
+rostochiensis reduces the number of cysts in soil over a season by the order of 80-90% reduction
+after each crop. This is because exudates from the potato roots stimulate the eggs to hatch and
+while the juvenile nematodes still invade the potato roots, they do not develop and therefore
+further production of cysts is prevented. Resistant cultivars can cause up to 90% of PCN eggs in
+the vicinity of potato plants to hatch, but the Ro1 strain of PCN cannot encyst on resistant cultivars.
+This is a more effective way to reduce PCN soil populations compared to just using a rotation with
+no potato crop in which the natural decline in number of cysts in soil per season is only 20-30%.
+The growing of other non-PCN resistant potato crops in infested fields is inappropriate as these
+will increase or maintain PCN populations. Tomato and eggplant crops may also increase PCN
+levels and these also should not be grown
+122 POTATO PRODUCTION HANDBOOK
+Annex 8: General Market Assessment Tool
+Market information needed Player 1 Player 2 Player 3 Notes
+1. Type and name of the market person
+(consumer , collector or retailer )
+2. Name of the market and distance from your
+farm
+3. Telephone number of the respondent
+4. What kind / type of tuber variety they prefer?
+5. What size of the tubers do you prefer?
+6. What quantities do they require and when?
+7. How much is paid for the potatoes and how
+(cash , MPESA)
+8. When are payments made (advance, on
+delivery, after delivery)
+9. Is the player willing to purchase potato
+from you
+POTATO PRODUCTION HANDBOOK 123
+Annex 9: Price Trends Charts For Variety A
+Month JAN FEB MAR APR MAY JUN JULY AUG SEPT OCT NOV DEC
+Market
+Name 1
+Market
+Name 2
+Prepared by:
+Charity Maina (NPCK), Judith Oyoo (KALRO-Tigoni), Meshach Rono (GIZ), Mary Mendi (Department
+of AL&F Kiambu), Charles Mwangi (KEPHIS), Judith Chabari (IFDC) and Antony Njogu (consultant)
+Other contributors:
+Jackson Muchoki (GIZ), James Mugo (CIP), Peter Kariuki (NPCK), Gillian Kadenyi (SNV), Florence
+Wambeti (PCPB), Elizabeth Langat (AFA), Alex Kang’eri (MoALF&I), Hannah Odour (Department of
+AL&F Nakuru) and Duncan Maina (Toyota tsusho)
+Reviewed by:
+Prof. John H. Nderitu (Chairman NPCK), John Burke and Seamus Crosse (Teagasc)
+Designed by:
+Douglas Macharia (Shalva Limited)
+Coordinated by:
+Wachira Kaguongo (NPCK)
+NATIONAL POTATO COUNCIL OF KENYA
+KALRO Kabete Campus, Off Waiyaki Way,
+P.O. Box 29982-00100 Nairobi, Kenya
+T: +254 712 338 633 / +254 799 739 578
+E: npck@npck.org
+W: http://www.npck.org
