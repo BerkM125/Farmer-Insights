@@ -3,6 +3,11 @@ from models import SatelliteRequest, SatelliteResponse
 import os
 from supabase import create_client, Client
 import ee
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ee.Authenticate()
 
 ee.Initialize(project="farmer-insights-project")
 

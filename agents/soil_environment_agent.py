@@ -3,6 +3,9 @@ from models import SoilEnvironmentRequest, SoilEnvironmentResponse
 import ee
 from supabase import create_client, Client
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 ee.Initialize(project="farmer-insights-project")
 
