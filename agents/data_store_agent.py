@@ -17,8 +17,30 @@ SATELLITE_AGENT_ADDRESS = "agent1qt6uwy02w48l49z007txkyys63e9tj73up3am4ftakejlmx
 MARKET_AGENT_ADDRESS = "agent1q26j45u6rtm83csyqhre6l0qwmdc67y065emknmcv9wvhcltfte0zfa4s2r"
 SOIL_ENVIRONMENT_AGENT_ADDRESS = "agent1q0j9fcj57s70sm00asqpr4zh08juxk3wzzxz2zh2hua7el0alu4l27t40st"
 
+# Storage for collected responses
+collected_data = {
+    "weather": None,
+    "satellite": None,
+    "market": None,
+    "soil_environment": None
+}
 
-# EVENTUALLY DO NOT HARDCODE THIS
+
+def check_and_log_complete_data(ctx: Context):
+    """Check if all data is collected and log it."""
+    if all(value is not None for value in collected_data.values()):
+        ctx.logger.info("=" * 60)
+        ctx.logger.info("ALL DATA COLLECTED:")
+        ctx.logger.info("=" * 60)
+        ctx.logger.info(f"Complete Data Dictionary: {collected_data}")
+        ctx.logger.info("=" * 60)
+        
+        # Reset for next collection
+        for key in collected_data:
+            collected_data[key] = None
+
+
+# Create the requests (after class definitions)
 WEATHER_REQUEST = WeatherRequest(latitude=40.7128, longitude=-74.0060)
 SATELLITE_REQUEST = SatelliteRequest(latitude=40.7128, longitude=-74.0060)
 MARKET_REQUEST = MarketRequest(crop_type="wheat")
@@ -68,26 +90,30 @@ async def ask_agents(ctx: Context):
  
 @agent.on_message(model=WeatherResponse)
 async def handle_weather(ctx: Context, sender: str, data: WeatherResponse):
-    ctx.logger.info(f"Got weather forecast from {sender}:")
-    ctx.logger.info(f"  Data: {data}")
+    ctx.logger.info(f"Received weather data from {sender}")
+    collected_data["weather"] = data.model_dump()
+    check_and_log_complete_data(ctx)
 
 
 @agent.on_message(model=SatelliteResponse)
 async def handle_satellite(ctx: Context, sender: str, data: SatelliteResponse):
-    ctx.logger.info(f"Got satellite response from {sender}:")
-    ctx.logger.info(f"  Data: {data}")
+    ctx.logger.info(f"Received satellite data from {sender}")
+    collected_data["satellite"] = data.model_dump()
+    check_and_log_complete_data(ctx)
 
 
 @agent.on_message(model=MarketResponse)
 async def handle_market(ctx: Context, sender: str, data: MarketResponse):
-    ctx.logger.info(f"Got market response from {sender}:")
-    ctx.logger.info(f"  Data: {data}")
+    ctx.logger.info(f"Received market data from {sender}")
+    collected_data["market"] = data.model_dump()
+    check_and_log_complete_data(ctx)
 
 
 @agent.on_message(model=SoilEnvironmentResponse)
 async def handle_soil_environment(ctx: Context, sender: str, data: SoilEnvironmentResponse):
-    ctx.logger.info(f"Got soil environment response from {sender}:")
-    ctx.logger.info(f"  Data: {data}")
+    ctx.logger.info(f"Received soil environment data from {sender}")
+    collected_data["soil_environment"] = data.model_dump()
+    check_and_log_complete_data(ctx)
 
 
 if __name__ == "__main__":
