@@ -7,6 +7,7 @@ from functools import wraps
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
 
 @app.route('/health', methods=['GET'])
 def health_check():

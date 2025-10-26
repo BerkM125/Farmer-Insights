@@ -24,7 +24,7 @@ def fetch_weather_data(latitude: float, longitude: float):
         "latitude": latitude,
         "longitude": longitude,
         "current": "temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m",
-        "daily": "temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max",
+        "daily": "temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,uv_index_max",
         "temperature_unit": "fahrenheit",
         "wind_speed_unit": "mph",
         "timezone": "auto"
@@ -55,11 +55,11 @@ async def handle_weather_request(ctx: Context, sender: str, msg: WeatherRequest)
             temperature_low=daily["temperature_2m_min"][0],
             humidity=current["relative_humidity_2m"],
             precipitation_chance=daily["precipitation_probability_max"][0] if daily["precipitation_probability_max"][0] else 0.0,
+            precipitation_sum=daily["precipitation_sum"][0] if daily["precipitation_sum"][0] else 0.0,
             wind_speed=current["wind_speed_10m"],
             wind_direction=wind_direction_from_degrees(current["wind_direction_10m"]),
             condition=str(current["weather_code"]),
             uv_index=int(daily["uv_index_max"][0]) if daily["uv_index_max"][0] else 0,
-            visibility=10.0
         )
         
         ctx.logger.info(f"Sending weather forecast to {sender}")
