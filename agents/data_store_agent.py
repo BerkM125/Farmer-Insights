@@ -36,7 +36,7 @@ SATELLITE_AGENT_ADDRESS = (
     "agent1qt6uwy02w48l49z007txkyys63e9tj73up3am4ftakejlmx8aqev7jzf37m"
 )
 MARKET_AGENT_ADDRESS = (
-    "agent1q26j45u6rtm83csyqhre6l0qwmdc67y065emknmcv9wvhcltfte0zfa4s2r"
+    "agent1q0z3dxx3huw6rq625s9vfke5w6drt80xdsjaelhqf6ga4rr9egze6vqysus"
 )
 SOIL_ENVIRONMENT_AGENT_ADDRESS = (
     "agent1q0j9fcj57s70sm00asqpr4zh08juxk3wzzxz2zh2hua7el0alu4l27t40st"
@@ -97,7 +97,36 @@ def check_and_log_complete_data(ctx: Context):
             ctx.logger.info(f"Records: {result.data}")
 
         except Exception as e:
-            ctx.logger.error(f"❌ Error inserting to Supabase: {e}")
+            ctx.logger.error(f"❌ Error inserting weather data to Supabase: {e}")
+
+        # Insert market data into Supabase (one row per price data point)
+        try:
+            market = collected_data["market"]
+            if market and market.get("price_records"):
+                price_records = []
+                for record in market["price_records"]:
+                    price_record = {
+                        "date": record["date"],
+                        "crop_name": market["crop_name"],
+                        "unit": market["unit"],
+                        "price": record["price"]
+                    }
+                    price_records.append(price_record)
+                
+                # Upsert all records (insert or update if date + crop_name exists)
+                result = supabase.table("market_prices").upsert(
+                    price_records,
+                    on_conflict="date,crop_name"
+                ).execute()
+                
+                ctx.logger.info(f"✅ Market data inserted to Supabase for crop: {market['crop_name']}")
+                ctx.logger.info(f"Inserted {len(price_records)} price records")
+                ctx.logger.info(f"Date range: {price_records[0]['date']} to {price_records[-1]['date']}")
+            else:
+                ctx.logger.warning("No market price records to insert")
+                
+        except Exception as e:
+            ctx.logger.error(f"❌ Error inserting market data to Supabase: {e}")
 
         # Reset weather data for next collection
         collected_data["weather"] = None

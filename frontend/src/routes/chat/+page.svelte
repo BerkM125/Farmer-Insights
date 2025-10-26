@@ -1,18 +1,30 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { sendMessage } from '$lib/openai.js';
+	import { sendMessage } from '$lib/api.js';
 
 	let messages = $state([]);
 	let inputValue = $state('');
 	let isLoading = $state(false);
 	let error = $state('');
 	let inputElement;
+	let messagesContainer;
 
 	// Auto-focus input when page loads
 	onMount(() => {
 		if (inputElement) {
 			inputElement.focus();
+		}
+	});
+
+	// Auto-scroll to bottom when new messages arrive
+	$effect(() => {
+		// This effect runs whenever messages change
+		messages;
+		if (messagesContainer) {
+			setTimeout(() => {
+				messagesContainer.scrollTop = messagesContainer.scrollHeight;
+			}, 0);
 		}
 	});
 
@@ -67,7 +79,7 @@
 	</header>
 
 	<div class="chat-container">
-		<div class="messages">
+		<div class="messages" bind:this={messagesContainer}>
 			{#if messages.length === 0}
 				<div class="empty-state">
 					<p class="emoji">🌾</p>
