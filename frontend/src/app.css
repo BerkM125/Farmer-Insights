@@ -6,8 +6,13 @@
 	--txt-3: hsl(205, 10%, 40%);
 	--txt-2: hsl(205, 10%, 20%);
 	--txt-1: hsl(205, 10%, 12%);
-	--acc-1: hsl(81, 37%, 60%);
-	--acc-2: hsl(81, 32%, 50%);
+	--test-1: hsl(97, 9%, 66%);
+	--test-2: hsl(111, 7%, 60%);
+	--test-3: hsl(116, 7%, 54%);
+	--red-1: hsl(0, 65%, 65%);
+	--yellow-1: hsl(45, 65%, 50%);
+	--green-1: hsl(80, 55%, 55%);
+	--blue-1: hsl(170, 55%, 50%);
 
 	box-sizing: border-box;
 }
@@ -15,7 +20,12 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: var(--txt-1);
+	color: var(--txt-2);
 	background: var(--bg-1);
 	font-family: 'Rethink Sans';
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
