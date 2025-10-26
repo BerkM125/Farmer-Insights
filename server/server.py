@@ -305,7 +305,16 @@ def rag_query():
         if not user_messages:
             return jsonify({"error": "No user messages found"}), 400
 
-        latest_user_prompt = user_messages[-1]["content"]
+        # Extract text from the latest user message (handle both string and multimodal format)
+        latest_message_content = user_messages[-1]["content"]
+        if isinstance(latest_message_content, str):
+            latest_user_prompt = latest_message_content
+        elif isinstance(latest_message_content, list):
+            # Multimodal format - extract text from the array
+            text_parts = [item.get("text", "") for item in latest_message_content if item.get("type") == "text"]
+            latest_user_prompt = " ".join(text_parts)
+        else:
+            latest_user_prompt = str(latest_message_content)
 
         # Get relevant context from RAG
         context_items = get_rag_context(latest_user_prompt, n_results)
