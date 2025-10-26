@@ -57,8 +57,6 @@ def check_and_log_complete_data(ctx: Context):
         ctx.logger.info("=" * 60)
         ctx.logger.info("ALL DATA COLLECTED - PROCEEDING WITH DATABASE UPDATES:")
         ctx.logger.info("=" * 60)
-        ctx.logger.info(f"Collected Data Dictionary: {collected_data}")
-        ctx.logger.info("=" * 60)
 
         # Insert weather data into Supabase (7-day forecast)
         try:
@@ -92,7 +90,6 @@ def check_and_log_complete_data(ctx: Context):
 
             ctx.logger.info(f"✅ Weather data inserted to Supabase for farm: {FARM_ID}")
             ctx.logger.info(f"Inserted {len(weather_records)} daily forecast records")
-            ctx.logger.info(f"Records: {result.data}")
 
         except Exception as e:
             ctx.logger.error(f"❌ Error inserting weather data to Supabase: {e}")
@@ -143,7 +140,7 @@ def check_and_log_complete_data(ctx: Context):
 # Create the requests (after class definitions)
 WEATHER_REQUEST = WeatherRequest(latitude=40.7128, longitude=-74.0060)
 SATELLITE_REQUEST = SatelliteRequest(latitude=40.7128, longitude=-74.0060)
-MARKET_REQUEST = MarketRequest(crop_type="Wheat")
+MARKET_REQUEST = MarketRequest(crop_type="Corn")
 SOIL_ENVIRONMENT_REQUEST = SoilEnvironmentRequest(latitude=40.7128, longitude=-74.0060)
 
 

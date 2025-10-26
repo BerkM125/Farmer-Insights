@@ -10,9 +10,13 @@
 	--test-2: hsl(111, 7%, 60%);
 	--test-3: hsl(116, 7%, 54%);
 	--red-1: hsl(0, 65%, 65%);
+	--red-2: hsl(0, 60%, 60%);
 	--yellow-1: hsl(45, 65%, 60%);
+	--yellow-2: hsl(45, 60%, 55%);
 	--green-1: hsl(80, 55%, 50%);
+	--green-2: hsl(80, 50%, 45%);
 	--blue-1: hsl(170, 55%, 50%);
+	--blue-2: hsl(170, 50%, 45%);
 
 	box-sizing: border-box;
 }

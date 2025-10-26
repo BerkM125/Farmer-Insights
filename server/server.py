@@ -12,7 +12,7 @@ from supabase import create_client, Client
 
 # Load environment variables from root .env file
 root_dir = Path(__file__).parent.parent
-load_dotenv(dotenv_path=root_dir / '.env')
+load_dotenv(dotenv_path=root_dir / ".env")
 
 app = Flask(__name__)
 CORS(app)
@@ -26,29 +26,31 @@ embedding = embedding_functions.SentenceTransformerEmbeddingFunction(
 # Get or create collection
 try:
     collection = chroma_client.get_collection(
-        name="static_knowledge_base",
-        embedding_function=embedding
+        name="static_knowledge_base", embedding_function=embedding
     )
 except Exception:
     collection = chroma_client.create_collection(
         name="static_knowledge_base",
         embedding_function=embedding,
-        metadata={"description": "Static knowledge base for RAG"}
+        metadata={"description": "Static knowledge base for RAG"},
     )
 
 # Initialize Supabase client
-supabase: Client = create_client(
-    os.getenv('SUPABASE_URL'),
-    os.getenv('SUPABASE_KEY')
-)
+supabase: Client = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_KEY"))
+
 
 # Initialize Lava Payments token
 def get_lava_token():
-    return base64.b64encode(json.dumps({
-        "secret_key": os.getenv('LAVA_API_KEY'),
-        "connection_secret": os.getenv('LAVA_SELF_CONNECTION_SECRET'),
-        "product_secret": os.getenv('LAVA_SELF_PRODUCT_SECRET')
-    }).encode()).decode()
+    return base64.b64encode(
+        json.dumps(
+            {
+                "secret_key": os.getenv("LAVA_API_KEY"),
+                "connection_secret": os.getenv("LAVA_SELF_CONNECTION_SECRET"),
+                "product_secret": os.getenv("LAVA_SELF_PRODUCT_SECRET"),
+            }
+        ).encode()
+    ).decode()
+
 
 def get_rag_context(query: str, n_results: int = 3):
     """
@@ -67,98 +69,142 @@ def get_rag_context(query: str, n_results: int = 3):
     results = collection.query(
         query_texts=[query],
         n_results=n_results,
-        include=["documents", "distances", "metadatas"]
+        include=["documents", "distances", "metadatas"],
     )
 
     context_items = []
     for doc, distance, metadata in zip(
-        results['documents'][0],
-        results['distances'][0],
-        results['metadatas'][0]
+        results["documents"][0], results["distances"][0], results["metadatas"][0]
     ):
-        context_items.append({
-            "text": doc,
-            "distance": distance,
-            "metadata": metadata
-        })
+        context_items.append({"text": doc, "distance": distance, "metadata": metadata})
 
     return context_items
 
-def get_realtime_farm_data():
+
+def get_realtime_farm_data(crop_list=None):
     """
     Fetch real-time data from Supabase tables.
-    
+
+    Args:
+        crop_list: Optional list of crop names to filter market data
+
     Returns:
         Dictionary containing weather, market, and other farm data
     """
     try:
         # Fetch weather data (most recent 7 days)
-        weather_response = supabase.table("weather_data").select("*").order("date", desc=False).limit(7).execute()
-        
-        # Fetch market prices (all available)
-        market_response = supabase.table("market_prices").select("*").order("date", desc=False).execute()
-        
+        weather_response = (
+            supabase.table("weather_data")
+            .select("*")
+            .order("date", desc=False)
+            .limit(7)
+            .execute()
+        )
+
+        # Fetch market prices with optional crop filter
+        market_query = supabase.table("market_prices").select("*")
+
+        if crop_list:
+            # Filter by crop names (case-insensitive)
+            market_query = market_query.in_("crop_name", crop_list)
+
+        market_response = market_query.order("date", desc=False).execute()
+
         return {
             "weather": weather_response.data if weather_response.data else [],
-            "market": market_response.data if market_response.data else []
+            "market": market_response.data if market_response.data else [],
         }
     except Exception as e:
         print(f"Error fetching real-time data: {e}")
-        return {
-            "weather": [],
-            "market": []
-        }
+        return {"weather": [], "market": []}
+
 
 def format_realtime_data(realtime_data):
     """
     Format real-time data into a readable text format for the LLM.
-    
+
     Args:
         realtime_data: Dictionary containing weather and market data
-        
+
     Returns:
         Formatted string with real-time data
     """
     formatted_text = "=== REAL-TIME PERSONALIZED FARM DATA ===\n\n"
-    
+
     # Format weather data
     if realtime_data["weather"]:
         formatted_text += "** Weather Forecast (Next 7 Days) **\n"
         for day in realtime_data["weather"]:
             formatted_text += f"Date: {day.get('date', 'N/A')}\n"
             formatted_text += f"  - Temperature: {day.get('temperature_low_f', 'N/A')}°F to {day.get('temperature_high_f', 'N/A')}°F\n"
-            formatted_text += f"  - Rainfall Chance: {day.get('rainfall_chance', 'N/A')}%\n"
-            formatted_text += f"  - Rainfall Amount: {day.get('rainfall_amount_mm', 'N/A')} mm\n"
-            if day.get('humidity_percent'):
+            formatted_text += (
+                f"  - Rainfall Chance: {day.get('rainfall_chance', 'N/A')}%\n"
+            )
+            formatted_text += (
+                f"  - Rainfall Amount: {day.get('rainfall_amount_mm', 'N/A')} mm\n"
+            )
+            if day.get("humidity_percent"):
                 formatted_text += f"  - Humidity: {day.get('humidity_percent')}%\n"
-            if day.get('wind_speed_mph'):
+            if day.get("wind_speed_mph"):
                 formatted_text += f"  - Wind Speed: {day.get('wind_speed_mph')} mph from {day.get('wind_direction', 'N/A')}\n"
             formatted_text += f"  - UV Index: {day.get('uv_index', 'N/A')}\n\n"
     else:
         formatted_text += "** Weather Forecast **\nNo weather data available.\n\n"
-    
+
     # Format market data
     if realtime_data["market"]:
         formatted_text += "** Market Prices **\n"
         # Group by crop
         crops = {}
         for price in realtime_data["market"]:
-            crop_name = price.get('crop_name', 'Unknown')
+            crop_name = price.get("crop_name", "Unknown")
             if crop_name not in crops:
                 crops[crop_name] = []
             crops[crop_name].append(price)
-        
+
         for crop_name, prices in crops.items():
-            formatted_text += f"\n{crop_name.title()} ({prices[0].get('unit', 'N/A')}):\n"
+            formatted_text += (
+                f"\n{crop_name.title()} ({prices[0].get('unit', 'N/A')}):\n"
+            )
             for price in prices[:10]:  # Limit to 10 most recent prices per crop
-                formatted_text += f"  - {price.get('date', 'N/A')}: ${price.get('price', 'N/A')}\n"
+                formatted_text += (
+                    f"  - {price.get('date', 'N/A')}: ${price.get('price', 'N/A')}\n"
+                )
     else:
         formatted_text += "** Market Prices **\nNo market data available.\n\n"
-    
+
     formatted_text += "\n=== END REAL-TIME DATA ===\n"
     return formatted_text
 
-@app.route('/rag-query', methods=['POST'])
+
+@app.route("/api/farm-data", methods=["GET"])
+def get_farm_data():
+    """
+    Get real-time farm data from Supabase.
+
+    Query parameters:
+        crops: Optional comma-separated list of crop names to filter (e.g., "corn,soybeans,wheat")
+
+    Returns:
+    {
+        "weather": [...],  // 7-day forecast
+        "market": [...]    // market prices (filtered by crops if provided)
+    }
+    """
+    try:
+        # Get optional crops filter from query params
+        crops_param = request.args.get("crops")
+        crop_list = (
+            [c.strip().lower() for c in crops_param.split(",")] if crops_param else None
+        )
+
+        realtime_data = get_realtime_farm_data(crop_list)
+        return jsonify(realtime_data), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/rag-query", methods=["POST"])
 def rag_query():
     """
     Process a RAG query and return LLM response with context.
@@ -184,27 +230,29 @@ def rag_query():
     try:
         data = request.get_json()
 
-        if not data or 'messages' not in data:
-            return jsonify({'error': 'Missing "messages" in request body'}), 400
+        if not data or "messages" not in data:
+            return jsonify({"error": 'Missing "messages" in request body'}), 400
 
-        messages = data['messages']
-        n_results = data.get('n_results', 3)
+        messages = data["messages"]
+        n_results = data.get("n_results", 3)
 
         # Get the latest user message for RAG context retrieval
-        user_messages = [m for m in messages if m['role'] == 'user']
+        user_messages = [m for m in messages if m["role"] == "user"]
         if not user_messages:
-            return jsonify({'error': 'No user messages found'}), 400
-        
-        latest_user_prompt = user_messages[-1]['content']
+            return jsonify({"error": "No user messages found"}), 400
+
+        latest_user_prompt = user_messages[-1]["content"]
 
         # Get relevant context from RAG
         context_items = get_rag_context(latest_user_prompt, n_results)
 
         # Format context for LLM
-        context_text = "\n\n".join([
-            f"[Source: {item['metadata']['source']}]\n{item['text']}"
-            for item in context_items
-        ])
+        context_text = "\n\n".join(
+            [
+                f"[Source: {item['metadata']['source']}]\n{item['text']}"
+                for item in context_items
+            ]
+        )
 
         # Get real-time farm data from Supabase
         realtime_data = get_realtime_farm_data()
@@ -212,14 +260,13 @@ def rag_query():
         print(realtime_text)
 
         # Load system prompt template from file
-        system_prompt_path = Path(__file__).parent / 'system_prompt.md'
-        with open(system_prompt_path, 'r') as f:
+        system_prompt_path = Path(__file__).parent / "system_prompt.md"
+        with open(system_prompt_path, "r") as f:
             system_prompt_template = f.read()
 
         # Create system message with both RAG context and real-time data
         system_message = system_prompt_template.format(
-            realtime_data=realtime_text,
-            rag_context=context_text
+            realtime_data=realtime_text, rag_context=context_text
         )
 
         # Build the messages array for the LLM with conversation history
@@ -227,8 +274,8 @@ def rag_query():
 
         # Add all conversation history (excluding any existing system messages from client)
         for msg in messages:
-            if msg['role'] != 'system':
-                llm_messages.append({"role": msg['role'], "content": msg['content']})
+            if msg["role"] != "system":
+                llm_messages.append({"role": msg["role"], "content": msg["content"]})
 
         # Call OpenAI via Lava Payments
         token = get_lava_token()
@@ -237,26 +284,28 @@ def rag_query():
             "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
             headers={
                 "Authorization": f"Bearer {token}",
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
-            json={
-                "model": "gpt-4o-mini",
-                "messages": llm_messages
-            }
+            json={"model": "gpt-4o-mini", "messages": llm_messages},
         )
 
         lava_data = lava_response.json()
-        response_text = lava_data['choices'][0]['message']['content']
+        response_text = lava_data["choices"][0]["message"]["content"]
 
-        return jsonify({
-            'response': response_text,
-            'context': context_items,
-            'model': lava_data.get('model', 'gpt-4o-mini')
-        }), 200
+        return (
+            jsonify(
+                {
+                    "response": response_text,
+                    "context": context_items,
+                    "model": lava_data.get("model", "gpt-4o-mini"),
+                }
+            ),
+            200,
+        )
 
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        return jsonify({"error": str(e)}), 500
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True, port=8080)
