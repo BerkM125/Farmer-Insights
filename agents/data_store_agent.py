@@ -1,4 +1,6 @@
 from uagents import Agent, Context
+import os
+from supabase import create_client, Client
 from models import (
     WeatherRequest,
     WeatherResponse,
