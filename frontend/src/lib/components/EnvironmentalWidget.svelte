@@ -33,7 +33,7 @@
 				<span class="value"
 					>{environmentalData.soil_temperature_c
 						? Math.round(environmentalData.soil_temperature_c)
-						: '--'}°C</span
+						: '--'}°</span
 				>
 			</div>
 		</div>
