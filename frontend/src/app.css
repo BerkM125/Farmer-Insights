@@ -1,0 +1,21 @@
+* {
+	--bg-1: hsl(51, 60%, 92%);
+	--bg-2: hsl(51, 40%, 88%);
+	--bg-3: hsl(51, 30%, 84%);
+	--bg-4: hsl(51, 20%, 80%);
+	--txt-3: hsl(205, 10%, 40%);
+	--txt-2: hsl(205, 10%, 20%);
+	--txt-1: hsl(205, 10%, 12%);
+	--acc-1: hsl(81, 37%, 60%);
+	--acc-2: hsl(81, 32%, 50%);
+
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--txt-1);
+	background: var(--bg-1);
+	font-family: 'Rethink Sans';
+}
