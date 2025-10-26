@@ -3,4 +3,5 @@ pydantic
 requests
 supabase
 python-dotenv
+python-dateutil
 
