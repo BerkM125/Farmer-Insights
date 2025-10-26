@@ -2,6 +2,7 @@
 	import { farmDataStore } from '$lib/stores.svelte.js';
 	import WeatherWidget from '$lib/components/WeatherWidget.svelte';
 	import MarketWidget from '$lib/components/MarketWidget.svelte';
+	import CropMonitorWidget from '$lib/components/CropMonitorWidget.svelte';
 </script>
 
 <div class="container">
@@ -35,14 +36,10 @@
 			<MarketWidget />
 
 			<div class="side-by-side">
-				<a href="/satellite" class="widget satellite">
-					<h2>Field Imagery</h2>
-					<p>Updated 2 days ago</p>
-					<p class="small-text"></p>
-				</a>
+				<CropMonitorWidget />
 
 				<a href="/crops" class="widget crops">
-					<h2>Environment</h2>
+					<h2>Soil Monitor</h2>
 					<p>Soil moisture: 65%</p>
 					<p>pH level: 6.8</p>
 				</a>
@@ -170,7 +167,7 @@
 		gap: 0.5rem;
 		padding: 0.5rem;
 		background: var(--bg-3);
-		border-radius: 1.75rem;
+		border-radius: 1rem;
 		border: 1px solid var(--bg-4);
 	}
 
@@ -183,7 +180,7 @@
 	.widget {
 		padding: 1rem;
 		background: var(--bg-2);
-		border-radius: 1.75rem;
+		border-radius: 1rem;
 		border: 1px solid var(--bg-3);
 	}
 
@@ -199,7 +196,7 @@
 	.chat-bar {
 		padding: 1rem;
 		background: var(--bg-3);
-		border-radius: 1.75rem;
+		border-radius: 1rem;
 		border: 1px solid var(--bg-4);
 		cursor: text;
 	}
