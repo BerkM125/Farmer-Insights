@@ -28,9 +28,10 @@
 	// Auto-scroll to bottom when new messages arrive or streaming updates
 	$effect(() => {
 		// This effect runs whenever messages or streamingMessage change
-		messages;
-		streamingMessage;
+		messages.length;
+		streamingMessage.length;
 		if (messagesContainer) {
+			// Scroll to absolute bottom - use setTimeout to ensure DOM is fully updated
 			setTimeout(() => {
 				messagesContainer.scrollTop = messagesContainer.scrollHeight;
 			}, 0);

@@ -421,7 +421,7 @@ def rag_query():
                 "Authorization": f"Bearer {token}",
                 "Content-Type": "application/json",
             },
-            json={"model": "gpt-4o-mini", "messages": llm_messages},
+            json={"model": "gpt-4o", "messages": llm_messages},
         )
 
         # Check if streaming is requested
@@ -450,7 +450,7 @@ def rag_query():
                             "Content-Type": "application/json",
                         },
                         json={
-                            "model": "gpt-4o-mini",
+                            "model": "gpt-4o",
                             "messages": llm_messages,
                             "stream": True,
                         },
@@ -510,7 +510,7 @@ def rag_query():
                     "Authorization": f"Bearer {token}",
                     "Content-Type": "application/json",
                 },
-                json={"model": "gpt-4o-mini", "messages": llm_messages},
+                json={"model": "gpt-4o", "messages": llm_messages},
             )
 
         lava_data = lava_response.json()
@@ -524,7 +524,7 @@ def rag_query():
                 {
                     "response": response_text,
                     "context": context_items,
-                    "model": lava_data.get("model", "gpt-4o-mini"),
+                    "model": lava_data.get("model", "gpt-4o"),
                 }
             ),
             200,
