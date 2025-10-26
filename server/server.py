@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, Response, stream_with_context
 from flask_cors import CORS
 import chromadb
 from chromadb.utils import embedding_functions
@@ -214,27 +214,6 @@ def format_realtime_data(realtime_data):
 
 @app.route('/rag-query', methods=['POST'])
 def rag_query():
-    """
-    Process a RAG query and return LLM response with context.
-
-    Expected JSON body:
-    {
-        "messages": [
-            {"role": "system", "content": "..."},
-            {"role": "user", "content": "..."},
-            {"role": "assistant", "content": "..."},
-            ...
-        ],
-        "n_results": 3  // optional, defaults to 3
-    }
-
-    Returns:
-    {
-        "response": "LLM response",
-        "context": [...],  // retrieved documents
-        "model": "gpt-4"
-    }
-    """
     try:
         data = request.get_json()
 
@@ -286,30 +265,83 @@ def rag_query():
 
         # Call OpenAI via Lava Payments
         token = get_lava_token()
+        
+        # Check if streaming is requested
+        should_stream = data.get('stream', False)
 
-        lava_response = requests.post(
-            "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {token}",
-                "Content-Type": "application/json"
-            },
-            json={
-                "model": "gpt-4o-mini",
-                "messages": llm_messages
-            }
-        )
+        if should_stream:
+            # Return streaming response
+            def generate():
+                try:
+                    lava_response = requests.post(
+                        "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
+                        headers={
+                            "Authorization": f"Bearer {token}",
+                            "Content-Type": "application/json"
+                        },
+                        json={
+                            "model": "gpt-4o-mini",
+                            "messages": llm_messages,
+                            "stream": True
+                        },
+                        stream=True
+                    )
+                    
+                    # Stream the response
+                    for line in lava_response.iter_lines():
+                        if line:
+                            decoded_line = line.decode('utf-8')
+                            # Forward the SSE data directly to client
+                            if decoded_line.startswith('data: '):
+                                data_content = decoded_line[6:]  # Remove 'data: ' prefix
+                                
+                                # Remove ** from content if present
+                                if data_content != '[DONE]':
+                                    try:
+                                        parsed = json.loads(data_content)
+                                        if 'choices' in parsed and len(parsed['choices']) > 0:
+                                            if 'delta' in parsed['choices'][0] and 'content' in parsed['choices'][0]['delta']:
+                                                content = parsed['choices'][0]['delta']['content']
+                                                content = content.replace('**', '')
+                                                parsed['choices'][0]['delta']['content'] = content
+                                                data_content = json.dumps(parsed)
+                                    except:
+                                        pass
+                                
+                                yield f"data: {data_content}\n\n"
+                    
+                    # Send completion marker
+                    yield "data: [DONE]\n\n"
+                    
+                except Exception as e:
+                    yield f"data: {json.dumps({'error': str(e)})}\n\n"
+            
+            return Response(stream_with_context(generate()), mimetype='text/event-stream')
+        else:
+            # Non-streaming response (legacy)
+            lava_response = requests.post(
+                "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": "gpt-4o-mini",
+                    "messages": llm_messages
+                }
+            )
 
-        lava_data = lava_response.json()
-        response_text = lava_data['choices'][0]['message']['content']
+            lava_data = lava_response.json()
+            response_text = lava_data['choices'][0]['message']['content']
 
-        # Remove markdown formatting symbols
-        response_text = response_text.replace('**', '')
+            # Remove markdown formatting symbols
+            response_text = response_text.replace('**', '')
 
-        return jsonify({
-            'response': response_text,
-            'context': context_items,
-            'model': lava_data.get('model', 'gpt-4o-mini')
-        }), 200
+            return jsonify({
+                'response': response_text,
+                'context': context_items,
+                'model': lava_data.get('model', 'gpt-4o-mini')
+            }), 200
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500

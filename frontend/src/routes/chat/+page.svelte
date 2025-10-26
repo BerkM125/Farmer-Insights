@@ -1,12 +1,13 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { sendMessage } from '$lib/api.js';
+	import { sendMessageStreaming } from '$lib/api.js';
 
 	let messages = $state([]);
 	let inputValue = $state('');
 	let isLoading = $state(false);
 	let error = $state('');
+	let streamingMessage = $state('');
 	let inputElement;
 	let messagesContainer;
 
@@ -17,10 +18,11 @@
 		}
 	});
 
-	// Auto-scroll to bottom when new messages arrive
+	// Auto-scroll to bottom when new messages arrive or streaming updates
 	$effect(() => {
-		// This effect runs whenever messages change
+		// This effect runs whenever messages or streamingMessage change
 		messages;
+		streamingMessage;
 		if (messagesContainer) {
 			setTimeout(() => {
 				messagesContainer.scrollTop = messagesContainer.scrollHeight;
@@ -35,18 +37,24 @@
 		inputValue = '';
 		isLoading = true;
 		error = '';
+		streamingMessage = '';
 
 		// Add user message
 		messages = [...messages, { role: 'user', content: userMessage }];
 
 		try {
-			// Send all messages (server will add system prompt with RAG context)
-			const response = await sendMessage(messages);
+			// Send all messages with streaming enabled
+			const fullResponse = await sendMessageStreaming(messages, (chunk) => {
+				// This callback is called for each chunk received
+				streamingMessage += chunk;
+			});
 
-			// Add AI response
-			messages = [...messages, { role: 'assistant', content: response }];
+			// Add the complete AI response to messages
+			messages = [...messages, { role: 'assistant', content: fullResponse }];
+			streamingMessage = '';
 		} catch (err) {
 			error = err.message;
+			streamingMessage = '';
 		} finally {
 			isLoading = false;
 		}
@@ -101,7 +109,11 @@
 				</div>
 			{/each}
 
-			{#if isLoading}
+			{#if isLoading && streamingMessage}
+				<div class="message assistant">
+					<div class="message-content">{streamingMessage}</div>
+				</div>
+			{:else if isLoading}
 				<div class="message assistant">
 					<div class="message-content loading">Thinking...</div>
 				</div>
