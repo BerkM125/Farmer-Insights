@@ -18,7 +18,7 @@ MARKET_AGENT_ADDRESS = "agent1q26j45u6rtm83csyqhre6l0qwmdc67y065emknmcv9wvhcltft
 SOIL_ENVIRONMENT_AGENT_ADDRESS = "agent1q0j9fcj57s70sm00asqpr4zh08juxk3wzzxz2zh2hua7el0alu4l27t40st"
 
 
-# Create the requests (after class definitions)
+# EVENTUALLY DO NOT HARDCODE THIS
 WEATHER_REQUEST = WeatherRequest(latitude=40.7128, longitude=-74.0060)
 SATELLITE_REQUEST = SatelliteRequest(latitude=40.7128, longitude=-74.0060)
 MARKET_REQUEST = MarketRequest(crop_type="wheat")
