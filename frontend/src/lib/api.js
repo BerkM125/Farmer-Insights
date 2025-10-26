@@ -41,27 +41,27 @@ export async function sendMessageStreaming(messages, onChunk, onStatus) {
 
 			// Decode the chunk
 			const chunk = decoder.decode(value, { stream: true });
-			
+
 			// Split by newlines to handle multiple SSE messages
 			const lines = chunk.split('\n');
-			
+
 			for (const line of lines) {
 				if (line.startsWith('data: ')) {
 					const data = line.slice(6); // Remove 'data: ' prefix
-					
+
 					if (data === '[DONE]') {
 						// Stream finished
 						continue;
 					}
-					
+
 					try {
 						const parsed = JSON.parse(data);
-						
+
 						// Handle error messages
 						if (parsed.error) {
 							throw new Error(parsed.error);
 						}
-						
+
 						// Handle status updates
 						if (parsed.status) {
 							if (onStatus) {
@@ -73,7 +73,7 @@ export async function sendMessageStreaming(messages, onChunk, onStatus) {
 							}
 							continue;
 						}
-						
+
 						// Extract the content delta from OpenAI response format
 						const content = parsed.choices?.[0]?.delta?.content;
 						if (content) {
