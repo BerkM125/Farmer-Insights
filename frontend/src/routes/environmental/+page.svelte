@@ -357,7 +357,7 @@
 		align-items: flex-start;
 		padding: 0.75rem;
 		background: var(--bg-3);
-		border-radius: 1.25rem;
+		border-radius: 1.75rem;
 		border: 1px solid var(--bg-4);
 	}
 
@@ -385,7 +385,7 @@
 
 	.advice-content {
 		background: var(--bg-3);
-		border-radius: 1.25rem;
+		border-radius: 1.75rem;
 		border: 1px solid var(--bg-4);
 		padding: 1rem;
 	}
@@ -409,7 +409,7 @@
 		align-items: center;
 		padding: 0.75rem;
 		background: var(--bg-3);
-		border-radius: 1.25rem;
+		border-radius: 1.75rem;
 		border: 1px solid var(--bg-4);
 	}
 

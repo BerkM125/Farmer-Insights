@@ -255,10 +255,7 @@
 				</div>
 			{:else if isLoading && !streamingMessage}
 				<div class="message assistant">
-					<div class="message-content loading">
-						<span class="loading-icon">✨</span>
-						Thinking...
-					</div>
+					<div class="message-content loading">Thinking...</div>
 				</div>
 			{/if}
 

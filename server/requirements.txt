@@ -6,5 +6,5 @@ scikit-learn
 supabase
 python-dotenv
 requests
-httpx
+numpy
 
