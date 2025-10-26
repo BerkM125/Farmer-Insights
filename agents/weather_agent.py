@@ -1,5 +1,5 @@
 from uagents import Agent, Context
-from models import WeatherRequest, WeatherResponse
+from models import WeatherRequest, WeatherResponse, DailyWeather
 import requests
 
 agent = Agent(name="weather_agent",
@@ -50,20 +50,29 @@ async def handle_weather_request(ctx: Context, sender: str, msg: WeatherRequest)
         current = data["current"]
         daily = data["daily"]
         
+        # Build 7-day forecast
+        daily_forecasts = []
+        for i in range(7):
+            day_forecast = DailyWeather(
+                date=daily["time"][i],
+                temperature_high=daily["temperature_2m_max"][i],
+                temperature_low=daily["temperature_2m_min"][i],
+                precipitation_chance=daily["precipitation_probability_max"][i] if daily["precipitation_probability_max"][i] else 0.0,
+                precipitation_sum=daily["precipitation_sum"][i] if daily["precipitation_sum"][i] else 0.0,
+                uv_index=int(daily["uv_index_max"][i]) if daily["uv_index_max"][i] else 0,
+            )
+            daily_forecasts.append(day_forecast)
+        
         forecast = WeatherResponse(
-            temperature_high=daily["temperature_2m_max"][0],
-            temperature_low=daily["temperature_2m_min"][0],
-            humidity=current["relative_humidity_2m"],
-            precipitation_chance=daily["precipitation_probability_max"][0] if daily["precipitation_probability_max"][0] else 0.0,
-            precipitation_sum=daily["precipitation_sum"][0] if daily["precipitation_sum"][0] else 0.0,
-            wind_speed=current["wind_speed_10m"],
-            wind_direction=wind_direction_from_degrees(current["wind_direction_10m"]),
-            condition=str(current["weather_code"]),
-            uv_index=int(daily["uv_index_max"][0]) if daily["uv_index_max"][0] else 0,
+            current_humidity=current["relative_humidity_2m"],
+            current_wind_speed=current["wind_speed_10m"],
+            current_wind_direction=wind_direction_from_degrees(current["wind_direction_10m"]),
+            current_condition=str(current["weather_code"]),
+            daily_forecast=daily_forecasts
         )
         
-        ctx.logger.info(f"Sending weather forecast to {sender}")
-        ctx.logger.info(f"Forecast: Code {forecast.condition}, High: {forecast.temperature_high}°F, Low: {forecast.temperature_low}°F")
+        ctx.logger.info(f"Sending 7-day weather forecast to {sender}")
+        ctx.logger.info(f"Current: Code {forecast.current_condition}, Humidity: {forecast.current_humidity}%")
         await ctx.send(sender, forecast)
         
     except Exception as e:
