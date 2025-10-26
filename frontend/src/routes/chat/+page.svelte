@@ -148,7 +148,6 @@
 		<div class="messages" bind:this={messagesContainer}>
 			{#if messages.length === 0}
 				<div class="empty-state">
-					<p class="emoji">🌾</p>
 					<p class="message">Ask me anything about farming, weather, crops, or markets!</p>
 					<div class="suggestions">
 						<button
@@ -313,11 +312,6 @@
 		text-align: center;
 		padding: 2rem 1rem;
 		color: var(--txt-3);
-	}
-
-	.empty-state .emoji {
-		font-size: 3rem;
-		margin-bottom: 1rem;
 	}
 
 	.empty-state .message {
@@ -510,7 +504,7 @@
 
 	input[type='text'] {
 		flex: 1;
-		padding: 0.5rem 0.75rem;
+		padding: 0.5rem 0;
 		border: none;
 		background: transparent;
 		font-size: 1rem;

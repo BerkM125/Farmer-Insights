@@ -51,7 +51,7 @@
 <div class="page">
 	<header>
 		<BackButton href="/" label="Back to home" />
-		<h1>🌱 Crop Monitor</h1>
+		<h1>Crop Monitor</h1>
 		<div class="header-spacer"></div>
 	</header>
 

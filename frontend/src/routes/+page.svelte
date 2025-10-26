@@ -46,15 +46,12 @@
 				<h2>Action Items</h2>
 				<div class="action-list">
 					<div class="action-item">
-						<span class="action-icon">🌱</span>
 						<span>Fertilize corn field</span>
 					</div>
 					<div class="action-item">
-						<span class="action-icon">💧</span>
 						<span>Check irrigation system</span>
 					</div>
 					<div class="action-item">
-						<span class="action-icon">📊</span>
 						<span>Review market trends</span>
 					</div>
 				</div>
@@ -166,12 +163,6 @@
 		background: var(--bg-3);
 		border-radius: 1.75rem;
 		border: 1px solid var(--bg-4);
-	}
-
-	.action-icon {
-		font-size: 1.25rem;
-		width: 1.5rem;
-		text-align: center;
 	}
 
 	.widget {

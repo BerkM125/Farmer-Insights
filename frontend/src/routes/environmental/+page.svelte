@@ -64,7 +64,7 @@
 <div class="page">
 	<header>
 		<BackButton href="/" label="Back to home" />
-		<h1>🌱 Soil & Environment</h1>
+		<h1>Soil & Environment</h1>
 		<div class="header-spacer"></div>
 	</header>
 

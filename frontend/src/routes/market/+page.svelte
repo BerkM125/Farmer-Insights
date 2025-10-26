@@ -6,18 +6,6 @@
 	// User's crops (hardcoded for now, can be made dynamic later)
 	const USER_CROPS = ['corn', 'soybeans', 'wheat'];
 
-	// Helper function: Get crop emoji
-	function getCropEmoji(cropName) {
-		const emojiMap = {
-			corn: '🌽',
-			soybeans: '🫘',
-			wheat: '🌾',
-			barley: '🌾',
-			oats: '🌾'
-		};
-		return emojiMap[cropName.toLowerCase()] || '🌱';
-	}
-
 	// Helper function: Format unit for display
 	function formatUnit(unit) {
 		// Convert "$ / BU" to "/bushel", "$ / CWT" to "/cwt", etc.
@@ -69,7 +57,6 @@
 
 				items.push({
 					name: cropName,
-					emoji: getCropEmoji(cropName),
 					price: latest.price,
 					unit: formatUnit(latest.unit),
 					change: change,
@@ -148,7 +135,7 @@
 <div class="page">
 	<header>
 		<BackButton href="/" label="Back to home" />
-		<h1>📈 Market Prices</h1>
+		<h1>Market Prices</h1>
 		<div class="header-spacer"></div>
 	</header>
 
@@ -167,7 +154,6 @@
 						<div class="price-item">
 							<div class="price-info">
 								<p class="commodity">
-									{item.emoji}
 									{item.name.charAt(0).toUpperCase() + item.name.slice(1)}
 								</p>
 								<p class="price-value">

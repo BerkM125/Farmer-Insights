@@ -100,7 +100,7 @@
 	.weather-range {
 		display: grid;
 		grid-template-columns: auto auto;
-		gap: 0.5rem 0.75rem;
+		gap: 0.5rem 0.5rem;
 		flex-shrink: 0;
 		margin-right: auto;
 		align-items: center;
