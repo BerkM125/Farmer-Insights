@@ -3,6 +3,8 @@
 	import { sendMessageStreaming } from '$lib/api.js';
 	import PhPlus from '~icons/ph/plus';
 	import PhArrowRight from '~icons/ph/arrow-right';
+	import PhThumbsUp from '~icons/ph/thumbs-up';
+	import PhThumbsDown from '~icons/ph/thumbs-down';
 	import BackButton from '$lib/components/BackButton.svelte';
 
 	let messages = $state([]);
@@ -78,6 +80,10 @@
 		const images = [...selectedImages];
 		inputValue = '';
 		selectedImages = [];
+		// Reset textarea height
+		if (inputElement) {
+			inputElement.style.height = 'auto';
+		}
 		isLoading = true;
 		error = '';
 		streamingMessage = '';
@@ -134,6 +140,35 @@
 			handleSubmit();
 		}
 	}
+
+	function handleInput(event) {
+		const textarea = event.target;
+		resizeTextarea(textarea);
+	}
+
+	function resizeTextarea(textarea) {
+		// Reset height to auto to get the correct scrollHeight
+		textarea.style.height = 'auto';
+		// Calculate number of lines
+		const lineHeight = parseFloat(getComputedStyle(textarea).lineHeight);
+		const lines = Math.floor(textarea.scrollHeight / lineHeight);
+		// Limit to 3 rows
+		if (lines <= 3) {
+			textarea.style.height = textarea.scrollHeight + 'px';
+			textarea.style.overflowY = 'hidden';
+		} else {
+			textarea.style.height = (lineHeight * 3) + 'px';
+			textarea.style.overflowY = 'auto';
+		}
+	}
+
+	// Auto-resize textarea when inputValue changes (e.g., from suggestion buttons)
+	$effect(() => {
+		inputValue;
+		if (inputElement) {
+			setTimeout(() => resizeTextarea(inputElement), 0);
+		}
+	});
 </script>
 
 <div class="page">
@@ -196,6 +231,16 @@
 							{/if}
 						</div>
 					</div>
+					{#if message.role === 'assistant'}
+						<div class="feedback-buttons">
+							<button class="feedback-btn" aria-label="Good response">
+								<PhThumbsUp />
+							</button>
+							<button class="feedback-btn" aria-label="Bad response">
+								<PhThumbsDown />
+							</button>
+						</div>
+					{/if}
 				</div>
 			{/each}
 
@@ -265,14 +310,15 @@
 				>
 					<PhPlus />
 				</button>
-				<input
+				<textarea
 					bind:this={inputElement}
-					type="text"
 					bind:value={inputValue}
 					onkeypress={handleKeyPress}
+					oninput={handleInput}
 					placeholder="Ask a farming question..."
 					disabled={isLoading}
-				/>
+					rows="1"
+				></textarea>
 				<button
 					class="send-button"
 					onclick={handleSubmit}
@@ -346,14 +392,16 @@
 
 	.message {
 		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
 	}
 
 	.message.user {
-		justify-content: flex-end;
+		align-items: flex-end;
 	}
 
 	.message.assistant {
-		justify-content: flex-start;
+		align-items: flex-start;
 	}
 
 	.message-content {
@@ -502,7 +550,7 @@
 		cursor: not-allowed;
 	}
 
-	input[type='text'] {
+	textarea {
 		flex: 1;
 		padding: 0.5rem 0;
 		border: none;
@@ -510,13 +558,18 @@
 		font-size: 1rem;
 		color: var(--txt-1);
 		min-width: 0;
+		resize: none;
+		font-family: inherit;
+		line-height: 1.5;
+		overflow-y: hidden;
+		max-height: calc(1.5em * 3);
 	}
 
-	input[type='text']:focus {
+	textarea:focus {
 		outline: none;
 	}
 
-	input[type='text']::placeholder {
+	textarea::placeholder {
 		color: var(--txt-3);
 	}
 
@@ -569,5 +622,32 @@
 	.message-text {
 		word-wrap: break-word;
 		white-space: pre-wrap;
+	}
+
+	.feedback-buttons {
+		display: flex;
+		gap: 0.25rem;
+		margin-left: 0.5rem;
+	}
+
+	.feedback-btn {
+		background: transparent;
+		border: none;
+		color: var(--txt-3);
+		cursor: pointer;
+		padding: 0.25rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: color 0.2s;
+	}
+
+	.feedback-btn :global(svg) {
+		width: 0.875rem;
+		height: 0.875rem;
+	}
+
+	.feedback-btn:hover {
+		color: var(--txt-2);
 	}
 </style>
