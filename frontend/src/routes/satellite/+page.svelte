@@ -362,11 +362,9 @@
 		margin: 0;
 	}
 
-	.insight-content {
-	}
-
 	.insight-text {
 		line-height: 1.5;
+		margin-bottom: 9;
 	}
 
 	.metadata {

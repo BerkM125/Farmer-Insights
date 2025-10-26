@@ -42,7 +42,11 @@ function createFarmDataStore() {
 				}
 
 				// Fetch farm data (weather and market)
-				const response = await fetch(url);
+				const response = await fetch(url, {
+					headers: {
+						'ngrok-skip-browser-warning': 'true'
+					}
+				});
 
 				if (!response.ok) {
 					throw new Error(`Failed to fetch farm data: ${response.statusText}`);
@@ -59,7 +63,11 @@ function createFarmDataStore() {
 				data.market = result.market || [];
 
 				// Fetch satellite data separately
-				const satelliteResponse = await fetch(`${BACKEND_URL}/api/satellite-data`);
+				const satelliteResponse = await fetch(`${BACKEND_URL}/api/satellite-data`, {
+					headers: {
+						'ngrok-skip-browser-warning': 'true'
+					}
+				});
 
 				if (!satelliteResponse.ok) {
 					throw new Error(`Failed to fetch satellite data: ${satelliteResponse.statusText}`);
@@ -72,7 +80,11 @@ function createFarmDataStore() {
 				data.satellite = satelliteResult;
 
 				// Fetch environmental data separately
-				const environmentalResponse = await fetch(`${BACKEND_URL}/api/environmental-data`);
+				const environmentalResponse = await fetch(`${BACKEND_URL}/api/environmental-data`, {
+					headers: {
+						'ngrok-skip-browser-warning': 'true'
+					}
+				});
 
 				if (!environmentalResponse.ok) {
 					throw new Error(
