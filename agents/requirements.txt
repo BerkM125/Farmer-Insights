@@ -4,4 +4,7 @@ requests
 supabase
 python-dotenv
 python-dateutil
+opencv-python
+numpy
+Pillow
 
