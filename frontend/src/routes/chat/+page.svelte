@@ -11,6 +11,8 @@
 	let currentStatus = $state(null);
 	let inputElement;
 	let messagesContainer;
+	let selectedImages = $state([]);
+	let fileInput;
 
 	// Auto-focus input when page loads
 	onMount(() => {
@@ -31,18 +33,69 @@
 		}
 	});
 
+	function handleImageSelect(event) {
+		const files = Array.from(event.target.files || []);
+		
+		files.forEach(file => {
+			if (!file.type.startsWith('image/')) {
+				error = 'Please select only image files';
+				return;
+			}
+
+			const reader = new FileReader();
+			reader.onload = (e) => {
+				selectedImages = [...selectedImages, {
+					data: e.target.result,
+					name: file.name
+				}];
+			};
+			reader.readAsDataURL(file);
+		});
+
+		// Reset file input
+		if (fileInput) {
+			fileInput.value = '';
+		}
+	}
+
+	function removeImage(index) {
+		selectedImages = selectedImages.filter((_, i) => i !== index);
+	}
+
+	function triggerFileInput() {
+		fileInput?.click();
+	}
+
 	async function handleSubmit() {
-		if (!inputValue.trim() || isLoading) return;
+		if ((!inputValue.trim() && selectedImages.length === 0) || isLoading) return;
 
 		const userMessage = inputValue.trim();
+		const images = [...selectedImages];
 		inputValue = '';
+		selectedImages = [];
 		isLoading = true;
 		error = '';
 		streamingMessage = '';
 		currentStatus = null;
 
+		// Build message content - support multimodal format if images are present
+		let messageContent;
+		if (images.length > 0) {
+			messageContent = [
+				{ type: 'text', text: userMessage || 'What do you see in this image?' }
+			];
+			images.forEach(img => {
+				messageContent.push({
+					type: 'image_url',
+					image_url: { url: img.data }
+				});
+			});
+		} else {
+			messageContent = userMessage;
+		}
+
 		// Add user message
-		messages = [...messages, { role: 'user', content: userMessage }];
+		messages = [...messages, { role: 'user', content: messageContent, images }];
 
 		try {
 			// Send all messages with streaming enabled
@@ -117,7 +170,22 @@
 
 			{#each messages as message}
 				<div class="message {message.role}">
-					<div class="message-content">{message.content}</div>
+					<div class="message-content">
+						{#if message.images && message.images.length > 0}
+							<div class="message-images">
+								{#each message.images as image}
+									<img src={image.data} alt={image.name} class="message-image" />
+								{/each}
+							</div>
+						{/if}
+						<div class="message-text">
+							{#if typeof message.content === 'string'}
+								{message.content}
+							{:else if Array.isArray(message.content)}
+								{message.content.find(item => item.type === 'text')?.text || ''}
+							{/if}
+						</div>
+					</div>
 				</div>
 			{/each}
 
@@ -149,15 +217,54 @@
 		</div>
 
 		<div class="input-area">
+			<!-- Hidden file input -->
 			<input
-				bind:this={inputElement}
-				type="text"
-				bind:value={inputValue}
-				onkeypress={handleKeyPress}
-				placeholder="Ask a farming question..."
-				disabled={isLoading}
+				bind:this={fileInput}
+				type="file"
+				accept="image/*"
+				multiple
+				onchange={handleImageSelect}
+				style="display: none;"
 			/>
-			<button onclick={handleSubmit} disabled={isLoading || !inputValue.trim()}> Send </button>
+
+			<!-- Image previews -->
+			{#if selectedImages.length > 0}
+				<div class="image-previews">
+					{#each selectedImages as image, index}
+						<div class="image-preview">
+							<img src={image.data} alt={image.name} />
+							<button
+								class="remove-image"
+								onclick={() => removeImage(index)}
+								aria-label="Remove image"
+							>
+								×
+							</button>
+						</div>
+					{/each}
+				</div>
+			{/if}
+
+			<div class="input-row">
+				<button
+					class="image-button"
+					onclick={triggerFileInput}
+					disabled={isLoading}
+					aria-label="Upload image"
+					title="Upload image"
+				>
+					📷
+				</button>
+				<input
+					bind:this={inputElement}
+					type="text"
+					bind:value={inputValue}
+					onkeypress={handleKeyPress}
+					placeholder="Ask a farming question..."
+					disabled={isLoading}
+				/>
+				<button onclick={handleSubmit} disabled={isLoading || (!inputValue.trim() && selectedImages.length === 0)}> Send </button>
+			</div>
 		</div>
 	</div>
 </div>
@@ -321,12 +428,86 @@
 
 	.input-area {
 		display: flex;
-		gap: 0.75rem;
+		flex-direction: column;
+		gap: 0.5rem;
 		padding-top: 0.5rem;
 		border-top: 1px solid #e5e7eb;
 	}
 
-	input {
+	.input-row {
+		display: flex;
+		gap: 0.75rem;
+	}
+
+	.image-previews {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		padding: 0.5rem;
+		background: #f9fafb;
+		border-radius: 8px;
+	}
+
+	.image-preview {
+		position: relative;
+		width: 80px;
+		height: 80px;
+		border-radius: 8px;
+		overflow: hidden;
+		border: 2px solid #e5e7eb;
+	}
+
+	.image-preview img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.remove-image {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		background: rgba(0, 0, 0, 0.6);
+		color: white;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.remove-image:hover {
+		background: rgba(0, 0, 0, 0.8);
+	}
+
+	.image-button {
+		padding: 0.75rem 1rem;
+		background-color: white;
+		color: var(--txt-2);
+		border: 1px solid #e5e7eb;
+		border-radius: 8px;
+		cursor: pointer;
+		font-size: 1.25rem;
+		transition: all 0.2s;
+	}
+
+	.image-button:hover:not(:disabled) {
+		border-color: var(--acc-1);
+		background: var(--bg-2);
+	}
+
+	.image-button:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+	input[type='text'] {
 		flex: 1;
 		padding: 0.75rem 1rem;
 		border: 1px solid #e5e7eb;
@@ -336,7 +517,7 @@
 		color: var(--txt-1);
 	}
 
-	input:focus {
+	input[type='text']:focus {
 		outline: none;
 		border-color: var(--acc-1);
 	}
@@ -360,5 +541,25 @@
 	button:disabled {
 		background-color: #ccc;
 		cursor: not-allowed;
+	}
+
+	.message-images {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.message-image {
+		max-width: 300px;
+		max-height: 300px;
+		border-radius: 8px;
+		object-fit: contain;
+		cursor: pointer;
+	}
+
+	.message-text {
+		word-wrap: break-word;
+		white-space: pre-wrap;
 	}
 </style>

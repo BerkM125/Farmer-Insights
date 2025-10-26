@@ -263,6 +263,32 @@ def get_farm_data():
         return jsonify({"error": str(e), "weather": [], "market": []}), 500
 
 
+@app.route("/api/satellite-data", methods=["GET"])
+def get_satellite_data():
+    """
+    API endpoint to fetch satellite/crop monitor data from Supabase.
+    Returns the most recent satellite data entry.
+    """
+    try:
+        # Fetch the most recent satellite data (ordered by created_at)
+        satellite_response = (
+            supabase.table("satellite_data_table")
+            .select("*")
+            .order("created_at", desc=True)
+            .limit(1)
+            .execute()
+        )
+
+        # Return the first (most recent) record, or null if none exists
+        satellite_data = satellite_response.data[0] if satellite_response.data else None
+
+        return jsonify(satellite_data), 200
+
+    except Exception as e:
+        print(f"Error in /api/satellite-data endpoint: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route("/rag-query", methods=["POST"])
 def rag_query():
     try:
@@ -279,7 +305,16 @@ def rag_query():
         if not user_messages:
             return jsonify({"error": "No user messages found"}), 400
 
-        latest_user_prompt = user_messages[-1]["content"]
+        # Extract text from the latest user message (handle both string and multimodal format)
+        latest_message_content = user_messages[-1]["content"]
+        if isinstance(latest_message_content, str):
+            latest_user_prompt = latest_message_content
+        elif isinstance(latest_message_content, list):
+            # Multimodal format - extract text from the array
+            text_parts = [item.get("text", "") for item in latest_message_content if item.get("type") == "text"]
+            latest_user_prompt = " ".join(text_parts)
+        else:
+            latest_user_prompt = str(latest_message_content)
 
         # Get relevant context from RAG
         context_items = get_rag_context(latest_user_prompt, n_results)
@@ -337,10 +372,15 @@ def rag_query():
                 try:
                     # Send single status with context sources if available
                     if context_items:
-                        sources = [item['metadata'].get('source', 'Unknown').replace('.txt', '') for item in context_items[:2]]
-                        sources_text = ', '.join(sources)
+                        sources = [
+                            item["metadata"]
+                            .get("source", "Unknown")
+                            .replace(".txt", "")
+                            for item in context_items[:2]
+                        ]
+                        sources_text = ", ".join(sources)
                         yield f"data: {json.dumps({'status': f'Analyzing {sources_text}...', 'stage': 'rag'})}\n\n"
-                    
+
                     # Now stream the actual LLM response
                     lava_response = requests.post(
                         "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
