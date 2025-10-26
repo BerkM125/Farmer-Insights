@@ -57,12 +57,7 @@ def get_rag_context(query: str, n_results: int = 3):
     Returns:
         List of dictionaries containing document text, distance, and metadata
     """
-    # Check collection count
-    count = collection.count()
-    print(f"\n[RAG DEBUG] Collection has {count} documents")
-
-    if count == 0:
-        print("[RAG DEBUG] WARNING: Collection is empty! No documents to search.")
+    if collection.count() == 0:
         return []
 
     results = collection.query(
@@ -70,9 +65,6 @@ def get_rag_context(query: str, n_results: int = 3):
         n_results=n_results,
         include=["documents", "distances", "metadatas"]
     )
-
-    print(f"[RAG DEBUG] Query: {query}")
-    print(f"[RAG DEBUG] Found {len(results['documents'][0])} results")
 
     context_items = []
     for doc, distance, metadata in zip(
@@ -134,17 +126,10 @@ def rag_query():
         # Create LLM prompt with context
         system_message = """You are a helpful agricultural assistant with access to a knowledge base.
 Use the provided context to answer the user's question accurately. If the context doesn't contain
-relevant information, acknowledge this and provide your best general answer."""
+relevant information, acknowledge this and provide your best general answer. In your response, do not state 
+the words, \"the provided context\", \"the given information\", and phrases similar to these."""
 
         user_message = f"Context:\n{context_text}\n\nQuestion: {user_prompt}"
-
-        # Print RAG prompt for debugging
-        print("\n" + "="*80)
-        print("RAG PROMPT TO LLM")
-        print("="*80)
-        print(f"\nSYSTEM MESSAGE:\n{system_message}\n")
-        print(f"USER MESSAGE:\n{user_message}")
-        print("="*80 + "\n")
 
         # Call OpenAI via Lava Payments
         token = get_lava_token()
