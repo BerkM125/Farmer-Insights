@@ -3,6 +3,7 @@
 	import WeatherWidget from '$lib/components/WeatherWidget.svelte';
 	import MarketWidget from '$lib/components/MarketWidget.svelte';
 	import CropMonitorWidget from '$lib/components/CropMonitorWidget.svelte';
+	import EnvironmentalWidget from '$lib/components/EnvironmentalWidget.svelte';
 </script>
 
 <div class="container">
@@ -38,11 +39,7 @@
 			<div class="side-by-side">
 				<CropMonitorWidget />
 
-				<a href="/crops" class="widget crops">
-					<h2>Soil Monitor</h2>
-					<p>Soil moisture: 65%</p>
-					<p>pH level: 6.8</p>
-				</a>
+				<EnvironmentalWidget />
 			</div>
 
 			<div class="widget action-items">
@@ -167,7 +164,7 @@
 		gap: 0.5rem;
 		padding: 0.5rem;
 		background: var(--bg-3);
-		border-radius: 1rem;
+		border-radius: 1.75rem;
 		border: 1px solid var(--bg-4);
 	}
 
@@ -180,7 +177,7 @@
 	.widget {
 		padding: 1rem;
 		background: var(--bg-2);
-		border-radius: 1rem;
+		border-radius: 1.75rem;
 		border: 1px solid var(--bg-3);
 	}
 
@@ -189,14 +186,10 @@
 		margin: 0;
 	}
 
-	.widget p {
-		margin: 0.5rem 0 0 0;
-	}
-
 	.chat-bar {
 		padding: 1rem;
 		background: var(--bg-3);
-		border-radius: 1rem;
+		border-radius: 1.75rem;
 		border: 1px solid var(--bg-4);
 		cursor: text;
 	}

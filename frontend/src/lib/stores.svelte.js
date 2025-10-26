@@ -12,7 +12,8 @@ function createFarmDataStore() {
 	let data = $state({
 		weather: [],
 		market: [],
-		satellite: null
+		satellite: null,
+		environmental: null
 	});
 
 	let loading = $state(false);
@@ -69,6 +70,21 @@ function createFarmDataStore() {
 
 				// Update satellite data
 				data.satellite = satelliteResult;
+
+				// Fetch environmental data separately
+				const environmentalResponse = await fetch(`${BACKEND_URL}/api/environmental-data`);
+
+				if (!environmentalResponse.ok) {
+					throw new Error(
+						`Failed to fetch environmental data: ${environmentalResponse.statusText}`
+					);
+				}
+
+				const environmentalResult = await environmentalResponse.json();
+				console.log('Fetched environmental data:', environmentalResult);
+
+				// Update environmental data
+				data.environmental = environmentalResult;
 			} catch (err) {
 				errorMsg = err.message;
 				console.error('Error fetching farm data:', err);

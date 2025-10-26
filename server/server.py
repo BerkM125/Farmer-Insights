@@ -289,6 +289,37 @@ def get_satellite_data():
         return jsonify({"error": str(e)}), 500
 
 
+@app.route("/api/environmental-data", methods=["GET"])
+def get_environmental_data():
+    """
+    API endpoint to fetch environmental/soil data from Supabase.
+    Returns the environmental data for the specified farm (defaults to FARM01).
+    """
+    try:
+        # Get farm_id parameter from query string (default to FARM01)
+        farm_id = request.args.get("farm_id", "FARM01")
+
+        # Fetch environmental data for the specified farm
+        environmental_response = (
+            supabase.table("environmental_data")
+            .select("*")
+            .eq("farm_id", farm_id)
+            .limit(1)
+            .execute()
+        )
+
+        # Return the first record, or null if none exists
+        environmental_data = (
+            environmental_response.data[0] if environmental_response.data else None
+        )
+
+        return jsonify(environmental_data), 200
+
+    except Exception as e:
+        print(f"Error in /api/environmental-data endpoint: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route("/rag-query", methods=["POST"])
 def rag_query():
     try:
@@ -311,7 +342,11 @@ def rag_query():
             latest_user_prompt = latest_message_content
         elif isinstance(latest_message_content, list):
             # Multimodal format - extract text from the array
-            text_parts = [item.get("text", "") for item in latest_message_content if item.get("type") == "text"]
+            text_parts = [
+                item.get("text", "")
+                for item in latest_message_content
+                if item.get("type") == "text"
+            ]
             latest_user_prompt = " ".join(text_parts)
         else:
             latest_user_prompt = str(latest_message_content)

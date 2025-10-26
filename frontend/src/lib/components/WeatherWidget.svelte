@@ -105,6 +105,7 @@
 		font-size: 0.875rem;
 		color: var(--txt-3);
 		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	.range-value {
@@ -128,7 +129,7 @@
 	}
 
 	.stat-label {
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		color: var(--txt-3);
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
