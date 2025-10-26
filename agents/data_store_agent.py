@@ -52,10 +52,10 @@ collected_data = {
 
 
 def check_and_log_complete_data(ctx: Context):
-    """Check if weather data is collected and log it."""
-    if collected_data["weather"] is not None:
+    """Check if all data is collected and insert into database."""
+    if all(value is not None for value in collected_data.values()):
         ctx.logger.info("=" * 60)
-        ctx.logger.info("WEATHER DATA COLLECTED - PROCEEDING WITH DATABASE UPDATE:")
+        ctx.logger.info("ALL DATA COLLECTED - PROCEEDING WITH DATABASE UPDATES:")
         ctx.logger.info("=" * 60)
         ctx.logger.info(f"Collected Data Dictionary: {collected_data}")
         ctx.logger.info("=" * 60)
@@ -131,8 +131,13 @@ def check_and_log_complete_data(ctx: Context):
         except Exception as e:
             ctx.logger.error(f"❌ Error inserting market data to Supabase: {e}")
 
-        # Reset weather data for next collection
-        collected_data["weather"] = None
+        # Reset all collected data for next collection
+        for key in collected_data:
+            collected_data[key] = None
+
+        ctx.logger.info("=" * 60)
+        ctx.logger.info("DATA COLLECTION CYCLE COMPLETE - READY FOR NEXT CYCLE")
+        ctx.logger.info("=" * 60)
 
 
 # Create the requests (after class definitions)
