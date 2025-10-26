@@ -1,9 +1,9 @@
 <script>
-	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { sendMessageStreaming } from '$lib/api.js';
 	import PhPlus from '~icons/ph/plus';
 	import PhArrowRight from '~icons/ph/arrow-right';
+	import BackButton from '$lib/components/BackButton.svelte';
 
 	let messages = $state([]);
 	let inputValue = $state('');
@@ -37,8 +37,8 @@
 
 	function handleImageSelect(event) {
 		const files = Array.from(event.target.files || []);
-		
-		files.forEach(file => {
+
+		files.forEach((file) => {
 			if (!file.type.startsWith('image/')) {
 				error = 'Please select only image files';
 				return;
@@ -46,10 +46,13 @@
 
 			const reader = new FileReader();
 			reader.onload = (e) => {
-				selectedImages = [...selectedImages, {
-					data: e.target.result,
-					name: file.name
-				}];
+				selectedImages = [
+					...selectedImages,
+					{
+						data: e.target.result,
+						name: file.name
+					}
+				];
 			};
 			reader.readAsDataURL(file);
 		});
@@ -83,10 +86,8 @@
 		// Build message content - support multimodal format if images are present
 		let messageContent;
 		if (images.length > 0) {
-			messageContent = [
-				{ type: 'text', text: userMessage || 'What do you see in this image?' }
-			];
-			images.forEach(img => {
+			messageContent = [{ type: 'text', text: userMessage || 'What do you see in this image?' }];
+			images.forEach((img) => {
 				messageContent.push({
 					type: 'image_url',
 					image_url: { url: img.data }
@@ -135,13 +136,12 @@
 	}
 </script>
 
-<div class="chat-page">
+<div class="page">
 	<!-- Back Button -->
 	<header>
-		<button class="back-button" onclick={() => goto('/')} aria-label="Back to home">
-			←
-		</button>
-		<h1>Chat with AI</h1>
+		<BackButton href="/" label="Back to home" />
+		<h1>Chat</h1>
+		<div class="header-spacer"></div>
 	</header>
 
 	<div class="chat-container">
@@ -193,7 +193,7 @@
 							{#if typeof message.content === 'string'}
 								{message.content}
 							{:else if Array.isArray(message.content)}
-								{message.content.find(item => item.type === 'text')?.text || ''}
+								{message.content.find((item) => item.type === 'text')?.text || ''}
 							{/if}
 						</div>
 					</div>
@@ -274,9 +274,9 @@
 					placeholder="Ask a farming question..."
 					disabled={isLoading}
 				/>
-				<button 
+				<button
 					class="send-button"
-					onclick={handleSubmit} 
+					onclick={handleSubmit}
 					disabled={isLoading || (!inputValue.trim() && selectedImages.length === 0)}
 					aria-label="Send message"
 				>
@@ -288,49 +288,9 @@
 </div>
 
 <style>
-	.chat-page {
+	.page {
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
-		max-width: 35rem;
-		margin: 0 auto;
-		padding: 0.75rem;
-		background: var(--bg-1);
-	}
-
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0.75rem 0;
-		margin-bottom: 0.75rem;
-		position: relative;
-	}
-
-	header h1 {
-		margin: 0;
-		font-size: 1.5rem;
-		color: var(--txt-1);
-		font-weight: 600;
-	}
-
-	.back-button {
-		position: absolute;
-		left: 0;
-		background: none;
-		border: none;
-		font-size: 1.25rem;
-		color: var(--txt-2);
-		cursor: pointer;
-		padding: 0.25rem;
-		display: flex;
-		align-items: center;
-		font-weight: 500;
-		transition: color 0.2s;
-	}
-
-	.back-button:hover {
-		color: var(--txt-1);
 	}
 
 	.chat-container {

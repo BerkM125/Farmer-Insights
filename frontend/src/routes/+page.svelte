@@ -73,7 +73,7 @@
 	.container {
 		max-width: 35rem;
 		margin: 0 auto;
-		padding: 0.75rem;
+		padding: 1rem 0.75rem;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
