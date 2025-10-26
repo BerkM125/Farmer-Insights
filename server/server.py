@@ -244,22 +244,8 @@ def rag_query():
         
         latest_user_prompt = user_messages[-1]['content']
 
-        # Split the user query into optimized search terms
-        search_queries = split_query_into_search_terms(latest_user_prompt)
-
-        # Get relevant context from RAG using all split queries
-        all_context_items = []
-        seen_texts = set()  # Deduplicate results
-
-        for search_query in search_queries:
-            context_items = get_rag_context(search_query, n_results)
-            for item in context_items:
-                # Only add if we haven't seen this text before
-                if item['text'] not in seen_texts:
-                    all_context_items.append(item)
-                    seen_texts.add(item['text'])
-
-        context_items = all_context_items
+        # Get relevant context from RAG
+        context_items = get_rag_context(latest_user_prompt, n_results)
 
         # Format context for LLM
         context_text = "\n\n".join([
@@ -308,6 +294,9 @@ def rag_query():
 
         lava_data = lava_response.json()
         response_text = lava_data['choices'][0]['message']['content']
+
+        # Remove markdown formatting symbols
+        response_text = response_text.replace('**', '')
 
         return jsonify({
             'response': response_text,
