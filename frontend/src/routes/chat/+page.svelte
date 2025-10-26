@@ -183,7 +183,7 @@
 		<div class="messages" bind:this={messagesContainer}>
 			{#if messages.length === 0}
 				<div class="empty-state">
-					<p class="message">Ask me anything about farming, weather, crops, or markets!</p>
+					<p class="message">Hi there! I'm Demeter! Ask me anything about farming, weather, crops, or markets.</p>
 					<div class="suggestions">
 						<button
 							class="suggestion"
