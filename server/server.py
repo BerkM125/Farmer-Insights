@@ -80,13 +80,6 @@ def get_rag_context(query: str, n_results: int = 3):
 
     return context_items
 
-@app.route('/')
-
-@app.route('/health', methods=['GET'])
-def health_check():
-    """Health check endpoint"""
-    return jsonify({'status': 'healthy', 'service': 'farmer_insights_api'}), 200
-
 @app.route('/rag-query', methods=['POST'])
 def rag_query():
     """
@@ -94,7 +87,12 @@ def rag_query():
 
     Expected JSON body:
     {
-        "prompt": "user's question",
+        "messages": [
+            {"role": "system", "content": "..."},
+            {"role": "user", "content": "..."},
+            {"role": "assistant", "content": "..."},
+            ...
+        ],
         "n_results": 3  // optional, defaults to 3
     }
 
@@ -108,14 +106,21 @@ def rag_query():
     try:
         data = request.get_json()
 
-        if not data or 'prompt' not in data:
-            return jsonify({'error': 'Missing "prompt" in request body'}), 400
+        if not data or 'messages' not in data:
+            return jsonify({'error': 'Missing "messages" in request body'}), 400
 
-        user_prompt = data['prompt']
+        messages = data['messages']
         n_results = data.get('n_results', 3)
 
+        # Get the latest user message for RAG context retrieval
+        user_messages = [m for m in messages if m['role'] == 'user']
+        if not user_messages:
+            return jsonify({'error': 'No user messages found'}), 400
+        
+        latest_user_prompt = user_messages[-1]['content']
+
         # Get relevant context from RAG
-        context_items = get_rag_context(user_prompt, n_results)
+        context_items = get_rag_context(latest_user_prompt, n_results)
 
         # Format context for LLM
         context_text = "\n\n".join([
@@ -123,13 +128,22 @@ def rag_query():
             for item in context_items
         ])
 
-        # Create LLM prompt with context
-        system_message = """You are a helpful agricultural assistant with access to a knowledge base.
-Use the provided context to answer the user's question accurately. If the context doesn't contain
+        # Create system message with RAG context
+        system_message = f"""You are a helpful agricultural assistant with access to a knowledge base.
+Use the provided context to answer the user's questions accurately. If the context doesn't contain
 relevant information, acknowledge this and provide your best general answer. In your response, do not state 
-the words, \"the provided context\", \"the given information\", and phrases similar to these."""
+the words, \"the provided context\", \"the given information\", and phrases similar to these.
 
-        user_message = f"Context:\n{context_text}\n\nQuestion: {user_prompt}"
+Context from knowledge base:
+{context_text}"""
+
+        # Build the messages array for the LLM with conversation history
+        llm_messages = [{"role": "system", "content": system_message}]
+        
+        # Add conversation history (excluding any existing system messages)
+        for msg in messages:
+            if msg['role'] != 'system':
+                llm_messages.append({"role": msg['role'], "content": msg['content']})
 
         # Call OpenAI via Lava Payments
         token = get_lava_token()
@@ -142,10 +156,7 @@ the words, \"the provided context\", \"the given information\", and phrases simi
             },
             json={
                 "model": "gpt-4o-mini",
-                "messages": [
-                    {"role": "system", "content": system_message},
-                    {"role": "user", "content": user_message}
-                ]
+                "messages": llm_messages
             }
         )
 
