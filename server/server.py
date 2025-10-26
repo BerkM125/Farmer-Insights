@@ -173,14 +173,21 @@ def format_realtime_data(realtime_data):
         formatted_text += "** Weather Forecast (Next 7 Days) **\n"
         for day in realtime_data["weather"]:
             formatted_text += f"Date: {day.get('date', 'N/A')}\n"
-            formatted_text += f"  - Temperature: {day.get('temperature_low_f', 'N/A')}°F to {day.get('temperature_high_f', 'N/A')}°F\n"
-            formatted_text += f"  - Rainfall Chance: {day.get('rainfall_chance', 'N/A')}%\n"
-            formatted_text += f"  - Rainfall Amount: {day.get('rainfall_amount_mm', 'N/A')} mm\n"
-            if day.get('humidity_percent'):
-                formatted_text += f"  - Humidity: {day.get('humidity_percent')}%\n"
-            if day.get('wind_speed_mph'):
-                formatted_text += f"  - Wind Speed: {day.get('wind_speed_mph')} mph from {day.get('wind_direction', 'N/A')}\n"
-            formatted_text += f"  - UV Index: {day.get('uv_index', 'N/A')}\n\n"
+            formatted_text += f"  - Temperature: {day.get('temperature_low', 'N/A')}°F to {day.get('temperature_high', 'N/A')}°F\n"
+            formatted_text += f"  - Mean Temperature: {day.get('temperature_mean', 'N/A')}°F\n"
+            formatted_text += f"  - Precipitation Chance: {day.get('precipitation_chance', 'N/A')}%\n"
+            formatted_text += f"  - Precipitation Amount: {day.get('precipitation_sum', 'N/A')} inches\n"
+            if day.get('humidity_mean'):
+                formatted_text += f"  - Humidity: {day.get('humidity_mean')}%\n"
+            if day.get('wind_speed_max'):
+                formatted_text += f"  - Max Wind Speed: {day.get('wind_speed_max')} mph from {day.get('wind_direction', 'N/A')}\n"
+            if day.get('wind_gusts_max'):
+                formatted_text += f"  - Wind Gusts: {day.get('wind_gusts_max')} mph\n"
+            if day.get('evapotranspiration'):
+                formatted_text += f"  - Evapotranspiration: {day.get('evapotranspiration')} inches\n"
+            if day.get('sunshine_duration'):
+                formatted_text += f"  - Sunshine Duration: {day.get('sunshine_duration')} seconds\n"
+            formatted_text += "\n"
     else:
         formatted_text += "** Weather Forecast **\nNo weather data available.\n\n"
     
