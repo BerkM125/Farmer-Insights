@@ -140,9 +140,10 @@ def get_ndvi_map_url(latitude: float, longitude: float) -> tuple[ee.Image, str]:
             "min": -0.2,  # NDVI range for Landsat 8
             "max": 1.0,
             "palette": [
-                "#e06c6c",  # Red - bare soil/poor vegetation
-                "#dbba57",  # Yellow - moderate vegetation
-                "#97c639",  # Green - healthy vegetation
+                "#e06c6c",  # red-1 - bare soil/poor vegetation
+                "#dbba57",  # yellow-1 - moderate vegetation
+                "#97c639",  # green-1 - healthy vegetation
+                "#39c6af",  # blue-1 - very healthy/dense vegetation
             ],
             "region": point.buffer(BUFFER_RADIUS).bounds().getInfo()["coordinates"],
             "dimensions": 2056,

@@ -157,7 +157,7 @@
 			textarea.style.height = textarea.scrollHeight + 'px';
 			textarea.style.overflowY = 'hidden';
 		} else {
-			textarea.style.height = (lineHeight * 3) + 'px';
+			textarea.style.height = lineHeight * 3 + 'px';
 			textarea.style.overflowY = 'auto';
 		}
 	}
@@ -183,7 +183,9 @@
 		<div class="messages" bind:this={messagesContainer}>
 			{#if messages.length === 0}
 				<div class="empty-state">
-					<p class="message">Hi there! I'm Demeter! Ask me anything about farming, weather, crops, or markets.</p>
+					<p class="message">
+						Hi there! I'm Demeter! Ask me anything about farming, weather, crops, or markets.
+					</p>
 					<div class="suggestions">
 						<button
 							class="suggestion"
@@ -485,7 +487,7 @@
 		position: relative;
 		width: 70px;
 		height: 70px;
-		border-radius: 1.75rem;
+		border-radius: 1.25rem;
 		overflow: hidden;
 		border: 2px solid var(--bg-4);
 	}

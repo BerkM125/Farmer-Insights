@@ -64,7 +64,7 @@
 <div class="page">
 	<header>
 		<BackButton href="/" label="Back to home" />
-		<h1>Soil & Environment</h1>
+		<h1>Soil Monitor</h1>
 		<div class="header-spacer"></div>
 	</header>
 
@@ -75,7 +75,7 @@
 			<div class="error">Error loading environmental data: {farmDataStore.error}</div>
 		{:else if envData}
 			<!-- pH Status Section -->
-			<div class="section highlight" style="border-left: 4px solid {phStatus.color}">
+			<div class="section">
 				<div class="status-header">
 					<h2>Soil pH Status</h2>
 					<span class="status-badge" style="background-color: {phStatus.color}">
@@ -225,24 +225,23 @@
 
 <style>
 	.content {
-		padding: 1.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
 	.section {
-		background: white;
-		border-radius: 12px;
-		padding: 1.25rem;
-		margin-bottom: 1rem;
-	}
-
-	.section.highlight {
-		padding-left: 1rem;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
+		padding: 1rem;
 	}
 
 	.section h2 {
 		margin: 0 0 1rem 0;
-		font-size: 1.1rem;
-		color: var(--txt-2);
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--txt-1);
 	}
 
 	.status-header {
@@ -280,8 +279,9 @@
 	}
 
 	.metric-card {
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.25rem;
+		border: 1px solid var(--bg-4);
 		padding: 1rem;
 		text-align: center;
 	}
@@ -308,8 +308,9 @@
 	}
 
 	.chart-container {
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.25rem;
+		border: 1px solid var(--bg-4);
 		padding: 1.5rem 1rem;
 	}
 
@@ -355,8 +356,9 @@
 		gap: 0.75rem;
 		align-items: flex-start;
 		padding: 0.75rem;
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.25rem;
+		border: 1px solid var(--bg-4);
 	}
 
 	.task-number {
@@ -382,8 +384,9 @@
 	}
 
 	.advice-content {
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.25rem;
+		border: 1px solid var(--bg-4);
 		padding: 1rem;
 	}
 
@@ -405,8 +408,9 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 0.75rem;
-		background: var(--bg-2);
-		border-radius: 8px;
+		background: var(--bg-3);
+		border-radius: 1.25rem;
+		border: 1px solid var(--bg-4);
 	}
 
 	.detail-label {
@@ -425,13 +429,13 @@
 	.no-data {
 		text-align: center;
 		padding: 3rem 1rem;
-		background: white;
-		border-radius: 12px;
-		margin: 1rem 0;
+		background: var(--bg-2);
+		border-radius: 1.75rem;
+		border: 1px solid var(--bg-3);
 		color: var(--txt-2);
 	}
 
 	.error {
-		color: #ef4444;
+		color: var(--red-1);
 	}
 </style>

@@ -183,7 +183,7 @@
 		align-items: center;
 		padding: 0.75rem;
 		background: var(--bg-3);
-		border-radius: 1.75rem;
+		border-radius: 1.25rem;
 		border: 1px solid var(--bg-4);
 	}
 

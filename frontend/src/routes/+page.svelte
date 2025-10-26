@@ -4,6 +4,8 @@
 	import MarketWidget from '$lib/components/MarketWidget.svelte';
 	import CropMonitorWidget from '$lib/components/CropMonitorWidget.svelte';
 	import EnvironmentalWidget from '$lib/components/EnvironmentalWidget.svelte';
+	import PhPlus from '~icons/ph/plus';
+	import PhArrowRight from '~icons/ph/arrow-right';
 </script>
 
 <div class="container">
@@ -61,8 +63,13 @@
 
 	<!-- Chat Bar (navigates to chat) -->
 	<a href="/chat" class="chat-bar">
-		<span class="chat-icon"></span>
-		<span class="chat-placeholder">Ask anything...</span>
+		<span class="image-button">
+			<PhPlus />
+		</span>
+		<span class="chat-placeholder">Ask a farming question...</span>
+		<span class="send-button">
+			<PhArrowRight />
+		</span>
 	</a>
 </div>
 
@@ -161,7 +168,7 @@
 		gap: 0.5rem;
 		padding: 0.5rem;
 		background: var(--bg-3);
-		border-radius: 1.75rem;
+		border-radius: 1.25rem;
 		border: 1px solid var(--bg-4);
 	}
 
@@ -178,15 +185,59 @@
 	}
 
 	.chat-bar {
-		padding: 1rem;
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
 		background: var(--bg-3);
 		border-radius: 1.75rem;
+		padding: 0.5rem;
 		border: 1px solid var(--bg-4);
 		cursor: text;
 	}
 
+	.image-button {
+		padding: 0.5rem;
+		background-color: var(--bg-2);
+		color: var(--txt-1);
+		border: 1px solid var(--bg-4);
+		border-radius: 50%;
+		width: 2.5rem;
+		height: 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.image-button :global(svg) {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+
 	.chat-placeholder {
 		color: var(--txt-3);
+		flex: 1;
+		padding: 0.5rem 0;
+		font-size: 1rem;
+		min-width: 0;
+	}
+
+	.send-button {
+		padding: 0.5rem;
+		background-color: var(--green-1);
+		color: var(--txt-1);
+		border-radius: 50%;
+		width: 2.5rem;
+		height: 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.send-button :global(svg) {
+		width: 1.25rem;
+		height: 1.25rem;
 	}
 
 	.loading-spinner {

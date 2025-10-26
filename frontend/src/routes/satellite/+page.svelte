@@ -58,7 +58,6 @@
 	<div class="content">
 		{#if satelliteData}
 			<!-- NDVI Section -->
-			<h2>Vegetation Health (NDVI)</h2>
 			{#if satelliteData.ndvi_url}
 				<div class="map-container">
 					<img src={satelliteData.ndvi_url} alt="NDVI Vegetation Map" class="map-image" />
@@ -71,6 +70,7 @@
 			{/if}
 
 			<div class="stats-card">
+				<h2>Vegetation Health (NDVI)</h2>
 				{#if satelliteData.mean_ndvi != null}
 					{@const status = getNDVIStatus(satelliteData.mean_ndvi)}
 					<p class="status-label">Status</p>
@@ -106,12 +106,11 @@
 						<div class="gradient-bar ndvi-gradient"></div>
 						<span class="legend-label">1.0</span>
 					</div>
-					<p class="legend-desc">Red (poor) → Yellow (moderate) → Green (healthy vegetation)</p>
+					<p class="legend-desc">Red (poor) → Yellow → Green → Teal (very healthy)</p>
 				</div>
 			</div>
 
 			<!-- NDWI Section -->
-			<h2>Water Resources (NDWI)</h2>
 			{#if satelliteData.ndwi_url}
 				<div class="map-container">
 					<img src={satelliteData.ndwi_url} alt="NDWI Water Resources Map" class="map-image" />
@@ -124,6 +123,7 @@
 			{/if}
 
 			<div class="stats-card">
+				<h2>Water Resources (NDWI)</h2>
 				{#if satelliteData.mean_ndwi != null}
 					{@const status = getNDWIStatus(satelliteData.mean_ndwi)}
 					<p class="status-label">Status</p>
@@ -165,9 +165,8 @@
 
 			<!-- Insights Section -->
 			{#if satelliteData.crop_advice}
-				<h2>Insights & Recommendations</h2>
 				<div class="insight-box">
-					<p class="insight-icon">💡</p>
+					<h2>Recommendations</h2>
 					<div class="insight-content">
 						<p class="insight-text">{satelliteData.crop_advice}</p>
 					</div>
@@ -196,14 +195,11 @@
 		gap: 0.5rem;
 	}
 
-	.content h2 {
-		margin: 0;
-		padding: 1rem;
+	.stats-card h2,
+	.insight-box h2 {
+		margin: 0 0 1rem 0;
 		font-size: 1.25rem;
 		color: var(--txt-1);
-		background: var(--bg-2);
-		border-radius: 1.75rem;
-		border: 1px solid var(--bg-3);
 	}
 
 	.map-container {
@@ -263,7 +259,7 @@
 	}
 
 	.status-value.moderate {
-		color: var(--yellow-1);
+		color: var(--yellow-2);
 	}
 
 	.status-value.poor {
@@ -332,7 +328,7 @@
 	}
 
 	.ndvi-gradient {
-		background: linear-gradient(to right, #e06c6c, #dbba57, #97c639);
+		background: linear-gradient(to right, #e06c6c, #dbba57, #97c639, var(--blue-1));
 	}
 
 	.ndwi-gradient {
@@ -347,12 +343,18 @@
 	}
 
 	.insight-box {
-		display: flex;
-		gap: 0.75rem;
 		padding: 1rem;
 		background: var(--bg-2);
 		border-radius: 1.75rem;
 		border: 1px solid var(--bg-3);
+	}
+
+	.insight-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 0.75rem;
 	}
 
 	.insight-icon {
@@ -361,13 +363,9 @@
 	}
 
 	.insight-content {
-		flex: 1;
 	}
 
 	.insight-text {
-		font-size: 0.95rem;
-		color: var(--txt-2);
-		margin: 0;
 		line-height: 1.5;
 	}
 
