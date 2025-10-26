@@ -36,7 +36,7 @@ SATELLITE_AGENT_ADDRESS = (
     "agent1qt6uwy02w48l49z007txkyys63e9tj73up3am4ftakejlmx8aqev7jzf37m"
 )
 MARKET_AGENT_ADDRESS = (
-    "agent1q26j45u6rtm83csyqhre6l0qwmdc67y065emknmcv9wvhcltfte0zfa4s2r"
+    "agent1q0z3dxx3huw6rq625s9vfke5w6drt80xdsjaelhqf6ga4rr9egze6vqysus"
 )
 SOIL_ENVIRONMENT_AGENT_ADDRESS = (
     "agent1q0j9fcj57s70sm00asqpr4zh08juxk3wzzxz2zh2hua7el0alu4l27t40st"

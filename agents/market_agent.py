@@ -157,17 +157,6 @@ async def handle_market_request(ctx: Context, sender: str, msg: MarketRequest):
         
         ctx.logger.info(f"Found {len(price_records)} price records for {msg.crop_type}")
         
-        # Store records in Supabase
-        for record in price_records:
-            try:
-                result = supabase.table("market_prices").upsert(
-                    record,
-                    on_conflict="date,crop_name"
-                ).execute()
-                ctx.logger.info(f"✅ Stored price record: {record['date']} - {record['crop_name']} - ${record['price']} {record['unit']}")
-            except Exception as e:
-                ctx.logger.error(f"❌ Error inserting record to Supabase: {e}")
-        
         # Prepare response with all price records
         latest_record = max(price_records, key=lambda x: x['date'])
         
