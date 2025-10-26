@@ -98,7 +98,33 @@ def check_and_log_complete_data(ctx: Context):
             ctx.logger.info(f"Records: {result.data}")
 
         except Exception as e:
-            ctx.logger.error(f"❌ Error inserting to Supabase: {e}")
+            ctx.logger.error(f"❌ Error inserting weather data to Supabase: {e}")
+
+        # Insert market data into Supabase (one row per price data point)
+        try:
+            market = collected_data["market"]
+            if market and market.get("price_records"):
+                price_records = []
+                for record in market["price_records"]:
+                    price_record = {
+                        "date": record["date"],
+                        "crop_name": market["crop_name"],
+                        "unit": market["unit"],
+                        "price": record["price"]
+                    }
+                    price_records.append(price_record)
+                
+                # Upsert all records (insert or update if date + crop_name exists)
+                result = supabase.table("market_prices").upsert(price_records).execute()
+                
+                ctx.logger.info(f"✅ Market data inserted to Supabase for crop: {market['crop_name']}")
+                ctx.logger.info(f"Inserted {len(price_records)} price records")
+                ctx.logger.info(f"Date range: {price_records[0]['date']} to {price_records[-1]['date']}")
+            else:
+                ctx.logger.warning("No market price records to insert")
+                
+        except Exception as e:
+            ctx.logger.error(f"❌ Error inserting market data to Supabase: {e}")
 
         # Reset for next collection
         for key in collected_data:
