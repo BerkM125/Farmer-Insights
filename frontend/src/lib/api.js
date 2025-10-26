@@ -10,6 +10,8 @@ const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080';
 export async function sendMessageStreaming(messages, onChunk, onStatus) {
 	try {
 		console.log('Sending messages (streaming):', messages);
+		console.log('Backend URL:', BACKEND_URL);
+		console.log('Full URL:', `${BACKEND_URL}/rag-query`);
 
 		const response = await fetch(`${BACKEND_URL}/rag-query`, {
 			method: 'POST',
@@ -92,6 +94,7 @@ export async function sendMessageStreaming(messages, onChunk, onStatus) {
 
 		return fullResponse || 'No response received';
 	} catch (error) {
+		console.error('API Error Details:', error);
 		if (error.name === 'TypeError' && error.message.includes('fetch')) {
 			throw new Error('Network error: Unable to connect to backend API');
 		}
