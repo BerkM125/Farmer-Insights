@@ -51,6 +51,7 @@ def get_lava_token():
         ).encode()
     ).decode()
 
+
 def get_rag_context(query: str, n_results: int = 3):
     """
     Retrieve relevant documents from the vector database.
@@ -130,7 +131,9 @@ def get_realtime_farm_data(crop_list=None):
         return {
             "weather": weather_response.data if weather_response.data else [],
             "market": market_response.data if market_response.data else [],
-            "environmental": environmental_response.data if environmental_response.data else [],
+            "environmental": (
+                environmental_response.data if environmental_response.data else []
+            ),
             "satellite": satellite_response.data if satellite_response.data else [],
         }
     except Exception as e:
@@ -209,56 +212,72 @@ def format_realtime_data(realtime_data):
         for entry in realtime_data["environmental"][:5]:  # Show most recent 5
             formatted_text += f"Farm ID: {entry.get('farm_id', 'N/A')}\n"
             formatted_text += f"Date: {entry.get('date', 'N/A')}\n"
-            if entry.get('soil_ph') is not None:
+            if entry.get("soil_ph") is not None:
                 formatted_text += f"  - Soil pH: {entry.get('soil_ph')}\n"
-            if entry.get('soil_temperature_c') is not None:
-                formatted_text += f"  - Soil Temperature: {entry.get('soil_temperature_c')}°C\n"
-            if entry.get('sediment_level_mg_l') is not None:
-                formatted_text += f"  - Sediment Level: {entry.get('sediment_level_mg_l')} mg/L\n"
-            if entry.get('erosion_risk_index') is not None:
-                formatted_text += f"  - Erosion Risk Index: {entry.get('erosion_risk_index')}\n"
-            if entry.get('fertilizer_availability_index') is not None:
+            if entry.get("soil_temperature_c") is not None:
+                formatted_text += (
+                    f"  - Soil Temperature: {entry.get('soil_temperature_c')}°C\n"
+                )
+            if entry.get("sediment_level_mg_l") is not None:
+                formatted_text += (
+                    f"  - Sediment Level: {entry.get('sediment_level_mg_l')} mg/L\n"
+                )
+            if entry.get("erosion_risk_index") is not None:
+                formatted_text += (
+                    f"  - Erosion Risk Index: {entry.get('erosion_risk_index')}\n"
+                )
+            if entry.get("fertilizer_availability_index") is not None:
                 formatted_text += f"  - Fertilizer Availability Index: {entry.get('fertilizer_availability_index')}\n"
-            if entry.get('nitrogen_levels'):
-                formatted_text += f"  - Nitrogen Levels: {entry.get('nitrogen_levels')}\n"
-            if entry.get('broad_advice'):
+            if entry.get("nitrogen_levels"):
+                formatted_text += (
+                    f"  - Nitrogen Levels: {entry.get('nitrogen_levels')}\n"
+                )
+            if entry.get("broad_advice"):
                 formatted_text += f"  - Advice: {entry.get('broad_advice')}\n"
-            if entry.get('task_recommendations'):
+            if entry.get("task_recommendations"):
                 formatted_text += f"  - Task Recommendations: {', '.join(entry.get('task_recommendations'))}\n"
             formatted_text += "\n"
     else:
-        formatted_text += "** Environmental & Soil Data **\nNo environmental data available.\n\n"
+        formatted_text += (
+            "** Environmental & Soil Data **\nNo environmental data available.\n\n"
+        )
 
     # Format satellite imagery data
     if realtime_data.get("satellite"):
         formatted_text += "** Satellite Imagery Data **\n"
         for entry in realtime_data["satellite"]:
             formatted_text += f"Created: {entry.get('created_at', 'N/A')}\n"
-            if entry.get('latitude') is not None and entry.get('longitude') is not None:
+            if entry.get("latitude") is not None and entry.get("longitude") is not None:
                 formatted_text += f"  - Location: ({entry.get('latitude')}, {entry.get('longitude')})\n"
-            if entry.get('mean_ndvi') is not None:
-                formatted_text += f"  - Mean NDVI (Vegetation Health): {entry.get('mean_ndvi')}\n"
-            if entry.get('median_ndvi') is not None:
+            if entry.get("mean_ndvi") is not None:
+                formatted_text += (
+                    f"  - Mean NDVI (Vegetation Health): {entry.get('mean_ndvi')}\n"
+                )
+            if entry.get("median_ndvi") is not None:
                 formatted_text += f"  - Median NDVI: {entry.get('median_ndvi')}\n"
-            if entry.get('ndvi_trend') is not None:
+            if entry.get("ndvi_trend") is not None:
                 formatted_text += f"  - NDVI Trend: {entry.get('ndvi_trend')}\n"
-            if entry.get('mean_ndwi') is not None:
-                formatted_text += f"  - Mean NDWI (Water Index): {entry.get('mean_ndwi')}\n"
-            if entry.get('median_ndwi') is not None:
+            if entry.get("mean_ndwi") is not None:
+                formatted_text += (
+                    f"  - Mean NDWI (Water Index): {entry.get('mean_ndwi')}\n"
+                )
+            if entry.get("median_ndwi") is not None:
                 formatted_text += f"  - Median NDWI: {entry.get('median_ndwi')}\n"
-            if entry.get('ndwi_trend') is not None:
+            if entry.get("ndwi_trend") is not None:
                 formatted_text += f"  - NDWI Trend: {entry.get('ndwi_trend')}\n"
-            if entry.get('crop_advice'):
+            if entry.get("crop_advice"):
                 formatted_text += f"  - Crop Advice: {entry.get('crop_advice')}\n"
-            if entry.get('task_recommendations'):
+            if entry.get("task_recommendations"):
                 formatted_text += f"  - Task Recommendations: {', '.join(entry.get('task_recommendations'))}\n"
-            if entry.get('ndvi_url'):
+            if entry.get("ndvi_url"):
                 formatted_text += f"  - NDVI Visualization Available: Yes\n"
-            if entry.get('ndwi_url'):
+            if entry.get("ndwi_url"):
                 formatted_text += f"  - NDWI Visualization Available: Yes\n"
             formatted_text += "\n"
     else:
-        formatted_text += "** Satellite Imagery Data **\nNo satellite data available.\n\n"
+        formatted_text += (
+            "** Satellite Imagery Data **\nNo satellite data available.\n\n"
+        )
 
     formatted_text += "\n=== END REAL-TIME DATA ===\n"
     return formatted_text
@@ -286,7 +305,18 @@ def get_farm_data():
 
     except Exception as e:
         print(f"Error in /api/farm-data endpoint: {e}")
-        return jsonify({"error": str(e), "weather": [], "market": [], "environmental": [], "satellite": []}), 500
+        return (
+            jsonify(
+                {
+                    "error": str(e),
+                    "weather": [],
+                    "market": [],
+                    "environmental": [],
+                    "satellite": [],
+                }
+            ),
+            500,
+        )
 
 
 @app.route("/api/satellite-data", methods=["GET"])
