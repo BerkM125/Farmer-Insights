@@ -63,12 +63,6 @@ def create_daily_weather(daily_data, index):
         evapotranspiration=safe_get(daily_data, "et0_fao_evapotranspiration", index),
         sunshine_duration=safe_get(daily_data, "sunshine_duration", index),
         dew_point=safe_get(daily_data, "dew_point_2m_mean", index),
-        growing_degree_days=safe_get(
-            daily_data, "growing_degree_days_base_0_limit_50", index
-        ),
-        leaf_wetness_probability=safe_get(
-            daily_data, "leaf_wetness_probability_mean", index
-        ),
     )
 
 
@@ -78,7 +72,7 @@ def fetch_weather_data(latitude: float, longitude: float):
     params = {
         "latitude": latitude,
         "longitude": longitude,
-        "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,relative_humidity_2m_mean,et0_fao_evapotranspiration,temperature_2m_mean,growing_degree_days_base_0_limit_50,leaf_wetness_probability_mean,precipitation_probability_max,sunshine_duration,dew_point_2m_mean",
+        "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,relative_humidity_2m_mean,et0_fao_evapotranspiration,temperature_2m_mean,precipitation_probability_max,sunshine_duration,dew_point_2m_mean",
         "timezone": "auto",
         "wind_speed_unit": "mph",
         "temperature_unit": "fahrenheit",

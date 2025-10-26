@@ -14,9 +14,7 @@ ADD COLUMN IF NOT EXISTS wind_gusts_max DECIMAL(6,2),
 ADD COLUMN IF NOT EXISTS humidity_mean DECIMAL(5,2),
 ADD COLUMN IF NOT EXISTS evapotranspiration DECIMAL(8,4),
 ADD COLUMN IF NOT EXISTS sunshine_duration DECIMAL(10,2),
-ADD COLUMN IF NOT EXISTS dew_point DECIMAL(5,2),
-ADD COLUMN IF NOT EXISTS growing_degree_days DECIMAL(8,2),
-ADD COLUMN IF NOT EXISTS leaf_wetness_probability DECIMAL(5,2);
+ADD COLUMN IF NOT EXISTS dew_point DECIMAL(5,2);
 
 -- Update existing columns to match new naming convention
 -- Note: These ALTER COLUMN statements may need to be adjusted based on your current schema

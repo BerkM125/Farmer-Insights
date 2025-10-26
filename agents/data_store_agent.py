@@ -84,8 +84,6 @@ def check_and_log_complete_data(ctx: Context):
                     "evapotranspiration": day["evapotranspiration"],
                     "sunshine_duration": day["sunshine_duration"],
                     "dew_point": day["dew_point"],
-                    "growing_degree_days": day["growing_degree_days"],
-                    "leaf_wetness_probability": day["leaf_wetness_probability"],
                 }
                 weather_records.append(weather_record)
 
@@ -109,22 +107,27 @@ def check_and_log_complete_data(ctx: Context):
                         "date": record["date"],
                         "crop_name": market["crop_name"],
                         "unit": market["unit"],
-                        "price": record["price"]
+                        "price": record["price"],
                     }
                     price_records.append(price_record)
-                
+
                 # Upsert all records (insert or update if date + crop_name exists)
-                result = supabase.table("market_prices").upsert(
-                    price_records,
-                    on_conflict="date,crop_name"
-                ).execute()
-                
-                ctx.logger.info(f"✅ Market data inserted to Supabase for crop: {market['crop_name']}")
+                result = (
+                    supabase.table("market_prices")
+                    .upsert(price_records, on_conflict="date,crop_name")
+                    .execute()
+                )
+
+                ctx.logger.info(
+                    f"✅ Market data inserted to Supabase for crop: {market['crop_name']}"
+                )
                 ctx.logger.info(f"Inserted {len(price_records)} price records")
-                ctx.logger.info(f"Date range: {price_records[0]['date']} to {price_records[-1]['date']}")
+                ctx.logger.info(
+                    f"Date range: {price_records[0]['date']} to {price_records[-1]['date']}"
+                )
             else:
                 ctx.logger.warning("No market price records to insert")
-                
+
         except Exception as e:
             ctx.logger.error(f"❌ Error inserting market data to Supabase: {e}")
 

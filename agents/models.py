@@ -23,8 +23,6 @@ class DailyWeather(BaseModel):
     evapotranspiration: float = Field(description="Evapotranspiration in inches")
     sunshine_duration: float = Field(description="Sunshine duration in seconds")
     dew_point: float = Field(description="Dew point temperature in Fahrenheit")
-    growing_degree_days: float = Field(description="Growing degree days")
-    leaf_wetness_probability: float = Field(description="Leaf wetness probability")
 
 
 class WeatherResponse(BaseModel):
