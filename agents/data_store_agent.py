@@ -1,10 +1,17 @@
 from uagents import Agent, Context
+import os
+from supabase import create_client, Client
 from models import (
     WeatherRequest, WeatherResponse,
     SatelliteRequest, SatelliteResponse,
     MarketRequest, MarketResponse,
     SoilEnvironmentRequest, SoilEnvironmentResponse
 )
+
+# Initialize our Supabase client
+url: str = "https://hpcqmlskbyotkpgljslh.supabase.co"
+key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwY3FtbHNrYnlvdGtwZ2xqc2xoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTM5ODEsImV4cCI6MjA3Njk4OTk4MX0.PCAZxnWnKSpCzgZQRz5Pfl3oHHm3H1kh231rgi0zj2M"
+supabase: Client = create_client(supabase_url=url, supabase_key=key)
 
 agent = Agent(name="data_store_agent",
               seed="data_store_agent_seed_123",
@@ -86,6 +93,15 @@ async def ask_agents(ctx: Context):
     await ctx.send(
         SOIL_ENVIRONMENT_AGENT_ADDRESS, SOIL_ENVIRONMENT_REQUEST
     )
+
+    response = (
+        supabase.table("satellite_data")
+        .select("*")
+        .execute()
+        )
+
+    print("Supabase table response: ", response)
+    # Store the data in the database
  
  
 @agent.on_message(model=WeatherResponse)
