@@ -115,7 +115,10 @@ def check_and_log_complete_data(ctx: Context):
                     price_records.append(price_record)
                 
                 # Upsert all records (insert or update if date + crop_name exists)
-                result = supabase.table("market_prices").upsert(price_records).execute()
+                result = supabase.table("market_prices").upsert(
+                    price_records,
+                    on_conflict="date,crop_name"
+                ).execute()
                 
                 ctx.logger.info(f"✅ Market data inserted to Supabase for crop: {market['crop_name']}")
                 ctx.logger.info(f"Inserted {len(price_records)} price records")
