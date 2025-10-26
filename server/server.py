@@ -232,6 +232,7 @@ def rag_query():
 
         # Get relevant context from RAG
         context_items = get_rag_context(latest_user_prompt, n_results)
+        print(context_items)
 
         # Format context for LLM
         context_text = "\n\n".join([
@@ -270,9 +271,16 @@ def rag_query():
         should_stream = data.get('stream', False)
 
         if should_stream:
-            # Return streaming response
+            # Return streaming response with status updates
             def generate():
                 try:
+                    # Send single status with context sources if available
+                    if context_items:
+                        sources = [item['metadata'].get('source', 'Unknown').replace('.txt', '') for item in context_items[:2]]
+                        sources_text = ', '.join(sources)
+                        yield f"data: {json.dumps({'status': f'Analyzing {sources_text}...', 'stage': 'rag'})}\n\n"
+                    
+                    # Now stream the actual LLM response
                     lava_response = requests.post(
                         "https://api.lavapayments.com/v1/forward?u=https://api.openai.com/v1/chat/completions",
                         headers={

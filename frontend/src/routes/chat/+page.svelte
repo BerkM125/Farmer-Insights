@@ -8,6 +8,7 @@
 	let isLoading = $state(false);
 	let error = $state('');
 	let streamingMessage = $state('');
+	let currentStatus = $state(null);
 	let inputElement;
 	let messagesContainer;
 
@@ -38,23 +39,34 @@
 		isLoading = true;
 		error = '';
 		streamingMessage = '';
+		currentStatus = null;
 
 		// Add user message
 		messages = [...messages, { role: 'user', content: userMessage }];
 
 		try {
 			// Send all messages with streaming enabled
-			const fullResponse = await sendMessageStreaming(messages, (chunk) => {
-				// This callback is called for each chunk received
-				streamingMessage += chunk;
-			});
+			const fullResponse = await sendMessageStreaming(
+				messages,
+				(chunk) => {
+					// This callback is called for each chunk received
+					streamingMessage += chunk;
+					currentStatus = null; // Clear status once streaming starts
+				},
+				(status) => {
+					// This callback is called for each status update
+					currentStatus = status;
+				}
+			);
 
 			// Add the complete AI response to messages
 			messages = [...messages, { role: 'assistant', content: fullResponse }];
 			streamingMessage = '';
+			currentStatus = null;
 		} catch (err) {
 			error = err.message;
 			streamingMessage = '';
+			currentStatus = null;
 		} finally {
 			isLoading = false;
 		}
@@ -109,13 +121,25 @@
 				</div>
 			{/each}
 
+			{#if isLoading && !streamingMessage && currentStatus}
+				<div class="message assistant">
+					<div class="message-content loading">
+						<span class="loading-icon">🔍</span>
+						{currentStatus.status}
+					</div>
+				</div>
+			{:else if isLoading && !streamingMessage}
+				<div class="message assistant">
+					<div class="message-content loading">
+						<span class="loading-icon">✨</span>
+						Thinking...
+					</div>
+				</div>
+			{/if}
+
 			{#if isLoading && streamingMessage}
 				<div class="message assistant">
 					<div class="message-content">{streamingMessage}</div>
-				</div>
-			{:else if isLoading}
-				<div class="message assistant">
-					<div class="message-content loading">Thinking...</div>
 				</div>
 			{/if}
 
@@ -267,6 +291,24 @@
 	.loading {
 		font-style: italic;
 		opacity: 0.7;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.loading-icon {
+		display: inline-block;
+		animation: gentle-pulse 1.5s ease-in-out infinite;
+	}
+
+	@keyframes gentle-pulse {
+		0%,
+		100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.05);
+		}
 	}
 
 	.error {

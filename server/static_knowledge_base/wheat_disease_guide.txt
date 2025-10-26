@@ -1,0 +1,456 @@
+Accurate plant disease identification is the first step in designing effective and
+sustainable disease management programs. The purpose of this guide is to provide
+information on how to recognize wheat diseases and also to provide possible
+management options.
+Scouting for wheat diseases
+Scouting provides information from which economically feasible and environmental
+friendly management practices can be applied. Field scouting is conducted to: 1)
+diagnose diseases developing; 2) determine severity of the disease; 3) determine
+the need for treatment; and 4) assess the effectiveness of previous/applied control
+strategies. When planning to scout, note the current and forecasted weather conditions,
+wheat growth stage, agronomic practices (variety planted, time of planting) and field
+history. A wheat disease-scouting calendar (pg 19) provides an estimated period when
+certain wheat diseases are likely to develop.
+In-season plant disease management
+Fungicides are the only in-season plant disease management practice for managing
+fungal diseases. However diagnosing diseases even when no in-season treatments
+can be done is important for future seasons. Fungicides can be effective against fungal
+diseases; however, timing and application of specific active ingredients are important
+in order to realize the benefits of a fungicide application. Wheat fungicide management
+practice is most economical when:
+• Fungicides are used to manage actual disease risk rather than as a prescriptive
+(“insurance”) application without a risk assessment; and
+• Fungicides are used as part of an integrated disease management strategy and not
+when they are the only management method.
+Integrated disease management
+Well-adapted disease resistant or tolerant varieties should be combined with good
+cultural practices such as crop rotation, disease-free seed, control of weeds and
+volunteer wheat, and optimal planting dates. A fungicide should be used after scouting
+and when fungal disease pressure under current and forecasted weather indicates
+continued disease development. The best timing for fungicide application in wheat is
+at flag leaf, because the flag leaf contributes up to 75% to the grain yield. However,
+where there is an early onset of fungal diseases such as stripe rust or powdery mildew
+and where wheat is planted into wheat stubble, an early fungicide tank-mixed with a
+herbicide may be necessary. To avoid chances of fungicide resistance development,
+rotate fungicide modes of action within and between seasons, and apply fungicides only
+when warranted.
+Page 3
+© 2018, South Dakota Board of Regents
+Tan Spot
+Caused by: Pyrenophora tritici-repentis
+Disease period: Throughout the growing season
+Occurrence: Widespread
+Impact on yield: Low to moderate
+Left Photo: Tan spot symptoms on leaves. Right Photo: Tan spot resting spores on wheat straw.
+(Photo credits: E. Byamukama)
+Symptoms and source of inoculum: Tan spot produces tan to brown lesions on the
+leaves. Lesions can vary from 1/8 of an inch to ½ of an inch in length and 1/16 of an
+inch to 1/18 of an inch wide. Lesions are often referred to as “lens-shaped” and are
+surrounded by a distinctive yellow halo with a small dark spot in the center. Tan spot
+lesions can coalesce, leading to larger areas of the leaf which are killed. In advanced
+cases, tan spot can develop on spikes and some bleaching of the spikes may be visible
+and the kernels will turn dark red. This change in color is known as red smudge. Red
+smudge usually develops under prolonged wet periods or high humidity during kernel
+development. Tan spot is usually more severe on lower leaves and then progresses
+upward. The tan spot pathogen survives on wheat stubble and inoculum can also come
+from wild grasses. The tan spot pathogen can infect wheat under a wide range of
+temperatures but requires at least 6 hours of leaf wetness.
+Management:
+• Select tolerant varieties.
+• Remove or reduce residues infested with tan spot through tillage (where practical) or
+bailing wheat straw.
+• Practice crop rotation to reduce the inoculum level within the field. Rotate wheat
+with broad leaf crops.
+• Use clean-disease free seed.
+• Apply a foliar fungicide when disease pressure is high.
+Page 4
+© 2018, South Dakota Board of Regents
+Powdery Mildew
+Caused by: Blumeria graminis f. sp. tritici
+Disease period: Throughout the growing season
+Occurrence: Widespread
+Impact on yield: Low to moderate
+Powdery mildew symptoms on wheat (Photo credit: E. Byamukama)
+Symptoms and source of inoculum: Powdery mildew starts as raised, white,
+powdery spots on the lower leaves. The powdery mildew pathogen survives the
+winter in plant debris left on the field. Secondary infection from conidia, a type of
+asexual spore, can occur when these spores are blown by wind to other plants.
+Temperatures between 60-70°F with damp weather are favorable for powdery mildew
+buildup. Disease development is slowed when temperature is higher than 77°F. High
+planting rate and high fertility increase the humidity within the lower canopy and these
+conditions favor powdery mildew development.
+Management:
+• Plant wheat varieties with resistance/tolerance to powdery mildew.
+• Practice crop rotations to reduce the risk of powdery mildew infection.
+• Avoid over fertilization with nitrogen fertilizers. Use a balanced soil fertility program.
+• Apply a timely fungicide if disease pressure warrants it.
+Page 5
+© 2018, South Dakota Board of Regents
+Rusts
+Leaf Rust
+Caused by: Puccinia triticina
+Disease period: Mid to late season
+Occurrence: Widespread
+Impact on yield: Low to moderate
+Leaf rust pustules on a wheat leaf (Photo credit: E. Byamukama)
+Symptoms and inoculum source: Leaf rust pustules are orange to dark reddishbrown, raised, and small (usually 1 mm or less in size), often found on the upper leaf
+surface. You can distinguish rust pustules from other leaf spot diseases by rubbing
+(smearing) your finger on the leaf surface which leaves a brownish color on the finger.
+The leaf rust pathogen does not overwinter in the northern states, and for the disease
+to start in any given year, new inoculum must be introduced from the southern states.
+Light rain, high humidity, or heavy dew and temperatures ranging between 59° and 77°
+are ideal for leaf rust development. Leaf rust continues to spread by means of windblown uredospores (from plant to plant and from field to field) until the wheat matures.
+Management:
+• Plant varieties with resistance to leaf rust.
+• Apply a fungicide if the disease is established in the crop canopy and when weather
+favors rust development prior to wheat heading. Crop rotation or other cultural
+practices are not effective against rust diseases.
+Page 6
+© 2018, South Dakota Board of Regents
+Stripe Rust
+Caused by: Puccinia striiformis f. sp. tritici
+Disease period: Throughout the season
+Occurrence: Widespread
+Impact on yield: Low to moderate, severe if infection takes place early
+Stripe rust on wheat (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Small, yellow-orange pustules arranged in rows
+(stripes) on the leaves of wheat. Rows of pustules often resemble sewing machine
+stitches. Cool, wet weather favors stripe rust development. Rapid disease development
+occurs between 50° and 60°F when moisture is available, while temperatures over 68°F
+for several days in a row inhibits disease development. Stripe rust needs a green host
+(wheat, perennial grassy weeds) to survive and has been known to overwinter under
+snow cover as dormant mycelium in our region. However, stripe rust inoculum blowing
+into South Dakota from southern states in the spring plays an important role in the
+disease development.
+Management:
+• Plant resistant cultivars.
+• Apply a fungicide if weather promotes stripe rust development and wheat has not
+reached flowering. Scout often.
+Page 7
+© 2018, South Dakota Board of Regents
+Stem Rust
+Caused by: Puccinia graminis f. sp. tritici
+Disease period: Late season
+Occurrence: Widespread
+Impact on yield: Low to moderate, severe if the cultivar is susceptible
+Stem rust on wheat stems (left) and leaves (right). (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Stem rust forms large orange to red oval shaped
+pustules on stems, leaves, and leaf sheaths of infected plants. At times, pustules can
+also be seen on awns, glumes, and spikelets. Stem rust causes conspicuous tears in
+the epidermal tissues of infected plants. Towards the end of the wheat growing season,
+stem rust pustules will form black spores called teliospores. With increasing severity,
+lesions can weaken the stem, causing lodging and prematurely ripened grain.
+Like leaf and stripe rusts, stem rust spores are carried by the wind to the northern states
+(Puccinia pathway). Stem rust develops under warmer conditions (79-86ºF) and 6-8
+hours of free moisture (dew) on leaves.
+Management:
+• Plant stem rust resistant cultivars. New rust races develop most of the time. For
+example, a new race of stem rust called Ug99 currently found in Africa and the
+Middle East can overcome all known stem rust resistance genes. If a previously
+resistant cultivar is found with moderate level of a rust disease, this could mean that
+this resistance gene is no longer effective.
+• Apply a well-timed fungicide to provide protection against yield loss caused by cereal
+rusts. Scout often.
+Page 8
+© 2018, South Dakota Board of Regents
+Stagonospora Leaf and Glume Blotch
+Caused by: Parastagonospora nodorum (formerly known as Stagonospora nodorum,
+Septoria nodorum)
+Disease period: Mid to late season
+Occurrence: Widespread
+Impact on yield: Low to moderate
+Stagonospora leaf and glume blotch symptoms (Photo credit: (left) E. Byamukama, (right) Erik
+Stromberg, Virginia Polytechnic Institute and State University, Bugwood.org)
+Symptoms and sources of inoculum: Small lesions begin on the lower leaves as
+irregular water soaked patches that will eventually develop into lens-shaped lesions with
+dark brown borders. As the lesions expand, the centers will become lighter, necrotic,
+and take on the shape of a lens. Mature lesions have small black dots (pycnidia) fungal
+fruiting bodies which can be visible with a magnifying glass or hand lens. The fungus
+can also infect the wheat head causing purple-brown blotches on the glumes starting at
+the glume tip.
+This pathogen overwinters on volunteer plants and on wheat stubble from the previous
+season. Seed can also be the source of inoculum. Wet (12-18 hours of continuous free
+moisture) and warm weather are optimal for infection. Optimal temperatures range from
+68°F to 81°F. For this reason, this disease develops at a higher rate around the time of
+heading.
+Management:
+• Plant varieties with resistance/tolerance to leaf and glume blotch.
+• Practice crop rotation. A three-year crop rotation with two years of non-cereal crops
+is recommended.
+• A foliar fungicide timed at flag leaf emergence is effective against Septoria/
+Stagonospora nodorum blotch.
+Page 9
+© 2018, South Dakota Board of Regents
+Root Rot Diseases
+Common Root Rot
+Caused by: Bipolaris sorokiniana (also called Cochliobolus sativus)
+Disease period: Early, but symptoms obvious after heading
+Occurrence: Localized
+Impact on yield: Low
+Common root rot on wheat plants (Photo credit: E. Byamukama)
+Symptoms and source of inoculum: Common root rot pathogen causes dark brown
+lesions on the subcrown. These lesions will eventually spread to encompass the entire
+subcrown internode. Severe infection can lead to pre-mature ripening of the wheat
+head. But most of the time this disease goes unnoticed when tillers are not prematurely
+killed. Mildly infected plants have few tillers and may be stunted. The disease is favored
+by dry, droughty conditions. The common root rot pathogen survives in wheat residue
+and in soil.
+Management:
+• Crop rotation with a broadleaf crop such as sunflower, canola, soybean, etc.
+• Plant resistant varieties.
+• Use fungicide seed treatment where fields have a history of poor seedling
+emergence and root and crown rots.
+Page 10
+© 2018, South Dakota Board of Regents
+Fusarium Foot and Crown Rot
+Caused by: Fusarium spp. (mainly F. graminearum)
+Disease period: Early, but symptoms obvious after heading
+Occurrence: Localized
+Impact on yield: Low
+Fusarium foot and crown rot symptoms on the lower node of stem (left), A leaf sheath removed
+from an infected stem showing the pinkish color, a sign of the pathogen (right). (Photo credit:
+Heather Kelly)
+Symptoms and sources of inoculum: Fusarium crown and foot rot can develop from
+the roots and progress up to the lower nodes. Roots are often brown, the subcrown
+internode is discolored, and a chocolate brown or reddish-brown lesion often extends up
+the plant stem. A pink, cottony fungal growth may sometimes be found in the interior of
+the lower stem when it is split open. Fusarium foot rot also produces sterile white heads
+and premature plant death. The severity of this disease is also worsened by prolonged
+drought and dry conditions. Source of inoculum for this disease is infested residue.
+Management
+• Crop rotation with a broadleaf crop such as sunflower, canola, etc.
+• Plant tolerant varieties.
+• Use fungicide seed treatment where fields have a history of poor seedling
+emergence and root and crown rots.
+Page 11
+© 2018, South Dakota Board of Regents
+Take-all Root and Crown Rot
+Caused by: Gaeumannomyces graminis f. sp. tritici
+Disease period: Early, but symptoms obvious after heading
+Occurrence: Localized
+Impact on yield: Low
+Take-all symptoms on wheat lower nodes and roots (Photo credit: E. Byamukama)
+Symptoms and source of inoculum: Roots, crowns, and lower nodes have a shiny
+black discoloration. White heads are often observed on infected plants at or after
+heading. Under severe infection, plants are stunted and ripen prematurely and these are
+usually found in low laying areas of the field. The Take-all pathogen survives on infested
+residue and in soil.
+Management:
+• Crop rotation with a broadleaf crop such as sunflower, canola, soybean, etc.
+• Plant tolerant varieties.
+• Improve drainage.
+Page 12
+© 2018, South Dakota Board of Regents
+Head Diseases
+Fusarium Head Blight or Scab
+Caused by: Mainly Fusarium graminearum
+Disease period: After heading
+Occurrence: Widespread
+Impact on yield: Moderate to high
+Fusarium head blight (FHB or scab) symptoms on wheat plants (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Bleaching of spikelets on the whole or parts
+of the head. Pink or orange-red spore masses are sometimes visible at the base of
+the glumes, especially during long periods of high humidity. The kernels from infected
+spikelets will be shriveled, and are often discolored, ranging from pink to gray to light
+brown. These kernels accumulate high levels of the mycotoxin, deoxynivalenol (DON).
+Scab infection is favored by warm (75° - 85°F), wet weather two weeks before flowering
+and continuing through the flowering period. Fusarium spp. overwinter as fruiting fungal
+structures known as perithicia on crop residue from the previous growing season.
+Management:
+• Plant moderately resistant varieties.
+• Practice crop rotation. Corn and other small grains are also hosts for the FHB
+pathogen.
+• Apply a timely triazole fungicide. Consult the FHB risk assessment tool to decide
+on the need for a fungicide. http://www.wheatscab.psu.edu/riskTool_2011.html,
+https://climate.sdstate.edu/tools/smallgrains/
+Page 13
+© 2018, South Dakota Board of Regents
+Loose Smut
+Caused by: Ustilago tritici
+Disease period: After heading
+Occurrence: Widespread
+Impact on yield: Very low
+Loose smut symptoms on wheat (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Loose smut of wheat is observed as masses
+of black spores in place of the glumes and kernels on the head. Often, only the rachis
+remains after the spores are released. The fungus survives on the embryo of wheat
+seeds and grows inside the plant after seed germination. Spores from affected heads
+can be blown onto non-affected heads and cause infection during wheat flowering,
+allowing the fungus to grow into the developing seed.
+Management:
+• Plant resistant cultivars.
+• Use clean disease-free seed.
+• Use a systemic fungicide seed treatment for seed harvested from infected fields.
+Page 14
+© 2018, South Dakota Board of Regents
+Common Bunt or Stinking Smut
+Caused by: Tilletia tritici and T. laevis
+Disease period: After heading
+Occurrence: Localized
+Impact on yield: Moderate
+Wheat kernels filled with spores of common bunt pathogen spores. (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Infected plants often produce fewer and smaller
+heads than normal ones, and the heads of diseased plants are generally dark green and
+retain their green color longer than healthy heads. Diseased heads tend to have a more
+open appearance due to the expanding of the smutted kernels which causes a spreading
+of the glumes. In heads infected with common bunt, the outer hull of the kernels will
+remain intact, but the inside of the kernel will be replaced with brown or black spores
+that have a fishy odor. During harvest and handling, the bunt balls will break open and
+contaminate healthy seeds with the spores, as well as spread the spores and odor
+throughout the seed lot.
+Common bunt is normally a seed-borne disease, but the pathogen can also survive in
+the soil and infect otherwise healthy, emerging seedlings. Smut spores that are adhered
+to infected kernels germinate at the same time as the wheat seed germinates, and the
+fungus invades the coleoptile before emergence. The fungus invades the young tissues
+and becomes established in the tissues that eventually develop into the head.
+Management:
+• Plant disease-free seed, preferably certified seed.
+• Use fungicide seed treatments.
+• Planting winter wheat early (when soil temperatures are above 60 degrees F) and
+spring wheat when soils have begun to warm may allow the seedlings to outgrow
+the fungus and escape infection. Planting winter wheat too early may also pose
+an increased risk of virus diseases and excess growth which may cause moisture
+stress.
+Page 15
+© 2018, South Dakota Board of Regents
+Ergot
+Caused by: Claviceps purpurea, Claviceps paspalli and Claviceps fusiformis
+Disease period: After heading
+Occurrence: Localized
+Impact on yield: Low
+Ergot bodies in wheat heads (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Purple-black, hornlike sclerotia (ergot bodies)
+replace one or more seeds in the head. Infected florets exude a sugary slime in sticky
+yellow droplets. The pathogen survives as a hardened fungal mass called ergot bodies,
+and in spring, wet, cool weather stimulates the ergot bodies lying on the soil surface
+or slightly buried in the soil to produce spores that can infect the florets of wheat, rye,
+triticale, barley, oats and wild oats, as well as some grasses. An ergot body can survive
+for approximately one year in or on the soil, but for several years in dry storage. Ergot
+bodies from previous seasons or from grass are the source of inoculum.
+Management:
+• Plant seed free of sclerotia. Certified seed can have no more than 2% maximum
+ergot sclerotia for the registered class and no more than 3% for the certified seed
+class.
+• A triazole fungicide seed treatment may inhibit germination of ergot.
+Page 16
+© 2018, South Dakota Board of Regents
+Bacterial Disease
+Bacterial Leaf Streak/ Black Chaff
+Caused by: Xanthomonas tranclucens pv. undulosa
+Disease period: Flag leaf
+Occurrence: Widespread
+Impact on yield: Low to moderate
+Bacterial leaf streak symptoms (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: Infection starts as water soaked streaks or
+spots on the surface of upper leaves which is then followed by a shiny glaze. Olive green
+translucent streaks will develop into yellow-brown streaks. Brown, dry spots begin to
+emerge on the surface of the leaf, usually beginning at the tip of the leaf or in the middle
+of the leaf. In infected plants, black chaff can be present in the head and glume. Black
+chaff occurs when the bacteria invade the glumes during grain fill and cause dark purple
+or black streaks and spots on the exterior of the glume, hence the name black chaff.
+The bacteria can survive on seed, debris and in soil. Inoculum is splashed during rainfall
+onto healthy tissues. The bacteria enter the host plant through stomatal openings or
+wounds. Droplets of bacterial ooze during high humidity periods may act as inoculum
+for secondary infection. The disease can develop under a relatively wide range of
+temperature (59-86°F) and humidity levels. Infection is enhanced by frequent rainfall
+and warm temperatures.
+Management:
+• Use certified, pathogen-free seeds.
+• Plant resistant varieties.
+• Control volunteer cereal and grassy weeds around the wheat field to reduce the
+inoculum pressure on the field.
+Page 17
+© 2018, South Dakota Board of Regents
+Viral Diseases
+Wheat Streak Mosaic Virus
+Caused by: Wheat Streak Mosaic Virus (WSMV)
+Disease period: Throughout the season
+Occurrence: Widespread
+Impact on yield: Low to severe
+Wheat Streak Mosaic symptoms (Photo credit: E. Byamukama)
+Symptoms and sources of inoculum: The most common symptoms of WSMV are
+stunted growth and yellowing. Infected plants will show yellow and green streaks
+parallel to the leaf veins. Leaves will curl inwards and young leaves get “trapped” due to
+the presence of a high population of wheat curl mites, the vector of WSMV. Symptom
+severity can vary based on the cultivar of wheat, time of infection (fall vs spring
+infection), and environmental conditions. Warm fall and dry and warm spring increase
+symptom severity.
+WSMV is spread between winter wheat crops by wheat curl mites (WCMs) moving off
+volunteer wheat and grassy weeds to the emerging winter wheat in the fall and from
+winter wheat, volunteer winter wheat or grassy weeds to the spring wheat in spring.
+The WCMs are not visible to the human eye. When observed under a microscope,
+the mites resemble small, white grains of rice with two pairs of legs near the head.
+The mites rely on the wind for transportation from plant to plant. Warm temperatures
+are optimal for mite reproduction. Temperatures near freezing will stop reproduction,
+but will not kill the mites. WCMs overwinter near the growing point of winter wheat
+or in perennial grasses as eggs, nymphs or adults. Spring wheat infection is heavily
+dependent on the survival of mites during the winter.
+Management:
+• Destroy volunteer wheat and grasses at least two weeks before planting a new crop.
+• Avoid early planting in areas with history of WSMV. Winter wheat planting should be
+delayed until after mid to late September for optimum WSMV control.
+• Plant wheat cultivars tolerant to WSMV.
+Page 18
+© 2018, South Dakota Board of Regents
+Barley Yellow Dwarf Virus
+Caused by: Barley Yellow Dwarf Virus (various strains)
+Disease period: Throughout the season
+Occurrence: Localized
+Impact on yield: Low
+Barley Yellow Dwarf symptoms on wheat (Photo credit: E. Byamukama)
+Symptoms and source of inoculum: Symptoms of Barley Yellow Dwarf Virus (BYDV)
+can vary based on the strain of virus present, the cultivar, environmental conditions, and
+the growth stage at which plants become infected. Typical BYDV symptoms include
+yellow, purplish-red discoloration of leaves, usually the flag leaf. Depending on the time
+of infection, the symptomatic flag leaf may start to die from the leaf tip. Other common
+symptoms include upright and stiff leaves, serrated leaf borders, reduced tillering and
+flowering, small grain heads, and an inability to fill the grain. If plants are infected very
+early in the season, severe stunting may occur and yield is most likely to be significantly
+impacted.
+Barley yellow dwarf virus is vectored by different aphid species. The virus is not seedborne, therefore the only means of virus spread is through these aphid vectors. The
+aphids acquire the BYDV as they feed on infected plants and transmit it to healthy plants
+as they feed within a field or when they are emigrating from other fields and hosts.
+BYDV can survive between crop cycles in volunteer wheat, barley, oats and several
+grass weed hosts, or in winter sown cereals.
+Management:
+• Plant winter wheat after the migration season of bird cherry-oat aphid to reduce the
+risk of early BYDV/CYDV infection. Generally, planting winter wheat after September
+15 reduces infestation of aphids and subsequent BYDV/CYDV infections.
+• Plant varieties with low susceptibility against BYDV.
+• Insecticide seed treatments may be a good strategy when winter wheat needs to be
+planted early.
+Page 19
+© 2018, South Dakota Board of Regents
+Wheat disease scouting calendar for South Dakota.
+Disease
+Wheat stage
+Fall Winter Emergence Tillering Jointing Boot Heading & Flowering Grain fill
+Tan Spot
+Winter wheat
+Spring wheat
+Powdery Mildew
+Stagonospora Leaf Blotch
+Glume Blotch (Stagonospora)
+Leaf Rust
+Stripe Rust
+Stem Rust
+Fusarium Head Blight/Wheat Scab
+Root Rot Diseases
+Black Chaff/Bacterial Leaf Streak
+BYDV
+Winter wheat
+Spring wheat
+WSMV
+Winter wheat
+Spring wheat
+Page 20
+© 2018, South Dakota Board of Regents
+Management of Small Grain Diseases
+2018 Fungicide Efficacy for Control of Wheat Diseases
+The North Central Regional Committee on Management of Small Grain Diseases (NCERA-184) has developed the following information on fungicide efficacy for
+control of certain foliar diseases of wheat for use by the grain production industry in the U.S. Efficacy ratings for each fungicide listed in the table were determined
+by field testing the materials over multiple years and locations by the members of the committee. Efficacy is based on proper application timing to achieve
+optimum effectiveness of the fungicide as determined by labeled instructions and overall level of disease in the field at the time of application. Differences in
+efficacy among fungicide products were determined by direct comparisons among products in field tests and are based on a single application of the labeled rate
+as listed in the table. Table includes most widely marketed products and is not intended to be a list of all labeled products.
+Fungicide(s) Efficacy of fungicides for wheat disease control based on appropriate application timing
