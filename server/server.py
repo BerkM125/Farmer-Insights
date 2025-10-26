@@ -15,7 +15,13 @@ root_dir = Path(__file__).parent.parent
 load_dotenv(dotenv_path=root_dir / ".env")
 
 app = Flask(__name__)
-CORS(app)
+CORS(
+    app,
+    origins="*",
+    methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "ngrok-skip-browser-warning"],
+    supports_credentials=False,
+)
 
 # Initialize ChromaDB client
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
@@ -565,4 +571,4 @@ def rag_query():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=8081)
