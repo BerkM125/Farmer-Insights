@@ -13,6 +13,8 @@
 	--yellow-1: hsl(45, 65%, 60%);
 	--green-1: hsl(80, 55%, 50%);
 	--blue-1: hsl(170, 55%, 50%);
+	--acc-1: hsl(80, 55%, 50%);
+	--acc-2: hsl(80, 55%, 45%);
 
 	box-sizing: border-box;
 }

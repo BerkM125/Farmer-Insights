@@ -50,7 +50,7 @@ def get_lava_token():
         "product_secret": os.getenv('LAVA_SELF_PRODUCT_SECRET')
     }).encode()).decode()
 
-def split_query_into_search_terms(user_query: str) -> list[str]:
+def split_query_into_search_terms(user_query: str):
     """
     Use LLM to split a complex user query into simpler search terms for RAG.
 
