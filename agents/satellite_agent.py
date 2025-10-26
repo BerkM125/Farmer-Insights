@@ -1,24 +1,11 @@
-from pydantic import BaseModel, Field
-from uagents import Agent, Context, Protocol, Model
+from uagents import Agent, Context
+from models import SatelliteRequest, SatelliteResponse
 
 agent = Agent(name="satellite_agent",
               seed="satellite_agent_seed_123",
               port=8002,
               endpoint=["http://127.0.0.1:8002/submit"]
               )
-
-class SatelliteRequest(BaseModel):
-    latitude: float = Field(
-        description="The latitude of the location"
-    )
-    longitude: float = Field(
-        description="The longitude of the location"
-    )   
-
-class SatelliteResponse(BaseModel):
-    status: str = Field(
-        description="Status of the satellite data connection"
-    )
 
 
 @agent.on_event("startup")

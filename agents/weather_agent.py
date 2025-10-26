@@ -1,30 +1,11 @@
-from pydantic import BaseModel, Field
-from uagents import Agent, Context, Protocol, Model
- 
+from uagents import Agent, Context
+from models import WeatherRequest, WeatherResponse
+
 agent = Agent(name="weather_agent",
               seed="weather_agent_seed_123",
               port=8001,
               endpoint=["http://127.0.0.1:8001/submit"]
               )
-
-class WeatherRequest(BaseModel):
-    latitude: float = Field(
-        description="The latitude of the location"
-    )
-    longitude: float = Field(
-        description="The longitude of the location"
-    )   
-
-class WeatherResponse(BaseModel):
-    temperature_high: float = Field(description="High temperature in Fahrenheit")
-    temperature_low: float = Field(description="Low temperature in Fahrenheit")
-    humidity: float = Field(description="Humidity percentage")
-    precipitation_chance: float = Field(description="Chance of precipitation (0-100)")
-    wind_speed: float = Field(description="Wind speed in mph")
-    wind_direction: str = Field(description="Wind direction")
-    condition: str = Field(description="Weather condition (e.g., sunny, cloudy, rainy)")
-    uv_index: int = Field(description="UV index (0-11+)")
-    visibility: float = Field(description="Visibility in miles")
 
 
 
@@ -34,7 +15,7 @@ async def print_address(ctx: Context):
  
  
 @agent.on_message(model=WeatherRequest, replies=WeatherResponse)
-async def answer_question(ctx: Context, sender: str, msg: WeatherRequest):
+async def handle_weather_request(ctx: Context, sender: str, msg: WeatherRequest):
     ctx.logger.info(f"Received weather request from {sender}: {msg.latitude}, {msg.longitude}")
     
     # Hardcoded weather forecast stats
