@@ -3,7 +3,7 @@
  * This store manages farm data fetched from the backend API
  */
 
-const BACKEND_URL = 'http://localhost:8080';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080';
 
 /**
  * Create a reactive farm data store
