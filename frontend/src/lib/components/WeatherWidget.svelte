@@ -1,6 +1,10 @@
 <script>
 	import { farmDataStore } from '$lib/stores.svelte.js';
-	import { getWeatherDescription, getWeatherIcon } from '$lib/weatherHelpers.js';
+	import {
+		getWeatherDescription,
+		getWeatherIcon,
+		getWeatherIconColor
+	} from '$lib/weatherHelpers.js';
 
 	// Get today's weather (first day in forecast)
 	let todayWeather = $derived(
@@ -13,6 +17,7 @@
 <a href="/weather" class="widget weather">
 	{#if todayWeather}
 		{@const WeatherIcon = getWeatherIcon(todayWeather.weather_code || 0)}
+		{@const iconColor = getWeatherIconColor(todayWeather.weather_code || 0)}
 		<div class="weather-main">
 			<div class="weather-info">
 				<div class="weather-temp">
@@ -26,7 +31,7 @@
 				<span class="range-label">Lo</span>
 				<span class="range-value">{Math.round(todayWeather.temperature_low || 0)}°</span>
 			</div>
-			<WeatherIcon class="weather-icon-large" />
+			<WeatherIcon class="weather-icon-large" style="color: {iconColor}" />
 		</div>
 		<div class="weather-stats">
 			<div class="stat">
@@ -95,7 +100,7 @@
 	.weather-range {
 		display: grid;
 		grid-template-columns: auto auto;
-		gap: 0.5rem 0.75rem;
+		gap: 0.5rem 0.5rem;
 		flex-shrink: 0;
 		margin-right: auto;
 		align-items: center;
@@ -155,7 +160,6 @@
 	:global(.weather-icon-large) {
 		width: 3.75rem;
 		height: 3.75rem;
-		color: var(--blue-2);
 		flex-shrink: 0;
 	}
 </style>

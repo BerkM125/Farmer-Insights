@@ -89,6 +89,66 @@ export function getWeatherIcon(code, isDay = true) {
 }
 
 /**
+ * Get weather icon color based on WMO weather code
+ * @param {number} code - WMO weather code
+ * @returns {string} CSS color variable name
+ */
+export function getWeatherIconColor(code) {
+	// Clear sky (0, 1) - Sun/Moon
+	if (code === 0 || code === 1) {
+		return 'var(--yellow-2)'; // Yellow for sun
+	}
+
+	// Partly cloudy (2) - CloudSun/CloudMoon
+	if (code === 2) {
+		return 'var(--yellow-1)'; // Light yellow for partly cloudy
+	}
+
+	// Cloudy (3) - Cloud
+	if (code === 3) {
+		return 'var(--txt-4)'; // Light gray for clouds
+	}
+
+	// Fog (45, 48) - CloudFog
+	if (code === 45 || code === 48) {
+		return 'var(--txt-4)'; // Light gray for fog
+	}
+
+	// Drizzle (51, 53, 55, 56, 57) - Drop
+	if (code >= 51 && code <= 57) {
+		return 'var(--blue-2)'; // Blue for drizzle
+	}
+
+	// Rain (61, 63, 65, 66, 67) - CloudRain
+	if (code >= 61 && code <= 67) {
+		return 'var(--blue-2)'; // Blue for rain
+	}
+
+	// Snow (71, 73, 75, 77) - Snowflake
+	if (code >= 71 && code <= 77) {
+		return 'var(--blue-1)'; // Light blue for snow
+	}
+
+	// Rain showers (80, 81, 82) - CloudRain
+	if (code >= 80 && code <= 82) {
+		return 'var(--blue-2)'; // Blue for rain showers
+	}
+
+	// Snow showers (85, 86) - CloudSnow
+	if (code === 85 || code === 86) {
+		return 'var(--blue-1)'; // Light blue for snow showers
+	}
+
+	// Thunderstorm (95, 96, 99) - CloudLightning
+	if (code >= 95 && code <= 99) {
+		return 'var(--txt-4)'; // Light gray for thunderstorms
+	}
+
+	// Default fallback
+	return 'var(--txt-4)'; // Light gray for unknown conditions
+}
+
+/**
  * Get day of week from date string
  * @param {string} dateString - Date in YYYY-MM-DD format
  * @returns {string} Abbreviated day of week

@@ -1,21 +1,10 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { farmDataStore } from '$lib/stores.svelte.js';
+	import BackButton from '$lib/components/BackButton.svelte';
 
 	// User's crops (hardcoded for now, can be made dynamic later)
 	const USER_CROPS = ['corn', 'soybeans', 'wheat'];
-
-	// Helper function: Get crop emoji
-	function getCropEmoji(cropName) {
-		const emojiMap = {
-			corn: '🌽',
-			soybeans: '🫘',
-			wheat: '🌾',
-			barley: '🌾',
-			oats: '🌾'
-		};
-		return emojiMap[cropName.toLowerCase()] || '🌱';
-	}
 
 	// Helper function: Format unit for display
 	function formatUnit(unit) {
@@ -68,7 +57,6 @@
 
 				items.push({
 					name: cropName,
-					emoji: getCropEmoji(cropName),
 					price: latest.price,
 					unit: formatUnit(latest.unit),
 					change: change,
@@ -146,8 +134,9 @@
 
 <div class="page">
 	<header>
-		<button class="back-button" onclick={() => goto('/')} aria-label="Back to home"> ✕ </button>
-		<h1>📈 Market Prices</h1>
+		<BackButton href="/" label="Back to home" />
+		<h1>Market Prices</h1>
+		<div class="header-spacer"></div>
 	</header>
 
 	<div class="content">
@@ -165,7 +154,6 @@
 						<div class="price-item">
 							<div class="price-info">
 								<p class="commodity">
-									{item.emoji}
 									{item.name.charAt(0).toUpperCase() + item.name.slice(1)}
 								</p>
 								<p class="price-value">
@@ -247,47 +235,6 @@
 </div>
 
 <style>
-	.page {
-		max-width: 600px;
-		margin: 0 auto;
-		min-height: 100vh;
-		background: var(--bg-1);
-	}
-
-	header {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		padding: 1rem;
-		background: white;
-		border-bottom: 1px solid #e5e7eb;
-		position: sticky;
-		top: 0;
-		z-index: 10;
-	}
-
-	header h1 {
-		margin: 0;
-		font-size: 1.25rem;
-		color: var(--txt-1);
-	}
-
-	.back-button {
-		background: none;
-		border: none;
-		font-size: 1.5rem;
-		color: var(--txt-3);
-		cursor: pointer;
-		padding: 0.5rem;
-		display: flex;
-		align-items: center;
-		line-height: 1;
-	}
-
-	.back-button:hover {
-		color: var(--txt-1);
-	}
-
 	.content {
 		padding: 1.5rem 1rem;
 	}
