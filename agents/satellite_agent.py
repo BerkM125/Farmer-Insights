@@ -44,7 +44,7 @@ async def handle_satellite_request(ctx: Context, sender: str, msg: SatelliteRequ
 # database. This function takes a farm ID and returns the satellite data for that farm,
 # including lat/lon, NDWI, NDVI, and other important info
 def fetch_satellite_data(farm_id: str):
-    aggregate_block = supabase_client.table("satellite_data_table").select("id").execute()
+    aggregate_block = supabase_client.table("satellite_data_table").select("*").execute()
     print(f"Aggregate block: {aggregate_block.data}")
     # relevant_latitude = aggregate_block["latitude"]
     # relevant_longitude = aggregate_block["longitude"]

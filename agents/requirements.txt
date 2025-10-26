@@ -1,4 +1,7 @@
 uagents
 pydantic
 requests
-earthengine-api
+supabase
+python-dotenv
+python-dateutil
+
