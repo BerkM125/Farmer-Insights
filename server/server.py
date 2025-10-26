@@ -11,6 +11,7 @@ import json
 import base64
 from dotenv import load_dotenv
 from pathlib import Path
+from supabase import create_client, Client
 
 # Load environment variables from root .env file
 root_dir = Path(__file__).parent.parent
@@ -37,6 +38,12 @@ except Exception:
         embedding_function=embedding,
         metadata={"description": "Static knowledge base for RAG"}
     )
+
+# Initialize Supabase client
+supabase: Client = create_client(
+    os.getenv('SUPABASE_URL'),
+    os.getenv('SUPABASE_KEY')
+)
 
 # Initialize Lava Payments token
 def get_lava_token():
@@ -79,6 +86,80 @@ def get_rag_context(query: str, n_results: int = 3):
         })
 
     return context_items
+
+def get_realtime_farm_data():
+    """
+    Fetch real-time data from Supabase tables.
+    
+    Returns:
+        Dictionary containing weather, market, and other farm data
+    """
+    try:
+        # Fetch weather data (most recent 7 days)
+        weather_response = supabase.table("weather_data").select("*").order("date", desc=False).limit(7).execute()
+        
+        # Fetch market prices (all available)
+        market_response = supabase.table("market_prices").select("*").order("date", desc=False).execute()
+        
+        return {
+            "weather": weather_response.data if weather_response.data else [],
+            "market": market_response.data if market_response.data else []
+        }
+    except Exception as e:
+        print(f"Error fetching real-time data: {e}")
+        return {
+            "weather": [],
+            "market": []
+        }
+
+def format_realtime_data(realtime_data):
+    """
+    Format real-time data into a readable text format for the LLM.
+    
+    Args:
+        realtime_data: Dictionary containing weather and market data
+        
+    Returns:
+        Formatted string with real-time data
+    """
+    formatted_text = "=== REAL-TIME PERSONALIZED FARM DATA ===\n\n"
+    
+    # Format weather data
+    if realtime_data["weather"]:
+        formatted_text += "** Weather Forecast (Next 7 Days) **\n"
+        for day in realtime_data["weather"]:
+            formatted_text += f"Date: {day.get('date', 'N/A')}\n"
+            formatted_text += f"  - Temperature: {day.get('temperature_low_f', 'N/A')}°F to {day.get('temperature_high_f', 'N/A')}°F\n"
+            formatted_text += f"  - Rainfall Chance: {day.get('rainfall_chance', 'N/A')}%\n"
+            formatted_text += f"  - Rainfall Amount: {day.get('rainfall_amount_mm', 'N/A')} mm\n"
+            if day.get('humidity_percent'):
+                formatted_text += f"  - Humidity: {day.get('humidity_percent')}%\n"
+            if day.get('wind_speed_mph'):
+                formatted_text += f"  - Wind Speed: {day.get('wind_speed_mph')} mph from {day.get('wind_direction', 'N/A')}\n"
+            formatted_text += f"  - UV Index: {day.get('uv_index', 'N/A')}\n\n"
+    else:
+        formatted_text += "** Weather Forecast **\nNo weather data available.\n\n"
+    
+    # Format market data
+    if realtime_data["market"]:
+        formatted_text += "** Market Prices **\n"
+        # Group by crop
+        crops = {}
+        for price in realtime_data["market"]:
+            crop_name = price.get('crop_name', 'Unknown')
+            if crop_name not in crops:
+                crops[crop_name] = []
+            crops[crop_name].append(price)
+        
+        for crop_name, prices in crops.items():
+            formatted_text += f"\n{crop_name.title()} ({prices[0].get('unit', 'N/A')}):\n"
+            for price in prices[:10]:  # Limit to 10 most recent prices per crop
+                formatted_text += f"  - {price.get('date', 'N/A')}: ${price.get('price', 'N/A')}\n"
+    else:
+        formatted_text += "** Market Prices **\nNo market data available.\n\n"
+    
+    formatted_text += "\n=== END REAL-TIME DATA ===\n"
+    return formatted_text
 
 @app.route('/rag-query', methods=['POST'])
 def rag_query():
@@ -128,14 +209,23 @@ def rag_query():
             for item in context_items
         ])
 
-        # Create system message with RAG context
-        system_message = f"""You are a helpful agricultural assistant with access to a knowledge base.
-Use the provided context to answer the user's questions accurately. If the context doesn't contain
-relevant information, acknowledge this and provide your best general answer. In your response, do not state 
-the words, \"the provided context\", \"the given information\", and phrases similar to these.
+        # Get real-time farm data from Supabase
+        realtime_data = get_realtime_farm_data()
+        realtime_text = format_realtime_data(realtime_data)
+        print(realtime_text)
 
-Context from knowledge base:
-{context_text}"""
+        # Create system message with both RAG context and real-time data
+        system_message = f"""You are a helpful agricultural assistant with access to both a knowledge base and real-time farm data.
+
+{realtime_text}
+
+Knowledge Base Context:
+{context_text}
+
+Use the real-time personalized farm data and knowledge base to answer the user's questions accurately. 
+The real-time data includes current weather forecasts and market prices specific to the user's farm.
+If the context doesn't contain relevant information, acknowledge this and provide your best general answer. 
+In your response, do not state phrases like "the provided context" or "the given information"."""
 
         # Build the messages array for the LLM with conversation history
         llm_messages = [{"role": "system", "content": system_message}]
