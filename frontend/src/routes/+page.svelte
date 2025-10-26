@@ -1,4 +1,7 @@
 <script>
+	import { farmDataStore } from '$lib/stores.svelte.js';
+	import WeatherWidget from '$lib/components/WeatherWidget.svelte';
+	import MarketWidget from '$lib/components/MarketWidget.svelte';
 </script>
 
 <div class="container">
@@ -12,55 +15,58 @@
 				<div class="accent-box blue"></div>
 			</div>
 		</div>
-		<p class="location">Ames, Iowa</p>
+		<!-- <p class="location">Ames, Iowa</p> -->
 	</header>
 
 	<!-- Widget Grid -->
-	<div class="widgets">
-		<a href="/weather" class="widget weather">
-			<h2>Weather</h2>
-			<p class="big-text">72°F</p>
-			<p class="small-text">Sunny</p>
-		</a>
-
-		<a href="/market" class="widget market">
-			<h2>Market</h2>
-			<p class="price">Corn: $4.20/bu <span class="change up">↑2%</span></p>
-			<p class="price">Soy: $12.15/bu <span class="change down">↓1%</span></p>
-		</a>
-
-		<div class="side-by-side">
-			<a href="/satellite" class="widget satellite">
-				<h2>Field Imagery</h2>
-				<p>Updated 2 days ago</p>
-				<p class="small-text"></p>
-			</a>
-
-			<a href="/crops" class="widget crops">
-				<h2>Environment</h2>
-				<p>Soil moisture: 65%</p>
-				<p>pH level: 6.8</p>
-			</a>
+	{#if farmDataStore.loading}
+		<div class="widgets-loading">
+			<div class="loading-spinner"></div>
+			<p class="loading-text">Loading farm data...</p>
 		</div>
+	{:else if farmDataStore.error}
+		<div class="widgets-error">
+			<p class="error-text">Error loading data: {farmDataStore.error}</p>
+		</div>
+	{:else}
+		<div class="widgets">
+			<WeatherWidget />
 
-		<div class="widget action-items">
-			<h2>Action Items</h2>
-			<div class="action-list">
-				<div class="action-item">
-					<span class="action-icon">🌱</span>
-					<span>Fertilize corn field</span>
-				</div>
-				<div class="action-item">
-					<span class="action-icon">💧</span>
-					<span>Check irrigation system</span>
-				</div>
-				<div class="action-item">
-					<span class="action-icon">📊</span>
-					<span>Review market trends</span>
+			<MarketWidget />
+
+			<div class="side-by-side">
+				<a href="/satellite" class="widget satellite">
+					<h2>Field Imagery</h2>
+					<p>Updated 2 days ago</p>
+					<p class="small-text"></p>
+				</a>
+
+				<a href="/crops" class="widget crops">
+					<h2>Environment</h2>
+					<p>Soil moisture: 65%</p>
+					<p>pH level: 6.8</p>
+				</a>
+			</div>
+
+			<div class="widget action-items">
+				<h2>Action Items</h2>
+				<div class="action-list">
+					<div class="action-item">
+						<span class="action-icon">🌱</span>
+						<span>Fertilize corn field</span>
+					</div>
+					<div class="action-item">
+						<span class="action-icon">💧</span>
+						<span>Check irrigation system</span>
+					</div>
+					<div class="action-item">
+						<span class="action-icon">📊</span>
+						<span>Review market trends</span>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	{/if}
 
 	<!-- Chat Bar (navigates to chat) -->
 	<a href="/chat" class="chat-bar">
@@ -123,6 +129,28 @@
 		gap: 0.5rem;
 	}
 
+	.widgets-loading,
+	.widgets-error {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		padding: 3rem 1rem;
+	}
+
+	.loading-text {
+		color: var(--txt-2);
+		font-size: 1rem;
+		margin: 0;
+	}
+
+	.widgets-error .error-text {
+		color: var(--red-1);
+		margin: 0;
+	}
+
 	.side-by-side {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -178,5 +206,26 @@
 
 	.chat-placeholder {
 		color: var(--txt-3);
+	}
+
+	.loading-spinner {
+		width: 2rem;
+		height: 2rem;
+		border: 3px solid var(--bg-4);
+		border-top-color: var(--txt-1);
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		margin: 0.5rem 0;
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.error-text {
+		color: var(--red-1);
+		font-size: 0.875rem;
 	}
 </style>
