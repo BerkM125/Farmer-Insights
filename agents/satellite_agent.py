@@ -232,6 +232,13 @@ def get_normalized_diff_stats(latitude: float, longitude: float, nd_image: ee.Im
 
     return stats.getInfo()
 
+def get_crop_task_recs(satellite_data_block):
+    # Return a list of strings that are recommendations for how to 
+    # treat the crop based on all the data this function recieves.
+    # Should use an LLM instance to generate this tasklist.
+    pass
+
+
 def crop_advice(satellite_data_block):
     ndvi_mean = satellite_data_block["mean_ndvi"]
     ndvi_25 = satellite_data_block["25th_ndvi"]
