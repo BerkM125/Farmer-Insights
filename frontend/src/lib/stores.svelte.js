@@ -42,7 +42,11 @@ function createFarmDataStore() {
 				}
 
 				// Fetch farm data (weather and market)
-				const response = await fetch(url);
+				const response = await fetch(url, {
+					headers: {
+						'ngrok-skip-browser-warning': 'true'
+					}
+				});
 
 				if (!response.ok) {
 					throw new Error(`Failed to fetch farm data: ${response.statusText}`);

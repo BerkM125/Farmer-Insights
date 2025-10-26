@@ -16,7 +16,8 @@ export async function sendMessageStreaming(messages, onChunk, onStatus) {
 		const response = await fetch(`${BACKEND_URL}/rag-query`, {
 			method: 'POST',
 			headers: {
-				'Content-Type': 'application/json'
+				'Content-Type': 'application/json',
+				'ngrok-skip-browser-warning': 'true'
 			},
 			body: JSON.stringify({
 				messages: messages,
